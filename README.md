@@ -13,6 +13,8 @@ Busca `const LEAGUE_DATA` en `index.html`. Centraliza equipos, publicaciones, cr
 - **Ranking:** inserta una nueva edición al principio de `rankings` con `id`, `date`, `title`, `label` y `entries:[{team:'shockers',analysis:'Argumento deportivo.'},…]`. Conserva las ediciones anteriores sin modificarlas. Una nota puede incluir `rankingId` para mostrar los argumentos de esa edición conservada. La vista principal usa la primera edición. Adapta los textos de `rankPage()` sobre primera edición y el enlace a su nota cuando haya nuevas ediciones; no inventes variaciones ni probabilidades.
 - **Enlaces:** `#nota/apertura-temporada`, `#equipo/shockers`, `#ranking`, `#noticias` y `#equipos` admiten recarga y acceso directo sin configuración de servidor.
 
+- **Identidad:** Mequetrefes es el nombre actual del equipo de Carlos Sanchez, antes Pelafustanes. Conserva el ID interno `pelafustanes` para mantener los enlaces y referencias anteriores. Su logo está en `assets/mequetrefes.png` y tiene fondo exterior transparente.
+
 ## Publicar en GitHub Pages
 
 Sube `index.html`, `README.md` y `assets/` al repositorio. En GitHub: **Settings → Pages → Build and deployment → Deploy from a branch**. Selecciona la rama con los archivos y `/ (root)`, y guarda. Las rutas relativas admiten Pages de usuario y proyecto. Editar localmente no publica: debes subir los cambios.
