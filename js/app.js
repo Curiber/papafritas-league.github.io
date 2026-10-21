@@ -89,7 +89,7 @@ function featured() {
       <div class="vs">${ev ? `<span class="score">${ev.score.a}–${ev.score.b}</span>` : 'VS'}</div>
       <div class="side">${crest(b)}<div><h3>${esc(b.name)}</h3><div class="owner">${esc(b.owner)}</div></div></div>
     </div>
-    <div class="feature-foot">${catstrip(m)}<div class="meta"><span>${ev ? `${ev.score.a} categorías a ${ev.score.b}${ev.score.t ? ` · ${ev.score.t} empate${ev.score.t > 1 ? 's' : ''}` : ''}` : 'Nueve categorías en disputa · ' + fmtDate(m.start) + ' al ' + fmtDate(m.end)}</span><span class="link">Ver el cruce</span></div></div>
+    <div class="feature-foot">${catstrip(m)}<div class="meta"><span>${ev ? `${ev.score.a} categorías a ${ev.score.b}${ev.score.t ? ` · ${ev.score.t} empate${ev.score.t > 1 ? 's' : ''}` : ''}` : 'Nueve categorías en disputa · ' + fmtShort(m.start) + ' – ' + fmtShort(m.end)}</span><span class="link">Ver el cruce</span></div></div>
   </a>`;
 }
 function story() {
@@ -151,7 +151,7 @@ function schedulePage() {
 function matchupPage(m) {
   const [a, b] = m.teams.map(team), ev = evaluate(m);
   return `<a class="back" href="#calendario">← Calendario</a>
-    <div class="page-head"><span class="eyebrow">${esc(m.weekLabel)} · ${fmtDate(m.start)} al ${fmtDate(m.end)}</span><h1>${esc(a.short)} <span style="color:var(--orange)">vs</span> ${esc(b.short)}</h1></div>
+    <div class="page-head"><span class="eyebrow">${esc(m.weekLabel)} · ${fmtShort(m.start)} – ${fmtShort(m.end)} ${m.end.slice(0,4)}</span><h1>${esc(a.short)} <span style="color:var(--orange)">vs</span> ${esc(b.short)}</h1></div>
     <div class="scoreboard" style="--ta:${esc(a.colors[0])};--tb:${esc(b.colors[0])}">
       <div class="head"><a class="side" href="#equipo/${a.id}">${crest(a)}<span><h2>${esc(a.name)}</h2><span class="owner">${esc(a.owner)} · ${recordOf(a.id)}</span></span></a>
         <div class="total">${ev ? `<span>${ev.score.a}</span><span class="sep">–</span><span>${ev.score.b}</span>` : 'VS'}<small>${ev ? (ev.result === 't' ? 'Empate' : 'Final') : m.status === 'live' ? 'En juego' : 'Por jugar'}</small></div>
