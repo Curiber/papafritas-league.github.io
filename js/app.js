@@ -246,6 +246,7 @@ function route(focus = false) {
   else if (view === 'cruce' && matchupById(id)) { const m = matchupById(id); html = matchupPage(m); title = m.teams.map(t => team(t).short).join(' vs '); nav = 'calendario'; }
   else html = '<div class="empty"><h1>Página no encontrada</h1><a class="link" href="#">Volver a portada</a></div>';
   $('#contenido').innerHTML = html;
+  document.body.classList.toggle('is-home', nav === 'home' && (!hash || hash === 'contenido'));
   document.title = title + ' | Papafritas League';
   document.querySelectorAll('[data-nav]').forEach(a => { if (a.dataset.nav === nav) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   document.querySelectorAll('.team-image').forEach(img => { const fb = () => { img.hidden = true; img.nextElementSibling.hidden = false; }; img.addEventListener('error', fb); if (img.complete && !img.naturalWidth && img.src) fb(); });
@@ -259,7 +260,13 @@ function route(focus = false) {
 const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' }) : null;
 function reveal() { document.querySelectorAll('.reveal:not(.in)').forEach((el, i) => { el.style.transitionDelay = Math.min(i * 40, 280) + 'ms'; io ? io.observe(el) : el.classList.add('in'); }); }
 
+/* ---------- Arena: se ancla justo bajo el ticker ---------- */
+function placeArena() { const t = $('.ticker'), a = $('.arena'); if (t && a) a.style.top = (t.offsetTop + t.offsetHeight) + 'px'; }
+window.addEventListener('resize', placeArena, { passive: true });
+window.addEventListener('load', placeArena);
+
 window.addEventListener('hashchange', () => route(true));
 window.addEventListener('scroll', () => document.body.classList.toggle('scrolled', window.scrollY > 40), { passive: true });
 ticker();
 route();
+placeArena();

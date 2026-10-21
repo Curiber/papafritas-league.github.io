@@ -109,6 +109,23 @@ main{min-height:65vh;padding-bottom:40px}
 .badge{width:100%;height:100%;display:grid;place-items:center;color:#0a0b0d;font-family:var(--display);font-weight:900;font-size:calc(var(--s,48px)*.34);letter-spacing:-.02em;background:var(--team);clip-path:polygon(50% 0,100% 18%,100% 72%,50% 100%,0 72%,0 18%);position:relative}
 .badge:after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(255,255,255,.35),transparent 55%,rgba(0,0,0,.25));clip-path:inherit;pointer-events:none}
 
+/* ---------- Arena (fondo de portada) ---------- */
+.arena{position:absolute;left:0;right:0;top:110px;height:min(1000px,100vh + 240px);z-index:-1;pointer-events:none;opacity:0;transition:opacity .8s var(--ease);
+  background:
+    linear-gradient(180deg,rgba(10,11,13,.2) 0%,rgba(10,11,13,0) 25%,rgba(10,11,13,.25) 60%,var(--bg) 100%),
+    radial-gradient(100% 70% at 50% 40%,transparent 50%,rgba(10,11,13,.6) 100%),
+    url(../assets/arena.webp) center top/cover no-repeat}
+body.is-home .hero{margin-top:96px}
+body.is-home .arena{opacity:1}
+body.is-home{background-image:none}
+body.is-home .feature,body.is-home .story{background-color:transparent;backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+body.is-home .feature{background:
+  radial-gradient(600px 400px at 12% 50%,color-mix(in srgb,var(--ta) 30%,transparent),transparent 60%),
+  radial-gradient(600px 400px at 88% 50%,color-mix(in srgb,var(--tb) 30%,transparent),transparent 60%),
+  linear-gradient(180deg,rgba(21,24,29,.28),rgba(15,17,20,.62))}
+body.is-home .story{background:linear-gradient(160deg,rgba(27,31,38,.45),rgba(15,17,20,.78))}
+body.is-home .feature,body.is-home .story{border-color:rgba(255,255,255,.1);box-shadow:0 30px 80px rgba(0,0,0,.55)}
+
 /* ---------- Hero ---------- */
 .hero{margin:36px 0 0;display:grid;grid-template-columns:1.25fr 1fr;gap:20px}
 .feature{position:relative;overflow:hidden;border-radius:var(--radius);border:1px solid var(--line);background:
@@ -142,7 +159,8 @@ main{min-height:65vh;padding-bottom:40px}
 .story h1{font-size:clamp(44px,4.6vw,72px);letter-spacing:-.01em;margin:16px 0 14px}
 .story h1 em{font-style:normal;color:var(--orange)}
 .story p{color:var(--text-2);font-size:16px;line-height:1.6;max-width:44ch;margin:0}
-.story .ghost{position:absolute;right:20px;bottom:-24px;font-family:var(--display);font-weight:900;font-size:150px;color:rgba(255,255,255,.035);letter-spacing:-.04em;line-height:1;pointer-events:none;user-select:none}
+.story .btn{position:relative;z-index:1;align-self:flex-start}
+.story .ghost{z-index:0;position:absolute;right:20px;bottom:-24px;font-family:var(--display);font-weight:900;font-size:150px;color:rgba(255,255,255,.035);letter-spacing:-.04em;line-height:1;pointer-events:none;user-select:none}
 
 /* ---------- Cruces ---------- */
 .matches{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -374,6 +392,8 @@ footer .tagline{color:var(--text-2)}
 }
 @media(max-width:620px){
   :root{--gutter:16px}
+  .arena{background:linear-gradient(180deg,rgba(10,11,13,0) 0%,rgba(10,11,13,0) 55%,var(--bg) 100%),url(../assets/arena-sm.webp) center top/165% auto no-repeat,var(--bg);height:420px}
+  body.is-home .hero{margin-top:150px}
   .top{font-size:10px;letter-spacing:.12em}.top span:last-child{display:none}
   .brand{width:190px}
   body.scrolled .brand{width:160px}
