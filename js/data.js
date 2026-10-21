@@ -39,7 +39,7 @@ categories: [
 /* Equipos --------------------------------------------------------------- */
 teams: [
   { id: 'shockers', name: 'Penalolen Shockers', short: 'SHK', city: 'Peñalolén', owner: 'Patricio Uribe', ownerNote: 'Creador y comisionado',
-    initials: 'PS', colors: ['#b4ff3a', '#0a0b0d'], logo: '',
+    initials: 'PS', colors: ['#3d8bff', '#c9d3e0'], logo: './assets/penalolen-shockers.webp',
     leaders: ['Shai Gilgeous-Alexander', 'Jayson Tatum', 'Karl-Anthony Towns'],
     roster: ['Shai Gilgeous-Alexander', 'Scottie Barnes', 'Jayson Tatum', 'Jaren Jackson Jr.', 'Karl-Anthony Towns', 'Amen Thompson', 'Kon Knueppel', 'Dyson Daniels', 'Cameron Boozer', 'Daniel Gafford', 'Herbert Jones', 'Jalen Suggs', 'Tari Eason'],
     strength: 'Gilgeous-Alexander, Tatum y Towns ofrecen distintas vías para construir PTS, FT% y 3PM. Barnes y Amen Thompson amplían las opciones de creación y rebote; Daniels, Jones y Jackson Jr. dan argumentos para disputar STL y BLK.',
