@@ -82,7 +82,7 @@ function featured() {
   const m = allMatchups().find(x => x.id === week.featured) ?? allMatchups()[0];
   const [a, b] = m.teams.map(team);
   const ev = evaluate(m);
-  return `<a class="feature reveal" href="#cruce/${esc(m.id)}" style="--ta:${esc(a.colors[0])};--tb:${esc(b.colors[0])}">
+  return `<a class="feature" href="#cruce/${esc(m.id)}" style="--ta:${esc(a.colors[0])};--tb:${esc(b.colors[0])}">
     <div class="feature-head"><span class="eyebrow">Cruce destacado · ${esc(m.weekLabel)}</span>${statusPill(m)}</div>
     <div class="feature-body">
       <div class="side">${crest(a)}<div><h3>${esc(a.name)}</h3><div class="owner">${esc(a.owner)}</div></div></div>
@@ -94,7 +94,7 @@ function featured() {
 }
 function story() {
   const p = posts()[0];
-  return `<div class="story reveal"><div><span class="eyebrow">${esc(p.category)} · ${fmtDate(p.date)}</span><h1>${esc(p.title)}</h1><p>${esc(p.excerpt)}</p></div><a class="btn" href="#nota/${esc(p.id)}">Leer la nota</a><span class="ghost" aria-hidden="true">${esc(D.season.replace(/\s/g, ''))}</span></div>`;
+  return `<div class="story"><div><span class="eyebrow">${esc(p.category)} · ${fmtDate(p.date)}</span><h1>${esc(p.title)}</h1><p>${esc(p.excerpt)}</p></div><a class="btn" href="#nota/${esc(p.id)}">Leer la nota</a><span class="ghost" aria-hidden="true">${esc(D.season.replace(/\s/g, ''))}</span></div>`;
 }
 function standingsTable(compact = false) {
   const rows = standings(), max = Math.max(1, ...rows.map(r => r.cw));
@@ -257,8 +257,20 @@ function route(focus = false) {
   if (focus) { window.scrollTo(0, 0); $('#contenido').focus({ preventScroll: true }); }
 }
 /* ---------- Animaciones de aparición ---------- */
+/* Las animaciones nunca deben esconder contenido: lo que ya está en pantalla se
+   muestra al instante y, por seguridad, todo se muestra a los 1,5 s aunque el
+   navegador no avise el scroll (pestaña en segundo plano, ahorro de energía, etc.). */
 const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' }) : null;
-function reveal() { document.querySelectorAll('.reveal:not(.in)').forEach((el, i) => { el.style.transitionDelay = Math.min(i * 40, 280) + 'ms'; io ? io.observe(el) : el.classList.add('in'); }); }
+let revealTimer;
+function reveal() {
+  const vh = window.innerHeight || document.documentElement.clientHeight;
+  document.querySelectorAll('.reveal:not(.in)').forEach((el, i) => {
+    if (!io || !vh || el.getBoundingClientRect().top < vh) { el.classList.add('in'); return; }
+    el.style.transitionDelay = Math.min(i * 40, 280) + 'ms'; io.observe(el);
+  });
+  clearTimeout(revealTimer);
+  revealTimer = setTimeout(() => document.querySelectorAll('.reveal:not(.in)').forEach(el => el.classList.add('in')), 1500);
+}
 
 /* ---------- Arena: se ancla justo bajo el ticker ---------- */
 function placeArena() { const t = $('.ticker'), a = $('.arena'); if (t && a) a.style.top = (t.offsetTop + t.offsetHeight) + 'px'; }

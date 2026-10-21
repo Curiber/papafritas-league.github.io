@@ -33,7 +33,7 @@ cruce, la tabla de posiciones, el récord de cada equipo y el ticker.
 
 ## Agregar una semana
 
-Añadir un objeto a `schedule` con `week`, `label`, `start`, `end`, `featured` (id del cruce
+Cada fecha dura 6 días (`end` = `start` + 5). Añadir un objeto a `schedule` con `week`, `label`, `start`, `end`, `featured` (id del cruce
 destacado en portada) y sus `matchups`.
 
 ## Power ranking

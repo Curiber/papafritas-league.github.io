@@ -64,9 +64,10 @@ teams: [
     challenge: 'La convivencia de varios jugadores con el balón obliga a vigilar TO. La apuesta interior puede tensionar FT%, mientras sumar especialistas en triples puede modificar FG%. Elegir qué categorías priorizar será determinante.' }
 ],
 
-/* Calendario y resultados ----------------------------------------------- */
+/* Calendario y resultados -----------------------------------------------
+   Cada fecha dura 6 días: `end` = `start` + 5 (p. ej. 20 al 25 de octubre). */
 schedule: [
-  { week: 1, label: 'Semana 1', start: '2026-10-20', end: '2026-10-26', featured: 'w1-m1',
+  { week: 1, label: 'Semana 1', start: '2026-10-20', end: '2026-10-25', featured: 'w1-m1',
     matchups: [
       { id: 'w1-m1', teams: ['hipopotamos', 'pelafustanes'], status: 'scheduled', stats: null },
       { id: 'w1-m2', teams: ['pilsens', 'shockers'],         status: 'scheduled', stats: null }
