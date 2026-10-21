@@ -1,19 +1,382 @@
 <!doctype html><html lang="es-CL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Papafritas League — La crónica</title><meta name="description" content="Previas, equipos y análisis de las nueve categorías de Papafritas League."><meta property="og:title" content="Papafritas League — La crónica"><meta property="og:description" content="Cuatro equipos documentados. Nueve categorías. Una temporada por escribir."><meta property="og:type" content="website"><meta property="og:locale" content="es_CL"><meta name="theme-color" content="#171918"><link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><style>
-:root{--ink:#171918;--paper:#f3f1ea;--orange:#f35b25;--muted:#666b61;--line:#d6d8ce}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}a:hover{color:var(--orange)}button{font:inherit;cursor:pointer}a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:5px}.skip{position:absolute;top:-70px;left:15px;z-index:10;background:white;padding:15px}.skip:focus{top:10px}.wrap{max-width:1320px;margin:auto;padding:0 42px}.mast{background:var(--ink);color:var(--paper)}.top{display:flex;justify-content:space-between;font-size:10px;letter-spacing:1.6px;padding:12px 0;border-bottom:1px solid #ffffff25}header{min-height:108px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{width:240px;display:block}nav{display:flex;gap:28px;font-size:13px;font-weight:bold}nav a{padding:16px 0}nav [aria-current=page]{color:var(--orange)}.season{border:1px solid #61665a;padding:10px;font-size:10px;letter-spacing:1px}.ticker{background:#e5e7dd;border-bottom:1px solid var(--line);padding:12px 0;font-size:11px}.ticker .wrap{display:flex;align-items:center;gap:20px}.tag{display:inline-block;background:var(--orange);padding:7px 9px;font-size:10px;font-weight:bold;letter-spacing:1px;color:var(--ink)}main{min-height:65vh}.hero{display:grid;grid-template-columns:1.1fr 1fr;margin:32px 0 38px;background:var(--ink);color:var(--paper);overflow:hidden}.hero-copy{padding:40px}.hero h1{font-size:clamp(44px,5vw,69px);letter-spacing:-3px;line-height:.99;margin:23px 0}.hero p{font-size:14px;line-height:1.75;color:#c2c5b8;max-width:390px}.link{font-size:12px;font-weight:bold;display:inline-block;padding:15px 0;border-bottom:2px solid var(--orange)}.court{position:relative;display:grid;place-items:center;background:#da5426;overflow:hidden;isolation:isolate;min-height:380px}.court:before{content:'';position:absolute;inset:30px;border:1px solid #ffce9166;transform:rotate(-16deg) scale(1.2);z-index:-1}.court:after{content:'';position:absolute;width:350px;height:350px;border:1px solid #ffce9180;border-radius:50%;z-index:-1}.ball{width:260px;height:260px;border:5px solid #23261f;background:#ee993f;border-radius:50%;position:relative;overflow:hidden;transform:rotate(-25deg);box-shadow:22px 23px 0 #20241d30}.ball:before{content:'';position:absolute;inset:-20px 55px;border:4px solid #23261f;border-radius:50%}.ball:after{content:'';position:absolute;inset:85px -30px;border:4px solid #23261f;border-radius:50%}.ball span{position:absolute;left:50%;width:4px;height:100%;background:#23261f}.court-label{position:absolute;bottom:24px;right:25px;font-size:10px;letter-spacing:2px}.court-number{position:absolute;top:8px;left:20px;font-size:100px;letter-spacing:-8px;font-weight:900;color:#ffffff18}.section-title{border-top:2px solid var(--ink);padding-top:17px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:30px 0 18px}.section-title h2{font-size:23px;letter-spacing:-.8px;margin:0}.section-title small{font-size:10px;letter-spacing:1px;color:var(--muted)}.matches,.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.match{background:#fffef9;border:1px solid var(--line);padding:21px 24px}.match-top{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);letter-spacing:1px;gap:10px}.versus{display:grid;grid-template-columns:1fr 25px 1fr;align-items:center;text-align:center;gap:10px;margin:20px 0}.versus b{font-size:10px;color:var(--muted)}.team-name{display:block;font-size:13px;font-weight:bold;line-height:1.4;margin-top:10px}.emblem{display:inline-grid;place-items:center;background:var(--team);color:#171918;width:48px;height:54px;font-size:17px;font-weight:900;clip-path:polygon(0 0,100% 0,100% 76%,50% 100%,0 76%)}.team-image{width:48px;height:48px;object-fit:contain;vertical-align:middle}.page-head>.team-image{width:128px;height:128px}.team-card>.team-image{width:72px;height:72px}.rank-row .team-image{width:32px;height:32px}.news-art .team-image{width:68px;height:68px}.result{border-top:1px solid var(--line);padding-top:14px;text-align:center;font-size:11px;color:var(--muted)}.columns{display:grid;grid-template-columns:1.8fr 1fr;gap:32px;margin-bottom:35px}.news{border:1px solid var(--line);background:#fffef9;transition:transform .15s}.news:hover{transform:translateY(-3px)}.news-art{height:145px;background:#dce1d4;display:flex;align-items:center;justify-content:center;gap:20px;position:relative;overflow:hidden}.news-art:before{content:'';width:240px;height:240px;position:absolute;border:1px solid #17191820;border-radius:50%}.news-art .emblem{width:60px;height:68px;font-size:23px}.news-body{padding:22px}.eyebrow{font-size:10px;color:#bd3c13;text-transform:uppercase;letter-spacing:1.6px;font-weight:bold}.news h3{font-size:23px;line-height:1.12;letter-spacing:-.7px;margin:12px 0}.news p{font-size:12px;line-height:1.7;color:var(--muted)}.meta{font-size:10px;color:var(--muted);line-height:1.6}.rank-box{background:#e6e9de;padding:5px 20px 18px}.rank-row{display:flex;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid #cbd0c1}.rank-num{font-size:30px;font-weight:900;color:#7d8772;width:26px}.rank-row:first-child .rank-num{color:#bf4017}.rank-row .emblem{width:32px;height:36px;font-size:12px}.rank-name{font-size:12px;font-weight:bold}.rank-owner{font-size:10px;color:var(--muted);margin-top:5px}.note{font-size:12px;color:var(--muted);line-height:1.75}.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:45px}.team-card{padding:25px 20px;border:1px solid var(--line);border-top:3px solid var(--team);background:#fffef9}.team-card h3{font-size:16px;line-height:1.2;min-height:39px}.team-card p{font-size:11px;line-height:1.6;color:var(--muted)}footer{background:var(--ink);color:#b7bcae;font-size:11px;line-height:1.8;padding:30px 0}footer .wrap{display:flex;justify-content:space-between;gap:25px}footer strong{color:var(--paper)}.page-head{padding:40px 0 15px}.page-head h1{font-size:clamp(36px,6vw,60px);line-height:1.05;letter-spacing:-2px;margin:18px 0}.back{display:inline-block;font-size:12px;color:var(--muted);margin-top:28px}.reading{max-width:740px;margin:0 auto 60px}.reading h1{font-size:clamp(36px,5vw,55px);line-height:1.05;letter-spacing:-1.7px}.reading p,.reading li{font-size:16px;line-height:1.85}.reading .lead{font-size:21px;line-height:1.5;color:#51584a}.reading h2{font-size:25px;margin-top:32px;letter-spacing:-.6px}.reading .source{font-size:12px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted)}.share{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.button{border:0;background:var(--ink);color:white;padding:13px 17px;display:inline-block;font-size:12px}.button:hover{background:var(--orange);color:var(--ink)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.filters button{padding:11px 16px;background:transparent;border:1px solid var(--line);font-size:12px}.filters .active{background:var(--ink);color:white}.empty{padding:40px;border:1px dashed #9ca48f;margin:25px 0 45px}.team-detail{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin:25px 0 45px}.panel{padding:24px;border:1px solid var(--line);background:#fffef9}table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:12px 7px;border-bottom:1px solid var(--line);text-align:left}th{font-size:10px;color:var(--muted);text-transform:uppercase}.analysis{font-size:14px;line-height:1.8}.categories{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.categories span{border:1px solid var(--line);padding:8px;font-size:11px;font-weight:bold}.rank-detail{display:grid;grid-template-columns:65px 1fr;gap:20px;padding:28px 0;border-bottom:1px solid var(--line)}.rank-detail h2{margin:0 0 12px}.rank-detail .rank-num{font-size:55px}[hidden]{display:none!important}
+:root{--ink:#171918;--paper:#f3f1ea;--orange:#f35b25;--muted:#666b61;--line:#d6d8ce}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}a:hover{color:var(--orange)}button{font:inherit;cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--orange);outline-offset:5px}.skip{position:absolute;top:-70px;left:15px;z-index:10;background:white;padding:15px}.skip:focus{top:10px}.wrap{max-width:1320px;margin:auto;padding:0 42px}.mast{background:var(--ink);color:var(--paper)}.top{display:flex;justify-content:space-between;font-size:10px;letter-spacing:1.6px;padding:12px 0;border-bottom:1px solid #ffffff25}header{min-height:108px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{width:240px;display:block}nav{display:flex;gap:28px;font-size:13px;font-weight:bold}nav a{padding:16px 0}nav [aria-current=page]{color:var(--orange)}.season{border:1px solid #61665a;padding:10px;font-size:10px;letter-spacing:1px}.ticker{background:#e5e7dd;border-bottom:1px solid var(--line);padding:12px 0;font-size:11px}.ticker .wrap{display:flex;align-items:center;gap:20px}.tag{display:inline-block;background:var(--orange);padding:7px 9px;font-size:10px;font-weight:bold;letter-spacing:1px;color:var(--ink)}main{min-height:65vh}.hero{display:grid;grid-template-columns:1.1fr 1fr;margin:32px 0 38px;background:var(--ink);color:var(--paper);overflow:hidden}.hero-copy{padding:40px}.hero h1{font-size:clamp(44px,5vw,69px);letter-spacing:-3px;line-height:.99;margin:23px 0}.hero p{font-size:14px;line-height:1.75;color:#c2c5b8;max-width:390px}.link{font-size:12px;font-weight:bold;display:inline-block;padding:15px 0;border-bottom:2px solid var(--orange)}.court{position:relative;display:grid;place-items:center;background:#da5426;overflow:hidden;isolation:isolate;min-height:380px}.court:before{content:'';position:absolute;inset:30px;border:1px solid #ffce9166;transform:rotate(-16deg) scale(1.2);z-index:-1}.court:after{content:'';position:absolute;width:350px;height:350px;border:1px solid #ffce9180;border-radius:50%;z-index:-1}.ball{width:260px;height:260px;border:5px solid #23261f;background:#ee993f;border-radius:50%;position:relative;overflow:hidden;transform:rotate(-25deg);box-shadow:22px 23px 0 #20241d30}.ball:before{content:'';position:absolute;inset:-20px 55px;border:4px solid #23261f;border-radius:50%}.ball:after{content:'';position:absolute;inset:85px -30px;border:4px solid #23261f;border-radius:50%}.ball span{position:absolute;left:50%;width:4px;height:100%;background:#23261f}.court-label{position:absolute;bottom:24px;right:25px;font-size:10px;letter-spacing:2px}.court-number{position:absolute;top:8px;left:20px;font-size:100px;letter-spacing:-8px;font-weight:900;color:#ffffff18}.section-title{border-top:2px solid var(--ink);padding-top:17px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:30px 0 18px}.section-title h2{font-size:23px;letter-spacing:-.8px;margin:0}.section-title small{font-size:10px;letter-spacing:1px;color:var(--muted)}.matches,.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.match{background:#fffef9;border:1px solid var(--line);padding:21px 24px}.match-top{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);letter-spacing:1px;gap:10px}.versus{display:grid;grid-template-columns:1fr 25px 1fr;align-items:center;text-align:center;gap:10px;margin:20px 0}.versus b{font-size:10px;color:var(--muted)}.team-name{display:block;font-size:13px;font-weight:bold;line-height:1.4;margin-top:10px}.emblem{display:inline-grid;place-items:center;background:var(--team);color:#171918;width:48px;height:54px;font-size:17px;font-weight:900;clip-path:polygon(0 0,100% 0,100% 76%,50% 100%,0 76%)}.team-image{width:48px;height:48px;object-fit:contain;vertical-align:middle}.page-head>.team-image{width:128px;height:128px}.team-card>.team-image{width:72px;height:72px}.rank-row .team-image{width:32px;height:32px}.news-art .team-image{width:68px;height:68px}.result{border-top:1px solid var(--line);padding-top:14px;text-align:center;font-size:11px;color:var(--muted)}.columns{display:grid;grid-template-columns:1.8fr 1fr;gap:32px;margin-bottom:35px}.news{border:1px solid var(--line);background:#fffef9;transition:transform .15s}.news:hover{transform:translateY(-3px)}.news-art{height:145px;background:#dce1d4;display:flex;align-items:center;justify-content:center;gap:20px;position:relative;overflow:hidden}.news-art:before{content:'';width:240px;height:240px;position:absolute;border:1px solid #17191820;border-radius:50%}.news-art .emblem{width:60px;height:68px;font-size:23px}.news-body{padding:22px}.eyebrow{font-size:10px;color:#bd3c13;text-transform:uppercase;letter-spacing:1.6px;font-weight:bold}.news h3{font-size:23px;line-height:1.12;letter-spacing:-.7px;margin:12px 0}.news p{font-size:12px;line-height:1.7;color:var(--muted)}.meta{font-size:10px;color:var(--muted);line-height:1.6}.rank-box{background:#e6e9de;padding:5px 20px 18px}.rank-row{display:flex;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid #cbd0c1}.rank-num{font-size:30px;font-weight:900;color:#7d8772;width:26px}.rank-row:first-child .rank-num{color:#bf4017}.rank-row .emblem{width:32px;height:36px;font-size:12px}.rank-name{font-size:12px;font-weight:bold}.rank-owner{font-size:10px;color:var(--muted);margin-top:5px}.note{font-size:12px;color:var(--muted);line-height:1.75}.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:45px}.team-card{padding:25px 20px;border:1px solid var(--line);border-top:3px solid var(--team);background:#fffef9}.team-card h3{font-size:16px;line-height:1.2;min-height:39px}.team-card p{font-size:11px;line-height:1.6;color:var(--muted)}footer{background:var(--ink);color:#b7bcae;font-size:11px;line-height:1.8;padding:30px 0}footer .wrap{display:flex;justify-content:space-between;gap:25px}footer strong{color:var(--paper)}.page-head{padding:40px 0 15px}.page-head h1{font-size:clamp(36px,6vw,60px);line-height:1.05;letter-spacing:-2px;margin:18px 0}.back{display:inline-block;font-size:12px;color:var(--muted);margin-top:28px}.reading{max-width:740px;margin:0 auto 60px}.reading h1{font-size:clamp(36px,5vw,55px);line-height:1.05;letter-spacing:-1.7px}.reading p,.reading li{font-size:16px;line-height:1.85}.reading .lead{font-size:21px;line-height:1.5;color:#51584a}.reading h2{font-size:25px;margin-top:32px;letter-spacing:-.6px}.reading .source{font-size:12px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted)}.share{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.button{border:0;background:var(--ink);color:white;padding:13px 17px;display:inline-block;font-size:12px}.button:hover{background:var(--orange);color:var(--ink)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.filters button{padding:11px 16px;background:transparent;border:1px solid var(--line);font-size:12px}.filters .active{background:var(--ink);color:white}.empty{padding:40px;border:1px dashed #9ca48f;margin:25px 0 45px}.team-detail{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin:25px 0 45px}.panel{padding:24px;border:1px solid var(--line);background:#fffef9}table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:12px 7px;border-bottom:1px solid var(--line);text-align:left}th{font-size:10px;color:var(--muted);text-transform:uppercase}.analysis{font-size:14px;line-height:1.8}.categories{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.categories span{border:1px solid var(--line);padding:8px;font-size:11px;font-weight:bold}.rank-detail{display:grid;grid-template-columns:65px 1fr;gap:20px;padding:28px 0;border-bottom:1px solid var(--line)}.rank-detail h2{margin:0 0 12px}.rank-detail .rank-num{font-size:55px}[hidden]{display:none!important}
 @media(max-width:900px){.wrap{padding:0 24px}header{flex-wrap:wrap;padding:20px 0;gap:17px}nav{order:3;justify-content:space-between;width:100%;gap:12px}.hero-copy{padding:30px 25px}.hero h1{letter-spacing:-2px}.ball{width:210px;height:210px}.columns{grid-template-columns:1fr}.team-grid{grid-template-columns:1fr 1fr}.team-detail{gap:20px}}
 @media(max-width:580px){.wrap{padding:0 18px}.top{font-size:8px;letter-spacing:.8px}.brand{width:205px}.season{display:none}nav{font-size:12px}.ticker .wrap{gap:10px;font-size:10px}.hero{grid-template-columns:1fr;margin-top:20px}.hero-copy{padding:30px 24px}.hero h1{font-size:52px}.court{min-height:230px}.ball{width:185px;height:185px}.ball:before{inset:-20px 30px}.ball:after{inset:55px -30px}.matches,.news-grid,.team-detail{grid-template-columns:1fr}.section-title h2{font-size:21px}.section-title small{font-size:9px}.team-grid{gap:10px}.team-card{padding:20px 12px}.team-card h3{font-size:14px;min-height:50px}.reading .lead{font-size:18px}.rank-detail{grid-template-columns:40px 1fr;gap:10px}.rank-detail .rank-num{font-size:40px}footer .wrap{flex-direction:column;gap:10px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 .rank-heading{display:flex;align-items:center;gap:16px;margin-bottom:16px}.rank-heading h2{margin:0;min-width:0}.rank-heading .team-image,.rank-heading .emblem{width:64px;height:64px;flex:0 0 64px}.reading .rank-heading{margin-top:32px}.reading .rank-heading h2{margin:0}
 @media(max-width:580px){.rank-heading{flex-direction:column;align-items:flex-start;gap:12px}.rank-heading .team-image,.rank-heading .emblem{width:48px;height:48px;flex-basis:48px}}
-</style></head><body><a class="skip" href="#contenido">Saltar al contenido</a><div class="mast"><div class="wrap"><div class="top"><span>FANTASY BASKETBALL</span><span>EST. 2026 / SANTIAGO, CHILE</span></div><header><a href="#" aria-label="Papafritas League, portada"><img class="brand" src="./assets/logo.svg" width="240" height="63" alt="Papafritas League"></a><nav aria-label="Principal"><a href="#" data-nav="home">Portada</a><a href="#noticias" data-nav="noticias">Noticias</a><a href="#ranking" data-nav="ranking">Power ranking</a><a href="#equipos" data-nav="equipos">Equipos</a></nav><span class="season">TEMPORADA 2026 / 27</span></header></div></div><div class="ticker"><div class="wrap"><span class="tag">APERTURA</span><span>20 de octubre de 2026</span><span>9 categorías · Todo por escribir.</span></div></div><main id="contenido" class="wrap" tabindex="-1"></main><footer><div class="wrap"><div><strong>PAPAFRITAS LEAGUE</strong><br>El básquet se juega. La liga se cuenta.</div><div>Liga independiente de amigos. Sin afiliación oficial con ESPN ni NBA.<br>Contenido editorial y resultados de actualización manual.</div><a href="#">Volver a portada ↑</a></div></footer><script>
+
+nav{flex-wrap:wrap;row-gap:0}.rule-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0 30px}.rule-stat{background:var(--ink);color:var(--paper);padding:24px}.rule-stat strong{display:block;color:var(--orange);font-size:42px;letter-spacing:-2px}.rule-stat span{font-size:12px;line-height:1.6}.rule-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px;margin:24px 0}.rule-grid h2{font-size:23px;letter-spacing:-.6px;margin-top:0}.rule-copy{font-size:14px;line-height:1.8}.rule-copy li{margin-bottom:10px}.rule-grid table{table-layout:fixed}.rule-grid td,.rule-grid th{padding:12px 4px}.rule-notice{border-left:3px solid var(--orange);padding:16px 20px;background:#e8e9df;margin:25px 0}.rule-notice h2{font-size:20px;margin:0 0 12px}.tier-search{max-width:560px;margin:24px 0}.tier-search label{display:block;font-size:13px;font-weight:bold;margin-bottom:10px}.tier-search input{width:100%;font:inherit;font-size:16px;border:1px solid #919887;background:#fffef9;padding:14px;color:var(--ink);border-radius:0}.tier-panel{border:1px solid var(--line);background:#fffef9;padding:24px;margin-bottom:18px}.tier-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px}.tier-heading h3{font-size:22px;letter-spacing:-.5px;margin:0}.tier-heading span{font-size:11px;color:var(--muted);white-space:nowrap}.tier-players{list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 24px}.tier-players li{font-size:13px;line-height:1.6;padding:10px 0;border-top:1px solid var(--line);overflow-wrap:anywhere}.tier-badge{font-size:10px;font-weight:bold;white-space:nowrap;background:#e8eadf;padding:4px 6px;display:inline-block}.tier-summary{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}.roster-position{width:58px}.roster-tier{width:58px}.draft-order{list-style:none;padding:0;margin:25px 0}.draft-order li{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}.draft-order .emblem,.draft-order .team-image{flex:0 0 42px;width:42px;height:46px}.draft-pick{font-weight:900;color:#7d8772}.draft-order a{font-size:14px;font-weight:bold}.rule-pending{padding-left:20px}.tier-caption{margin-top:8px}
+@media(max-width:900px){.rule-grid{grid-template-columns:1fr}.tier-players{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){nav{justify-content:flex-start;column-gap:22px}.rule-stats{grid-template-columns:1fr;gap:10px}.rule-stat{padding:18px 22px;display:flex;align-items:center;gap:22px}.rule-stat strong{font-size:34px;min-width:35px}.tier-players{grid-template-columns:1fr}.tier-panel{padding:20px}.tier-heading{align-items:flex-start;flex-direction:column;gap:6px}.draft-order li{gap:10px}.rule-grid .panel{padding:20px 16px}.roster-position,.roster-tier{width:46px}.team-detail .panel{padding:20px 16px}}
+</style></head><body><a class="skip" href="#contenido">Saltar al contenido</a><div class="mast"><div class="wrap"><div class="top"><span>FANTASY BASKETBALL</span><span>EST. 2026 / SANTIAGO, CHILE</span></div><header><a href="#" aria-label="Papafritas League, portada"><img class="brand" src="./assets/logo.svg" width="240" height="63" alt="Papafritas League"></a><nav aria-label="Principal"><a href="#" data-nav="home">Portada</a><a href="#noticias" data-nav="noticias">Noticias</a><a href="#ranking" data-nav="ranking">Power ranking</a><a href="#equipos" data-nav="equipos">Equipos</a><a href="#reglas" data-nav="reglas">Reglas</a></nav><span class="season">TEMPORADA 2026 / 27</span></header></div></div><div class="ticker"><div class="wrap"><span class="tag">APERTURA</span><span>20 de octubre de 2026</span><span>9 categorías · Todo por escribir.</span></div></div><main id="contenido" class="wrap" tabindex="-1"></main><footer><div class="wrap"><div><strong>PAPAFRITAS LEAGUE</strong><br>El básquet se juega. La liga se cuenta.</div><div>Liga independiente de amigos. Sin afiliación oficial con ESPN ni NBA.<br>Contenido editorial y resultados de actualización manual.</div><a href="#">Volver a portada ↑</a></div></footer><script>
 'use strict';
 // CONTENIDO DE LA LIGA — toda la información editorial se actualiza aquí.
-const LEAGUE_DATA={startDate:'2026-10-20',commissioner:'Patricio Uribe',teams:[
+const LEAGUE_DATA={startDate:'2026-10-20',commissioner:'Patricio Uribe',
+rules:{
+  "date": "2026-10-20",
+  "source": "Reglamento y anexo de tiers remitidos por Patricio Uribe el 20 de octubre de 2026.",
+  "format": "Head-to-Head (H2H)",
+  "teamCount": 4,
+  "weeklyAcquisitions": 3,
+  "draftFormat": "Snake Draft",
+  "tiers": [
+    {
+      "id": "S",
+      "title": "La mesa de los grandes",
+      "limit": 2,
+      "players": [
+        "Tyrese Maxey",
+        "Jayson Tatum",
+        "Giannis Antetokounmpo",
+        "Luka Dončić",
+        "Nikola Jokić",
+        "Cade Cunningham",
+        "Victor Wembanyama",
+        "Shai Gilgeous-Alexander",
+        "Anthony Edwards"
+      ]
+    },
+    {
+      "id": "A+",
+      "title": "Estrellas con precio premium",
+      "limit": 2,
+      "players": [
+        "Joel Embiid",
+        "Alperen Şengün",
+        "Donovan Mitchell",
+        "Scottie Barnes",
+        "LeBron James",
+        "Josh Giddey",
+        "Evan Mobley",
+        "James Harden",
+        "Jalen Johnson",
+        "Lauri Markkanen",
+        "Domantas Sabonis",
+        "Jalen Brunson",
+        "Karl-Anthony Towns",
+        "Austin Reaves",
+        "Cooper Flagg",
+        "Jamal Murray",
+        "Tyrese Haliburton",
+        "Kawhi Leonard",
+        "Kevin Durant",
+        "Devin Booker",
+        "Chet Holmgren",
+        "LaMelo Ball",
+        "Deni Avdija",
+        "Stephen Curry",
+        "Anthony Davis",
+        "Trae Young"
+      ]
+    },
+    {
+      "id": "A",
+      "title": "Titulares de alto valor",
+      "limit": 2,
+      "players": [
+        "Jaylen Brown",
+        "Tyler Herro",
+        "Jarrett Allen",
+        "Derrick White",
+        "Darius Garland",
+        "Brandon Ingram",
+        "Nickeil Alexander-Walker",
+        "Bam Adebayo",
+        "Brandon Miller",
+        "Keyonte George",
+        "Jaren Jackson Jr.",
+        "OG Anunoby",
+        "Walker Kessler",
+        "Paolo Banchero",
+        "Franz Wagner",
+        "Desmond Bane",
+        "Kyrie Irving",
+        "Michael Porter Jr.",
+        "Julius Randle",
+        "Pascal Siakam",
+        "Zion Williamson",
+        "Trey Murphy III",
+        "Dejounte Murray",
+        "Jalen Duren",
+        "Amen Thompson",
+        "De’Aaron Fox",
+        "Stephon Castle",
+        "Onyeka Okongwu",
+        "Jalen Williams",
+        "Rudy Gobert",
+        "Ja Morant",
+        "Damian Lillard",
+        "Jimmy Butler"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Profundidad, potencial y apuestas estratégicas",
+      "limit": 3,
+      "players": [
+        "Anfernee Simons",
+        "VJ Edgecombe",
+        "Kyle Kuzma",
+        "Myles Turner",
+        "Kevin Porter Jr.",
+        "Ryan Rollins",
+        "Jaime Jaquez Jr.",
+        "Kel’el Ware",
+        "Brayden Burries",
+        "Caleb Wilson",
+        "Norman Powell",
+        "Matas Buzelis",
+        "Nic Claxton",
+        "Paul George",
+        "Payton Pritchard",
+        "Keaton Wagler",
+        "Cameron Boozer",
+        "Ty Jerome",
+        "Jerami Grant",
+        "Cedric Coward",
+        "Zach Edey",
+        "CJ McCollum",
+        "Andrew Wiggins",
+        "Dyson Daniels",
+        "Kingston Flemings",
+        "Kon Knueppel",
+        "Coby White",
+        "Naz Reid",
+        "Grayson Allen",
+        "Darryn Peterson",
+        "Zach LaVine",
+        "Keegan Murray",
+        "Darius Acuff Jr.",
+        "Ben Simmons",
+        "Mikal Bridges",
+        "Josh Hart",
+        "Collin Sexton",
+        "Nikola Vučević",
+        "Anthony Black",
+        "Morez Johnson Jr.",
+        "Day’Ron Sharpe",
+        "Mikel Brown Jr.",
+        "Aaron Gordon",
+        "Ivica Zubac",
+        "Andrew Nembhard",
+        "Jordan Poole",
+        "Bennedict Mathurin",
+        "John Collins",
+        "Ausar Thompson",
+        "RJ Barrett",
+        "Immanuel Quickley",
+        "Jabari Smith Jr.",
+        "Reed Sheppard",
+        "Devin Vassell",
+        "Dylan Harper",
+        "Miles Bridges",
+        "Jalen Green",
+        "Ajay Mitchell",
+        "Isaiah Hartenstein",
+        "Aday Mara",
+        "Ayo Dosunmu",
+        "Jaden McDaniels",
+        "Scoot Henderson",
+        "Donovan Clingan",
+        "Brandin Podziemski",
+        "Yaxel Lendeborg",
+        "Alex Sarr",
+        "Kyshawn George",
+        "AJ Dybantsa"
+      ]
+    }
+  ],
+  "categories": [
+    [
+      "FG%",
+      "Porcentaje de tiros de campo",
+      "Mayor porcentaje"
+    ],
+    [
+      "FT%",
+      "Porcentaje de tiros libres",
+      "Mayor porcentaje"
+    ],
+    [
+      "3PM",
+      "Triples convertidos",
+      "Más triples"
+    ],
+    [
+      "REB",
+      "Rebotes",
+      "Más rebotes"
+    ],
+    [
+      "AST",
+      "Asistencias",
+      "Más asistencias"
+    ],
+    [
+      "STL",
+      "Robos",
+      "Más robos"
+    ],
+    [
+      "BLK",
+      "Tapones",
+      "Más tapones"
+    ],
+    [
+      "TO",
+      "Pérdidas de balón",
+      "Menos pérdidas"
+    ],
+    [
+      "PTS",
+      "Puntos",
+      "Más puntos"
+    ]
+  ],
+  "pending": [
+    "Criterio exacto para registrar victorias y empates en la tabla general.",
+    "Desempates, formato y calendario de playoffs.",
+    "Configuración de alineaciones, IR y límites de plantilla más allá de los planteles iniciales documentados.",
+    "Horarios de corte y mecánica de waivers: prioridad, presupuesto y plazos.",
+    "Procedimiento de trades: aprobación, revisión, plazos y posibles vetos.",
+    "Sanciones y atribuciones específicas del comisionado."
+  ]
+},
+draft:{
+  "date": "2026-10-20",
+  "rounds": 13,
+  "order": [
+    "pilsens",
+    "hipopotamos",
+    "pelafustanes",
+    "shockers"
+  ],
+  "source": "Artículo del draft enviado por Patricio Uribe el 20 de octubre de 2026."
+},
+teams:[
 {id:'shockers',name:'Penalolen Shockers',owner:'Patricio Uribe',initials:'PS',colors:['#b9ce94','#171918'],logo:'',leaders:['Shai Gilgeous-Alexander','Jayson Tatum','Karl-Anthony Towns'],roster:['Shai Gilgeous-Alexander','Scottie Barnes','Jayson Tatum','Jaren Jackson Jr.','Karl-Anthony Towns','Amen Thompson','Kon Knueppel','Dyson Daniels','Cameron Boozer','Daniel Gafford','Herbert Jones','Jalen Suggs','Tari Eason'],strength:'Gilgeous-Alexander, Tatum y Towns ofrecen distintas vías para construir PTS, FT% y 3PM. Barnes y Amen Thompson amplían las opciones de creación y rebote; Daniels, Jones y Jackson Jr. dan argumentos para disputar STL y BLK.',challenge:'Perseguir REB y BLK con los interiores puede cambiar el perfil de FT%. AST y TO deben leerse juntos: acumular creación no garantiza eficiencia. FG% dependerá de cómo se reparta el volumen de tiro.'},
 {id:'pilsens',name:'Cromwell Pilsens',owner:'Diego Alvarez, “el Rubio”',initials:'CP',colors:['#e0bb6b','#171918'],logo:'./assets/cromwell-pilsens.png',leaders:['Nikola Jokić','Anthony Edwards','Jalen Brunson'],roster:['Jalen Brunson','Dylan Harper','Jaylen Brown','Keldon Johnson','Nikola Jokić','Anthony Edwards','Paolo Banchero','AJ Dybantsa','Caleb Wilson','Sandro Mamukelashvili','Jalen Johnson','Jaylen Wells','Dillon Brooks'],strength:'Jokić ofrece un eje para proyectar REB y AST sin depender exclusivamente de los bases. Brunson, Edwards y Brown aportan alternativas en PTS y 3PM. Banchero y Jalen Johnson suman creación desde el frente de ataque.',challenge:'La construcción parece más cómoda en ataque que en BLK. Debe comprobar su respuesta en STL y vigilar TO al reunir varios generadores. FG% y FT% dependerán del volumen y las alineaciones.'},
 {id:'hipopotamos',name:'Los Hipopotamos Chuchetumare',owner:'Cristóbal Uribe',initials:'LHC',colors:['#a1bfcb','#171918'],logo:'./assets/los-hipopotamos-chuchetumare.png',leaders:['Victor Wembanyama','Cade Cunningham','Derrick White'],roster:['Cade Cunningham','Derrick White','Deni Avdija','Naz Reid','Victor Wembanyama','VJ Edgecombe','Jaden McDaniels','Josh Giddey','Cason Wallace','Bennett Stirtz','Onyeka Okongwu','Toumani Camara','P.J. Washington'],strength:'Wembanyama es el eje del planteamiento en BLK y REB. Cunningham y Giddey permiten proyectar una disputa en AST. White, McDaniels y Wallace ofrecen alternativas para orientar las alineaciones hacia la defensa y STL.',challenge:'La carga de creación exige controlar TO. El aporte de 3PM y PTS más allá de sus figuras será una pregunta central. FG% y FT% requerirán seguimiento por volumen de intentos.'},
 {id:'pelafustanes',name:'Mequetrefes',owner:'Carlos Sanchez, “el Chino”',initials:'MQ',colors:['#ef3a32','#171918'],logo:'./assets/mequetrefes.png',leaders:['Luka Dončić','Donovan Mitchell','Giannis Antetokounmpo'],roster:['Luka Dončić','Donovan Mitchell','Brandon Miller','Giannis Antetokounmpo','Alperen Sengun','Payton Pritchard','OG Anunoby','Alex Sarr','Matas Buzelis','Bobby Portis','Malik Monk',"Royce O'Neale",'Klay Thompson'],strength:'Dončić y Mitchell permiten construir una propuesta en PTS, AST y 3PM. Antetokounmpo y Sengun dan peso al juego interior y REB. Anunoby y Sarr aportan alternativas para buscar STL y BLK.',challenge:'La convivencia de varios jugadores con el balón obliga a vigilar TO. La apuesta interior puede tensionar FT%, mientras sumar especialistas en triples puede modificar FG%. Elegir qué categorías priorizar será determinante.'}
 ],matchups:[{teams:['hipopotamos','pelafustanes'],label:'CRUCE INAUGURAL 01',dateLabel:'20 OCT 2026',result:null},{teams:['pilsens','shockers'],label:'CRUCE INAUGURAL 02',dateLabel:'20 OCT 2026',result:null}],rankings:[{id:'pretemporada-2026',date:'2026-10-20',title:'Power ranking de pretemporada · Provisional',label:'EDICIÓN 01',entries:[{team:'shockers',analysis:'El primer lugar provisional reconoce la variedad de recursos del plantel: creación, tiro y defensores para disputar categorías distintas. Gilgeous-Alexander, Tatum y Towns forman un núcleo complementado por Daniels y Jackson Jr. El desafío será convertir esa amplitud en un plan semanal coherente.'},{team:'pilsens',analysis:'La segunda posición premia un ataque articulado alrededor de Jokić, con Brunson y Edwards como apoyos. REB, AST y PTS ofrecen una base de discusión; queda por demostrar que el equilibrio en STL y BLK acompaña a la producción ofensiva.'},{team:'hipopotamos',analysis:'El tercer puesto reconoce una identidad clara alrededor de Wembanyama y Cunningham. La proyección en BLK y AST resulta atractiva; el aporte de PTS y 3PM del resto del plantel deberá sostener esa apuesta sin descuidar TO.'},{team:'pelafustanes',analysis:'El cuarto puesto evalúa el equilibrio entre categorías, no la calidad de sus estrellas. Dončić, Mitchell y Antetokounmpo dan potencial ofensivo; la tensión entre FT%, volumen de creación y TO exige una estrategia especialmente precisa.'}]}],posts:[
+{
+  "id": "analisis-draft-2026",
+  "date": "2026-10-21",
+  "category": "Previas",
+  "title": "El draft está cerrado. Ahora empieza la estrategia.",
+  "excerpt": "Cuatro proyectos, trece rondas y un mercado condicionado por los tiers. Las selecciones de Edwards y Knueppel explican por qué administrar los cupos también fue parte del juego.",
+  "teams": [
+    "pilsens",
+    "hipopotamos",
+    "pelafustanes",
+    "shockers"
+  ],
+  "rulesLink": true,
+  "source": "Adaptación editorial del artículo del draft remitido por Patricio Uribe el 20 de octubre de 2026, contrastado con el anexo de tiers y las fichas iniciales. Orden de selección y rondas citadas según ese relato. El análisis es una proyección cualitativa: no incorpora estadísticas actuales ni presupone disponibilidad.",
+  "body": [
+    [
+      "p",
+      "El draft de Papafritas League dejó cuatro planteles de trece jugadores y una primera conclusión: el talento disponible no bastaba para decidir cada selección. En una competencia de nueve categorías, los límites de tiers y la restricción por franquicia NBA obligaron a pensar tanto en el jugador elegido como en las opciones que dejaban de estar disponibles."
+    ],
+    [
+      "h2",
+      "El orden y el costo de cada decisión"
+    ],
+    [
+      "draft-order",
+      ""
+    ],
+    [
+      "p",
+      "El orden inicial fue Cromwell Pilsens, Los Hipopotamos Chuchetumare, Mequetrefes y Penalolen Shockers. El formato snake invirtió la secuencia en cada ronda: los equipos de los extremos tuvieron selecciones consecutivas en los cambios de ronda; los dos del medio debieron administrar la espera entre turnos."
+    ],
+    [
+      "p",
+      "Cada plantilla podía reunir como máximo dos jugadores S, dos A+, dos A y tres B. Además, solo un jugador con tier por franquicia NBA; los jugadores sin tier estaban exentos de esa restricción. Elegir un nombre implicaba consumir un cupo y, en ciertos casos, cerrar una vía para la siguiente selección. El orden dentro de cada tier no establece una jerarquía individual."
+    ],
+    [
+      "team-heading",
+      "pilsens"
+    ],
+    [
+      "p",
+      "Diego Alvarez construyó un ataque alrededor de Nikola Jokić, acompañado por Jalen Brunson, Jaylen Brown y Paolo Banchero. La lectura editorial apunta a una base para disputar REB, AST y PTS con distintas fuentes de creación. Jalen Johnson agrega una alternativa versátil; el examen estará en convertir esa variedad en una ventaja semanal sin ceder eficiencia ni TO."
+    ],
+    [
+      "p",
+      "El relato del draft sitúa a Anthony Edwards en la ronda 10 y explica que los otros equipos ya habían completado sus dos cupos S. Eso ayuda a entender su disponibilidad: la restricción redujo el número de rivales que podían elegirlo. La selección permite discutir valor y costo de oportunidad, aunque su ubicación tardía no garantiza un resultado deportivo."
+    ],
+    [
+      "p",
+      "Dylan Harper, AJ Dybantsa y Caleb Wilson completan los tres cupos B del plantel. Sus aportes tendrán que medirse por producción y función en las alineaciones. El potencial sirve para elegir; las categorías son las que terminarán evaluando la apuesta."
+    ],
+    [
+      "team-heading",
+      "hipopotamos"
+    ],
+    [
+      "p",
+      "Cristóbal Uribe eligió una estructura con Victor Wembanyama como referencia interior y Cade Cunningham como creador. El planteamiento permite proyectar una disputa en BLK, REB y AST. Josh Giddey y Deni Avdija amplían las vías para producir desde distintos puestos, mientras Derrick White y Onyeka Okongwu ocupan los dos cupos A."
+    ],
+    [
+      "p",
+      "La construcción propone algo más que anotación: complementar el núcleo con asistencias, rebotes y defensa. White, Jaden McDaniels y Cason Wallace ofrecen perfiles para buscar aportes secundarios. La pregunta será cuánto de esa variedad se transforma en una producción sostenida."
+    ],
+    [
+      "p",
+      "FG%, FT% y TO también forman parte del examen. Acumular creadores puede ampliar las asistencias y elevar las pérdidas; incorporar interiores puede cambiar el balance de los porcentajes. El tamaño del nombre del equipo no concede una categoría adicional."
+    ],
+    [
+      "team-heading",
+      "pelafustanes"
+    ],
+    [
+      "p",
+      "Carlos Sanchez reúne a Luka Dončić y Giannis Antetokounmpo en los cupos S, con Donovan Mitchell y Alperen Sengun en A+. Es un núcleo que permite proyectar volumen en PTS, AST y REB, además de opciones de tiro exterior. Brandon Miller y OG Anunoby ocupan los cupos A y suman alternativas para complementar esa producción."
+    ],
+    [
+      "p",
+      "El desafío está en el encaje: perseguir puntos y asistencias no resuelve por sí solo los porcentajes, las pérdidas ni la producción defensiva. En FT% importará quién asuma los intentos; en TO, el costo de concentrar varias fuentes de creación. Menos pérdidas sigue siendo el objetivo de esa categoría."
+    ],
+    [
+      "p",
+      "Payton Pritchard, Matas Buzelis y Alex Sarr completan el Tier B. Bobby Portis, Malik Monk, Royce O’Neale y Klay Thompson quedan sin tier según el anexo recibido. La tarea será elegir qué fortalezas reforzar y qué debilidades compensar, antes de que la lista de nombres se convierta en una excusa demasiado cómoda."
+    ],
+    [
+      "team-heading",
+      "shockers"
+    ],
+    [
+      "p",
+      "Patricio Uribe, creador y comisionado de la liga, parte con Shai Gilgeous-Alexander y Jayson Tatum como jugadores S. Scottie Barnes y Karl-Anthony Towns ocupan A+; Amen Thompson y Jaren Jackson Jr., A. La combinación reúne alternativas ofensivas y recursos para disputar categorías defensivas."
+    ],
+    [
+      "p",
+      "La ronda 13 de Kon Knueppel es el otro caso que destaca el artículo original. Según ese relato, los demás equipos ya habían completado sus tres cupos B. Su disponibilidad tuvo una explicación reglamentaria, además de cualquier lectura individual. Una selección tardía puede abrir una oportunidad; el retorno dependerá de lo que produzca."
+    ],
+    [
+      "p",
+      "Dyson Daniels y Cameron Boozer completan ese tier. El resto del plantel permite distintas combinaciones para buscar robos, tapones y apoyo ofensivo. La variedad explica su primer puesto en nuestro ranking provisional de pretemporada, una opinión editorial que todavía debe contrastarse con enfrentamientos reales. El cargo de comisionado organiza la liga; la alineación tendrá que hacer el resto."
+    ],
+    [
+      "h2",
+      "Las nueve categorías ponen el criterio"
+    ],
+    [
+      "p",
+      "FG% y FT% exigen considerar aciertos e intentos. 3PM, REB, AST, STL, BLK y PTS premian contribuciones diferentes. TO invierte la lógica: gana quien pierde menos balones. El análisis del draft debe mirar cómo conviven esas nueve dimensiones, en lugar de reducir el valor de una plantilla a su anotación o a la fama de sus figuras."
+    ],
+    [
+      "p",
+      "Los tiers permanecen fijos durante la temporada, según el anexo. Con un máximo de tres adquisiciones semanales por equipo, incluyendo agencia libre y waivers, cada ajuste tendrá que respetar tanto los cupos como la restricción por franquicia. La gestión continúa después de la última ronda."
+    ],
+    [
+      "p",
+      "El draft establece el punto de partida. Todavía no hay resultados confirmados que permitan convertir estas proyecciones en conclusiones. Las primeras jornadas mostrarán quién construyó una identidad sostenible y quién necesita corregirla. Las explicaciones pueden esperar; los cupos conviene revisarlos desde ahora."
+    ]
+  ]
+},
 {id:'apertura-temporada',date:'2026-10-20',category:'Previas',title:'Se abre la cancha. Empieza la historia.',excerpt:'Wembanyama frente al arsenal de Mequetrefes. Jokić ante el equipo del comisionado. La apertura se decide mucho más allá de los puntos.',teams:['hipopotamos','pelafustanes','pilsens','shockers'],body:[['p','Papafritas League comienza el 20 de octubre de 2026 con dos cruces que enfrentan formas distintas de construir un equipo. Los cuatro planteles documentados tienen figuras de primer orden, pero esta competencia exige algo más que reunir nombres: hay que encontrar ventajas en nueve categorías. Todavía no hay resultados informados.'],['h2','Hipopotamos–Mequetrefes: defensa contra creación'],['p','Cristóbal Uribe presenta a Victor Wembanyama y Cade Cunningham como pilares. La proyección de Los Hipopotamos Chuchetumare pasa por disputar BLK y REB desde el interior, sostener AST con Cunningham y Josh Giddey, y encontrar aportes complementarios en Derrick White y sus aleros. Es una identidad reconocible; falta verla competir.'],['p','Carlos Sanchez responde con Luka Dončić, Donovan Mitchell y Giannis Antetokounmpo. Mequetrefes tiene argumentos para buscar PTS, AST y 3PM, además del juego interior de Alperen Sengun. La cuestión no es si hay talento, sino cómo se distribuye su impacto: FT% y TO merecen tanta atención como una noche de muchos puntos. Al Chino le sobran nombres para que las bromas del grupo duren menos que el calentamiento.'],['h2','Pilsens–Shockers: un examen de equilibrio'],['p','Diego Alvarez dirige desde Nueva Zelanda un Cromwell Pilsens organizado alrededor de Nikola Jokić. Jalen Brunson, Anthony Edwards y Jaylen Brown permiten imaginar un ataque con varias fuentes de producción. REB y AST son territorios de interés; BLK y STL plantean el examen del equilibrio. Vivir en el futuro ayuda con el calendario, pero todavía no entrega resultados.'],['p','Penalolen Shockers, de Patricio Uribe, enfrenta esa propuesta con Shai Gilgeous-Alexander, Jayson Tatum y Karl-Anthony Towns. Jaren Jackson Jr., Dyson Daniels y Herbert Jones amplían las opciones defensivas. El creador y comisionado parte primero en nuestra evaluación editorial provisional: la variedad del plantel explica la elección, aunque organizar la competencia no suma una sola categoría.'],['h2','Las nueve categorías, sin atajos'],['p','FG% y FT% son porcentajes: importa el volumen de intentos detrás de cada acierto. 3PM, REB, AST, STL, BLK y PTS obligan a valorar contribuciones distintas. En TO gana quien registra menos pérdidas. Una alineación que agrega creación puede mejorar AST y, a la vez, complicar TO; un refuerzo interior puede modificar REB, BLK y los porcentajes. La lectura debe ser conjunta.'],['p','Estas son proyecciones cualitativas basadas en los planteles entregados, no estadísticas de la temporada ni garantías de disponibilidad. Las reglas específicas de playoffs, desempates y waivers siguen pendientes de confirmación. La historia deportiva empieza ahora; los antecedentes entre amigos aportan contexto, no victorias.']]},
 {id:'ranking-pretemporada',date:'2026-10-20',category:'Power Ranking',title:'El equilibrio toma la primera posición.',excerpt:'Shockers encabeza una evaluación provisional que mira las nueve categorías. El talento individual abre la discusión; la construcción del plantel la ordena.',teams:['shockers','pilsens','hipopotamos','pelafustanes'],rankingId:'pretemporada-2026',body:[['p','Esta es una opinión editorial entre los cuatro equipos documentados. No representa una clasificación oficial, una simulación ni probabilidades de campeonato. Es la primera edición: no existen variaciones respecto de una entrega anterior.']]}
 ]};
@@ -27,9 +390,29 @@ function teamcard(t){return `<a class="team-card" href="#equipo/${t.id}" style="
 function mini(){const r=LEAGUE_DATA.rankings[0];return `<div class="rank-box">${r.entries.map((e,i)=>{const t=team(e.team);return `<a class="rank-row" href="#equipo/${t.id}"><span class="rank-num">${i+1}</span>${emblem(t)}<div><div class="rank-name">${esc(t.name)}</div><div class="rank-owner">${esc(t.owner)}</div></div></a>`}).join('')}<p class="note">${esc(r.title)}<br>Opinión editorial. No es la clasificación oficial.</p><a class="link" href="#ranking">Leer el análisis ↗</a></div>`}
 function home(){return `<section class="hero" aria-labelledby="headline"><div class="hero-copy"><span class="tag">LA PREVIA · TEMPORADA 2026 / 27</span><h1 id="headline">Se abre la cancha.<br>Empieza la historia.</h1><p>Cuatro equipos documentados. Nueve categorías. La primera jornada enfrenta proyectos con talento de sobra y todo por demostrar.</p><a class="link" href="#nota/apertura-temporada">Leer la previa inaugural ↗</a></div><div class="court" aria-hidden="true"><div class="court-number">20.10</div><div class="ball"><span></span></div><div class="court-label">PAPAFRITAS / OPENING NIGHT</div></div></section>${section('Los primeros cruces','APERTURA · 20 OCT 2026')}<div class="matches">${LEAGUE_DATA.matchups.map(match).join('')}</div><div class="columns"><section>${section('Desde la redacción','<a href="#noticias">TODAS LAS NOTAS ↗</a>')}<div class="news-grid">${posts().slice(0,2).map(news).join('')}</div></section><aside>${section('Power ranking',esc(LEAGUE_DATA.rankings[0].label))}${mini()}</aside></div>${section('Las franquicias','CUATRO EQUIPOS DOCUMENTADOS')}<div class="team-grid">${LEAGUE_DATA.teams.map(teamcard).join('')}</div>`}
 let filter='Todas';function archive(){const list=posts().filter(p=>filter==='Todas'||p.category===filter);return `<div class="page-head"><span class="eyebrow">LA CRÓNICA</span><h1>Desde la redacción.</h1><p class="note">El archivo de una temporada por escribir.</p></div><div class="filters" aria-label="Filtrar publicaciones">${['Todas','Previas','Crónicas','Power Ranking','Trades'].map(c=>`<button data-filter="${c}" class="${c===filter?'active':''}" aria-pressed="${c===filter}">${c}</button>`).join('')}</div>${list.length?`<div class="news-grid" style="margin-bottom:45px">${list.map(news).join('')}</div>`:`<div class="empty"><h2>${filter==='Trades'?'Sin movimientos confirmados.':'La primera crónica todavía está por jugarse.'}</h2><p class="note">${filter==='Trades'?'Publicaremos movimientos cuando estén confirmados.':'No hay resultados informados para elaborar una crónica.'}</p></div>`}`}
-function article(p){const r=LEAGUE_DATA.rankings.find(r=>r.id===p.rankingId);return `<a class="back" href="#noticias">← Volver al archivo</a><article class="reading"><div class="page-head"><span class="eyebrow">${esc(p.category)}</span><h1>${esc(p.title)}</h1><div class="meta"><time datetime="${p.date}">${date(p.date)}</time> · Redacción Papafritas</div></div><p class="lead">${esc(p.excerpt)}</p>${p.body.map(([tag,text])=>`<${tag==='h2'?'h2':'p'}>${esc(text)}</${tag==='h2'?'h2':'p'}>`).join('')}${r?r.entries.map((e,i)=>`${rankingHeading(team(e.team),i+1)}<p>${esc(e.analysis)}</p>`).join(''):''}<p class="source">Base documental: Contexto-y-Bitacora.txt y fichas de los cuatro equipos, registradas el 20 de octubre de 2026 a partir de capturas proporcionadas por los participantes. Las valoraciones son opinión y proyección editorial: no incorporan estadísticas actuales ni presuponen disponibilidad.</p><div class="share"><button class="button" id="copy">Copiar enlace</button><a class="button" href="https://wa.me/?text=${encodeURIComponent(p.title+' '+location.href)}" target="_blank" rel="noopener noreferrer">Compartir por WhatsApp ↗</a></div><p id="status" role="status"></p><h2>Equipos de esta nota</h2><div class="categories">${p.teams.map(id=>`<a class="link" href="#equipo/${id}">${esc(team(id).name)} ↗</a>`).join('')}</div><a class="link" href="#">Volver a portada ↑</a></article>`}
-const positions=['PG','SG','SF','PF','C','G','F','UTIL','UTIL','UTIL','Banca','Banca','Banca'];function teamPage(t){return `<a class="back" href="#equipos">← Todos los equipos</a><div class="page-head">${emblem(t)}<h1>${esc(t.name)}</h1><p>${esc(t.owner)}${t.id==='shockers'?' · Creador y comisionado de la liga':''}</p><p class="note">${t.logo?'Logo del equipo':'Emblema provisional'} · Plantel documentado al 20 de octubre de 2026.</p></div><div class="team-detail"><section class="panel"><h2>Plantel confirmado</h2><table><thead><tr><th scope="col">Ubicación inicial</th><th scope="col">Jugador</th></tr></thead><tbody>${t.roster.map((p,i)=>`<tr><td>${positions[i]}</td><td>${esc(p)}</td></tr>`).join('')}<tr><td>IR</td><td>Vacante</td></tr></tbody></table></section><section><span class="eyebrow">RADIOGRAFÍA EDITORIAL</span><h2>Líderes esperados</h2><p class="analysis">${t.leaders.map(esc).join(' · ')}</p><h2>Fortalezas proyectadas</h2><p class="analysis">${esc(t.strength)}</p><h2>Desafíos por categorías</h2><p class="analysis">${esc(t.challenge)}</p><div class="categories">${['FG%','FT%','3PM','REB','AST','STL','BLK','TO ↓','PTS'].map(c=>`<span>${c}</span>`).join('')}</div><p class="note">Proyección cualitativa del plantel entregado. No presupone disponibilidad ni rendimiento actual. En TO gana quien registra menos pérdidas.</p><p class="note">Fuente: ficha documental de ${esc(t.name)}. Las ubicaciones reflejan la captura inicial, no una validación de elegibilidad actual.</p></section></div>${section('Publicaciones relacionadas')}<div class="news-grid" style="margin-bottom:45px">${posts().filter(p=>p.teams.includes(t.id)).map(news).join('')}</div>`}
+function normalizePlayerName(value){return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase()}
+function playerTier(name){const key=normalizePlayerName(name);return LEAGUE_DATA.rules.tiers.find(t=>t.players.some(p=>normalizePlayerName(p)===key))?.id??'Sin tier'}
+function tierBadge(name){return `<span class="tier-badge">${esc(playerTier(name))}</span>`}
+function draftOrder(){return `<ol class="draft-order" aria-label="Orden inicial del draft">${LEAGUE_DATA.draft.order.map((id,i)=>{const t=team(id);return `<li><span class="draft-pick">${String(i+1).padStart(2,'0')}</span>${emblem(t)}<a href="#equipo/${id}">${esc(t.name)} ↗</a></li>`}).join('')}</ol>`}
+function tierDirectory(query=''){
+ const key=normalizePlayerName(query);
+ const groups=LEAGUE_DATA.rules.tiers.map(t=>({...t,players:t.players.filter(p=>normalizePlayerName(p).includes(key))})).filter(t=>t.players.length);
+ const count=groups.reduce((n,t)=>n+t.players.length,0);
+ return {count,html:groups.length?groups.map(t=>`<section class="tier-panel"><div class="tier-heading"><h3>Tier ${esc(t.id)}</h3><span>Máximo ${t.limit} por equipo</span></div><p class="note tier-caption">${esc(t.title)}</p><ul class="tier-players">${t.players.map(p=>`<li>${esc(p)}</li>`).join('')}</ul></section>`).join(''):`<div class="empty"><h3>Sin coincidencias</h3><p class="note">Prueba con otro nombre o apellido. Según el anexo, los jugadores que no figuran en ninguna lista se consideran sin tier.</p></div>`};
+}
+function rulesPage(){
+ const r=LEAGUE_DATA.rules,directory=tierDirectory();
+ return `<div class="page-head"><span class="eyebrow">TEMPORADA 2026 / 27 · REGLAMENTO</span><h1>Las reglas del juego.</h1><p class="analysis">Formato y anexo de tiers comunicados por Patricio Uribe, creador y comisionado de la liga.</p><p class="note">Fuente recibida: <time datetime="${r.date}">${date(r.date)}</time>. Esta página recoge las reglas disponibles y señala los puntos todavía pendientes.</p></div>
+ <div class="rule-stats"><div class="rule-stat"><strong>${r.teamCount}</strong><span>Equipos en la liga</span></div><div class="rule-stat"><strong>${r.categories.length}</strong><span>Categorías por enfrentamiento</span></div><div class="rule-stat"><strong>${r.weeklyAcquisitions}</strong><span>Adquisiciones máximas por equipo y semana</span></div></div>
+ <div class="rule-grid"><section class="panel"><h2>Formato de competencia</h2><div class="rule-copy"><p>Fantasy Basketball ${esc(r.format)} con ${r.teamCount} equipos y nueve categorías.</p><p>El draft utiliza el formato <strong>${esc(r.draftFormat)}</strong>: el orden de selección se invierte en cada ronda.</p><p>Cada equipo dispone de un máximo de <strong>${r.weeklyAcquisitions} adquisiciones por semana</strong>, incluyendo agencia libre y waivers.</p></div><h2>Las nueve categorías</h2><table><thead><tr><th scope="col">Categoría</th><th scope="col">Se compara</th><th scope="col">Objetivo</th></tr></thead><tbody>${r.categories.map(([id,name,goal])=>`<tr><th scope="row">${esc(id)}</th><td>${esc(name)}</td><td>${esc(goal)}</td></tr>`).join('')}</tbody></table><p class="note">En TO gana quien registra menos pérdidas. FG% y FT% comparan porcentajes; para reconstruirlos hacen falta los aciertos e intentos.</p></section>
+ <section class="panel"><h2>Cupos por tier</h2><table><thead><tr><th scope="col">Tier</th><th scope="col">Máximo por equipo</th></tr></thead><tbody>${r.tiers.map(t=>`<tr><th scope="row">${esc(t.id)}</th><td>${t.limit} jugadores</td></tr>`).join('')}<tr><th scope="row">Sin tier</th><td>Sin límite de cupos de tier</td></tr></tbody></table><div class="rule-copy"><p>Los tiers <strong>se mantienen fijos durante toda la temporada</strong>. El orden de los nombres dentro de cada tier no representa un ranking individual.</p><p>Máximo <strong>un jugador con tier de cada franquicia NBA</strong> por equipo. Los jugadores sin tier están exentos de esta restricción.</p><p>Un jugador que no aparece en S, A+, A o B se considera sin tier. Sigue sujeto a las demás reglas de plantilla y adquisiciones.</p><p>La clasificación responde al equilibrio interno de esta liga. El anexo explica que algunos riesgos de disponibilidad se incorporan al costo del cupo; no acredita el estado físico actual de ningún jugador.</p></div></section></div>
+ <section class="rule-notice"><h2>Antes de adquirir a un jugador</h2><ol class="rule-copy"><li>Comprobar que queda un cupo disponible en su tier.</li><li>Revisar si el equipo ya tiene un jugador con tier de esa franquicia NBA.</li><li>Verificar el límite semanal de adquisiciones y el resto de las reglas aplicables.</li></ol></section>
+ ${section('El anexo de jugadores','TIERS FIJOS PARA LA TEMPORADA')}<p class="analysis">Nombres transcritos del anexo recibido del comisionado. Esta clasificación es propia de Papafritas League.</p><div class="tier-search"><label for="tier-search">Buscar un jugador por nombre o apellido</label><input id="tier-search" type="search" placeholder="Ej.: Jokić, Sengun, Edwards…" autocomplete="off" aria-controls="tier-results"><p class="note" id="tier-status" role="status" aria-live="polite">${directory.count} jugadores en los tiers S, A+, A y B.</p></div><div id="tier-results">${directory.html}</div>
+ <section class="rule-notice"><h2>Puntos pendientes de confirmar</h2><p class="note">El reglamento principal recibido se corta al comenzar la sección 2; el anexo de tiers sí está completo. No se completan las reglas restantes por suposición.</p><ul class="rule-copy rule-pending">${r.pending.map(p=>`<li>${esc(p)}</li>`).join('')}</ul></section><p class="note">${esc(r.source)}</p><a class="link" href="#nota/analisis-draft-2026" style="margin-bottom:45px">Leer el análisis del draft ↗</a>`;
+}
+function article(p){const r=LEAGUE_DATA.rankings.find(r=>r.id===p.rankingId);return `<a class="back" href="#noticias">← Volver al archivo</a><article class="reading"><div class="page-head"><span class="eyebrow">${esc(p.category)}</span><h1>${esc(p.title)}</h1><div class="meta"><time datetime="${p.date}">${date(p.date)}</time> · Redacción Papafritas</div></div><p class="lead">${esc(p.excerpt)}</p>${p.body.map(([tag,text])=>tag==='draft-order'?draftOrder():tag==='team-heading'?rankingHeading(team(text)):`<${tag==='h2'?'h2':'p'}>${esc(text)}</${tag==='h2'?'h2':'p'}>`).join('')}${r?r.entries.map((e,i)=>`${rankingHeading(team(e.team),i+1)}<p>${esc(e.analysis)}</p>`).join(''):''}<p class="source">${esc(p.source??'Base documental: Contexto-y-Bitacora.txt y fichas de los cuatro equipos, registradas el 20 de octubre de 2026 a partir de capturas proporcionadas por los participantes. Las valoraciones son opinión y proyección editorial: no incorporan estadísticas actuales ni presuponen disponibilidad.')}</p>${p.rulesLink?'<a class="link" href="#reglas">Consultar el reglamento y los tiers ↗</a>':''}<div class="share"><button class="button" id="copy">Copiar enlace</button><a class="button" href="https://wa.me/?text=${encodeURIComponent(p.title+' '+location.href)}" target="_blank" rel="noopener noreferrer">Compartir por WhatsApp ↗</a></div><p id="status" role="status"></p><h2>Equipos de esta nota</h2><div class="categories">${p.teams.map(id=>`<a class="link" href="#equipo/${id}">${esc(team(id).name)} ↗</a>`).join('')}</div><a class="link" href="#">Volver a portada ↑</a></article>`}
+const positions=['PG','SG','SF','PF','C','G','F','UTIL','UTIL','UTIL','Banca','Banca','Banca'];function teamPage(t){return `<a class="back" href="#equipos">← Todos los equipos</a><div class="page-head">${emblem(t)}<h1>${esc(t.name)}</h1><p>${esc(t.owner)}${t.id==='shockers'?' · Creador y comisionado de la liga':''}</p><p class="note">${t.logo?'Logo del equipo':'Emblema provisional'} · Plantel documentado al 20 de octubre de 2026.</p></div><div class="team-detail"><section class="panel"><h2>Plantel confirmado</h2><div class="tier-summary" aria-label="Cupos de tier del plantel inicial">${LEAGUE_DATA.rules.tiers.map(r=>`<span class="tier-badge">${esc(r.id)}: ${t.roster.filter(p=>playerTier(p)===r.id).length}/${r.limit}</span>`).join('')}</div><p class="note">Cupos según el anexo comunicado el ${date(LEAGUE_DATA.rules.date)}. <a class="link" href="#reglas">Ver reglas ↗</a></p><table><thead><tr><th class="roster-position" scope="col">Puesto inicial</th><th scope="col">Jugador</th><th class="roster-tier" scope="col">Tier</th></tr></thead><tbody>${t.roster.map((p,i)=>`<tr><td>${positions[i]}</td><td>${esc(p)}</td><td>${tierBadge(p)}</td></tr>`).join('')}<tr><td>IR</td><td>Vacante</td><td>—</td></tr></tbody></table></section><section><span class="eyebrow">RADIOGRAFÍA EDITORIAL</span><h2>Líderes esperados</h2><p class="analysis">${t.leaders.map(esc).join(' · ')}</p><h2>Fortalezas proyectadas</h2><p class="analysis">${esc(t.strength)}</p><h2>Desafíos por categorías</h2><p class="analysis">${esc(t.challenge)}</p><div class="categories">${['FG%','FT%','3PM','REB','AST','STL','BLK','TO ↓','PTS'].map(c=>`<span>${c}</span>`).join('')}</div><p class="note">Proyección cualitativa del plantel entregado. No presupone disponibilidad ni rendimiento actual. En TO gana quien registra menos pérdidas.</p><p class="note">Fuente: ficha documental de ${esc(t.name)}. Las ubicaciones reflejan la captura inicial, no una validación de elegibilidad actual.</p></section></div>${section('Publicaciones relacionadas')}<div class="news-grid" style="margin-bottom:45px">${posts().filter(p=>p.teams.includes(t.id)).map(news).join('')}</div>`}
 function rankPage(){const r=LEAGUE_DATA.rankings[0];return `<div class="page-head"><span class="eyebrow">${esc(r.label)} · ${date(r.date)}</span><h1>${esc(r.title)}</h1><p class="analysis">Opinión editorial entre los cuatro equipos documentados. No es la clasificación oficial ni el resultado de una simulación.</p></div>${r.entries.map((e,i)=>{const t=team(e.team);return `<section class="rank-detail"><span class="rank-num">${i+1}</span><div>${rankingHeading(t)}<p class="analysis">${esc(e.analysis)}</p><p class="note">${esc(t.strength)} ${esc(t.challenge)}</p></div></section>`}).join('')}<p class="note">Base: planteles documentados el 20 de octubre de 2026. Proyecciones cualitativas sin estadísticas actuales. En TO gana quien registra menos pérdidas. Primera edición, sin variaciones anteriores.</p><a class="link" href="#nota/ranking-pretemporada" style="margin-bottom:40px">Leer la nota de pretemporada ↗</a>`}
-function route(focus=false){const hash=location.hash.slice(1),[view,id]=hash.split('/');if(hash==='contenido'){document.getElementById('contenido').focus();return}let html,title='La crónica',nav=view||'home';if(!hash)html=home();else if(view==='noticias'){html=archive();title='Noticias'}else if(view==='equipos'){html=`<div class="page-head"><span class="eyebrow">LA LIGA</span><h1>Las franquicias.</h1><p class="note">Cuatro equipos documentados. Patricio Uribe, creador y comisionado.</p></div><div class="team-grid">${LEAGUE_DATA.teams.map(teamcard).join('')}</div>`;title='Equipos'}else if(view==='ranking'){html=rankPage();title='Power ranking'}else if(view==='nota'&&LEAGUE_DATA.posts.some(p=>p.id===id)){const p=LEAGUE_DATA.posts.find(p=>p.id===id);html=article(p);title=p.title;nav='noticias'}else if(view==='equipo'&&team(id)){html=teamPage(team(id));title=team(id).name;nav='equipos'}else html='<div class="empty"><h1>Página no encontrada</h1><a class="link" href="#">Volver a portada →</a></div>';$('#contenido').innerHTML=html;document.title=title+' | Papafritas League';document.querySelectorAll('[data-nav]').forEach(a=>{if(a.dataset.nav===nav)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});document.querySelectorAll('.team-image').forEach(img=>{const fallback=()=>{img.hidden=true;img.nextElementSibling.hidden=false};img.addEventListener('error',fallback);if(img.complete&&!img.naturalWidth)fallback()});document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;route();document.querySelector(`[data-filter="${filter}"]`).focus()}));if($('#copy'))$('#copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href);$('#status').textContent='Enlace copiado.'}catch{const input=document.createElement('textarea');input.value=location.href;document.body.append(input);input.select();let ok=false;try{ok=document.execCommand('copy')}catch{}input.remove();$('#status').textContent=ok?'Enlace copiado.':'Copia este enlace: '+location.href;$('#copy').focus()}});if(focus){window.scrollTo(0,0);$('#contenido').focus({preventScroll:true})}}
+function route(focus=false){const hash=location.hash.slice(1),[view,id]=hash.split('/');if(hash==='contenido'&&$('#contenido').innerHTML){document.getElementById('contenido').focus();return}let html,title='La crónica',nav=view||'home';if(!hash||hash==='contenido'){html=home();nav='home'}else if(view==='noticias'){html=archive();title='Noticias'}else if(view==='equipos'){html=`<div class="page-head"><span class="eyebrow">LA LIGA</span><h1>Las franquicias.</h1><p class="note">Cuatro equipos documentados. Patricio Uribe, creador y comisionado.</p></div><div class="team-grid">${LEAGUE_DATA.teams.map(teamcard).join('')}</div>`;title='Equipos'}else if(view==='ranking'){html=rankPage();title='Power ranking'}else if(view==='reglas'){html=rulesPage();title='Reglas'}else if(view==='nota'&&LEAGUE_DATA.posts.some(p=>p.id===id)){const p=LEAGUE_DATA.posts.find(p=>p.id===id);html=article(p);title=p.title;nav='noticias'}else if(view==='equipo'&&team(id)){html=teamPage(team(id));title=team(id).name;nav='equipos'}else html='<div class="empty"><h1>Página no encontrada</h1><a class="link" href="#">Volver a portada →</a></div>';$('#contenido').innerHTML=html;document.title=title+' | Papafritas League';document.querySelectorAll('[data-nav]').forEach(a=>{if(a.dataset.nav===nav)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});document.querySelectorAll('.team-image').forEach(img=>{const fallback=()=>{img.hidden=true;img.nextElementSibling.hidden=false};img.addEventListener('error',fallback);if(img.complete&&!img.naturalWidth)fallback()});document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;route();document.querySelector(`[data-filter="${filter}"]`).focus()}));if(view==='reglas')$('#tier-search').addEventListener('input',event=>{const result=tierDirectory(event.target.value);$('#tier-results').innerHTML=result.html;$('#tier-status').textContent=event.target.value.trim()?`${result.count} ${result.count===1?'coincidencia':'coincidencias'} en el anexo.`:`${result.count} jugadores en los tiers S, A+, A y B.`});if($('#copy'))$('#copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href);$('#status').textContent='Enlace copiado.'}catch{const input=document.createElement('textarea');input.value=location.href;document.body.append(input);input.select();let ok=false;try{ok=document.execCommand('copy')}catch{}input.remove();$('#status').textContent=ok?'Enlace copiado.':'Copia este enlace: '+location.href;$('#copy').focus()}});if(focus){window.scrollTo(0,0);$('#contenido').focus({preventScroll:true})}}
 window.addEventListener('hashchange',()=>route(true));route();
 </script></body></html>
