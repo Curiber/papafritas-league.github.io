@@ -1612,7 +1612,7 @@ teams: [
     strength: 'Jokić ofrece un eje para proyectar REB y AST sin depender exclusivamente de los bases. Brunson, Edwards y Brown aportan alternativas en PTS y 3PM. Banchero y Jalen Johnson suman creación desde el frente de ataque.',
     challenge: 'La construcción parece más cómoda en ataque que en BLK. Debe comprobar su respuesta en STL y vigilar TO al reunir varios generadores. FG% y FT% dependerán del volumen y las alineaciones.' },
   { id: 'hipopotamos', name: 'Los Hipopotamos Chuchetumare', short: 'LHC', city: 'Santiago', owner: 'Cristóbal Uribe', ownerNote: '',
-    initials: 'LHC', colors: ['#d1261f', '#9a958a'], logo: './assets/los-hipopotamos-chuchetumare.webp',
+    initials: 'LHC', colors: ['#7b3fd1', '#f2ba33'], logo: './assets/los-hipopotamos-chuchetumare.webp?v=2',
     leaders: ['Victor Wembanyama', 'Cade Cunningham', 'Derrick White'],
     roster: ['Cade Cunningham', 'Derrick White', 'Deni Avdija', 'Naz Reid', 'Victor Wembanyama', 'VJ Edgecombe', 'Jaden McDaniels', 'Josh Giddey', 'Cason Wallace', 'Bennett Stirtz', 'Onyeka Okongwu', 'Toumani Camara', 'P.J. Washington'],
     strength: 'Wembanyama es el eje del planteamiento en BLK y REB. Cunningham y Giddey permiten proyectar una disputa en AST. White, McDaniels y Wallace ofrecen alternativas para orientar las alineaciones hacia la defensa y STL.',
