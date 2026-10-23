@@ -14,11 +14,31 @@ const allMatchups = () => D.schedule.flatMap(w => w.matchups.map(m => ({ ...m, w
 const matchupById = id => allMatchups().find(m => m.id === id);
 
 /* ---------- Motor de categorías ---------- */
-function fmtStat(cat, v) { return cat.pct ? (v * 100).toFixed(1) + '%' : String(v); }
+function fmtStat(cat, v) { return cat.pct ? (v * 100).toFixed(2) + '%' : String(v); }
+const isPartial = m => m.status === 'partial' || m.status === 'live';
+function statusText(m) {
+  if (isPartial(m)) return 'Parcial';
+  if (m.status === 'final') return evaluate(m) ? 'Final' : 'Datos pendientes';
+  return 'Por jugar';
+}
+function cutoffText(m) {
+  if (!m.updatedAt) return '';
+  const stamp = new Intl.DateTimeFormat('es-CL', {
+    day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit',
+    timeZone: 'America/Santiago', hour12: false
+  }).format(new Date(m.updatedAt));
+  return `${stamp}${m.updatedAtApproximate ? ' aprox.' : ''} · Chile`;
+}
+function cutoffNote(m) {
+  return m.updatedAt ? `<span class="snapshot-meta">Corte manual: ${esc(cutoffText(m))}</span>` : '';
+}
 /** Devuelve, por categoría, quién gana: 'a' | 'b' | 't', y el marcador total. */
 function evaluate(m) {
   const [a, b] = m.teams;
   if (!m.stats || !m.stats[a] || !m.stats[b]) return null;
+  const valid = (c, value) => typeof value === 'number' && Number.isFinite(value) &&
+    value >= 0 && (c.pct ? value <= 1 : Number.isInteger(value));
+  if (!D.categories.every(c => valid(c, m.stats[a][c.key]) && valid(c, m.stats[b][c.key]))) return null;
   const cats = D.categories.map(c => {
     const va = m.stats[a][c.key], vb = m.stats[b][c.key];
     let w = 't';
@@ -43,7 +63,7 @@ function standings() {
   return Object.values(rows).sort((x, y) => (y.w - y.l) - (x.w - x.l) || y.w - x.w || (y.cw - y.cl) - (x.cw - x.cl) || rank.indexOf(x.id) - rank.indexOf(y.id));
 }
 const recordOf = id => { const r = standings().find(r => r.id === id); return `${r.w}-${r.l}${r.t ? '-' + r.t : ''}`; };
-const played = () => allMatchups().some(m => m.status === 'final');
+const played = () => allMatchups().some(m => m.status === 'final' && evaluate(m));
 
 /* ---------- Componentes ---------- */
 function crest(t, size) {
@@ -54,8 +74,8 @@ function crest(t, size) {
 }
 function section(title, aside = '') { return `<div class="section-title reveal"><h2>${title}</h2><small>${aside}</small></div>`; }
 function statusPill(m) {
-  if (m.status === 'final') return '<span class="pill final">Final</span>';
-  if (m.status === 'live') return '<span class="pill live">● En juego</span>';
+  if (m.status === 'final') return `<span class="pill final">${statusText(m)}</span>`;
+  if (isPartial(m)) return '<span class="pill partial">Parcial</span>';
   return `<span class="pill">${fmtShort(m.start)} – ${fmtShort(m.end)}</span>`;
 }
 function catstrip(m) {
@@ -64,8 +84,8 @@ function catstrip(m) {
 }
 function scoreBlock(m, cls = 'score') {
   const ev = evaluate(m);
-  if (!ev) return `<span class="${cls} pending">${m.status === 'live' ? 'En juego' : 'Por jugar'}</span>`;
-  return `<span class="${cls}"><span>${ev.score.a}</span><span class="sep">–</span><span>${ev.score.b}</span></span>`;
+  if (!ev) return `<span class="${cls} pending">${isPartial(m) ? 'Datos pendientes' : statusText(m)}</span>`;
+  return `<span class="${cls}"><span>${ev.score.a}</span><span class="sep">–</span><span>${ev.score.b}</span>${ev.score.t ? `<small class="score-ties">${ev.score.t} categoría${ev.score.t > 1 ? 's' : ''} empatada${ev.score.t > 1 ? 's' : ''}</small>` : ''}</span>`;
 }
 function matchCard(m) {
   const [a, b] = m.teams.map(team);
@@ -75,7 +95,7 @@ function matchCard(m) {
       <span class="team">${crest(a, 56)}<span><strong>${esc(a.name)}</strong><small>${esc(a.owner)}</small></span></span>
       ${scoreBlock(m)}
       <span class="team">${crest(b, 56)}<span><strong>${esc(b.name)}</strong><small>${esc(b.owner)}</small></span></span>
-    </div>${catstrip(m)}</a>`;
+    </div>${catstrip(m)}${cutoffNote(m)}</a>`;
 }
 function featured() {
   const week = D.schedule[D.schedule.length - 1];
@@ -89,25 +109,25 @@ function featured() {
       <div class="vs">${ev ? `<span class="score">${ev.score.a}–${ev.score.b}</span>` : 'VS'}</div>
       <div class="side">${crest(b)}<div><h3>${esc(b.name)}</h3><div class="owner">${esc(b.owner)}</div></div></div>
     </div>
-    <div class="feature-foot">${catstrip(m)}<div class="meta"><span>${ev ? `${ev.score.a} categorías a ${ev.score.b}${ev.score.t ? ` · ${ev.score.t} empate${ev.score.t > 1 ? 's' : ''}` : ''}` : 'Nueve categorías en disputa · ' + fmtShort(m.start) + ' – ' + fmtShort(m.end)}</span><span class="link">Ver el cruce</span></div></div>
+    <div class="feature-foot">${catstrip(m)}<div class="meta"><span>${ev ? `${ev.score.a} categorías a ${ev.score.b}${ev.score.t ? ` · ${ev.score.t} empate${ev.score.t > 1 ? 's' : ''}` : ''}` : 'Nueve categorías en disputa · ' + fmtShort(m.start) + ' – ' + fmtShort(m.end)}</span><span class="link">Ver el cruce</span></div>${cutoffNote(m)}</div>
   </a>`;
 }
 function story() {
   const p = posts()[0];
-  return `<div class="story"><div><span class="eyebrow">${esc(p.category)} · ${fmtDate(p.date)}</span><h1>${esc(p.title)}</h1><p>${esc(p.excerpt)}</p></div><a class="btn" href="#nota/${esc(p.id)}">Leer la nota</a><span class="ghost" aria-hidden="true">${esc(D.season.replace(/\s/g, ''))}</span></div>`;
+  return `<div class="story"><div><span class="eyebrow">${esc(postLabel(p))} · ${fmtDate(p.date)}</span><h1>${esc(p.title)}</h1><p>${esc(p.excerpt)}</p></div><a class="btn" href="#nota/${esc(p.id)}">Leer la nota</a><span class="ghost" aria-hidden="true">${esc(D.season.replace(/\s/g, ''))}</span></div>`;
 }
 function standingsTable(compact = false) {
   const rows = standings(), max = Math.max(1, ...rows.map(r => r.cw));
   return `<div class="table-wrap reveal"><table class="standings"><thead><tr><th>#</th><th>Equipo</th><th class="c">PJ</th><th class="c">G</th><th class="c">P</th><th class="c">E</th><th class="c" title="Categorías ganadas-perdidas-empatadas">CAT</th>${compact ? '' : '<th>Forma</th>'}</tr></thead><tbody>${rows.map((r, i) => {
     const t = team(r.id);
-    return `<tr><td class="pos">${i + 1}</td><td><a class="teamcell" href="#equipo/${t.id}">${crest(t, 36)}<span><strong>${esc(t.name)}</strong><small>${esc(t.owner)}</small></span></a></td><td class="c n">${r.w + r.l + r.t}</td><td class="c n">${r.w}</td><td class="c n">${r.l}</td><td class="c n">${r.t}</td><td class="c"><div style="display:flex;align-items:center;gap:10px;justify-content:center"><span class="n" style="font-size:15px">${r.cw}-${r.cl}-${r.ct}</span><span class="bar" style="--team:${esc(t.colors[0])}"><i style="width:${Math.round(100 * r.cw / max)}%"></i></span></div></td>${compact ? '' : `<td class="streak">${r.form.length ? r.form.map(f => `<span style="color:${f === 'W' ? 'var(--win)' : f === 'L' ? 'var(--loss)' : 'var(--tie)'}">${f === 'W' ? 'G' : f === 'L' ? 'P' : 'E'}</span>`).join(' ') : '<span class="note">—</span>'}</td>`}</tr>`;
+    return `<tr><td class="pos">${played() ? i + 1 : '—'}</td><td><a class="teamcell" href="#equipo/${t.id}">${crest(t, 36)}<span><strong>${esc(t.name)}</strong><small>${esc(t.owner)}</small></span></a></td><td class="c n">${r.w + r.l + r.t}</td><td class="c n">${r.w}</td><td class="c n">${r.l}</td><td class="c n">${r.t}</td><td class="c"><div style="display:flex;align-items:center;gap:10px;justify-content:center"><span class="n" style="font-size:15px">${r.cw}-${r.cl}-${r.ct}</span><span class="bar" style="--team:${esc(t.colors[0])}"><i style="width:${Math.round(100 * r.cw / max)}%"></i></span></div></td>${compact ? '' : `<td class="streak">${r.form.length ? r.form.map(f => `<span style="color:${f === 'W' ? 'var(--win)' : f === 'L' ? 'var(--loss)' : 'var(--tie)'}">${f === 'W' ? 'G' : f === 'L' ? 'P' : 'E'}</span>`).join(' ') : '<span class="note">—</span>'}</td>`}</tr>`;
   }).join('')}</tbody></table></div>`;
 }
 function news(p) {
   const [a, b] = p.teams.slice(0, 2).map(team);
   const n = String(posts().length - posts().findIndex(x => x.id === p.id)).padStart(2, '0');
   return `<a class="news reveal" href="#nota/${esc(p.id)}" style="--ta:${esc(a?.colors[0] ?? '#ff5a1f')};--tb:${esc(b?.colors[0] ?? '#ff5a1f')}">
-    <div class="news-art"><span class="pill hot cat">${esc(p.category)}</span>${a ? crest(a, 84) : ''}${b ? `<span class="slash">/</span>${crest(b, 84)}` : ''}<span class="big" aria-hidden="true">${n}</span></div>
+    <div class="news-art"><span class="pill hot cat">${esc(postLabel(p))}</span>${a ? crest(a, 84) : ''}${b ? `<span class="slash">/</span>${crest(b, 84)}` : ''}<span class="big" aria-hidden="true">${n}</span></div>
     <div class="news-body"><h3>${esc(p.title)}</h3><p>${esc(p.excerpt)}</p><div class="meta">${fmtDate(p.date)} · Redacción Papafritas</div></div></a>`;
 }
 function moveBadge(e, i) {
@@ -154,13 +174,13 @@ function matchupPage(m) {
     <div class="page-head"><span class="eyebrow">${esc(m.weekLabel)} · ${fmtShort(m.start)} – ${fmtShort(m.end)} ${m.end.slice(0,4)}</span><h1>${esc(a.short)} <span style="color:var(--orange)">vs</span> ${esc(b.short)}</h1></div>
     <div class="scoreboard" style="--ta:${esc(a.colors[0])};--tb:${esc(b.colors[0])}">
       <div class="head"><a class="side" href="#equipo/${a.id}">${crest(a)}<span><h2>${esc(a.name)}</h2><span class="owner">${esc(a.owner)} · ${recordOf(a.id)}</span></span></a>
-        <div class="total">${ev ? `<span>${ev.score.a}</span><span class="sep">–</span><span>${ev.score.b}</span>` : 'VS'}<small>${ev ? (ev.result === 't' ? 'Empate' : 'Final') : m.status === 'live' ? 'En juego' : 'Por jugar'}</small></div>
+        <div class="total">${ev ? `<span>${ev.score.a}</span><span class="sep">–</span><span>${ev.score.b}</span>` : 'VS'}<small>${m.status === 'final' && ev?.result === 't' ? 'Final · empate' : statusText(m)}</small>${ev?.score.t ? `<small class="score-ties">${ev.score.t} categoría${ev.score.t > 1 ? 's' : ''} empatada${ev.score.t > 1 ? 's' : ''}</small>` : ''}</div>
         <a class="side" href="#equipo/${b.id}">${crest(b)}<span><h2>${esc(b.name)}</h2><span class="owner">${esc(b.owner)} · ${recordOf(b.id)}</span></span></a></div>
-      <table><thead><tr><th>Categoría</th><th>${esc(a.short)}</th><th>${esc(b.short)}</th><th>Gana</th></tr></thead><tbody>${D.categories.map((c, i) => {
+      <table><thead><tr><th>Categoría</th><th>${esc(a.short)}</th><th>${esc(b.short)}</th><th>${m.status === 'final' ? 'Gana' : 'Ventaja'}</th></tr></thead><tbody>${D.categories.map((c, i) => {
         const r = ev?.cats[i];
         return `<tr><td class="cat" title="${esc(c.name)}">${esc(c.id)}${c.lowerWins ? ' ↓' : ''}</td><td class="${r ? (r.w === 'a' ? 'w' : r.w === 'b' ? 'l' : '') : ''}">${r ? fmtStat(c, r.va) : '—'}</td><td class="${r ? (r.w === 'b' ? 'w' : r.w === 'a' ? 'l' : '') : ''}">${r ? fmtStat(c, r.vb) : '—'}</td><td>${r ? (r.w === 't' ? '<span class="note">Empate</span>' : `<span class="dot" style="background:${esc((r.w === 'a' ? a : b).colors[0])}"></span>${esc((r.w === 'a' ? a : b).short)}`) : '<span class="note">Pendiente</span>'}</td></tr>`;
       }).join('')}</tbody></table></div>
-    ${ev ? '' : `<p class="note">Los totales semanales se cargan en <code>js/data.js</code> cuando el cruce termina. En TO gana quien registra menos pérdidas.</p>`}
+    ${cutoffNote(m)}${isPartial(m) ? '<p class="note">Marcador parcial de actualización manual. No suma victorias ni derrotas a la clasificación hasta que se confirme el cierre.</p>' : ''}${m.sourceImage ? `<a class="link" href="${esc(m.sourceImage)}" target="_blank" rel="noopener noreferrer">Ver captura fuente</a>` : ''}${ev ? '' : '<p class="note">Sin totales completos informados para este cruce.</p>'}
     ${section('Los dos planteles')}<div class="team-detail">${[a, b].map(t => `<section class="panel"><div class="rank-heading" style="margin-top:0">${crest(t, 56)}<h2><a href="#equipo/${t.id}">${esc(t.name)}</a></h2></div><p class="analysis"><strong>Líderes:</strong> ${t.leaders.map(esc).join(' · ')}</p><p class="analysis">${esc(t.strength)}</p></section>`).join('')}</div>`;
 }
 function normalizePlayerName(v) { return String(v).normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/gi, '').toLowerCase(); }
@@ -186,12 +206,32 @@ function rulesPage() {
     <section class="rule-notice"><h2>Puntos pendientes de confirmar</h2><p class="note">El reglamento principal recibido se corta al comenzar la sección 2; el anexo de tiers sí está completo.</p><ul class="rule-copy rule-pending">${r.pending.map(p => `<li>${esc(p)}</li>`).join('')}</ul></section><p class="note">${esc(r.source)}</p><a class="link" href="#nota/analisis-draft-2026" style="margin-bottom:40px">Leer el análisis del draft</a>`;
 }
 function rankingHeading(t, position) { return `<div class="rank-heading">${crest(t, 64)}<h2><a href="#equipo/${t.id}">${position ? position + '. ' : ''}${esc(t.name)}</a></h2></div>`; }
+
+function postLabel(p) { return p.partial ? 'Crónica parcial' : p.category; }
+function playerReport(reportId, teamId) {
+  const report = D.statisticsReports?.find(r => r.id === reportId);
+  if (!report) return '';
+  const players = report.players.filter(p => p.team === teamId);
+  const ids = new Set(players.flatMap(p => p.games));
+  const sources = report.games.filter(g => ids.has(g.id));
+  const columns = ['tpm', 'reb', 'ast', 'stl', 'blk', 'to', 'pts'];
+  return `<details class="player-report"><summary>Ver actas de ${esc(team(teamId).name)} · ${players.length} jugadores</summary>
+    <p class="note">Totales NBA de los partidos revisados de las jornadas del 20 al 22 de octubre de 2026. PJ: partidos jugados; TC/TL: convertidos e intentados. Desliza la tabla para ver todas las categorías.</p>
+    <div class="report-scroll" tabindex="0" role="region" aria-label="Estadísticas individuales de ${esc(team(teamId).name)}"><table class="report-table"><caption>Actuaciones individuales al corte · temporada ${esc(report.season)}</caption><thead><tr><th scope="col">Jugador</th><th scope="col">PJ</th><th scope="col">MIN</th><th scope="col">TC</th><th scope="col">TL</th><th scope="col">3PM</th><th scope="col">REB</th><th scope="col">AST</th><th scope="col">STL</th><th scope="col">BLK</th><th scope="col">TO ↓</th><th scope="col">PTS</th></tr></thead><tbody>${players.map(p => `<tr><th scope="row">${esc(p.name)}</th><td>${p.gp ?? '—'}</td><td>${p.minutes ?? '—'}</td><td>${p.stats ? p.stats.fgm + '/' + p.stats.fga : '—'}</td><td>${p.stats ? p.stats.ftm + '/' + p.stats.fta : '—'}</td>${columns.map(k => `<td>${p.stats?.[k] ?? '—'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+    <p class="note">Un guion indica que no se localizó un acta; no equivale a una valoración negativa ni confirma una lesión. Las próximas actuaciones dependen de disponibilidad y alineación.</p><p class="note report-sources">Fuentes: ${sources.map(g => `<a href="${esc(g.url)}" target="_blank" rel="noopener noreferrer">${esc(g.name)}</a> <a href="${esc(g.dataUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Datos públicos ESPN de ${esc(g.name)}">(datos)</a>`).join(' · ')}.</p></details>`;
+}
+function reportSources(p) {
+  const r = D.statisticsReports?.find(r => r.id === p.reportId);
+  if (!r) return '';
+  return `<details class="player-report"><summary>Fuentes y alcance del corte</summary><p class="note">${esc(r.source)}</p><p class="note">Los marcadores son parciales de actualización manual. El horario se estimó a partir del mensaje del participante y se identifica como aproximado.</p><p><a class="link" href="${esc(r.sourceImage)}" target="_blank" rel="noopener noreferrer">Ver captura de los marcadores</a></p><p class="note">Calendario consultado al preparar esta nota: ${['20261023', '20261024', '20261025'].map(day => `<a href="https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${day}" target="_blank" rel="noopener noreferrer">ESPN · ${day.slice(6)} de octubre</a>`).join(' · ')}. Los partidos programados no garantizan participación de un jugador.</p></details>`;
+}
+
 function article(p) {
   const r = D.rankings.find(r => r.id === p.rankingId);
-  return `<a class="back" href="#noticias">← Volver al archivo</a><article class="reading"><div class="page-head"><span class="eyebrow">${esc(p.category)}</span><h1>${esc(p.title)}</h1><div class="meta"><time datetime="${p.date}">${fmtDate(p.date)}</time> · Redacción Papafritas</div></div><p class="lead">${esc(p.excerpt)}</p>
-    ${p.body.map(([tag, text]) => tag === 'draft-order' ? draftOrder() : tag === 'team-heading' ? rankingHeading(team(text)) : `<${tag === 'h2' ? 'h2' : 'p'}>${esc(text)}</${tag === 'h2' ? 'h2' : 'p'}>`).join('')}
+  return `<a class="back" href="#noticias">← Volver al archivo</a><article class="reading"><div class="page-head"><span class="eyebrow">${esc(postLabel(p))}</span><h1>${esc(p.title)}</h1><div class="meta"><time datetime="${p.date}">${fmtDate(p.date)}</time> · Redacción Papafritas${p.readingMinutes ? ` · ${p.readingMinutes} min de lectura` : ''}</div>${p.reportId ? cutoffNote({updatedAt:D.statisticsReports.find(r=>r.id===p.reportId)?.updatedAt,updatedAtApproximate:true}) : ''}</div><p class="lead">${esc(p.excerpt)}</p>
+    ${p.body.map(([tag, text]) => tag === 'player-report' ? playerReport(p.reportId, text) : tag === 'draft-order' ? draftOrder() : tag === 'team-heading' ? rankingHeading(team(text)) : `<${tag === 'h2' ? 'h2' : 'p'}>${esc(text)}</${tag === 'h2' ? 'h2' : 'p'}>`).join('')}
     ${r ? r.entries.map((e, i) => `${rankingHeading(team(e.team), i + 1)}<p>${esc(e.analysis)}</p>`).join('') : ''}
-    <p class="source">${esc(p.source ?? 'Base documental: fichas de los cuatro equipos registradas el 20 de octubre de 2026 a partir de capturas proporcionadas por los participantes. Las valoraciones son opinión y proyección editorial: no incorporan estadísticas actuales ni presuponen disponibilidad.')}</p>
+    ${reportSources(p)}<p class="source">${esc(p.source ?? 'Base documental: fichas de los cuatro equipos registradas el 20 de octubre de 2026 a partir de capturas proporcionadas por los participantes. Las valoraciones son opinión y proyección editorial: no incorporan estadísticas actuales ni presuponen disponibilidad.')}</p>
     ${p.rulesLink ? '<a class="link" href="#reglas">Consultar el reglamento y los tiers</a>' : ''}
     <div class="share"><button class="btn ghost" id="copy">Copiar enlace</button><a class="btn" href="https://wa.me/?text=${encodeURIComponent(p.title + ' ' + location.href)}" target="_blank" rel="noopener noreferrer">Compartir por WhatsApp</a></div><p id="status" role="status" class="note"></p>
     <h2>Equipos de esta nota</h2><div class="categories">${p.teams.map(id => `<a class="link" href="#equipo/${id}">${esc(team(id).name)}</a>`).join('')}</div></article>`;
@@ -202,7 +242,7 @@ function teamPage(t) {
   const myMatches = allMatchups().filter(m => m.teams.includes(t.id));
   return `<a class="back" href="#equipos">← Todos los equipos</a>
     <section class="team-hero" style="--team:${esc(t.colors[0])}">${t.logo ? `<div class="wm" aria-hidden="true"><img src="${esc(t.logo)}" alt=""></div>` : ''}${crest(t)}<div><span class="eyebrow">${esc(t.city)} · ${esc(t.short)}</span><h1>${esc(t.name)}</h1><div class="owner">${esc(t.owner)}${t.ownerNote ? ' · ' + esc(t.ownerNote) : ''}</div>
-      <div class="stats"><div class="stat"><b>${st.w}-${st.l}${st.t ? '-' + st.t : ''}</b><span>Récord</span></div><div class="stat"><b>${pos}°</b><span>Posición</span></div><div class="stat"><b>${st.cw}-${st.cl}</b><span>Categorías</span></div><div class="stat"><b>${D.rankings[0].entries.findIndex(e => e.team === t.id) + 1}°</b><span>Power ranking</span></div></div></div></section>
+      <div class="stats"><div class="stat"><b>${st.w}-${st.l}${st.t ? '-' + st.t : ''}</b><span>Récord</span></div><div class="stat"><b>${played() ? pos + '°' : '—'}</b><span>Posición</span></div><div class="stat"><b>${st.cw}-${st.cl}</b><span>Categorías</span></div><div class="stat"><b>${D.rankings[0].entries.findIndex(e => e.team === t.id) + 1}°</b><span>Power ranking</span></div></div></div></section>
     <div class="team-detail"><section class="panel reveal"><h2>Plantel</h2><div class="tier-summary" aria-label="Cupos de tier del plantel">${D.rules.tiers.map(r => `<span class="tier-badge ${r.id === 'A+' ? 'Ap' : r.id}">${esc(r.id)} ${t.roster.filter(p => playerTier(p) === r.id).length}/${r.limit}</span>`).join('')}</div>
       <table><thead><tr><th class="roster-position" scope="col">Puesto</th><th scope="col">Jugador</th><th class="roster-tier" scope="col">Tier</th></tr></thead><tbody>${t.roster.map((p, i) => `<tr><td class="kicker">${positions[i]}</td><td>${esc(p)}</td><td>${tierBadge(playerTier(p))}</td></tr>`).join('')}<tr><td class="kicker">IR</td><td class="note">Vacante</td><td>—</td></tr></tbody></table><p class="note" style="margin-top:12px">Cupos según el anexo del ${fmtDate(D.rules.date)}. <a class="link" href="#reglas" style="padding:0">Ver reglas</a></p></section>
     <section class="side-section reveal"><span class="eyebrow">Radiografía editorial</span><h2>Líderes esperados</h2><p class="analysis">${t.leaders.map(esc).join(' · ')}</p><h2>Fortalezas proyectadas</h2><p class="analysis">${esc(t.strength)}</p><h2>Desafíos por categorías</h2><p class="analysis">${esc(t.challenge)}</p><div class="categories">${D.categories.map(c => `<span>${esc(c.id)}${c.lowerWins ? ' ↓' : ''}</span>`).join('')}</div>
@@ -222,8 +262,8 @@ function teamsPage() {
 /* ---------- Ticker ---------- */
 function ticker() {
   const items = [];
-  allMatchups().forEach(m => { const [a, b] = m.teams.map(team), ev = evaluate(m); items.push(ev ? `<b>${esc(a.short)} ${ev.score.a}–${ev.score.b} ${esc(b.short)}</b> · ${m.status === 'final' ? 'Final' : 'En juego'}` : `${esc(a.short)} vs ${esc(b.short)} · ${fmtShort(m.start)}–${fmtShort(m.end)}`); });
-  posts().slice(0, 3).forEach(p => items.push(`<b>${esc(p.category)}</b> · ${esc(p.title)}`));
+  allMatchups().forEach(m => { const [a, b] = m.teams.map(team), ev = evaluate(m); items.push(ev ? `<b>${esc(a.short)} ${ev.score.a}–${ev.score.b} ${esc(b.short)}</b> · ${statusText(m)}` : `${esc(a.short)} vs ${esc(b.short)} · ${fmtShort(m.start)}–${fmtShort(m.end)}`); });
+  posts().slice(0, 3).forEach(p => items.push(`<b>${esc(postLabel(p))}</b> · ${esc(p.title)}`));
   const top = team(D.rankings[0].entries[0].team); items.push(`<b>Power ranking</b> · ${esc(top.name)} lidera la ${esc(D.rankings[0].label.toLowerCase())}`);
   items.push(`Temporada ${esc(D.season)} · ${D.categories.length} categorías · ${D.teams.length} equipos`);
   const rail = items.map(i => `<span class="item">${i}</span>`).join('');

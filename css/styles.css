@@ -486,3 +486,19 @@ html{-webkit-tap-highlight-color:transparent}
   .catstrip span.a,.catstrip span.b{background:rgba(255,90,31,.22);color:var(--text);border-color:rgba(255,90,31,.5)}
   .crest img{filter:drop-shadow(0 6px 14px rgba(0,0,0,.5))}
 }
+
+/* Cortes parciales y actas: actualización manual, sin alterar la arena. */
+.pill.partial{color:var(--orange);border-color:var(--orange);background:rgba(255,90,31,.08)}
+.snapshot-meta{display:block;font-size:12px;line-height:1.6;color:var(--muted);margin-top:12px;letter-spacing:0;font-style:normal;text-transform:none}
+.score-ties{display:block;font-family:var(--body);font-size:11px;font-weight:500;line-height:1.5;color:var(--muted);letter-spacing:0;font-style:normal;text-transform:none;-webkit-text-stroke:0;text-shadow:none}
+.scoreboard .total small.score-ties{font-size:11px;letter-spacing:0;text-transform:none;color:var(--muted)}
+.player-report{border:1px solid var(--line-2);border-radius:var(--radius);padding:14px 16px;margin:18px 0 30px;min-width:0}
+.player-report summary{cursor:pointer;font-family:var(--display);font-size:17px;font-weight:700;line-height:1.5;color:var(--orange)}
+.player-report summary:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+.reading .player-report .note{font-size:13px;line-height:1.65}
+.report-scroll{width:100%;max-width:100%;overflow-x:auto;margin:16px 0}
+.report-table{min-width:820px;font-size:12px}
+.report-table caption{font-size:12px;text-align:left;padding:8px 0;color:var(--muted)}
+.report-table td,.report-table th{padding:9px 10px;white-space:nowrap}
+.report-table tbody th{font-family:var(--body);font-weight:500;font-size:12px;letter-spacing:0;text-transform:none;color:var(--text-2)}
+.report-sources a{color:var(--orange);text-decoration:underline;text-underline-offset:3px}

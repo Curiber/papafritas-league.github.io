@@ -13,7 +13,7 @@
        hipopotamos: { fgp: .478, ftp: .812, tpm: 41, reb: 210, ast: 118, stl: 34, blk: 29, to: 58, pts: 512 },
        pelafustanes: { fgp: .465, ftp: .790, tpm: 48, reb: 198, ast: 131, stl: 30, blk: 18, to: 63, pts: 540 }
      },
-     status: 'final'        // 'scheduled' | 'live' | 'final'
+     status: 'final'        // 'scheduled' | 'partial' | 'final' (live se admite como parcial legado)
 
    En TO gana quien tiene MENOS. Un cruce se gana por mayoría de categorías
    (criterio provisional hasta que el comisionado confirme empates).
@@ -22,6 +22,1567 @@ window.LEAGUE_DATA = {
 startDate: '2026-10-20',
 commissioner: 'Patricio Uribe',
 season: '2026 / 27',
+
+/* Cortes históricos: conservar los informes anteriores sin modificarlos. */
+statisticsReports: [
+  {
+    "id": "semana-1-corte-2026-10-23",
+    "sourceImage": "./assets/cortes/semana-1-2026-10-23.png",
+    "season": "2026-27",
+    "from": "2026-10-20",
+    "through": "2026-10-22",
+    "updatedAt": "2026-10-23T10:21:00-03:00",
+    "approximate": true,
+    "source": "Actas públicas de ESPN de temporada regular 2026-27. La suma de los 49 jugadores con acta localizada reproduce los totales de los cuatro equipos de la captura. Tres jugadores no tienen acta localizada; no se les atribuye bajo rendimiento ni una ausencia por lesión.",
+    "players": [
+      {
+        "name": "Shai Gilgeous-Alexander",
+        "team": "shockers",
+        "gp": 2,
+        "minutes": 71.0,
+        "stats": {
+          "fgm": 19,
+          "fga": 46,
+          "ftm": 5,
+          "fta": 6,
+          "tpm": 6,
+          "reb": 8,
+          "ast": 7,
+          "stl": 3,
+          "blk": 4,
+          "to": 2,
+          "pts": 49
+        },
+        "games": [
+          "401909090",
+          "401909094"
+        ],
+        "remaining": 1
+      },
+      {
+        "name": "Scottie Barnes",
+        "team": "shockers",
+        "gp": 1,
+        "minutes": 26.0,
+        "stats": {
+          "fgm": 8,
+          "fga": 19,
+          "ftm": 6,
+          "fta": 6,
+          "tpm": 1,
+          "reb": 6,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "to": 1,
+          "pts": 23
+        },
+        "games": [
+          "401909837"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Jayson Tatum",
+        "team": "shockers",
+        "gp": 1,
+        "minutes": 38.0,
+        "stats": {
+          "fgm": 6,
+          "fga": 23,
+          "ftm": 1,
+          "fta": 1,
+          "tpm": 0,
+          "reb": 4,
+          "ast": 11,
+          "stl": 0,
+          "blk": 0,
+          "to": 2,
+          "pts": 13
+        },
+        "games": [
+          "401909088"
+        ],
+        "remaining": 1
+      },
+      {
+        "name": "Jaren Jackson Jr.",
+        "team": "shockers",
+        "gp": 1,
+        "minutes": 28.0,
+        "stats": {
+          "fgm": 6,
+          "fga": 10,
+          "ftm": 1,
+          "fta": 2,
+          "tpm": 2,
+          "reb": 5,
+          "ast": 2,
+          "stl": 1,
+          "blk": 2,
+          "to": 5,
+          "pts": 15
+        },
+        "games": [
+          "401909838"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Karl-Anthony Towns",
+        "team": "shockers",
+        "gp": 1,
+        "minutes": 24.0,
+        "stats": {
+          "fgm": 6,
+          "fga": 9,
+          "ftm": 4,
+          "fta": 7,
+          "tpm": 3,
+          "reb": 12,
+          "ast": 1,
+          "stl": 1,
+          "blk": 2,
+          "to": 4,
+          "pts": 19
+        },
+        "games": [
+          "401909089"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Amen Thompson",
+        "team": "shockers",
+        "gp": 1,
+        "minutes": 33.0,
+        "stats": {
+          "fgm": 6,
+          "fga": 12,
+          "ftm": 3,
+          "fta": 5,
+          "tpm": 1,
+          "reb": 10,
+          "ast": 4,
+          "stl": 1,
+          "blk": 0,
+          "to": 1,
+          "pts": 16
+        },
+        "games": [
+          "401909840"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Kon Knueppel",
+        "team": "shockers",
+        "gp": null,
+        "minutes": null,
+        "stats": null,
+        "games": [],
+        "remaining": null
+      },
+      {
+        "name": "Dyson Daniels",
+        "team": "shockers",
+        "gp": 1,
+        "minutes": 35.0,
+        "stats": {
+          "fgm": 8,
+          "fga": 13,
+          "ftm": 4,
+          "fta": 6,
+          "tpm": 0,
+          "reb": 4,
+          "ast": 3,
+          "stl": 5,
+          "blk": 0,
+          "to": 2,
+          "pts": 20
+        },
+        "games": [
+          "401909834"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Cameron Boozer",
+        "team": "shockers",
+        "gp": 1,
+        "minutes": 33.0,
+        "stats": {
+          "fgm": 2,
+          "fga": 15,
+          "ftm": 3,
+          "fta": 4,
+          "tpm": 0,
+          "reb": 11,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "to": 1,
+          "pts": 7
+        },
+        "games": [
+          "401909838"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Daniel Gafford",
+        "team": "shockers",
+        "gp": 1,
+        "minutes": 22.0,
+        "stats": {
+          "fgm": 0,
+          "fga": 1,
+          "ftm": 2,
+          "fta": 4,
+          "tpm": 0,
+          "reb": 3,
+          "ast": 1,
+          "stl": 1,
+          "blk": 2,
+          "to": 1,
+          "pts": 2
+        },
+        "games": [
+          "401909840"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Herbert Jones",
+        "team": "shockers",
+        "gp": 1,
+        "minutes": 17.0,
+        "stats": {
+          "fgm": 2,
+          "fga": 4,
+          "ftm": 0,
+          "fta": 0,
+          "tpm": 1,
+          "reb": 2,
+          "ast": 0,
+          "stl": 1,
+          "blk": 0,
+          "to": 1,
+          "pts": 5
+        },
+        "games": [
+          "401909839"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Jalen Suggs",
+        "team": "shockers",
+        "gp": 1,
+        "minutes": 32.0,
+        "stats": {
+          "fgm": 2,
+          "fga": 8,
+          "ftm": 2,
+          "fta": 2,
+          "tpm": 0,
+          "reb": 3,
+          "ast": 5,
+          "stl": 2,
+          "blk": 0,
+          "to": 2,
+          "pts": 6
+        },
+        "games": [
+          "401909834"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Tari Eason",
+        "team": "shockers",
+        "gp": 1,
+        "minutes": 3.0,
+        "stats": {
+          "fgm": 1,
+          "fga": 2,
+          "ftm": 0,
+          "fta": 0,
+          "tpm": 0,
+          "reb": 1,
+          "ast": 0,
+          "stl": 1,
+          "blk": 0,
+          "to": 0,
+          "pts": 2
+        },
+        "games": [
+          "401909840"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Jalen Brunson",
+        "team": "pilsens",
+        "gp": 1,
+        "minutes": 34.0,
+        "stats": {
+          "fgm": 6,
+          "fga": 19,
+          "ftm": 8,
+          "fta": 8,
+          "tpm": 1,
+          "reb": 5,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "to": 2,
+          "pts": 21
+        },
+        "games": [
+          "401909089"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Dylan Harper",
+        "team": "pilsens",
+        "gp": 1,
+        "minutes": 32.0,
+        "stats": {
+          "fgm": 7,
+          "fga": 17,
+          "ftm": 4,
+          "fta": 4,
+          "tpm": 0,
+          "reb": 7,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "to": 2,
+          "pts": 18
+        },
+        "games": [
+          "401909090"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Jaylen Brown",
+        "team": "pilsens",
+        "gp": 2,
+        "minutes": 73.0,
+        "stats": {
+          "fgm": 17,
+          "fga": 34,
+          "ftm": 3,
+          "fta": 4,
+          "tpm": 3,
+          "reb": 16,
+          "ast": 10,
+          "stl": 2,
+          "blk": 1,
+          "to": 6,
+          "pts": 40
+        },
+        "games": [
+          "401909089",
+          "401909093"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Keldon Johnson",
+        "team": "pilsens",
+        "gp": 1,
+        "minutes": 20.0,
+        "stats": {
+          "fgm": 4,
+          "fga": 8,
+          "ftm": 1,
+          "fta": 1,
+          "tpm": 1,
+          "reb": 4,
+          "ast": 1,
+          "stl": 2,
+          "blk": 0,
+          "to": 2,
+          "pts": 10
+        },
+        "games": [
+          "401909090"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Nikola Jokić",
+        "team": "pilsens",
+        "gp": 1,
+        "minutes": 35.0,
+        "stats": {
+          "fgm": 5,
+          "fga": 19,
+          "ftm": 2,
+          "fta": 4,
+          "tpm": 1,
+          "reb": 7,
+          "ast": 5,
+          "stl": 1,
+          "blk": 1,
+          "to": 2,
+          "pts": 13
+        },
+        "games": [
+          "401909094"
+        ],
+        "remaining": 1
+      },
+      {
+        "name": "Anthony Edwards",
+        "team": "pilsens",
+        "gp": 1,
+        "minutes": 33.0,
+        "stats": {
+          "fgm": 16,
+          "fga": 29,
+          "ftm": 4,
+          "fta": 5,
+          "tpm": 9,
+          "reb": 10,
+          "ast": 3,
+          "stl": 2,
+          "blk": 1,
+          "to": 4,
+          "pts": 45
+        },
+        "games": [
+          "401909091"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Paolo Banchero",
+        "team": "pilsens",
+        "gp": 1,
+        "minutes": 41.0,
+        "stats": {
+          "fgm": 10,
+          "fga": 12,
+          "ftm": 12,
+          "fta": 16,
+          "tpm": 3,
+          "reb": 7,
+          "ast": 10,
+          "stl": 1,
+          "blk": 0,
+          "to": 6,
+          "pts": 35
+        },
+        "games": [
+          "401909834"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "AJ Dybantsa",
+        "team": "pilsens",
+        "gp": null,
+        "minutes": null,
+        "stats": null,
+        "games": [],
+        "remaining": null
+      },
+      {
+        "name": "Caleb Wilson",
+        "team": "pilsens",
+        "gp": 1,
+        "minutes": 32.0,
+        "stats": {
+          "fgm": 7,
+          "fga": 21,
+          "ftm": 1,
+          "fta": 2,
+          "tpm": 1,
+          "reb": 4,
+          "ast": 0,
+          "stl": 3,
+          "blk": 1,
+          "to": 9,
+          "pts": 16
+        },
+        "games": [
+          "401909837"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Sandro Mamukelashvili",
+        "team": "pilsens",
+        "gp": 1,
+        "minutes": 22.0,
+        "stats": {
+          "fgm": 2,
+          "fga": 5,
+          "ftm": 1,
+          "fta": 2,
+          "tpm": 0,
+          "reb": 4,
+          "ast": 2,
+          "stl": 2,
+          "blk": 0,
+          "to": 0,
+          "pts": 5
+        },
+        "games": [
+          "401909092"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Jalen Johnson",
+        "team": "pilsens",
+        "gp": 1,
+        "minutes": 28.0,
+        "stats": {
+          "fgm": 7,
+          "fga": 19,
+          "ftm": 6,
+          "fta": 7,
+          "tpm": 0,
+          "reb": 14,
+          "ast": 6,
+          "stl": 0,
+          "blk": 0,
+          "to": 2,
+          "pts": 20
+        },
+        "games": [
+          "401909834"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Jaylen Wells",
+        "team": "pilsens",
+        "gp": 1,
+        "minutes": 28.0,
+        "stats": {
+          "fgm": 5,
+          "fga": 10,
+          "ftm": 1,
+          "fta": 3,
+          "tpm": 1,
+          "reb": 5,
+          "ast": 0,
+          "stl": 4,
+          "blk": 0,
+          "to": 0,
+          "pts": 12
+        },
+        "games": [
+          "401909838"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Dillon Brooks",
+        "team": "pilsens",
+        "gp": 1,
+        "minutes": 27.0,
+        "stats": {
+          "fgm": 4,
+          "fga": 11,
+          "ftm": 1,
+          "fta": 2,
+          "tpm": 1,
+          "reb": 4,
+          "ast": 0,
+          "stl": 0,
+          "blk": 0,
+          "to": 2,
+          "pts": 10
+        },
+        "games": [
+          "401909841"
+        ],
+        "remaining": 1
+      },
+      {
+        "name": "Cade Cunningham",
+        "team": "hipopotamos",
+        "gp": 1,
+        "minutes": 35.0,
+        "stats": {
+          "fgm": 8,
+          "fga": 18,
+          "ftm": 5,
+          "fta": 5,
+          "tpm": 1,
+          "reb": 4,
+          "ast": 8,
+          "stl": 1,
+          "blk": 1,
+          "to": 5,
+          "pts": 22
+        },
+        "games": [
+          "401909088"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Derrick White",
+        "team": "hipopotamos",
+        "gp": 1,
+        "minutes": 36.0,
+        "stats": {
+          "fgm": 7,
+          "fga": 13,
+          "ftm": 0,
+          "fta": 0,
+          "tpm": 3,
+          "reb": 1,
+          "ast": 8,
+          "stl": 1,
+          "blk": 0,
+          "to": 4,
+          "pts": 17
+        },
+        "games": [
+          "401909088"
+        ],
+        "remaining": 1
+      },
+      {
+        "name": "Deni Avdija",
+        "team": "hipopotamos",
+        "gp": 1,
+        "minutes": 23.0,
+        "stats": {
+          "fgm": 7,
+          "fga": 16,
+          "ftm": 2,
+          "fta": 4,
+          "tpm": 2,
+          "reb": 10,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "to": 2,
+          "pts": 18
+        },
+        "games": [
+          "401909841"
+        ],
+        "remaining": 1
+      },
+      {
+        "name": "Naz Reid",
+        "team": "hipopotamos",
+        "gp": 1,
+        "minutes": 33.0,
+        "stats": {
+          "fgm": 8,
+          "fga": 19,
+          "ftm": 0,
+          "fta": 1,
+          "tpm": 4,
+          "reb": 11,
+          "ast": 7,
+          "stl": 0,
+          "blk": 0,
+          "to": 1,
+          "pts": 20
+        },
+        "games": [
+          "401909836"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Victor Wembanyama",
+        "team": "hipopotamos",
+        "gp": 1,
+        "minutes": 34.0,
+        "stats": {
+          "fgm": 1,
+          "fga": 13,
+          "ftm": 10,
+          "fta": 12,
+          "tpm": 0,
+          "reb": 13,
+          "ast": 3,
+          "stl": 1,
+          "blk": 6,
+          "to": 4,
+          "pts": 12
+        },
+        "games": [
+          "401909090"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "VJ Edgecombe",
+        "team": "hipopotamos",
+        "gp": 2,
+        "minutes": 68.0,
+        "stats": {
+          "fgm": 8,
+          "fga": 21,
+          "ftm": 3,
+          "fta": 5,
+          "tpm": 1,
+          "reb": 11,
+          "ast": 7,
+          "stl": 4,
+          "blk": 0,
+          "to": 2,
+          "pts": 20
+        },
+        "games": [
+          "401909089",
+          "401909093"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Jaden McDaniels",
+        "team": "hipopotamos",
+        "gp": 1,
+        "minutes": 29.0,
+        "stats": {
+          "fgm": 8,
+          "fga": 11,
+          "ftm": 0,
+          "fta": 0,
+          "tpm": 1,
+          "reb": 8,
+          "ast": 1,
+          "stl": 3,
+          "blk": 0,
+          "to": 2,
+          "pts": 17
+        },
+        "games": [
+          "401909091"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Josh Giddey",
+        "team": "hipopotamos",
+        "gp": 1,
+        "minutes": 24.0,
+        "stats": {
+          "fgm": 1,
+          "fga": 10,
+          "ftm": 0,
+          "fta": 2,
+          "tpm": 0,
+          "reb": 7,
+          "ast": 6,
+          "stl": 0,
+          "blk": 0,
+          "to": 5,
+          "pts": 2
+        },
+        "games": [
+          "401909837"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Cason Wallace",
+        "team": "hipopotamos",
+        "gp": 2,
+        "minutes": 43.0,
+        "stats": {
+          "fgm": 6,
+          "fga": 16,
+          "ftm": 0,
+          "fta": 0,
+          "tpm": 3,
+          "reb": 4,
+          "ast": 3,
+          "stl": 5,
+          "blk": 0,
+          "to": 1,
+          "pts": 15
+        },
+        "games": [
+          "401909090",
+          "401909094"
+        ],
+        "remaining": 1
+      },
+      {
+        "name": "Bennett Stirtz",
+        "team": "hipopotamos",
+        "gp": 2,
+        "minutes": 3.0,
+        "stats": {
+          "fgm": 0,
+          "fga": 1,
+          "ftm": 0,
+          "fta": 0,
+          "tpm": 0,
+          "reb": 0,
+          "ast": 0,
+          "stl": 0,
+          "blk": 0,
+          "to": 0,
+          "pts": 0
+        },
+        "games": [
+          "401909090",
+          "401909094"
+        ],
+        "remaining": 1
+      },
+      {
+        "name": "Onyeka Okongwu",
+        "team": "hipopotamos",
+        "gp": 1,
+        "minutes": 29.0,
+        "stats": {
+          "fgm": 3,
+          "fga": 8,
+          "ftm": 2,
+          "fta": 2,
+          "tpm": 0,
+          "reb": 5,
+          "ast": 7,
+          "stl": 0,
+          "blk": 0,
+          "to": 2,
+          "pts": 8
+        },
+        "games": [
+          "401909834"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Toumani Camara",
+        "team": "hipopotamos",
+        "gp": 1,
+        "minutes": 23.0,
+        "stats": {
+          "fgm": 6,
+          "fga": 9,
+          "ftm": 2,
+          "fta": 2,
+          "tpm": 4,
+          "reb": 2,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "to": 1,
+          "pts": 18
+        },
+        "games": [
+          "401909841"
+        ],
+        "remaining": 1
+      },
+      {
+        "name": "P.J. Washington",
+        "team": "hipopotamos",
+        "gp": 1,
+        "minutes": 31.0,
+        "stats": {
+          "fgm": 4,
+          "fga": 9,
+          "ftm": 0,
+          "fta": 2,
+          "tpm": 2,
+          "reb": 4,
+          "ast": 2,
+          "stl": 0,
+          "blk": 1,
+          "to": 4,
+          "pts": 10
+        },
+        "games": [
+          "401909840"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Luka Dončić",
+        "team": "pelafustanes",
+        "gp": 1,
+        "minutes": 30.0,
+        "stats": {
+          "fgm": 7,
+          "fga": 18,
+          "ftm": 9,
+          "fta": 9,
+          "tpm": 5,
+          "reb": 8,
+          "ast": 7,
+          "stl": 3,
+          "blk": 0,
+          "to": 6,
+          "pts": 28
+        },
+        "games": [
+          "401909092"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Donovan Mitchell",
+        "team": "pelafustanes",
+        "gp": 1,
+        "minutes": 35.0,
+        "stats": {
+          "fgm": 11,
+          "fga": 19,
+          "ftm": 8,
+          "fta": 11,
+          "tpm": 2,
+          "reb": 10,
+          "ast": 3,
+          "stl": 2,
+          "blk": 1,
+          "to": 5,
+          "pts": 32
+        },
+        "games": [
+          "401909093"
+        ],
+        "remaining": 1
+      },
+      {
+        "name": "Brandon Miller",
+        "team": "pelafustanes",
+        "gp": 1,
+        "minutes": 36.0,
+        "stats": {
+          "fgm": 7,
+          "fga": 21,
+          "ftm": 1,
+          "fta": 2,
+          "tpm": 3,
+          "reb": 3,
+          "ast": 1,
+          "stl": 0,
+          "blk": 1,
+          "to": 3,
+          "pts": 18
+        },
+        "games": [
+          "401909836"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Giannis Antetokounmpo",
+        "team": "pelafustanes",
+        "gp": 1,
+        "minutes": 30.0,
+        "stats": {
+          "fgm": 13,
+          "fga": 19,
+          "ftm": 9,
+          "fta": 14,
+          "tpm": 0,
+          "reb": 6,
+          "ast": 1,
+          "stl": 1,
+          "blk": 0,
+          "to": 3,
+          "pts": 35
+        },
+        "games": [
+          "401909091"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Alperen Sengun",
+        "team": "pelafustanes",
+        "gp": 1,
+        "minutes": 30.0,
+        "stats": {
+          "fgm": 9,
+          "fga": 15,
+          "ftm": 3,
+          "fta": 4,
+          "tpm": 2,
+          "reb": 10,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "to": 4,
+          "pts": 23
+        },
+        "games": [
+          "401909840"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Payton Pritchard",
+        "team": "pelafustanes",
+        "gp": 1,
+        "minutes": 28.0,
+        "stats": {
+          "fgm": 4,
+          "fga": 9,
+          "ftm": 7,
+          "fta": 8,
+          "tpm": 2,
+          "reb": 4,
+          "ast": 1,
+          "stl": 0,
+          "blk": 0,
+          "to": 0,
+          "pts": 17
+        },
+        "games": [
+          "401909088"
+        ],
+        "remaining": 1
+      },
+      {
+        "name": "OG Anunoby",
+        "team": "pelafustanes",
+        "gp": 1,
+        "minutes": 32.0,
+        "stats": {
+          "fgm": 3,
+          "fga": 12,
+          "ftm": 3,
+          "fta": 3,
+          "tpm": 1,
+          "reb": 5,
+          "ast": 0,
+          "stl": 1,
+          "blk": 1,
+          "to": 2,
+          "pts": 10
+        },
+        "games": [
+          "401909089"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Alex Sarr",
+        "team": "pelafustanes",
+        "gp": 1,
+        "minutes": 24.0,
+        "stats": {
+          "fgm": 3,
+          "fga": 9,
+          "ftm": 0,
+          "fta": 0,
+          "tpm": 0,
+          "reb": 9,
+          "ast": 2,
+          "stl": 0,
+          "blk": 0,
+          "to": 0,
+          "pts": 6
+        },
+        "games": [
+          "401909835"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Matas Buzelis",
+        "team": "pelafustanes",
+        "gp": 1,
+        "minutes": 25.0,
+        "stats": {
+          "fgm": 2,
+          "fga": 8,
+          "ftm": 13,
+          "fta": 16,
+          "tpm": 0,
+          "reb": 6,
+          "ast": 0,
+          "stl": 0,
+          "blk": 2,
+          "to": 3,
+          "pts": 17
+        },
+        "games": [
+          "401909837"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Bobby Portis",
+        "team": "pelafustanes",
+        "gp": 1,
+        "minutes": 25.0,
+        "stats": {
+          "fgm": 3,
+          "fga": 5,
+          "ftm": 0,
+          "fta": 0,
+          "tpm": 1,
+          "reb": 4,
+          "ast": 1,
+          "stl": 1,
+          "blk": 1,
+          "to": 2,
+          "pts": 7
+        },
+        "games": [
+          "401909091"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Malik Monk",
+        "team": "pelafustanes",
+        "gp": null,
+        "minutes": null,
+        "stats": null,
+        "games": [],
+        "remaining": null
+      },
+      {
+        "name": "Royce O'Neale",
+        "team": "pelafustanes",
+        "gp": 1,
+        "minutes": 17.0,
+        "stats": {
+          "fgm": 3,
+          "fga": 6,
+          "ftm": 0,
+          "fta": 0,
+          "tpm": 2,
+          "reb": 4,
+          "ast": 0,
+          "stl": 1,
+          "blk": 1,
+          "to": 1,
+          "pts": 8
+        },
+        "games": [
+          "401909836"
+        ],
+        "remaining": 2
+      },
+      {
+        "name": "Klay Thompson",
+        "team": "pelafustanes",
+        "gp": 1,
+        "minutes": 16.0,
+        "stats": {
+          "fgm": 3,
+          "fga": 6,
+          "ftm": 1,
+          "fta": 1,
+          "tpm": 3,
+          "reb": 1,
+          "ast": 0,
+          "stl": 0,
+          "blk": 0,
+          "to": 2,
+          "pts": 10
+        },
+        "games": [
+          "401909091"
+        ],
+        "remaining": 2
+      }
+    ],
+    "games": [
+      {
+        "id": "401909088",
+        "date": "2026-10-20T19:00Z",
+        "name": "Boston Celtics at Detroit Pistons",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909088",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909088"
+      },
+      {
+        "id": "401909089",
+        "date": "2026-10-20T23:00Z",
+        "name": "Philadelphia 76ers at New York Knicks",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909089",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909089"
+      },
+      {
+        "id": "401909090",
+        "date": "2026-10-21T01:50Z",
+        "name": "Oklahoma City Thunder at San Antonio Spurs",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909090",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909090"
+      },
+      {
+        "id": "401909834",
+        "date": "2026-10-21T23:00Z",
+        "name": "Atlanta Hawks at Orlando Magic",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909834",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909834"
+      },
+      {
+        "id": "401909835",
+        "date": "2026-10-21T23:00Z",
+        "name": "Milwaukee Bucks at Washington Wizards",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909835",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909835"
+      },
+      {
+        "id": "401909091",
+        "date": "2026-10-21T23:30Z",
+        "name": "Minnesota Timberwolves at Miami Heat",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909091",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909091"
+      },
+      {
+        "id": "401909836",
+        "date": "2026-10-21T23:30Z",
+        "name": "Charlotte Hornets at Brooklyn Nets",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909836",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909836"
+      },
+      {
+        "id": "401909837",
+        "date": "2026-10-21T23:30Z",
+        "name": "Chicago Bulls at Toronto Raptors",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909837",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909837"
+      },
+      {
+        "id": "401909838",
+        "date": "2026-10-22T00:00Z",
+        "name": "Utah Jazz at Memphis Grizzlies",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909838",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909838"
+      },
+      {
+        "id": "401909839",
+        "date": "2026-10-22T00:00Z",
+        "name": "Indiana Pacers at New Orleans Pelicans",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909839",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909839"
+      },
+      {
+        "id": "401909840",
+        "date": "2026-10-22T00:30Z",
+        "name": "Dallas Mavericks at Houston Rockets",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909840",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909840"
+      },
+      {
+        "id": "401909092",
+        "date": "2026-10-22T02:00Z",
+        "name": "Golden State Warriors at Los Angeles Lakers",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909092",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909092"
+      },
+      {
+        "id": "401909841",
+        "date": "2026-10-22T02:00Z",
+        "name": "Phoenix Suns at Portland Trail Blazers",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909841",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909841"
+      },
+      {
+        "id": "401909842",
+        "date": "2026-10-22T02:30Z",
+        "name": "Sacramento Kings at LA Clippers",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909842",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909842"
+      },
+      {
+        "id": "401909093",
+        "date": "2026-10-22T23:00Z",
+        "name": "Cleveland Cavaliers at Philadelphia 76ers",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909093",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909093"
+      },
+      {
+        "id": "401909094",
+        "date": "2026-10-23T01:30Z",
+        "name": "Denver Nuggets at Oklahoma City Thunder",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909094",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909094"
+      }
+    ],
+    "upcoming": [
+      {
+        "id": "401909848",
+        "date": "2026-10-23T20:00Z",
+        "game": "Chicago Bulls at Milwaukee Bucks",
+        "teams": [
+          "15",
+          "4"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909848"
+      },
+      {
+        "id": "401909095",
+        "date": "2026-10-23T23:00Z",
+        "game": "New York Knicks at Boston Celtics",
+        "teams": [
+          "2",
+          "18"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909095"
+      },
+      {
+        "id": "401909843",
+        "date": "2026-10-23T23:00Z",
+        "game": "Atlanta Hawks at Charlotte Hornets",
+        "teams": [
+          "30",
+          "1"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909843"
+      },
+      {
+        "id": "401909844",
+        "date": "2026-10-23T23:00Z",
+        "game": "Dallas Mavericks at Indiana Pacers",
+        "teams": [
+          "11",
+          "6"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909844"
+      },
+      {
+        "id": "401909845",
+        "date": "2026-10-23T23:00Z",
+        "game": "Minnesota Timberwolves at Orlando Magic",
+        "teams": [
+          "19",
+          "16"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909845"
+      },
+      {
+        "id": "401909846",
+        "date": "2026-10-23T23:00Z",
+        "game": "Toronto Raptors at Washington Wizards",
+        "teams": [
+          "27",
+          "28"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909846"
+      },
+      {
+        "id": "401909847",
+        "date": "2026-10-24T00:00Z",
+        "game": "Detroit Pistons at Miami Heat",
+        "teams": [
+          "14",
+          "8"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909847"
+      },
+      {
+        "id": "401909096",
+        "date": "2026-10-24T01:30Z",
+        "game": "Houston Rockets at San Antonio Spurs",
+        "teams": [
+          "24",
+          "10"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909096"
+      },
+      {
+        "id": "401909849",
+        "date": "2026-10-24T01:30Z",
+        "game": "New Orleans Pelicans at Utah Jazz",
+        "teams": [
+          "26",
+          "3"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909849"
+      },
+      {
+        "id": "401909850",
+        "date": "2026-10-24T02:00Z",
+        "game": "Memphis Grizzlies at Golden State Warriors",
+        "teams": [
+          "9",
+          "29"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909850"
+      },
+      {
+        "id": "401909851",
+        "date": "2026-10-24T02:00Z",
+        "game": "LA Clippers at Los Angeles Lakers",
+        "teams": [
+          "13",
+          "12"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909851"
+      },
+      {
+        "id": "401909852",
+        "date": "2026-10-24T02:00Z",
+        "game": "Portland Trail Blazers at Sacramento Kings",
+        "teams": [
+          "23",
+          "22"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909852"
+      },
+      {
+        "id": "401909853",
+        "date": "2026-10-24T22:00Z",
+        "game": "Miami Heat at Charlotte Hornets",
+        "teams": [
+          "30",
+          "14"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909853"
+      },
+      {
+        "id": "401909854",
+        "date": "2026-10-24T23:30Z",
+        "game": "Brooklyn Nets at Cleveland Cavaliers",
+        "teams": [
+          "5",
+          "17"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909854"
+      },
+      {
+        "id": "401909855",
+        "date": "2026-10-24T23:30Z",
+        "game": "Milwaukee Bucks at Philadelphia 76ers",
+        "teams": [
+          "20",
+          "15"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909855"
+      },
+      {
+        "id": "401909857",
+        "date": "2026-10-25T00:00Z",
+        "game": "Washington Wizards at Chicago Bulls",
+        "teams": [
+          "4",
+          "27"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909857"
+      },
+      {
+        "id": "401909858",
+        "date": "2026-10-25T00:00Z",
+        "game": "San Antonio Spurs at Dallas Mavericks",
+        "teams": [
+          "6",
+          "24"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909858"
+      },
+      {
+        "id": "401909856",
+        "date": "2026-10-25T00:30Z",
+        "game": "Houston Rockets at Atlanta Hawks",
+        "teams": [
+          "1",
+          "10"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909856"
+      },
+      {
+        "id": "401909859",
+        "date": "2026-10-25T01:00Z",
+        "game": "New Orleans Pelicans at Denver Nuggets",
+        "teams": [
+          "7",
+          "3"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909859"
+      },
+      {
+        "id": "401909860",
+        "date": "2026-10-25T02:00Z",
+        "game": "Golden State Warriors at Phoenix Suns",
+        "teams": [
+          "21",
+          "9"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909860"
+      },
+      {
+        "id": "401909861",
+        "date": "2026-10-25T21:00Z",
+        "game": "Los Angeles Lakers at Utah Jazz",
+        "teams": [
+          "26",
+          "13"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909861"
+      },
+      {
+        "id": "401909862",
+        "date": "2026-10-25T22:00Z",
+        "game": "Indiana Pacers at Brooklyn Nets",
+        "teams": [
+          "17",
+          "11"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909862"
+      },
+      {
+        "id": "401909863",
+        "date": "2026-10-25T23:00Z",
+        "game": "Orlando Magic at New York Knicks",
+        "teams": [
+          "18",
+          "19"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909863"
+      },
+      {
+        "id": "401909864",
+        "date": "2026-10-25T23:00Z",
+        "game": "Toronto Raptors at Minnesota Timberwolves",
+        "teams": [
+          "16",
+          "28"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909864"
+      },
+      {
+        "id": "401909865",
+        "date": "2026-10-25T23:00Z",
+        "game": "LA Clippers at Oklahoma City Thunder",
+        "teams": [
+          "25",
+          "12"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909865"
+      },
+      {
+        "id": "401909866",
+        "date": "2026-10-25T23:30Z",
+        "game": "Detroit Pistons at Philadelphia 76ers",
+        "teams": [
+          "20",
+          "8"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909866"
+      },
+      {
+        "id": "401909867",
+        "date": "2026-10-26T01:00Z",
+        "game": "Memphis Grizzlies at Sacramento Kings",
+        "teams": [
+          "23",
+          "29"
+        ],
+        "url": "https://www.espn.com/nba/game/_/gameId/401909867"
+      }
+    ]
+  }
+],
 
 /* Categorías del formato H2H ------------------------------------------ */
 categories: [
@@ -69,8 +1630,78 @@ teams: [
 schedule: [
   { week: 1, label: 'Semana 1', start: '2026-10-20', end: '2026-10-25', featured: 'w1-m1',
     matchups: [
-      { id: 'w1-m1', teams: ['hipopotamos', 'pelafustanes'], status: 'scheduled', stats: null },
-      { id: 'w1-m2', teams: ['pilsens', 'shockers'],         status: 'scheduled', stats: null }
+      {
+  "id": "w1-m1",
+  "teams": [
+    "hipopotamos",
+    "pelafustanes"
+  ],
+  "status": "partial",
+  "updatedAt": "2026-10-23T10:21:00-03:00",
+  "updatedAtApproximate": true,
+  "source": "Captura de ESPN Fantasy aportada por el participante.",
+  "sourceImage": "./assets/cortes/semana-1-2026-10-23.png",
+  "stats": {
+    "hipopotamos": {
+      "fgp": 0.4085,
+      "ftp": 0.6857,
+      "tpm": 21,
+      "reb": 80,
+      "ast": 59,
+      "stl": 17,
+      "blk": 8,
+      "to": 33,
+      "pts": 179
+    },
+    "pelafustanes": {
+      "fgp": 0.4626,
+      "ftp": 0.7941,
+      "tpm": 21,
+      "reb": 70,
+      "ast": 21,
+      "stl": 9,
+      "blk": 7,
+      "to": 31,
+      "pts": 211
+    }
+  }
+},
+      {
+  "id": "w1-m2",
+  "teams": [
+    "pilsens",
+    "shockers"
+  ],
+  "status": "partial",
+  "updatedAt": "2026-10-23T10:21:00-03:00",
+  "updatedAtApproximate": true,
+  "source": "Captura de ESPN Fantasy aportada por el participante.",
+  "sourceImage": "./assets/cortes/semana-1-2026-10-23.png",
+  "stats": {
+    "pilsens": {
+      "fgp": 0.4412,
+      "ftp": 0.7586,
+      "tpm": 21,
+      "reb": 87,
+      "ast": 45,
+      "stl": 17,
+      "blk": 4,
+      "to": 37,
+      "pts": 245
+    },
+    "shockers": {
+      "fgp": 0.4074,
+      "ftp": 0.7209,
+      "tpm": 14,
+      "reb": 69,
+      "ast": 44,
+      "stl": 16,
+      "blk": 10,
+      "to": 22,
+      "pts": 177
+    }
+  }
+}
     ] }
 ],
 
@@ -123,6 +1754,109 @@ draft: {
 
 /* Publicaciones ------------------------------------------------------------- */
 posts: [
+{
+  "id": "parciales-semana-1-23-octubre",
+  "date": "2026-10-23",
+  "category": "Crónicas",
+  "partial": true,
+  "title": "Pilsens toma ventaja; Hipopotamos y Mequetrefes empatan.",
+  "excerpt": "Edwards marca la diferencia, Wembanyama sostiene la defensa y Shockers busca una reacción. El 7–2 de Cromwell y el 4–4 con una categoría empatada son parciales: el cierre del domingo sigue abierto.",
+  "teams": [
+    "pilsens",
+    "shockers",
+    "hipopotamos",
+    "pelafustanes"
+  ],
+  "reportId": "semana-1-corte-2026-10-23",
+  "source": "Marcadores: captura de ESPN Fantasy aportada el 23 de octubre de 2026, con corte horario aproximado informado por el participante. Actuaciones individuales: actas públicas de ESPN del inicio de la temporada regular 2026-27; partidos de las jornadas NBA del 20 al 22 de octubre. Las tablas distinguen partidos jugados de los que no tienen acta localizada. Proyecciones y posibles ajustes de plantilla son opinión editorial; no hay trades confirmados.",
+  "body": [
+    [
+      "p",
+      "El primer corte de Papafritas League deja dos escenarios: Cromwell Pilsens manda 7–2 ante Penalolen Shockers, mientras Los Hipopotamos Chuchetumare y Mequetrefes igualan 4–4, con los triples empatados. Los porcentajes, las pérdidas y varias ventajas mínimas explican tanto como los puntos. Quedan partidos hasta el domingo 25; todavía no corresponde repartir victorias."
+    ],
+    [
+      "team-heading",
+      "pilsens"
+    ],
+    [
+      "p",
+      "Anthony Edwards fue la actuación decisiva: 45 puntos, diez rebotes y nueve triples ante Miami. Paolo Banchero acompañó con 35 puntos, diez asistencias y 10/12 de campo. Jaylen Brown acumuló 40 puntos en dos partidos. Cromwell ganó volumen ofensivo sin necesitar una gran noche de Nikola Jokić, que abrió con 13 puntos y 5/19 de campo frente a Oklahoma City."
+    ],
+    [
+      "p",
+      "La sorpresa útil fue Jaylen Wells: cuatro robos y ninguna pérdida. Importa en un cruce donde Pilsens apenas aventaja 17–16 en robos. El foco de revisión es Caleb Wilson: sus nueve pérdidas y 7/21 de campo penalizaron dos categorías, aunque jugó 32 minutos. Si ese costo se repite, será una pieza a evaluar para un intercambio o reemplazo compatible con los tiers. Un partido todavía es una muestra pequeña."
+    ],
+    [
+      "player-report",
+      "pilsens"
+    ],
+    [
+      "team-heading",
+      "shockers"
+    ],
+    [
+      "p",
+      "Shai Gilgeous-Alexander sumó 49 puntos, seis triples y solo dos pérdidas en dos encuentros; su segundo partido, de 6/19 de campo, enfrió el arranque. Jayson Tatum aportó once asistencias, pero convirtió 6/23 y falló sus siete triples. Karl-Anthony Towns respondió con 19 puntos y doce rebotes; su 4/7 en libres también merece atención con FT% en desventaja."
+    ],
+    [
+      "p",
+      "Dyson Daniels dio una respuesta valiosa: 20 puntos, cinco robos y 8/13 de campo. Cameron Boozer entregó once rebotes y cinco asistencias, aunque su 2/15 de tiro pesó mucho. La primera revisión por minutos corresponde a Tari Eason, con apenas tres. Daniel Gafford anotó dos puntos, pero añadió dos tapones: juzgarlo solo por la anotación ignoraría una de las categorías que Shockers sí gana."
+    ],
+    [
+      "player-report",
+      "shockers"
+    ],
+    [
+      "team-heading",
+      "hipopotamos"
+    ],
+    [
+      "p",
+      "Victor Wembanyama dejó una línea de fuertes contrastes: 1/13 de campo, pero trece rebotes y seis tapones. Esa defensa resulta esencial en un margen de apenas 8–7 en BLK. Cade Cunningham sostuvo la creación con 22 puntos y ocho asistencias. Naz Reid destacó con 20 puntos, once rebotes, siete asistencias y cuatro triples; Toumani Camara agregó otros cuatro triples."
+    ],
+    [
+      "p",
+      "Josh Giddey quedó en deuda con dos puntos, 1/10 de campo y cinco pérdidas, compensadas parcialmente por siete rebotes y seis asistencias. Bennett Stirtz es el cupo que exige una revisión más inmediata: tres minutos y cero puntos entre dos partidos. Si esa participación persiste, una alternativa de mayor uso puede tener sentido dentro de las tres adquisiciones semanales. La decisión debería responder al rol y a las categorías que faltan."
+    ],
+    [
+      "player-report",
+      "hipopotamos"
+    ],
+    [
+      "team-heading",
+      "pelafustanes"
+    ],
+    [
+      "p",
+      "Mequetrefes recibió producción de sus figuras: Giannis Antetokounmpo anotó 35 puntos con 13/19 de campo; Donovan Mitchell, 32 con diez rebotes; Luka Dončić, 28 con cinco triples, ocho rebotes y siete asistencias. Luka acertó sus nueve libres, aunque registró seis pérdidas. La tensión entre volumen y control del balón sigue presente en un plantel que gana TO por solo dos."
+    ],
+    [
+      "p",
+      "Payton Pritchard aportó 17 puntos sin pérdidas y Klay Thompson convirtió tres triples en 16 minutos: producción especialmente útil con 3PM igualado. OG Anunoby necesita mejorar su 3/12 de campo, pero sus 32 minutos no justifican concluir que perdió protagonismo. Thompson sería una pieza negociable si Carlos busca más creación; moverlo solo por sus diez puntos ignoraría la categoría que hoy ayuda a disputar."
+    ],
+    [
+      "player-report",
+      "pelafustanes"
+    ],
+    [
+      "h2",
+      "Dónde puede cambiar el fin de semana"
+    ],
+    [
+      "p",
+      "Hipopotamos tiene ventaja de 38 asistencias, diez rebotes y ocho robos. Mequetrefes responde con 32 puntos más y mejores porcentajes. Los frentes inmediatos son los triples, empatados 21–21; los tapones, 8–7; y las pérdidas, 33–31, favorables a Carlos. Según el calendario consultado, Wembanyama, Cunningham, Giddey, Dončić y Giannis tienen dos encuentros programados antes del cierre. Una sola actuación puede cambiar varias categorías, siempre sujeta a disponibilidad y alineación."
+    ],
+    [
+      "p",
+      "Shockers debe atacar las ventajas de apenas una asistencia y un robo de Cromwell. Revertir ambas llevaría el parcial a 4–5: todavía necesitaría una tercera categoría para adelantarse, además de conservar tapones y pérdidas. Pilsens dispone de colchón en puntos y rebotes, pero no tiene asegurado el cruce. Edwards y Banchero tienen dos partidos programados; Jokić y Shai, uno cada uno. Ese reparto orienta la estrategia, no garantiza producción."
+    ],
+    [
+      "p",
+      "Los nombres bajo revisión son una lectura editorial de minutos, eficiencia y encaje. No hay información de conversaciones de trade. Antes de mover una pieza deben comprobarse el cupo de tier, la restricción por franquicia NBA y las reglas aplicables. A estas alturas, vender una estrella por una mala noche puede terminar reforzando al rival."
+    ]
+  ],
+  "readingMinutes": 3
+},
   { id: 'analisis-draft-2026', date: '2026-10-21', category: 'Previas',
     title: 'El draft está cerrado. Ahora empieza la estrategia.',
     excerpt: 'Cuatro proyectos, trece rondas y un mercado condicionado por los tiers. Las selecciones de Edwards y Knueppel explican por qué administrar los cupos también fue parte del juego.',
