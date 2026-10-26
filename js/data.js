@@ -3853,6 +3853,91 @@ draft: {
 /* Publicaciones ------------------------------------------------------------- */
 posts: [
 {
+  "id": "previa-clasicos-santa-maria-familiar",
+  "date": "2026-10-26",
+  "category": "Previas",
+  "readingMinutes": 3,
+  "title": "Semana de clásicos: Santa María mide fuerzas y la familia disputa el liderato",
+  "excerpt": "Cromwell y Mequetrefes se encuentran en el clásico Santa María; Hipopotamos y Shockers protagonizan el clásico familiar. Dos duelos con estrellas, necesidades distintas y categorías que prometen una pelea estrecha.",
+  "teams": [
+    "pilsens",
+    "pelafustanes",
+    "hipopotamos",
+    "shockers"
+  ],
+  "reportId": "semana-1-final-2026-10-25",
+  "rulesLink": true,
+  "source": "Previa editorial al 26 de octubre de 2026. Emparejamientos y nombres de los clásicos confirmados por el participante. Las estadísticas pertenecen exclusivamente al cierre de la primera semana; no son resultados ni proyecciones numéricas de la próxima fecha. No se han comunicado fechas exactas ni alineaciones confirmadas para estos cruces.",
+  "sources": [
+    {
+      "title": "NBA · Situación de Banchero",
+      "url": "https://www.nba.com/news/paolo-banchero-ankle-sprain"
+    },
+    {
+      "title": "Associated Press / ABC7 · Suggs salió lesionado ante Nueva York",
+      "url": "https://abc7ny.com/post/wagner-magic-use-big-fourth-quarter-drop-knicks-0-3-111-102-victory/19979581/"
+    }
+  ],
+  "body": [
+    [
+      "p",
+      "La próxima fecha de Papafritas League tendrá algo más que categorías en disputa. El clásico Santa María enfrentará a Cromwell Pilsens con Mequetrefes, mientras el clásico familiar reunirá a Los Hipopotamos Chuchetumare y Penalolen Shockers. Los números del debut ayudan a identificar fortalezas y urgencias; cada cruce tendrá su propia historia."
+    ],
+    [
+      "h2",
+      "Clásico Santa María: el ataque de Cromwell y la respuesta de Mequetrefes"
+    ],
+    [
+      "p",
+      "Cromwell llega segundo, con récord de 5–4–0, después de sobrevivir a la reacción de Shockers. Mequetrefes abre desde el cuarto lugar, con 2–7–0, pero con una ofensiva capaz de cambiar el panorama. El duelo reúne al equipo más anotador del estreno, con 642 puntos, y al conjunto de Luka Dončić, autor de 103 puntos y 15 triples en el cómputo fantasy. La clasificación marca una diferencia inicial; el talento disponible permite esperar competencia."
+    ],
+    [
+      "p",
+      "Anthony Edwards y Jaylen Brown aportaron 169 puntos entre ambos al triunfo de Cromwell. Jalen Johnson añadió un factor menos vistoso y muy importante: 30 asistencias y 30 rebotes. Con Banchero fuera, sostener la creación y la eficiencia exigirá más de ese núcleo. Nikola Jokić, que abrió con 17/42 de campo en dos partidos, tiene margen para elevar el rendimiento. La continuidad de Jaylen Wells y el aporte de Dylan Harper pueden evitar que toda la carga recaiga sobre las figuras."
+    ],
+    [
+      "sources",
+      [
+        0
+      ]
+    ],
+    [
+      "p",
+      "Mequetrefes tiene una vía para incomodar: Dončić y Donovan Mitchell desde el perímetro, Giannis Antetokounmpo y Alperen Sengun por dentro. En el debut terminó con más triples que Cromwell, 58 frente a 54, y mejor porcentaje de libres, 81,18% frente a 74,84%. Son antecedentes favorables para disputar esas categorías, siempre sujetos al volumen y los partidos que cuenten esta vez."
+    ],
+    [
+      "p",
+      "La gran tarea de Carlos Sanchez será controlar las pérdidas y mejorar la selección de tiro. Sus 89 pérdidas y el 19/64 de Brandon Miller limitaron un ataque productivo. Cromwell tampoco tiene una categoría de seguridad en el cuidado del balón: la ganó por apenas dos pérdidas. Si Mequetrefes consigue mejores posesiones sin sacrificar triples, el clásico puede resolverse en eficiencia, asistencias y detalles de rotación. Los apellidos impresionan; las pérdidas también suman, aunque nadie las presuma."
+    ],
+    [
+      "h2",
+      "Clásico familiar: la defensa de Hipopotamos contra la profundidad de Shockers"
+    ],
+    [
+      "p",
+      "Hipopotamos entra como líder, con 7–2–0. Shockers llega tercero, con 4–5–0, y el antecedente de haber reducido una desventaja importante. El cruce entre Cristóbal y Patricio Uribe encuentra dos identidades claras: Wembanyama y Cunningham sostienen una estructura fuerte en tapones y creación; Gilgeous-Alexander, Towns y Daniels ofrecen anotación, rebote y presión defensiva desde funciones diferentes."
+    ],
+    [
+      "p",
+      "El enfrentamiento interior promete ser central. Wembanyama sumó 12 tapones y 33 rebotes; Towns respondió en su propio cruce con 36 rebotes y 23/37 de campo. Jaren Jackson Jr. y Daniel Gafford dan a Shockers recursos para discutir los bloqueos, mientras Naz Reid añade a Hipopotamos una amenaza exterior desde la rotación interior. Sus 12 triples, junto con los nueve de Toumani Camara, ayudaron a construir los 59 del equipo. Shockers cerró con 34: el tiro exterior aparece como una prueba importante para Patricio."
+    ],
+    [
+      "p",
+      "En el perímetro habrá otra disputa: Cade Cunningham y Josh Giddey reunieron 49 asistencias para Hipopotamos, pero Dyson Daniels produjo 13 robos para Shockers. La capacidad de crear sin entregar posesiones será clave. También habrá que seguir a Jalen Suggs, que salió ante Nueva York por una lesión de rodilla; esta previa no dispone de un plazo de regreso confirmado. Su situación condiciona una rotación a la que aportó 17 asistencias y seis robos durante la primera semana."
+    ],
+    [
+      "sources",
+      [
+        1
+      ]
+    ],
+    [
+      "p",
+      "Shockers tiene argumentos para presionar en rebotes, robos y libres; Hipopotamos buscará sostener su tiro exterior, creación y protección del aro. La recuperación de Scottie Barnes y Cameron Boozer en el acierto, y la capacidad de Wembanyama de mejorar su 19/52, pueden inclinar porcentajes muy disputados. El líder tendrá que defender su posición frente a un rival con recursos para obligarlo a ganar cada categoría con trabajo."
+    ]
+  ]
+},
+{
   "date": "2026-10-26",
   "teams": [
     "hipopotamos",

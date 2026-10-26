@@ -219,3 +219,17 @@ test('un empate de clasificación comparte posición sin usar el power ranking c
   a.data.rankings[0].entries.reverse();
   assert.equal(a.run('JSON.stringify(standings().map(r=>r.id))'),before);
 });
+
+test('la previa presenta los dos clásicos con estadísticas del cierre y sin adjudicar resultados futuros', () => {
+  const a=app(),p=a.data.posts.find(p=>p.id==='previa-clasicos-santa-maria-familiar');
+  assert.equal(p.category,'Previas');
+  const html=a.run("article(D.posts.find(p=>p.id==='previa-clasicos-santa-maria-familiar'))");
+  assert.match(html,/Clásico Santa María/);
+  assert.match(html,/Clásico familiar/);
+  assert.match(html,/Cromwell Pilsens con Mequetrefes/);
+  assert.match(html,/Los Hipopotamos Chuchetumare y Penalolen Shockers/);
+  assert.match(html,/Base estadística: cierre del 25 de octubre de 2026/);
+  assert.match(html,/no son resultados ni proyecciones numéricas de la próxima fecha/);
+  assert.doesNotMatch(html,/Haliburton|Michael Porter|\bMPJ\b|Trey Murphy/i);
+  assert.equal(a.data.schedule.length,1);
+});
