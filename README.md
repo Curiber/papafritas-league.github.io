@@ -55,3 +55,11 @@ El cierre del 25 de octubre añade el informe `semana-1-final-2026-10-25`, confi
 Las notas del cierre y del mercado usan el mismo informe. Los bloques `['sources',[0,1]]` enlazan elementos de `sources` junto al análisis correspondiente. La nota de mercado distingue candidatos, encaje y movimientos confirmados, comprueba cupos y franquicias, y excluye del análisis los tres jugadores indicados por el participante. Los informes y publicaciones del corte anterior se conservan.
 
 Comprobación de resultados parciales y definitivos: `node --test tests/partial-results.test.cjs`. No requiere instalar dependencias.
+
+## Portadas de noticias
+
+Las notas de cruces conservan los escudos de los equipos. Las noticias de mercado, draft y power ranking tienen ilustraciones propias en `assets/editorial/`, relacionadas con el tema concreto de cada artículo. Su campo `image` define `src`, `small`, dimensiones, texto alternativo y pie de imagen. La misma portada aparece en la tarjeta y al abrir el artículo; las tarjetas cargan las imágenes de forma diferida y el navegador elige entre dos tamaños WebP.
+
+Para una nueva noticia que no trate de un cruce, preparar una portada acorde con sus protagonistas o tema y añadir su campo `image`. No usar los escudos como imagen de mercado, draft, reglas o análisis generales. Las ilustraciones se identifican en su pie y no se presentan como fotografías de un hecho real.
+
+Los prompts completos están en `assets/editorial/prompts.json`. Las tres ilustraciones se crearon con la herramienta integrada de generación de imágenes; los WebP son versiones optimizadas de esos originales.

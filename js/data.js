@@ -4043,6 +4043,14 @@ posts: [
   "reportId": "semana-1-final-2026-10-25",
   "rulesLink": true,
   "id": "mercado-tras-semana-1-flagg-wagner",
+  "image": {
+    "src": "./assets/editorial/market-flagg-wagner.webp",
+    "small": "./assets/editorial/market-flagg-wagner-640.webp",
+    "width": 1280,
+    "height": 640,
+    "alt": "Ilustración de Cooper Flagg y Franz Wagner sobre un tablero de análisis de posibles refuerzos.",
+    "caption": "Flagg y Wagner, dos perfiles bajo observación. Ilustración editorial."
+  },
   "category": "Trades",
   "readingMinutes": 4,
   "title": "Flagg despierta interés; Wagner gana peso en un mercado con condiciones",
@@ -4355,7 +4363,16 @@ posts: [
   ],
   "readingMinutes": 3
 },
-  { id: 'analisis-draft-2026', date: '2026-10-21', category: 'Previas',
+  { id: 'analisis-draft-2026',
+    image: {
+      "src": "./assets/editorial/draft-strategy.webp",
+      "small": "./assets/editorial/draft-strategy-640.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Ilustración de una mesa de draft con fichas de jugadores, cuatro columnas de selección y una pizarra de básquet.",
+      "caption": "El draft también se decide al administrar los cupos. Ilustración editorial."
+    },
+    date: '2026-10-21', category: 'Previas',
     title: 'El draft está cerrado. Ahora empieza la estrategia.',
     excerpt: 'Cuatro proyectos, trece rondas y un mercado condicionado por los tiers. Las selecciones de Edwards y Knueppel explican por qué administrar los cupos también fue parte del juego.',
     teams: ['pilsens', 'hipopotamos', 'pelafustanes', 'shockers'], rulesLink: true,
@@ -4403,7 +4420,16 @@ posts: [
       ['p', 'FG% y FT% son porcentajes: importa el volumen de intentos detrás de cada acierto. 3PM, REB, AST, STL, BLK y PTS obligan a valorar contribuciones distintas. En TO gana quien registra menos pérdidas. Una alineación que agrega creación puede mejorar AST y, a la vez, complicar TO; un refuerzo interior puede modificar REB, BLK y los porcentajes. La lectura debe ser conjunta.'],
       ['p', 'Estas son proyecciones cualitativas basadas en los planteles entregados, no estadísticas de la temporada ni garantías de disponibilidad. Las reglas específicas de playoffs, desempates y waivers siguen pendientes de confirmación. La historia deportiva empieza ahora; los antecedentes entre amigos aportan contexto, no victorias.']
     ] },
-  { id: 'ranking-pretemporada', date: '2026-10-20', category: 'Power Ranking',
+  { id: 'ranking-pretemporada',
+    image: {
+      "src": "./assets/editorial/power-ranking.webp",
+      "small": "./assets/editorial/power-ranking-640.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Ilustración de cuatro figuras de básquet en plataformas ascendentes que representan el power ranking de pretemporada.",
+      "caption": "El equilibrio de los planteles bajo evaluación. Ilustración editorial."
+    },
+    date: '2026-10-20', category: 'Power Ranking',
     title: 'El equilibrio toma la primera posición.',
     excerpt: 'Shockers encabeza una evaluación provisional que mira las nueve categorías. El talento individual abre la discusión; la construcción del plantel la ordena.',
     teams: ['shockers', 'pilsens', 'hipopotamos', 'pelafustanes'], rankingId: 'pretemporada-2026',

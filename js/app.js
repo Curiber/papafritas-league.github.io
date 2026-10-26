@@ -128,11 +128,20 @@ function standingsTable(compact = false) {
     return `<tr><td class="pos">${played() ? standingPosition(r.id) : '—'}</td><td><a class="teamcell" href="#equipo/${t.id}">${crest(t, 36)}<span><strong>${esc(t.name)}</strong><small>${esc(t.owner)}</small></span></a></td><td class="c n">${r.w + r.l + r.t}</td><td class="c n">${r.cw}</td><td class="c n">${r.cl}</td><td class="c n">${r.ct}</td><td class="c"><div style="display:flex;align-items:center;gap:10px;justify-content:center"><span class="n" style="font-size:15px">${r.cw}-${r.cl}-${r.ct}</span><span class="bar" style="--team:${esc(t.colors[0])}"><i style="width:${Math.round(100 * r.cw / max)}%"></i></span></div></td>${compact ? '' : `<td class="streak">${r.form.length ? r.form.map(f => `<span style="color:${f === 'W' ? 'var(--win)' : f === 'L' ? 'var(--loss)' : 'var(--tie)'}">${f === 'W' ? 'G' : f === 'L' ? 'P' : 'E'}</span>`).join(' ') : '<span class="note">—</span>'}</td>`}</tr>`;
   }).join('')}</tbody></table></div>`;
 }
+function postImage(p, placement) {
+  if (!p.image) return '';
+  const image = p.image, card = placement === 'card';
+  return `<img class="post-image" src="${esc(image.src)}" srcset="${esc(image.small)} 640w, ${esc(image.src)} ${image.width}w" sizes="${card ? '(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 400px' : '(max-width: 800px) 100vw, 760px'}" width="${image.width}" height="${image.height}" alt="${card ? '' : esc(image.alt)}" loading="${card ? 'lazy' : 'eager'}" decoding="async"${card ? '' : ' fetchpriority="high"'}>`;
+}
+function articleCover(p) {
+  if (!p.image) return '';
+  return `<figure class="article-cover">${postImage(p, 'article')}<figcaption>${esc(p.image.caption)}</figcaption></figure>`;
+}
 function news(p) {
   const [a, b] = p.teams.slice(0, 2).map(team);
   const n = String(posts().length - posts().findIndex(x => x.id === p.id)).padStart(2, '0');
   return `<a class="news reveal" href="#nota/${esc(p.id)}" style="--ta:${esc(a?.colors[0] ?? '#ff5a1f')};--tb:${esc(b?.colors[0] ?? '#ff5a1f')}">
-    <div class="news-art"><span class="pill hot cat">${esc(postLabel(p))}</span>${a ? crest(a, 84) : ''}${b ? `<span class="slash">/</span>${crest(b, 84)}` : ''}<span class="big" aria-hidden="true">${n}</span></div>
+    <div class="news-art${p.image ? ' editorial' : ''}"><span class="pill hot cat">${esc(postLabel(p))}</span>${p.image ? postImage(p, 'card') : `${a ? crest(a, 84) : ''}${b ? `<span class="slash">/</span>${crest(b, 84)}` : ''}<span class="big" aria-hidden="true">${n}</span>`}</div>
     <div class="news-body"><h3>${esc(p.title)}</h3><p>${esc(p.excerpt)}</p><div class="meta">${fmtDate(p.date)} · Redacción Papafritas</div></div></a>`;
 }
 function moveBadge(e, i) {
@@ -239,7 +248,7 @@ function article(p) {
   const r = D.rankings.find(r => r.id === p.rankingId);
   const report = D.statisticsReports?.find(r => r.id === p.reportId);
   const reportMeta = !report ? '' : p.category === 'Previas' ? `<span class="snapshot-meta">Base estadística: cierre del ${esc(fmtDate(report.through))}</span>` : cutoffNote({...report,updatedAtApproximate:report.approximate});
-  return `<a class="back" href="#noticias">← Volver al archivo</a><article class="reading"><div class="page-head"><span class="eyebrow">${esc(postLabel(p))}</span><h1>${esc(p.title)}</h1><div class="meta"><time datetime="${p.date}">${fmtDate(p.date)}</time> · Redacción Papafritas${p.readingMinutes ? ` · ${p.readingMinutes} min de lectura` : ''}</div>${reportMeta}</div><p class="lead">${esc(p.excerpt)}</p>
+  return `<a class="back" href="#noticias">← Volver al archivo</a><article class="reading"><div class="page-head"><span class="eyebrow">${esc(postLabel(p))}</span><h1>${esc(p.title)}</h1><div class="meta"><time datetime="${p.date}">${fmtDate(p.date)}</time> · Redacción Papafritas${p.readingMinutes ? ` · ${p.readingMinutes} min de lectura` : ''}</div>${reportMeta}</div>${articleCover(p)}<p class="lead">${esc(p.excerpt)}</p>
     ${p.body.map(([tag, text]) => tag === 'sources' ? articleSources(p, text) : tag === 'player-report' ? playerReport(p.reportId, text) : tag === 'draft-order' ? draftOrder() : tag === 'team-heading' ? rankingHeading(team(text)) : `<${tag === 'h2' ? 'h2' : 'p'}>${esc(text)}</${tag === 'h2' ? 'h2' : 'p'}>`).join('')}
     ${r ? r.entries.map((e, i) => `${rankingHeading(team(e.team), i + 1)}<p>${esc(e.analysis)}</p>`).join('') : ''}
     ${reportSources(p)}<p class="source">${esc(p.source ?? 'Base documental: fichas de los cuatro equipos registradas el 20 de octubre de 2026 a partir de capturas proporcionadas por los participantes. Las valoraciones son opinión y proyección editorial: no incorporan estadísticas actuales ni presuponen disponibilidad.')}</p>

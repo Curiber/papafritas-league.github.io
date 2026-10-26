@@ -219,8 +219,12 @@ td.n{font-family:var(--display);font-weight:800;font-size:18px;font-variant-nume
 .news-art .crest{--s:84px;transition:transform .35s var(--ease)}
 .news:hover .news-art .crest{transform:scale(1.06)}
 .news-art .slash{font-family:var(--display);font-weight:900;font-style:italic;font-size:48px;color:rgba(255,255,255,.18)}
-.news-art .cat{position:absolute;left:14px;top:12px}
+.news-art .cat{position:absolute;left:14px;top:12px;z-index:2}
 .news-art .big{position:absolute;right:12px;bottom:-14px;font-family:var(--display);font-weight:900;font-size:96px;line-height:1;color:rgba(255,255,255,.05);letter-spacing:-.04em;pointer-events:none}
+.news-art.editorial{height:auto;aspect-ratio:16/9;flex-shrink:0;padding:0;background:var(--surface-2);isolation:isolate}
+.news-art.editorial:after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.32),transparent 55%)}
+.news-art .post-image{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .45s var(--ease)}
+.news:hover .post-image{transform:scale(1.035)}
 .news-body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
 .news h3{font-size:26px;line-height:.98}
 .news p{font-size:14px;line-height:1.6;color:var(--text-2);margin:0}
@@ -280,6 +284,9 @@ footer .tagline{color:var(--text-2)}
 .reading{max-width:760px;margin:0 auto 64px}
 .reading .page-head{padding-top:24px}
 .reading .page-head h1{font-size:clamp(42px,6vw,76px)}
+.article-cover{margin:0 0 28px}
+.article-cover .post-image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface-2)}
+.article-cover figcaption{margin-top:9px;font-size:12px;line-height:1.6;color:var(--muted)}
 .reading .lead{font-size:21px;line-height:1.5;color:var(--text-2);border-left:3px solid var(--orange);padding-left:18px;margin:8px 0 28px}
 .reading p,.reading li{font-size:17px;line-height:1.8;color:var(--text-2)}
 .reading h2{font-size:32px;margin-top:40px;margin-bottom:10px;color:var(--text)}
@@ -469,7 +476,7 @@ html{-webkit-tap-highlight-color:transparent}
 @media (hover:none){
   /* En iOS el :hover queda "pegado" tras un toque: se anulan los desplazamientos */
   .match:hover,.news:hover,.team-card:hover,.btn:hover{transform:none;box-shadow:none}
-  .feature:hover .side .crest,.news:hover .news-art .crest{transform:none}
+  .feature:hover .side .crest,.news:hover .news-art .crest,.news:hover .post-image{transform:none}
   .link:hover:after{transform:none}
   /* Respuesta inmediata al tocar */
   .match:active,.news:active,.team-card:active,.feature:active,.rank-row:active{transform:scale(.985);transition:transform .08s}
