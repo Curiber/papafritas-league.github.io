@@ -32,6 +32,8 @@ semanales de cada equipo y cambiar `status` a `'partial'` durante el enfrentamie
 La web calcula sola el ganador de cada categoría (en TO gana el menor), el marcador del
 cruce y el ticker. Solo los cruces `final` con las nueve categorías completas modifican la tabla y el récord; un parcial no suma victorias ni derrotas. Los porcentajes se guardan como fracción (0.4085 = 40,85%). Los datos faltantes, negativos o no numéricos no se interpretan como ceros ni adjudican categorías. Las posiciones quedan sin número mientras no haya resultados definitivos.
 
+El récord acumula categorías ganadas, perdidas y empatadas (H2H Each Category), conforme a las capturas definitivas de ESPN. PJ cuenta cruces semanales; G/P/E cuenta categorías. La forma y el balance de cruces se conservan por separado. La tabla se ordena por porcentaje de categorías: `(ganadas + empatadas / 2) / categorías disputadas`. Las posiciones iguales se comparten; el power ranking editorial nunca desempata la clasificación. El procedimiento oficial de desempate sigue pendiente de confirmar. Si la captura no incluye hora, usa `updatedDate:'2026-10-26'` en lugar de inventar una marca horaria.
+
 ## Agregar una semana
 
 Cada fecha dura 6 días (`end` = `start` + 5). Añadir un objeto a `schedule` con `week`, `label`, `start`, `end`, `featured` (id del cruce
@@ -47,5 +49,9 @@ Nueva edición: agregar un objeto al inicio de `rankings` y, en cada `entries[]`
 `statisticsReports` conserva cada corte histórico con fecha, temporada, actas, fuentes, partidos jugados y totales individuales. Al recibir otro corte, añade un informe nuevo y enlázalo desde una nueva nota con `reportId`; conserva los informes anteriores para que las crónicas archivadas no cambien. Los bloques `['player-report','pilsens']` muestran una tabla desplegable del equipo dentro de la nota. `partial:true` la identifica como crónica parcial y `readingMinutes` informa el tiempo de lectura.
 
 El corte del 23 de octubre de 2026 está respaldado por la captura en `assets/cortes/semana-1-2026-10-23.png` y por las actas públicas de ESPN. El horario es aproximado porque el participante indicó «hace tres minutos». Los 49 jugadores con acta localizada reproducen los totales de la captura; los otros tres mantienen `gp:null` y `stats:null`, sin atribuirles partidos, lesiones ni bajo rendimiento. Los posibles cambios de plantel de la crónica son opinión editorial: no modifican rosters ni registran trades.
+
+El cierre del 25 de octubre añade el informe `semana-1-final-2026-10-25`, confirmado el 26, con cuatro capturas en `assets/cortes/semana-1-final-*.png`. Sus 50 jugadores visibles reconstruyen las 36 cifras de los cuatro equipos. `nbaGp` y `nbaGames` identifican partidos NBA; `gp` y `games` identifican las actas cuya suma coincide con el cómputo fantasy de la captura. Portis, Klay Thompson y Gafford jugaron tres partidos NBA, pero sus totales fantasy coinciden con dos; no se presupone el motivo de esa diferencia. Los dos jugadores ausentes de las capturas conservan cifras nulas y sus plazas en el roster. El informe incluye además una `watchlist` con datos NBA de siete candidatos, sin alterar ningún plantel.
+
+Las notas del cierre y del mercado usan el mismo informe. Los bloques `['sources',[0,1]]` enlazan elementos de `sources` junto al análisis correspondiente. La nota de mercado distingue candidatos, encaje y movimientos confirmados, comprueba cupos y franquicias, y excluye del análisis los tres jugadores indicados por el participante. Los informes y publicaciones del corte anterior se conservan.
 
 Comprobación de resultados parciales y definitivos: `node --test tests/partial-results.test.cjs`. No requiere instalar dependencias.
