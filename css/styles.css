@@ -287,6 +287,21 @@ footer .tagline{color:var(--text-2)}
 .article-cover{margin:0 0 28px}
 .article-cover .post-image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface-2)}
 .article-cover figcaption{margin-top:9px;font-size:12px;line-height:1.6;color:var(--muted)}
+.waiver-highlight-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:12px;padding:0;margin:20px 0 32px;list-style:none}
+.waiver-highlight-grid li{min-width:0;padding:20px 16px;border:1px solid var(--line-2);border-top:3px solid var(--orange);border-radius:var(--radius);background:var(--surface)}
+.waiver-highlight-grid h3{font-size:28px;line-height:1.05;margin:12px 0 8px}
+.waiver-highlight-grid .eyebrow{font-size:10px;letter-spacing:.08em}
+.waiver-highlight-grid .waiver-team{display:block;font-size:12px;line-height:1.5;color:var(--muted)}
+.waiver-highlight-grid .waiver-bid{display:block;margin-top:14px;font-family:var(--display);font-size:38px;line-height:1;color:var(--orange)}
+.waiver-bid small{margin-left:8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.reading .waiver-highlight-grid p{font-size:13px;line-height:1.6;margin:12px 0 0}
+.waiver-table{min-width:620px}
+.waiver-table caption{padding:10px 0;text-align:left;font-size:12px;color:var(--muted)}
+.waiver-table tbody th{font:inherit;text-transform:none;letter-spacing:normal;color:var(--text);background:none}
+.waiver-table .waiver-featured{background:rgba(255,90,31,.06)}
+.waiver-table .waiver-featured th{color:var(--orange)}
+.waiver-tag{display:block;margin-top:4px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
+.waiver-table .waiver-price{text-align:right;font-family:var(--display);font-size:20px;font-weight:800;white-space:nowrap}
 .reading .lead{font-size:21px;line-height:1.5;color:var(--text-2);border-left:3px solid var(--orange);padding-left:18px;margin:8px 0 28px}
 .reading p,.reading li{font-size:17px;line-height:1.8;color:var(--text-2)}
 .reading h2{font-size:32px;margin-top:40px;margin-bottom:10px;color:var(--text)}

@@ -62,4 +62,12 @@ Las notas de cruces conservan los escudos de los equipos. Las noticias de mercad
 
 Para una nueva noticia que no trate de un cruce, preparar una portada acorde con sus protagonistas o tema y añadir su campo `image`. No usar los escudos como imagen de mercado, draft, reglas o análisis generales. Las ilustraciones se identifican en su pie y no se presentan como fotografías de un hecho real.
 
-Los prompts completos están en `assets/editorial/prompts.json`. Las tres ilustraciones se crearon con la herramienta integrada de generación de imágenes; los WebP son versiones optimizadas de esos originales.
+Los prompts completos están en `assets/editorial/prompts.json`. Las ilustraciones se crearon con la herramienta integrada de generación de imágenes; los WebP son versiones optimizadas de esos originales.
+
+## Movimientos confirmados y planteles históricos
+
+`transactionReports` conserva cada captura de actividad, las parejas de alta/baja, los importes de las pujas y las actas NBA utilizadas para el análisis. El registro del 26 de octubre tiene diez altas por waivers por un total de $104; la captura fuente está en `assets/movimientos/waivers-2026-10-26.png`. Se guarda la hora tal como aparece en ESPN, sin atribuirle una zona horaria no indicada.
+
+Cada alta reemplaza a su baja asociada en el plantel actual. `rosterSnapshots` conserva la composición, los líderes y la radiografía editorial por fecha. `teamAt(id,date)` permite que los cruces cerrados y el power ranking de pretemporada mantengan los perfiles de su momento. Al incorporar un nuevo registro, conservar los snapshots anteriores y añadir el del plantel resultante; no reescribir actas ni resultados de semanas cerradas.
+
+Las fichas actuales muestran los trece jugadores sin atribuirles puestos de alineación, titulares, banca o estado de IR que la captura de movimientos no confirma. La nueva nota utiliza `transactionReportId` y bloques `transaction-highlights` / `transaction-table` para presentar los destacados editoriales y la lista completa de incorporaciones. Las estadísticas anteriores a la adquisición sirven de contexto y no se añaden retroactivamente a los marcadores fantasy.

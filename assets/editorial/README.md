@@ -7,6 +7,7 @@ Portadas creadas para el contenido de cada nota con la herramienta integrada `im
 | Flagg y Wagner: mercado tras la primera semana | [market-flagg-wagner.webp](market-flagg-wagner.webp) | [market-flagg-wagner-640.webp](market-flagg-wagner-640.webp) |
 | Análisis del draft | [draft-strategy.webp](draft-strategy.webp) | [draft-strategy-640.webp](draft-strategy-640.webp) |
 | Power ranking de pretemporada | [power-ranking.webp](power-ranking.webp) | [power-ranking-640.webp](power-ranking-640.webp) |
+| Waivers del 26 de octubre: Haliburton, Sabonis y Kessler | [waivers-2026-10-26.webp](waivers-2026-10-26.webp) | [waivers-2026-10-26-640.webp](waivers-2026-10-26-640.webp) |
 
 Generadas el 26 de octubre de 2026. Los retratos de la nota de mercado son ilustraciones, no fotografías de una operación realizada. Las otras portadas representan conceptos editoriales; no corresponden a un evento fotografiado. El pie de imagen de cada artículo las identifica como ilustraciones.
 

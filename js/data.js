@@ -3689,32 +3689,994 @@ categories: [
   { id: 'PTS', key: 'pts', name: 'Puntos',                       goal: 'Más puntos' }
 ],
 
-/* Equipos --------------------------------------------------------------- */
+/* Movimientos confirmados ----------------------------------------------- */
+transactionReports: [
+  {
+    "id": "waivers-2026-10-26",
+    "date": "2026-10-26",
+    "displayTime": "4:00 p. m.",
+    "timeZoneShown": false,
+    "sourceImage": "./assets/movimientos/waivers-2026-10-26.png",
+    "source": "Captura de ESPN Fantasy – Recent Activity aportada por el participante. Se transcriben diez altas desde waivers y sus bajas asociadas, todas con fecha 26 de octubre y hora mostrada 4:00 p. m.; la captura no especifica zona horaria. Las pujas suman $104, según la unidad indicada por ESPN. No se conocen el presupuesto inicial ni los saldos restantes. Las etiquetas de franquicia de la captura se conservan como datos de esa fuente; las actas NBA se documentan por separado.",
+    "transactions": [
+      {
+        "id": "waiver-20261026-01",
+        "team": "pilsens",
+        "type": "waiver",
+        "added": {
+          "name": "Darius Garland",
+          "nbaLabel": "LAC",
+          "position": "PG"
+        },
+        "dropped": {
+          "name": "Paolo Banchero",
+          "nbaLabel": "ORL",
+          "position": "PF"
+        },
+        "bid": 2
+      },
+      {
+        "id": "waiver-20261026-02",
+        "team": "pilsens",
+        "type": "waiver",
+        "added": {
+          "name": "Domantas Sabonis",
+          "nbaLabel": "SAC",
+          "position": "C"
+        },
+        "dropped": {
+          "name": "Jalen Brunson",
+          "nbaLabel": "NY",
+          "position": "PG"
+        },
+        "bid": 2
+      },
+      {
+        "id": "waiver-20261026-03",
+        "team": "hipopotamos",
+        "type": "waiver",
+        "added": {
+          "name": "Ace Bailey",
+          "nbaLabel": "UTAH",
+          "position": "SF"
+        },
+        "dropped": {
+          "name": "Bennett Stirtz",
+          "nbaLabel": "OKC",
+          "position": "PG"
+        },
+        "bid": 6
+      },
+      {
+        "id": "waiver-20261026-04",
+        "team": "hipopotamos",
+        "type": "waiver",
+        "added": {
+          "name": "Walker Kessler",
+          "nbaLabel": "LAC",
+          "position": "C"
+        },
+        "dropped": {
+          "name": "Onyeka Okongwu",
+          "nbaLabel": "ATL",
+          "position": "C"
+        },
+        "bid": 6
+      },
+      {
+        "id": "waiver-20261026-05",
+        "team": "shockers",
+        "type": "waiver",
+        "added": {
+          "name": "Jonathan Kuminga",
+          "nbaLabel": "MIN",
+          "position": "PF"
+        },
+        "dropped": {
+          "name": "Herbert Jones",
+          "nbaLabel": "NO",
+          "position": "SF"
+        },
+        "bid": 8
+      },
+      {
+        "id": "waiver-20261026-06",
+        "team": "shockers",
+        "type": "waiver",
+        "added": {
+          "name": "Paul Reed",
+          "nbaLabel": "DET",
+          "position": "C"
+        },
+        "dropped": {
+          "name": "Daniel Gafford",
+          "nbaLabel": "DAL",
+          "position": "C"
+        },
+        "bid": 10
+      },
+      {
+        "id": "waiver-20261026-07",
+        "team": "pelafustanes",
+        "type": "waiver",
+        "added": {
+          "name": "Aaron Wiggins",
+          "nbaLabel": "ATL",
+          "position": "SG"
+        },
+        "dropped": {
+          "name": "Royce O'Neale",
+          "nbaLabel": "CHA",
+          "position": "SF"
+        },
+        "bid": 10
+      },
+      {
+        "id": "waiver-20261026-08",
+        "team": "shockers",
+        "type": "waiver",
+        "added": {
+          "name": "Fred VanVleet",
+          "nbaLabel": "HOU",
+          "position": "PG"
+        },
+        "dropped": {
+          "name": "Jalen Suggs",
+          "nbaLabel": "ORL",
+          "position": "PG"
+        },
+        "bid": 14
+      },
+      {
+        "id": "waiver-20261026-09",
+        "team": "pelafustanes",
+        "type": "waiver",
+        "added": {
+          "name": "Jalen Smith",
+          "nbaLabel": "CHI",
+          "position": "PF"
+        },
+        "dropped": {
+          "name": "Klay Thompson",
+          "nbaLabel": "MIA",
+          "position": "SG"
+        },
+        "bid": 15
+      },
+      {
+        "id": "waiver-20261026-10",
+        "team": "hipopotamos",
+        "type": "waiver",
+        "added": {
+          "name": "Tyrese Haliburton",
+          "nbaLabel": "IND",
+          "position": "PG"
+        },
+        "dropped": {
+          "name": "Josh Giddey",
+          "nbaLabel": "CHI",
+          "position": "PG"
+        },
+        "bid": 31
+      }
+    ],
+    "highlights": [
+      {
+        "transactionId": "waiver-20261026-10",
+        "label": "La mayor puja",
+        "reason": "Creación y tiro exterior para Hipopotamos."
+      },
+      {
+        "transactionId": "waiver-20261026-02",
+        "label": "Cambio de estructura",
+        "reason": "Rebote y pase para el frente interior de Cromwell."
+      },
+      {
+        "transactionId": "waiver-20261026-04",
+        "label": "Refuerzo defensivo",
+        "reason": "Protección del aro junto a Wembanyama."
+      }
+    ],
+    "nbaFrom": "2026-10-20",
+    "nbaThrough": "2026-10-25",
+    "nbaPlayers": [
+      {
+        "name": "Darius Garland",
+        "nbaTeam": "LA Clippers",
+        "gp": 3,
+        "games": [
+          "401909842",
+          "401909851",
+          "401909865"
+        ],
+        "minutes": 105,
+        "stats": {
+          "fgm": 27,
+          "fga": 55,
+          "ftm": 9,
+          "fta": 13,
+          "tpm": 9,
+          "reb": 5,
+          "ast": 21,
+          "stl": 2,
+          "blk": 0,
+          "to": 18,
+          "pts": 72
+        }
+      },
+      {
+        "name": "Domantas Sabonis",
+        "nbaTeam": "Sacramento Kings",
+        "gp": 3,
+        "games": [
+          "401909842",
+          "401909852",
+          "401909867"
+        ],
+        "minutes": 108,
+        "stats": {
+          "fgm": 21,
+          "fga": 26,
+          "ftm": 13,
+          "fta": 15,
+          "tpm": 1,
+          "reb": 52,
+          "ast": 21,
+          "stl": 3,
+          "blk": 0,
+          "to": 12,
+          "pts": 56
+        }
+      },
+      {
+        "name": "Ace Bailey",
+        "nbaTeam": "Utah Jazz",
+        "gp": 3,
+        "games": [
+          "401909838",
+          "401909849",
+          "401909861"
+        ],
+        "minutes": 75,
+        "stats": {
+          "fgm": 15,
+          "fga": 30,
+          "ftm": 1,
+          "fta": 2,
+          "tpm": 4,
+          "reb": 24,
+          "ast": 9,
+          "stl": 0,
+          "blk": 4,
+          "to": 4,
+          "pts": 35
+        }
+      },
+      {
+        "name": "Walker Kessler",
+        "nbaTeam": "Los Angeles Lakers",
+        "gp": 3,
+        "games": [
+          "401909092",
+          "401909851",
+          "401909861"
+        ],
+        "minutes": 93,
+        "stats": {
+          "fgm": 23,
+          "fga": 28,
+          "ftm": 4,
+          "fta": 9,
+          "tpm": 0,
+          "reb": 24,
+          "ast": 4,
+          "stl": 3,
+          "blk": 9,
+          "to": 4,
+          "pts": 50
+        }
+      },
+      {
+        "name": "Jonathan Kuminga",
+        "nbaTeam": "Minnesota Timberwolves",
+        "gp": 3,
+        "games": [
+          "401909091",
+          "401909845",
+          "401909864"
+        ],
+        "minutes": 83,
+        "stats": {
+          "fgm": 12,
+          "fga": 25,
+          "ftm": 5,
+          "fta": 10,
+          "tpm": 7,
+          "reb": 13,
+          "ast": 9,
+          "stl": 7,
+          "blk": 1,
+          "to": 1,
+          "pts": 36
+        }
+      },
+      {
+        "name": "Paul Reed",
+        "nbaTeam": "Detroit Pistons",
+        "gp": 3,
+        "games": [
+          "401909088",
+          "401909847",
+          "401909866"
+        ],
+        "minutes": 66,
+        "stats": {
+          "fgm": 14,
+          "fga": 23,
+          "ftm": 3,
+          "fta": 5,
+          "tpm": 2,
+          "reb": 25,
+          "ast": 7,
+          "stl": 1,
+          "blk": 3,
+          "to": 5,
+          "pts": 33
+        }
+      },
+      {
+        "name": "Aaron Wiggins",
+        "nbaTeam": "Atlanta Hawks",
+        "gp": 3,
+        "games": [
+          "401909834",
+          "401909843",
+          "401909856"
+        ],
+        "minutes": 83,
+        "stats": {
+          "fgm": 18,
+          "fga": 31,
+          "ftm": 5,
+          "fta": 7,
+          "tpm": 10,
+          "reb": 9,
+          "ast": 3,
+          "stl": 5,
+          "blk": 1,
+          "to": 3,
+          "pts": 51
+        }
+      },
+      {
+        "name": "Fred VanVleet",
+        "nbaTeam": "Houston Rockets",
+        "gp": 2,
+        "games": [
+          "401909840",
+          "401909096"
+        ],
+        "minutes": 62,
+        "stats": {
+          "fgm": 6,
+          "fga": 18,
+          "ftm": 3,
+          "fta": 4,
+          "tpm": 5,
+          "reb": 5,
+          "ast": 16,
+          "stl": 6,
+          "blk": 1,
+          "to": 0,
+          "pts": 20
+        }
+      },
+      {
+        "name": "Jalen Smith",
+        "nbaTeam": "Chicago Bulls",
+        "gp": 3,
+        "games": [
+          "401909837",
+          "401909848",
+          "401909857"
+        ],
+        "minutes": 67,
+        "stats": {
+          "fgm": 16,
+          "fga": 31,
+          "ftm": 7,
+          "fta": 8,
+          "tpm": 4,
+          "reb": 24,
+          "ast": 3,
+          "stl": 3,
+          "blk": 1,
+          "to": 3,
+          "pts": 43
+        }
+      },
+      {
+        "name": "Tyrese Haliburton",
+        "nbaTeam": "Indiana Pacers",
+        "gp": 3,
+        "games": [
+          "401909839",
+          "401909844",
+          "401909862"
+        ],
+        "minutes": 97,
+        "stats": {
+          "fgm": 24,
+          "fga": 45,
+          "ftm": 11,
+          "fta": 12,
+          "tpm": 6,
+          "reb": 12,
+          "ast": 29,
+          "stl": 4,
+          "blk": 2,
+          "to": 8,
+          "pts": 65
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": "401909088",
+        "name": "Boston Celtics at Detroit Pistons",
+        "date": "2026-10-20T19:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909088",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909088"
+      },
+      {
+        "id": "401909091",
+        "name": "Minnesota Timberwolves at Miami Heat",
+        "date": "2026-10-21T23:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909091",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909091"
+      },
+      {
+        "id": "401909092",
+        "name": "Golden State Warriors at Los Angeles Lakers",
+        "date": "2026-10-22T02:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909092",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909092"
+      },
+      {
+        "id": "401909096",
+        "name": "Houston Rockets at San Antonio Spurs",
+        "date": "2026-10-24T01:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909096",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909096"
+      },
+      {
+        "id": "401909834",
+        "name": "Atlanta Hawks at Orlando Magic",
+        "date": "2026-10-21T23:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909834",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909834"
+      },
+      {
+        "id": "401909837",
+        "name": "Chicago Bulls at Toronto Raptors",
+        "date": "2026-10-21T23:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909837",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909837"
+      },
+      {
+        "id": "401909838",
+        "name": "Utah Jazz at Memphis Grizzlies",
+        "date": "2026-10-22T00:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909838",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909838"
+      },
+      {
+        "id": "401909839",
+        "name": "Indiana Pacers at New Orleans Pelicans",
+        "date": "2026-10-22T00:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909839",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909839"
+      },
+      {
+        "id": "401909840",
+        "name": "Dallas Mavericks at Houston Rockets",
+        "date": "2026-10-22T00:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909840",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909840"
+      },
+      {
+        "id": "401909842",
+        "name": "Sacramento Kings at LA Clippers",
+        "date": "2026-10-22T02:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909842",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909842"
+      },
+      {
+        "id": "401909843",
+        "name": "Atlanta Hawks at Charlotte Hornets",
+        "date": "2026-10-23T23:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909843",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909843"
+      },
+      {
+        "id": "401909844",
+        "name": "Dallas Mavericks at Indiana Pacers",
+        "date": "2026-10-23T23:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909844",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909844"
+      },
+      {
+        "id": "401909845",
+        "name": "Minnesota Timberwolves at Orlando Magic",
+        "date": "2026-10-23T23:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909845",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909845"
+      },
+      {
+        "id": "401909847",
+        "name": "Detroit Pistons at Miami Heat",
+        "date": "2026-10-24T00:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909847",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909847"
+      },
+      {
+        "id": "401909848",
+        "name": "Chicago Bulls at Milwaukee Bucks",
+        "date": "2026-10-23T20:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909848",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909848"
+      },
+      {
+        "id": "401909849",
+        "name": "New Orleans Pelicans at Utah Jazz",
+        "date": "2026-10-24T01:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909849",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909849"
+      },
+      {
+        "id": "401909851",
+        "name": "LA Clippers at Los Angeles Lakers",
+        "date": "2026-10-24T02:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909851",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909851"
+      },
+      {
+        "id": "401909852",
+        "name": "Portland Trail Blazers at Sacramento Kings",
+        "date": "2026-10-24T02:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909852",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909852"
+      },
+      {
+        "id": "401909856",
+        "name": "Houston Rockets at Atlanta Hawks",
+        "date": "2026-10-25T00:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909856",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909856"
+      },
+      {
+        "id": "401909857",
+        "name": "Washington Wizards at Chicago Bulls",
+        "date": "2026-10-25T00:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909857",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909857"
+      },
+      {
+        "id": "401909861",
+        "name": "Los Angeles Lakers at Utah Jazz",
+        "date": "2026-10-25T21:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909861",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909861"
+      },
+      {
+        "id": "401909862",
+        "name": "Indiana Pacers at Brooklyn Nets",
+        "date": "2026-10-25T22:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909862",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909862"
+      },
+      {
+        "id": "401909864",
+        "name": "Toronto Raptors at Minnesota Timberwolves",
+        "date": "2026-10-25T23:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909864",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909864"
+      },
+      {
+        "id": "401909865",
+        "name": "LA Clippers at Oklahoma City Thunder",
+        "date": "2026-10-25T23:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909865",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909865"
+      },
+      {
+        "id": "401909866",
+        "name": "Detroit Pistons at Philadelphia 76ers",
+        "date": "2026-10-25T23:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909866",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909866"
+      },
+      {
+        "id": "401909867",
+        "name": "Memphis Grizzlies at Sacramento Kings",
+        "date": "2026-10-26T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909867",
+        "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909867"
+      }
+    ]
+  }
+],
+
+/* Planteles y perfiles por fecha: conservar el contexto histórico. */
+rosterSnapshots: [
+  {
+    "date": "2026-10-20",
+    "source": "Fichas iniciales de los equipos.",
+    "teams": [
+      {
+        "id": "shockers",
+        "roster": [
+          "Shai Gilgeous-Alexander",
+          "Scottie Barnes",
+          "Jayson Tatum",
+          "Jaren Jackson Jr.",
+          "Karl-Anthony Towns",
+          "Amen Thompson",
+          "Kon Knueppel",
+          "Dyson Daniels",
+          "Cameron Boozer",
+          "Daniel Gafford",
+          "Herbert Jones",
+          "Jalen Suggs",
+          "Tari Eason"
+        ],
+        "leaders": [
+          "Shai Gilgeous-Alexander",
+          "Jayson Tatum",
+          "Karl-Anthony Towns"
+        ],
+        "strength": "Gilgeous-Alexander, Tatum y Towns ofrecen distintas vías para construir PTS, FT% y 3PM. Barnes y Amen Thompson amplían las opciones de creación y rebote; Daniels, Jones y Jackson Jr. dan argumentos para disputar STL y BLK.",
+        "challenge": "Perseguir REB y BLK con los interiores puede cambiar el perfil de FT%. AST y TO deben leerse juntos: acumular creación no garantiza eficiencia. FG% dependerá de cómo se reparta el volumen de tiro."
+      },
+      {
+        "id": "pilsens",
+        "roster": [
+          "Jalen Brunson",
+          "Dylan Harper",
+          "Jaylen Brown",
+          "Keldon Johnson",
+          "Nikola Jokić",
+          "Anthony Edwards",
+          "Paolo Banchero",
+          "AJ Dybantsa",
+          "Caleb Wilson",
+          "Sandro Mamukelashvili",
+          "Jalen Johnson",
+          "Jaylen Wells",
+          "Dillon Brooks"
+        ],
+        "leaders": [
+          "Nikola Jokić",
+          "Anthony Edwards",
+          "Jalen Brunson"
+        ],
+        "strength": "Jokić ofrece un eje para proyectar REB y AST sin depender exclusivamente de los bases. Brunson, Edwards y Brown aportan alternativas en PTS y 3PM. Banchero y Jalen Johnson suman creación desde el frente de ataque.",
+        "challenge": "La construcción parece más cómoda en ataque que en BLK. Debe comprobar su respuesta en STL y vigilar TO al reunir varios generadores. FG% y FT% dependerán del volumen y las alineaciones."
+      },
+      {
+        "id": "hipopotamos",
+        "roster": [
+          "Cade Cunningham",
+          "Derrick White",
+          "Deni Avdija",
+          "Naz Reid",
+          "Victor Wembanyama",
+          "VJ Edgecombe",
+          "Jaden McDaniels",
+          "Josh Giddey",
+          "Cason Wallace",
+          "Bennett Stirtz",
+          "Onyeka Okongwu",
+          "Toumani Camara",
+          "P.J. Washington"
+        ],
+        "leaders": [
+          "Victor Wembanyama",
+          "Cade Cunningham",
+          "Derrick White"
+        ],
+        "strength": "Wembanyama es el eje del planteamiento en BLK y REB. Cunningham y Giddey permiten proyectar una disputa en AST. White, McDaniels y Wallace ofrecen alternativas para orientar las alineaciones hacia la defensa y STL.",
+        "challenge": "La carga de creación exige controlar TO. El aporte de 3PM y PTS más allá de sus figuras será una pregunta central. FG% y FT% requerirán seguimiento por volumen de intentos."
+      },
+      {
+        "id": "pelafustanes",
+        "roster": [
+          "Luka Dončić",
+          "Donovan Mitchell",
+          "Brandon Miller",
+          "Giannis Antetokounmpo",
+          "Alperen Sengun",
+          "Payton Pritchard",
+          "OG Anunoby",
+          "Alex Sarr",
+          "Matas Buzelis",
+          "Bobby Portis",
+          "Malik Monk",
+          "Royce O'Neale",
+          "Klay Thompson"
+        ],
+        "leaders": [
+          "Luka Dončić",
+          "Donovan Mitchell",
+          "Giannis Antetokounmpo"
+        ],
+        "strength": "Dončić y Mitchell permiten construir una propuesta en PTS, AST y 3PM. Antetokounmpo y Sengun dan peso al juego interior y REB. Anunoby y Sarr aportan alternativas para buscar STL y BLK.",
+        "challenge": "La convivencia de varios jugadores con el balón obliga a vigilar TO. La apuesta interior puede tensionar FT%, mientras sumar especialistas en triples puede modificar FG%. Elegir qué categorías priorizar será determinante."
+      }
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "source": "Captura de ESPN Fantasy – Recent Activity del 26 de octubre.",
+    "teams": [
+      {
+        "id": "shockers",
+        "roster": [
+          "Shai Gilgeous-Alexander",
+          "Scottie Barnes",
+          "Jayson Tatum",
+          "Jaren Jackson Jr.",
+          "Karl-Anthony Towns",
+          "Amen Thompson",
+          "Kon Knueppel",
+          "Dyson Daniels",
+          "Cameron Boozer",
+          "Paul Reed",
+          "Jonathan Kuminga",
+          "Fred VanVleet",
+          "Tari Eason"
+        ],
+        "leaders": [
+          "Shai Gilgeous-Alexander",
+          "Jayson Tatum",
+          "Karl-Anthony Towns"
+        ],
+        "strength": "Gilgeous-Alexander, Tatum y Towns ofrecen recursos en anotación y porcentajes. VanVleet amplía la creación; Daniels y Kuminga aportan alternativas en robos. Reed agrega profundidad interior junto a Towns y Jackson Jr.",
+        "challenge": "La llegada de VanVleet debe equilibrar creación y eficiencia de tiro. El nuevo reparto de minutos interiores tras la salida de Gafford exige seguir REB y BLK; el tiro exterior continúa siendo una categoría a mejorar."
+      },
+      {
+        "id": "pilsens",
+        "roster": [
+          "Domantas Sabonis",
+          "Dylan Harper",
+          "Jaylen Brown",
+          "Keldon Johnson",
+          "Nikola Jokić",
+          "Anthony Edwards",
+          "Darius Garland",
+          "AJ Dybantsa",
+          "Caleb Wilson",
+          "Sandro Mamukelashvili",
+          "Jalen Johnson",
+          "Jaylen Wells",
+          "Dillon Brooks"
+        ],
+        "leaders": [
+          "Nikola Jokić",
+          "Anthony Edwards",
+          "Domantas Sabonis"
+        ],
+        "strength": "Jokić y Sabonis permiten construir alrededor del rebote y el pase desde el juego interior. Garland añade creación y tiro exterior; Edwards, Brown y Jalen Johnson sostienen una ofensiva con varias vías de producción.",
+        "challenge": "La salida de Brunson y Banchero cambia el reparto de anotación. Sabonis amplía REB y AST, pero la respuesta en BLK continúa pendiente; Garland exige especial atención a TO."
+      },
+      {
+        "id": "hipopotamos",
+        "roster": [
+          "Cade Cunningham",
+          "Derrick White",
+          "Deni Avdija",
+          "Naz Reid",
+          "Victor Wembanyama",
+          "VJ Edgecombe",
+          "Jaden McDaniels",
+          "Tyrese Haliburton",
+          "Cason Wallace",
+          "Ace Bailey",
+          "Walker Kessler",
+          "Toumani Camara",
+          "P.J. Washington"
+        ],
+        "leaders": [
+          "Victor Wembanyama",
+          "Cade Cunningham",
+          "Tyrese Haliburton"
+        ],
+        "strength": "Wembanyama y Kessler refuerzan la protección del aro y el rebote. Cunningham y Haliburton amplían la creación; White, McDaniels y Wallace ofrecen alternativas en defensa y robos. Bailey agrega una apuesta de desarrollo a la rotación.",
+        "challenge": "La presencia de dos interiores con volumen cerca del aro exige vigilar FT%. La creación de Cunningham y Haliburton debe acompañarse de control de pérdidas; la anotación de la segunda línea sigue siendo importante."
+      },
+      {
+        "id": "pelafustanes",
+        "roster": [
+          "Luka Dončić",
+          "Donovan Mitchell",
+          "Brandon Miller",
+          "Giannis Antetokounmpo",
+          "Alperen Sengun",
+          "Payton Pritchard",
+          "OG Anunoby",
+          "Alex Sarr",
+          "Matas Buzelis",
+          "Bobby Portis",
+          "Malik Monk",
+          "Aaron Wiggins",
+          "Jalen Smith"
+        ],
+        "leaders": [
+          "Luka Dončić",
+          "Donovan Mitchell",
+          "Giannis Antetokounmpo"
+        ],
+        "strength": "Dončić y Mitchell sostienen PTS, AST y 3PM, con Antetokounmpo y Sengun como apoyos interiores. Aaron Wiggins suma una opción exterior y Jalen Smith amplía la rotación de rebote, junto a Sarr y Portis.",
+        "challenge": "La mejora de la segunda línea debe acompañarse de control de pérdidas y mejores porcentajes. La salida de Klay Thompson obliga a redistribuir sus triples; no toda la anotación nueva sustituye el mismo perfil."
+      }
+    ]
+  }
+],
+
+/* Equipos actuales ------------------------------------------------------ */
 teams: [
-  { id: 'shockers', name: 'Penalolen Shockers', short: 'SHK', city: 'Peñalolén', owner: 'Patricio Uribe', ownerNote: 'Creador y comisionado',
-    initials: 'PS', colors: ['#3d8bff', '#c9d3e0'], logo: './assets/penalolen-shockers.webp',
-    leaders: ['Shai Gilgeous-Alexander', 'Jayson Tatum', 'Karl-Anthony Towns'],
-    roster: ['Shai Gilgeous-Alexander', 'Scottie Barnes', 'Jayson Tatum', 'Jaren Jackson Jr.', 'Karl-Anthony Towns', 'Amen Thompson', 'Kon Knueppel', 'Dyson Daniels', 'Cameron Boozer', 'Daniel Gafford', 'Herbert Jones', 'Jalen Suggs', 'Tari Eason'],
-    strength: 'Gilgeous-Alexander, Tatum y Towns ofrecen distintas vías para construir PTS, FT% y 3PM. Barnes y Amen Thompson amplían las opciones de creación y rebote; Daniels, Jones y Jackson Jr. dan argumentos para disputar STL y BLK.',
-    challenge: 'Perseguir REB y BLK con los interiores puede cambiar el perfil de FT%. AST y TO deben leerse juntos: acumular creación no garantiza eficiencia. FG% dependerá de cómo se reparta el volumen de tiro.' },
-  { id: 'pilsens', name: 'Cromwell Pilsens', short: 'CRP', city: 'Cromwell, Nueva Zelanda', owner: 'Diego Alvarez, “el Rubio”', ownerNote: '',
-    initials: 'CP', colors: ['#f5a623', '#20304e'], logo: './assets/cromwell-pilsens.webp',
-    leaders: ['Nikola Jokić', 'Anthony Edwards', 'Jalen Brunson'],
-    roster: ['Jalen Brunson', 'Dylan Harper', 'Jaylen Brown', 'Keldon Johnson', 'Nikola Jokić', 'Anthony Edwards', 'Paolo Banchero', 'AJ Dybantsa', 'Caleb Wilson', 'Sandro Mamukelashvili', 'Jalen Johnson', 'Jaylen Wells', 'Dillon Brooks'],
-    strength: 'Jokić ofrece un eje para proyectar REB y AST sin depender exclusivamente de los bases. Brunson, Edwards y Brown aportan alternativas en PTS y 3PM. Banchero y Jalen Johnson suman creación desde el frente de ataque.',
-    challenge: 'La construcción parece más cómoda en ataque que en BLK. Debe comprobar su respuesta en STL y vigilar TO al reunir varios generadores. FG% y FT% dependerán del volumen y las alineaciones.' },
-  { id: 'hipopotamos', name: 'Los Hipopotamos Chuchetumare', short: 'LHC', city: 'Santiago', owner: 'Cristóbal Uribe', ownerNote: '',
-    initials: 'LHC', colors: ['#7b3fd1', '#f2ba33'], logo: './assets/los-hipopotamos-chuchetumare.webp?v=2',
-    leaders: ['Victor Wembanyama', 'Cade Cunningham', 'Derrick White'],
-    roster: ['Cade Cunningham', 'Derrick White', 'Deni Avdija', 'Naz Reid', 'Victor Wembanyama', 'VJ Edgecombe', 'Jaden McDaniels', 'Josh Giddey', 'Cason Wallace', 'Bennett Stirtz', 'Onyeka Okongwu', 'Toumani Camara', 'P.J. Washington'],
-    strength: 'Wembanyama es el eje del planteamiento en BLK y REB. Cunningham y Giddey permiten proyectar una disputa en AST. White, McDaniels y Wallace ofrecen alternativas para orientar las alineaciones hacia la defensa y STL.',
-    challenge: 'La carga de creación exige controlar TO. El aporte de 3PM y PTS más allá de sus figuras será una pregunta central. FG% y FT% requerirán seguimiento por volumen de intentos.' },
-  { id: 'pelafustanes', name: 'Mequetrefes', short: 'MQT', city: 'Santiago', owner: 'Carlos Sanchez, “el Chino”', ownerNote: '',
-    initials: 'MQ', colors: ['#ff2a2a', '#3a0d0d'], logo: './assets/mequetrefes.webp',
-    leaders: ['Luka Dončić', 'Donovan Mitchell', 'Giannis Antetokounmpo'],
-    roster: ['Luka Dončić', 'Donovan Mitchell', 'Brandon Miller', 'Giannis Antetokounmpo', 'Alperen Sengun', 'Payton Pritchard', 'OG Anunoby', 'Alex Sarr', 'Matas Buzelis', 'Bobby Portis', 'Malik Monk', "Royce O'Neale", 'Klay Thompson'],
-    strength: 'Dončić y Mitchell permiten construir una propuesta en PTS, AST y 3PM. Antetokounmpo y Sengun dan peso al juego interior y REB. Anunoby y Sarr aportan alternativas para buscar STL y BLK.',
-    challenge: 'La convivencia de varios jugadores con el balón obliga a vigilar TO. La apuesta interior puede tensionar FT%, mientras sumar especialistas en triples puede modificar FG%. Elegir qué categorías priorizar será determinante.' }
+  {
+    "id": "shockers",
+    "name": "Penalolen Shockers",
+    "short": "SHK",
+    "city": "Peñalolén",
+    "owner": "Patricio Uribe",
+    "ownerNote": "Creador y comisionado",
+    "initials": "PS",
+    "colors": [
+      "#3d8bff",
+      "#c9d3e0"
+    ],
+    "logo": "./assets/penalolen-shockers.webp",
+    "leaders": [
+      "Shai Gilgeous-Alexander",
+      "Jayson Tatum",
+      "Karl-Anthony Towns"
+    ],
+    "roster": [
+      "Shai Gilgeous-Alexander",
+      "Scottie Barnes",
+      "Jayson Tatum",
+      "Jaren Jackson Jr.",
+      "Karl-Anthony Towns",
+      "Amen Thompson",
+      "Kon Knueppel",
+      "Dyson Daniels",
+      "Cameron Boozer",
+      "Paul Reed",
+      "Jonathan Kuminga",
+      "Fred VanVleet",
+      "Tari Eason"
+    ],
+    "strength": "Gilgeous-Alexander, Tatum y Towns ofrecen recursos en anotación y porcentajes. VanVleet amplía la creación; Daniels y Kuminga aportan alternativas en robos. Reed agrega profundidad interior junto a Towns y Jackson Jr.",
+    "challenge": "La llegada de VanVleet debe equilibrar creación y eficiencia de tiro. El nuevo reparto de minutos interiores tras la salida de Gafford exige seguir REB y BLK; el tiro exterior continúa siendo una categoría a mejorar.",
+    "rosterUpdatedDate": "2026-10-26",
+    "rosterReportId": "waivers-2026-10-26"
+  },
+  {
+    "id": "pilsens",
+    "name": "Cromwell Pilsens",
+    "short": "CRP",
+    "city": "Cromwell, Nueva Zelanda",
+    "owner": "Diego Alvarez, “el Rubio”",
+    "ownerNote": "",
+    "initials": "CP",
+    "colors": [
+      "#f5a623",
+      "#20304e"
+    ],
+    "logo": "./assets/cromwell-pilsens.webp",
+    "leaders": [
+      "Nikola Jokić",
+      "Anthony Edwards",
+      "Domantas Sabonis"
+    ],
+    "roster": [
+      "Domantas Sabonis",
+      "Dylan Harper",
+      "Jaylen Brown",
+      "Keldon Johnson",
+      "Nikola Jokić",
+      "Anthony Edwards",
+      "Darius Garland",
+      "AJ Dybantsa",
+      "Caleb Wilson",
+      "Sandro Mamukelashvili",
+      "Jalen Johnson",
+      "Jaylen Wells",
+      "Dillon Brooks"
+    ],
+    "strength": "Jokić y Sabonis permiten construir alrededor del rebote y el pase desde el juego interior. Garland añade creación y tiro exterior; Edwards, Brown y Jalen Johnson sostienen una ofensiva con varias vías de producción.",
+    "challenge": "La salida de Brunson y Banchero cambia el reparto de anotación. Sabonis amplía REB y AST, pero la respuesta en BLK continúa pendiente; Garland exige especial atención a TO.",
+    "rosterUpdatedDate": "2026-10-26",
+    "rosterReportId": "waivers-2026-10-26"
+  },
+  {
+    "id": "hipopotamos",
+    "name": "Los Hipopotamos Chuchetumare",
+    "short": "LHC",
+    "city": "Santiago",
+    "owner": "Cristóbal Uribe",
+    "ownerNote": "",
+    "initials": "LHC",
+    "colors": [
+      "#7b3fd1",
+      "#f2ba33"
+    ],
+    "logo": "./assets/los-hipopotamos-chuchetumare.webp?v=2",
+    "leaders": [
+      "Victor Wembanyama",
+      "Cade Cunningham",
+      "Tyrese Haliburton"
+    ],
+    "roster": [
+      "Cade Cunningham",
+      "Derrick White",
+      "Deni Avdija",
+      "Naz Reid",
+      "Victor Wembanyama",
+      "VJ Edgecombe",
+      "Jaden McDaniels",
+      "Tyrese Haliburton",
+      "Cason Wallace",
+      "Ace Bailey",
+      "Walker Kessler",
+      "Toumani Camara",
+      "P.J. Washington"
+    ],
+    "strength": "Wembanyama y Kessler refuerzan la protección del aro y el rebote. Cunningham y Haliburton amplían la creación; White, McDaniels y Wallace ofrecen alternativas en defensa y robos. Bailey agrega una apuesta de desarrollo a la rotación.",
+    "challenge": "La presencia de dos interiores con volumen cerca del aro exige vigilar FT%. La creación de Cunningham y Haliburton debe acompañarse de control de pérdidas; la anotación de la segunda línea sigue siendo importante.",
+    "rosterUpdatedDate": "2026-10-26",
+    "rosterReportId": "waivers-2026-10-26"
+  },
+  {
+    "id": "pelafustanes",
+    "name": "Mequetrefes",
+    "short": "MQT",
+    "city": "Santiago",
+    "owner": "Carlos Sanchez, “el Chino”",
+    "ownerNote": "",
+    "initials": "MQ",
+    "colors": [
+      "#ff2a2a",
+      "#3a0d0d"
+    ],
+    "logo": "./assets/mequetrefes.webp",
+    "leaders": [
+      "Luka Dončić",
+      "Donovan Mitchell",
+      "Giannis Antetokounmpo"
+    ],
+    "roster": [
+      "Luka Dončić",
+      "Donovan Mitchell",
+      "Brandon Miller",
+      "Giannis Antetokounmpo",
+      "Alperen Sengun",
+      "Payton Pritchard",
+      "OG Anunoby",
+      "Alex Sarr",
+      "Matas Buzelis",
+      "Bobby Portis",
+      "Malik Monk",
+      "Aaron Wiggins",
+      "Jalen Smith"
+    ],
+    "strength": "Dončić y Mitchell sostienen PTS, AST y 3PM, con Antetokounmpo y Sengun como apoyos interiores. Aaron Wiggins suma una opción exterior y Jalen Smith amplía la rotación de rebote, junto a Sarr y Portis.",
+    "challenge": "La mejora de la segunda línea debe acompañarse de control de pérdidas y mejores porcentajes. La salida de Klay Thompson obliga a redistribuir sus triples; no toda la anotación nueva sustituye el mismo perfil.",
+    "rosterUpdatedDate": "2026-10-26",
+    "rosterReportId": "waivers-2026-10-26"
+  }
 ],
 
 /* Calendario y resultados -----------------------------------------------
@@ -3852,6 +4814,266 @@ draft: {
 
 /* Publicaciones ------------------------------------------------------------- */
 posts: [
+{
+  "id": "waivers-26-octubre-haliburton-sabonis-kessler",
+  "date": "2026-10-26",
+  "category": "Trades",
+  "readingMinutes": 4,
+  "title": "Haliburton encabeza los waivers; Sabonis y Kessler destacan por su encaje",
+  "excerpt": "Diez incorporaciones y $104 en pujas mueven los cuatro planteles. Hipopotamos realiza la mayor inversión, Cromwell cambia su estructura por $4 y Shockers y Mequetrefes refuerzan la rotación.",
+  "teams": [
+    "hipopotamos",
+    "pilsens",
+    "shockers",
+    "pelafustanes"
+  ],
+  "transactionReportId": "waivers-2026-10-26",
+  "rulesLink": true,
+  "image": {
+    "src": "./assets/editorial/waivers-2026-10-26.webp",
+    "small": "./assets/editorial/waivers-2026-10-26-640.webp",
+    "width": 1280,
+    "height": 720,
+    "alt": "Ilustración editorial de Domantas Sabonis, Tyrese Haliburton y Walker Kessler, protagonistas de las adquisiciones por waivers.",
+    "caption": "Sabonis, Haliburton y Kessler encabezan el análisis de las incorporaciones. Ilustración editorial."
+  },
+  "source": "Movimientos confirmados en la captura de ESPN Fantasy del 26 de octubre de 2026. La selección de fichajes destacados es una valoración editorial por jerarquía, encaje y producción reciente. Las cifras individuales corresponden a partidos NBA del 20 al 25 de octubre, anteriores a estas adquisiciones; no modifican los resultados fantasy ya cerrados. Los importes son las pujas mostradas por ESPN.",
+  "sources": [
+    {
+      "title": "ESPN · Boston Celtics at Detroit Pistons · 20 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909088"
+    },
+    {
+      "title": "ESPN · Minnesota Timberwolves at Miami Heat · 21 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909091"
+    },
+    {
+      "title": "ESPN · Golden State Warriors at Los Angeles Lakers · 21 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909092"
+    },
+    {
+      "title": "ESPN · Houston Rockets at San Antonio Spurs · 23 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909096"
+    },
+    {
+      "title": "ESPN · Atlanta Hawks at Orlando Magic · 21 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909834"
+    },
+    {
+      "title": "ESPN · Chicago Bulls at Toronto Raptors · 21 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909837"
+    },
+    {
+      "title": "ESPN · Utah Jazz at Memphis Grizzlies · 21 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909838"
+    },
+    {
+      "title": "ESPN · Indiana Pacers at New Orleans Pelicans · 21 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909839"
+    },
+    {
+      "title": "ESPN · Dallas Mavericks at Houston Rockets · 21 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909840"
+    },
+    {
+      "title": "ESPN · Sacramento Kings at LA Clippers · 21 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909842"
+    },
+    {
+      "title": "ESPN · Atlanta Hawks at Charlotte Hornets · 23 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909843"
+    },
+    {
+      "title": "ESPN · Dallas Mavericks at Indiana Pacers · 23 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909844"
+    },
+    {
+      "title": "ESPN · Minnesota Timberwolves at Orlando Magic · 23 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909845"
+    },
+    {
+      "title": "ESPN · Detroit Pistons at Miami Heat · 23 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909847"
+    },
+    {
+      "title": "ESPN · Chicago Bulls at Milwaukee Bucks · 23 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909848"
+    },
+    {
+      "title": "ESPN · New Orleans Pelicans at Utah Jazz · 23 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909849"
+    },
+    {
+      "title": "ESPN · LA Clippers at Los Angeles Lakers · 23 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909851"
+    },
+    {
+      "title": "ESPN · Portland Trail Blazers at Sacramento Kings · 23 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909852"
+    },
+    {
+      "title": "ESPN · Houston Rockets at Atlanta Hawks · 24 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909856"
+    },
+    {
+      "title": "ESPN · Washington Wizards at Chicago Bulls · 24 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909857"
+    },
+    {
+      "title": "ESPN · Los Angeles Lakers at Utah Jazz · 25 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909861"
+    },
+    {
+      "title": "ESPN · Indiana Pacers at Brooklyn Nets · 25 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909862"
+    },
+    {
+      "title": "ESPN · Toronto Raptors at Minnesota Timberwolves · 25 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909864"
+    },
+    {
+      "title": "ESPN · LA Clippers at Oklahoma City Thunder · 25 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909865"
+    },
+    {
+      "title": "ESPN · Detroit Pistons at Philadelphia 76ers · 25 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909866"
+    },
+    {
+      "title": "ESPN · Memphis Grizzlies at Sacramento Kings · 25 oct",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909867"
+    }
+  ],
+  "body": [
+    [
+      "p",
+      "Los waivers dejaron de ser una lista de posibilidades y pasaron a cambiar los planteles. Los diez movimientos de la captura suman $104 en pujas: Hipopotamos invirtió $43, Shockers $32, Mequetrefes $25 y Cromwell Pilsens $4. La mayor apuesta fue Tyrese Haliburton, por $31. Por encaje y producción reciente, Domantas Sabonis y Walker Kessler también merecen un lugar destacado."
+    ],
+    [
+      "transaction-highlights",
+      "waivers-2026-10-26"
+    ],
+    [
+      "team-heading",
+      "hipopotamos"
+    ],
+    [
+      "h2",
+      "Haliburton toma el mando de las compras; Kessler refuerza la identidad"
+    ],
+    [
+      "p",
+      "El líder incorporó a Haliburton por $31 y dejó a Josh Giddey en waivers. El base de Indiana abrió la temporada con 65 puntos, 29 asistencias, seis triples y 24/45 de campo en tres partidos. Es una apuesta por sostener la creación junto a Cade Cunningham y ganar amenaza de tiro. Giddey había aportado 25 asistencias al primer cruce: sale una pieza útil, no un puesto vacío. Haliburton registró ocho pérdidas NBA en ese tramo; sumar otro generador también exige cuidar posesiones."
+    ],
+    [
+      "p",
+      "Kessler llegó por $6 en lugar de Onyeka Okongwu. Sus nueve tapones y 24 rebotes en tres partidos ofrecen un complemento claro para Wembanyama. El 23/28 de campo también ayuda a entender el atractivo, aunque el 4/9 en libres recuerda el costo potencial en otra categoría. La tercera incorporación fue Ace Bailey por $6, con la salida de Bennett Stirtz. Bailey acumuló 35 puntos, 24 rebotes y cuatro tapones en tres encuentros: una apuesta con participación reciente para profundizar la rotación."
+    ],
+    [
+      "sources",
+      [
+        2,
+        6,
+        7,
+        11,
+        15,
+        16,
+        20,
+        21
+      ]
+    ],
+    [
+      "team-heading",
+      "pilsens"
+    ],
+    [
+      "h2",
+      "Sabonis y Garland: una transformación por $4"
+    ],
+    [
+      "p",
+      "Diego Alvarez movió dos piezas importantes: Jalen Brunson salió para incorporar a Sabonis por $2; Banchero dejó su lugar a Darius Garland, también por $2. Sabonis es una de las adquisiciones de mayor impacto potencial del listado. En tres partidos NBA reunió 52 rebotes, 21 asistencias y 56 puntos, con 21/26 de campo. Junto a Jokić y Jalen Johnson, puede reforzar una estructura de pase y rebote que ya tiene varias vías de producción."
+    ],
+    [
+      "p",
+      "Garland añade otra clase de creación: 72 puntos, nueve triples y 21 asistencias en tres actuaciones. La contrapartida son sus 18 pérdidas. Cromwell ganó esa categoría por apenas dos en el debut, así que ese volumen merece seguimiento. La salida de Brunson, que aportó 68 puntos al cierre, y de Banchero cambia el reparto de responsabilidades. El precio fue bajo; la decisión deportiva es considerable. Además, ambos jugadores liberados pasan a waivers y se convierten en nombres a observar para el resto de la liga."
+    ],
+    [
+      "sources",
+      [
+        9,
+        16,
+        17,
+        23,
+        25
+      ]
+    ],
+    [
+      "team-heading",
+      "shockers"
+    ],
+    [
+      "h2",
+      "VanVleet, Kuminga y Reed: ajustes en tres funciones"
+    ],
+    [
+      "p",
+      "Shockers utilizó tres incorporaciones. Fred VanVleet llegó por $14 en lugar de Jalen Suggs; Jonathan Kuminga, por $8 en el puesto de Herbert Jones; Paul Reed, por $10 tras la salida de Daniel Gafford. VanVleet destaca por las 16 asistencias, seis robos y ninguna pérdida en sus dos partidos NBA iniciales. Su 6/18 de campo impide presentar el movimiento como una mejora garantizada de eficiencia, pero ofrece una vía para ordenar la creación."
+    ],
+    [
+      "p",
+      "Kuminga aportó siete triples, siete robos y una sola pérdida en tres encuentros, mientras Reed sumó 25 rebotes y tres tapones en el mismo número de actuaciones. Son perfiles que pueden ampliar la rotación de Patricio Uribe. El desafío consiste en traducirlos en minutos contabilizados sin perder las funciones defensivas que ofrecían Jones y Gafford."
+    ],
+    [
+      "sources",
+      [
+        0,
+        1,
+        3,
+        8,
+        12,
+        13,
+        22,
+        24
+      ]
+    ],
+    [
+      "team-heading",
+      "pelafustanes"
+    ],
+    [
+      "h2",
+      "Smith y Wiggins apuntan a una segunda línea más productiva"
+    ],
+    [
+      "p",
+      "Mequetrefes pagó $15 por Jalen Smith, la segunda puja más alta de la captura, y liberó a Klay Thompson. Smith acumuló 43 puntos, 24 rebotes y cuatro triples en tres partidos NBA. El cambio puede reforzar el rebote, aunque Klay había aportado siete triples al cómputo fantasy: esas funciones no se sustituyen de forma idéntica."
+    ],
+    [
+      "p",
+      "Aaron Wiggins llegó por $10 en lugar de Royce O'Neale. Sus 51 puntos, diez triples y cinco robos, con 18/31 de campo en tres actuaciones, ofrecen argumentos para mejorar la producción exterior. Después de un debut en el que las estrellas cargaron con buena parte del ataque, Carlos Sanchez busca más aportes desde la rotación. La inversión apunta a repartir esa carga, sin resolver por sí sola el problema de las pérdidas."
+    ],
+    [
+      "sources",
+      [
+        4,
+        5,
+        10,
+        14,
+        18,
+        19
+      ]
+    ],
+    [
+      "transaction-table",
+      "waivers-2026-10-26"
+    ],
+    [
+      "p",
+      "Haliburton concentra la inversión; Sabonis modifica el frente interior de Cromwell y Kessler refuerza una identidad defensiva ya reconocible en Hipopotamos. El resto de las incorporaciones se medirá por su capacidad de convertir participación en categorías. Estas cifras son antecedentes NBA: ninguno de los refuerzos añade puntos retroactivos al cierre de la primera semana."
+    ]
+  ]
+},
 {
   "id": "previa-clasicos-santa-maria-familiar",
   "date": "2026-10-26",

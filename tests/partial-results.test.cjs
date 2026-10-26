@@ -233,3 +233,63 @@ test('la previa presenta los dos clásicos con estadísticas del cierre y sin ad
   assert.doesNotMatch(html,/Haliburton|Michael Porter|\bMPJ\b|Trey Murphy/i);
   assert.equal(a.data.schedule.length,1);
 });
+
+test('los diez waivers respetan los pares de altas/bajas y las pujas de la captura', () => {
+  const a=app(),r=a.data.transactionReports[0];
+  const expected=[
+    ['pilsens','Darius Garland','Paolo Banchero',2],
+    ['pilsens','Domantas Sabonis','Jalen Brunson',2],
+    ['hipopotamos','Ace Bailey','Bennett Stirtz',6],
+    ['hipopotamos','Walker Kessler','Onyeka Okongwu',6],
+    ['shockers','Jonathan Kuminga','Herbert Jones',8],
+    ['shockers','Paul Reed','Daniel Gafford',10],
+    ['pelafustanes','Aaron Wiggins',"Royce O'Neale",10],
+    ['shockers','Fred VanVleet','Jalen Suggs',14],
+    ['pelafustanes','Jalen Smith','Klay Thompson',15],
+    ['hipopotamos','Tyrese Haliburton','Josh Giddey',31]
+  ];
+  assert.deepEqual(JSON.parse(JSON.stringify(r.transactions.map(m=>[m.team,m.added.name,m.dropped.name,m.bid]))),expected);
+  assert.equal(r.transactions.reduce((sum,m)=>sum+m.bid,0),104);
+  assert.equal(r.transactions.every(m=>m.type==='waiver'),true);
+  assert.equal(r.date,'2026-10-26');assert.equal(r.timeZoneShown,false);
+  assert.ok(fs.existsSync(path.join(root,r.sourceImage)));
+  const totals=Object.fromEntries(a.data.teams.map(t=>[t.id,r.transactions.filter(m=>m.team===t.id).reduce((sum,m)=>sum+m.bid,0)]));
+  assert.deepEqual(totals,{shockers:32,pilsens:4,hipopotamos:43,pelafustanes:25});
+});
+
+test('el historial de movimientos reconstruye los planteles actuales y conserva los anteriores', () => {
+  const a=app(),r=a.data.transactionReports[0],initial=a.data.rosterSnapshots.find(s=>s.date==='2026-10-20');
+  for(const t of a.data.teams){
+    const roster=Array.from(initial.teams.find(x=>x.id===t.id).roster);
+    for(const move of r.transactions.filter(m=>m.team===t.id)){
+      const i=roster.indexOf(move.dropped.name);assert.notEqual(i,-1);
+      roster[i]=move.added.name;
+      assert.ok(t.roster.includes(move.added.name));
+      assert.ok(!t.roster.includes(move.dropped.name));
+    }
+    assert.deepEqual(roster,Array.from(t.roster));assert.equal(t.roster.length,13);
+  }
+  assert.equal(new Set(a.data.teams.flatMap(t=>t.roster)).size,52);
+  assert.equal(a.run("teamAt('hipopotamos','2026-10-25').roster.includes('Josh Giddey')"),true);
+  assert.equal(a.run("teamAt('hipopotamos','2026-10-25').roster.includes('Tyrese Haliburton')"),false);
+  assert.equal(a.run("teamAt('hipopotamos','2026-10-26').roster.includes('Tyrese Haliburton')"),true);
+  assert.match(a.run('rankPage()'),/Brunson/);
+  assert.doesNotMatch(a.run('rankPage()'),/Domantas Sabonis/);
+  assert.doesNotMatch(a.run("matchupPage(matchupById('w1-m2'))"),/Domantas Sabonis/);
+  assert.match(a.run("teamPage(team('pilsens'))"),/Domantas Sabonis/);
+});
+
+test('la nueva noticia destaca el impacto deportivo y muestra los diez movimientos con su portada', () => {
+  const a=app(),r=a.data.transactionReports[0],p=a.data.posts.find(p=>p.transactionReportId===r.id);
+  const html=a.run(`article(D.posts.find(p=>p.id===${JSON.stringify(p.id)}))`);
+  assert.equal((html.match(/class="waiver-featured"/g)||[]).length,3);
+  for(const name of ['Tyrese Haliburton','Domantas Sabonis','Walker Kessler'])assert.ok(a.run("transactionHighlights('waivers-2026-10-26')").includes(name));
+  assert.match(html,/\$104/);
+  assert.match(html,/Jalen Smith, la segunda puja más alta/);
+  assert.match(html,/ESPN Fantasy/);
+  assert.match(html,/anteriores a estas adquisiciones/);
+  assert.match(html,/class="article-cover"/);
+  for(const f of [p.image.src,p.image.small])assert.ok(fs.existsSync(path.join(root,f)));
+  assert.equal(r.nbaPlayers.length,10);
+  for(const [tag,indexes]of p.body)if(tag==='sources')for(const i of indexes)assert.ok(p.sources[i]?.url.startsWith('https://site.api.espn.com/'));
+});

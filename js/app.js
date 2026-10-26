@@ -7,6 +7,12 @@ const D = window.LEAGUE_DATA;
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const team = id => D.teams.find(t => t.id === id);
+function teamAt(id, date) {
+  const current = team(id);
+  if (!date) return current;
+  const snapshot = D.rosterSnapshots?.filter(s => s.date <= date).sort((a,b) => b.date.localeCompare(a.date))[0];
+  return { ...current, ...snapshot?.teams.find(t => t.id === id) };
+}
 const fmtDate = d => new Intl.DateTimeFormat('es-CL', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(d + 'T12:00:00Z'));
 const fmtShort = d => new Intl.DateTimeFormat('es-CL', { day: 'numeric', month: 'short', timeZone: 'UTC' }).format(new Date(d + 'T12:00:00Z')).replace('.', '').toUpperCase();
 const posts = () => D.posts.slice().sort((a, b) => b.date.localeCompare(a.date));
@@ -183,7 +189,7 @@ function schedulePage() {
     <p class="note" style="margin-top:28px">El récord acumula categorías ganadas, perdidas y empatadas, como en ESPN. PJ cuenta cruces semanales finalizados. La clasificación se ordena por porcentaje de categorías (un empate vale media victoria); las posiciones iguales se muestran compartidas hasta confirmar el desempate oficial.</p>`;
 }
 function matchupPage(m) {
-  const [a, b] = m.teams.map(team), ev = evaluate(m);
+  const [a, b] = m.teams.map(id => teamAt(id, m.end)), ev = evaluate(m);
   return `<a class="back" href="#calendario">← Calendario</a>
     <div class="page-head"><span class="eyebrow">${esc(m.weekLabel)} · ${fmtShort(m.start)} – ${fmtShort(m.end)} ${m.end.slice(0,4)}</span><h1>${esc(a.short)} <span style="color:var(--orange)">vs</span> ${esc(b.short)}</h1></div>
     <div class="scoreboard" style="--ta:${esc(a.colors[0])};--tb:${esc(b.colors[0])}">
@@ -243,28 +249,43 @@ function reportSources(p) {
 function articleSources(p, indexes) {
   return `<p class="note report-sources">Fuentes: ${indexes.map(i => p.sources?.[i]).filter(Boolean).map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>`).join(' · ')}.</p>`;
 }
+function transactionHighlights(id) {
+  const report = D.transactionReports?.find(r => r.id === id);
+  if (!report) return '';
+  return `<section class="waiver-highlights" aria-label="Adquisiciones destacadas"><h2>Tres incorporaciones para seguir</h2><p class="note">Selección editorial por jerarquía, encaje y producción reciente.</p><ul class="waiver-highlight-grid">${report.highlights.map(h => {
+    const m = report.transactions.find(t => t.id === h.transactionId);
+    return `<li><span class="eyebrow">${esc(h.label)}</span><h3>${esc(m.added.name)}</h3><a class="waiver-team" href="#equipo/${esc(m.team)}">${esc(team(m.team).name)}</a><strong class="waiver-bid">$${m.bid}<small>Puja</small></strong><p>${esc(h.reason)}</p></li>`;
+  }).join('')}</ul></section>`;
+}
+function transactionTable(id) {
+  const report = D.transactionReports?.find(r => r.id === id);
+  if (!report) return '';
+  const featured = new Set(report.highlights.map(h => h.transactionId));
+  const moves = report.transactions.slice().sort((a,b) => b.bid-a.bid);
+  return `<h2>Todos los movimientos confirmados</h2><p class="note">Pujas ordenadas de mayor a menor. Las filas señaladas corresponden a las tres adquisiciones destacadas en el análisis.</p><div class="report-scroll" tabindex="0" role="region" aria-label="Altas y bajas por waivers"><table class="waiver-table"><caption>ESPN Fantasy · ${fmtDate(report.date)} · ${moves.length} incorporaciones</caption><thead><tr><th scope="col">Equipo</th><th scope="col">Alta</th><th scope="col">Baja</th><th scope="col">Puja</th></tr></thead><tbody>${moves.map(m => `<tr${featured.has(m.id) ? ' class="waiver-featured"' : ''}><td><a href="#equipo/${esc(m.team)}">${esc(team(m.team).name)}</a></td><th scope="row">${esc(m.added.name)}${featured.has(m.id) ? '<small class="waiver-tag">Destacada</small>' : ''}</th><td>${esc(m.dropped.name)}</td><td class="waiver-price">$${m.bid}</td></tr>`).join('')}</tbody><tfoot><tr><th scope="row" colspan="3">Suma de las pujas de la captura</th><td class="waiver-price">$${moves.reduce((sum,m) => sum+m.bid,0)}</td></tr></tfoot></table></div><details class="player-report"><summary>Fuente y alcance de los movimientos</summary><p class="note">${esc(report.source)}</p><a class="link" href="${esc(report.sourceImage)}" target="_blank" rel="noopener noreferrer">Ver registro de ESPN Fantasy</a></details>`;
+}
 
 function article(p) {
   const r = D.rankings.find(r => r.id === p.rankingId);
   const report = D.statisticsReports?.find(r => r.id === p.reportId);
   const reportMeta = !report ? '' : p.category === 'Previas' ? `<span class="snapshot-meta">Base estadística: cierre del ${esc(fmtDate(report.through))}</span>` : cutoffNote({...report,updatedAtApproximate:report.approximate});
   return `<a class="back" href="#noticias">← Volver al archivo</a><article class="reading"><div class="page-head"><span class="eyebrow">${esc(postLabel(p))}</span><h1>${esc(p.title)}</h1><div class="meta"><time datetime="${p.date}">${fmtDate(p.date)}</time> · Redacción Papafritas${p.readingMinutes ? ` · ${p.readingMinutes} min de lectura` : ''}</div>${reportMeta}</div>${articleCover(p)}<p class="lead">${esc(p.excerpt)}</p>
-    ${p.body.map(([tag, text]) => tag === 'sources' ? articleSources(p, text) : tag === 'player-report' ? playerReport(p.reportId, text) : tag === 'draft-order' ? draftOrder() : tag === 'team-heading' ? rankingHeading(team(text)) : `<${tag === 'h2' ? 'h2' : 'p'}>${esc(text)}</${tag === 'h2' ? 'h2' : 'p'}>`).join('')}
+    ${p.body.map(([tag, text]) => tag === 'transaction-highlights' ? transactionHighlights(text) : tag === 'transaction-table' ? transactionTable(text) : tag === 'sources' ? articleSources(p, text) : tag === 'player-report' ? playerReport(p.reportId, text) : tag === 'draft-order' ? draftOrder() : tag === 'team-heading' ? rankingHeading(team(text)) : `<${tag === 'h2' ? 'h2' : 'p'}>${esc(text)}</${tag === 'h2' ? 'h2' : 'p'}>`).join('')}
     ${r ? r.entries.map((e, i) => `${rankingHeading(team(e.team), i + 1)}<p>${esc(e.analysis)}</p>`).join('') : ''}
     ${reportSources(p)}<p class="source">${esc(p.source ?? 'Base documental: fichas de los cuatro equipos registradas el 20 de octubre de 2026 a partir de capturas proporcionadas por los participantes. Las valoraciones son opinión y proyección editorial: no incorporan estadísticas actuales ni presuponen disponibilidad.')}</p>
     ${p.rulesLink ? '<a class="link" href="#reglas">Consultar el reglamento y los tiers</a>' : ''}
     <div class="share"><button class="btn ghost" id="copy">Copiar enlace</button><a class="btn" href="https://wa.me/?text=${encodeURIComponent(p.title + ' ' + location.href)}" target="_blank" rel="noopener noreferrer">Compartir por WhatsApp</a></div><p id="status" role="status" class="note"></p>
     <h2>Equipos de esta nota</h2><div class="categories">${p.teams.map(id => `<a class="link" href="#equipo/${id}">${esc(team(id).name)}</a>`).join('')}</div></article>`;
 }
-const positions = ['PG', 'SG', 'SF', 'PF', 'C', 'G', 'F', 'UTIL', 'UTIL', 'UTIL', 'Banca', 'Banca', 'Banca'];
 function teamPage(t) {
   const st = standings().find(r => r.id === t.id), pos = standingPosition(t.id);
   const myMatches = allMatchups().filter(m => m.teams.includes(t.id));
+  const rosterPost = D.posts.find(p => p.transactionReportId && p.transactionReportId === t.rosterReportId);
   return `<a class="back" href="#equipos">← Todos los equipos</a>
     <section class="team-hero" style="--team:${esc(t.colors[0])}">${t.logo ? `<div class="wm" aria-hidden="true"><img src="${esc(t.logo)}" alt=""></div>` : ''}${crest(t)}<div><span class="eyebrow">${esc(t.city)} · ${esc(t.short)}</span><h1>${esc(t.name)}</h1><div class="owner">${esc(t.owner)}${t.ownerNote ? ' · ' + esc(t.ownerNote) : ''}</div>
       <div class="stats"><div class="stat"><b>${recordOf(t.id)}</b><span>Récord por categorías</span></div><div class="stat"><b>${played() ? pos + '°' : '—'}</b><span>Posición</span></div><div class="stat"><b>${st.w}-${st.l}-${st.t}</b><span>Cruces semanales</span></div><div class="stat"><b>${D.rankings[0].entries.findIndex(e => e.team === t.id) + 1}°</b><span>Power ranking</span></div></div></div></section>
     <div class="team-detail"><section class="panel reveal"><h2>Plantel</h2><div class="tier-summary" aria-label="Cupos de tier del plantel">${D.rules.tiers.map(r => `<span class="tier-badge ${r.id === 'A+' ? 'Ap' : r.id}">${esc(r.id)} ${t.roster.filter(p => playerTier(p) === r.id).length}/${r.limit}</span>`).join('')}</div>
-      <table><thead><tr><th class="roster-position" scope="col">Puesto</th><th scope="col">Jugador</th><th class="roster-tier" scope="col">Tier</th></tr></thead><tbody>${t.roster.map((p, i) => `<tr><td class="kicker">${positions[i]}</td><td>${esc(p)}</td><td>${tierBadge(playerTier(p))}</td></tr>`).join('')}<tr><td class="kicker">IR</td><td class="note">Vacante</td><td>—</td></tr></tbody></table><p class="note" style="margin-top:12px">Cupos según el anexo del ${fmtDate(D.rules.date)}. <a class="link" href="#reglas" style="padding:0">Ver reglas</a></p></section>
+      ${t.rosterUpdatedDate ? `<p class="note">Actualizado el ${fmtDate(t.rosterUpdatedDate)}${rosterPost ? ` · <a class="link" href="#nota/${esc(rosterPost.id)}">Ver movimientos</a>` : ''}</p>` : ''}<table><thead><tr><th class="roster-position" scope="col">N.º</th><th scope="col">Jugador</th><th class="roster-tier" scope="col">Tier</th></tr></thead><tbody>${t.roster.map((p, i) => `<tr><td class="kicker">${i+1}</td><td>${esc(p)}</td><td>${tierBadge(playerTier(p))}</td></tr>`).join('')}<tr><td class="kicker">IR</td><td class="note">Sin información actualizada</td><td>—</td></tr></tbody></table><p class="note" style="margin-top:12px">Listado de jugadores, sin asignación de titulares o banca. Cupos según el anexo del ${fmtDate(D.rules.date)}. <a class="link" href="#reglas" style="padding:0">Ver reglas</a></p></section>
     <section class="side-section reveal"><span class="eyebrow">Radiografía editorial</span><h2>Líderes esperados</h2><p class="analysis">${t.leaders.map(esc).join(' · ')}</p><h2>Fortalezas proyectadas</h2><p class="analysis">${esc(t.strength)}</p><h2>Desafíos por categorías</h2><p class="analysis">${esc(t.challenge)}</p><div class="categories">${D.categories.map(c => `<span>${esc(c.id)}${c.lowerWins ? ' ↓' : ''}</span>`).join('')}</div>
       <h2>Cruces</h2><div class="matches" style="grid-template-columns:1fr">${myMatches.map(matchCard).join('') || '<p class="note">Sin cruces programados.</p>'}</div></section></div>
     ${section('Publicaciones relacionadas')}<div class="news-grid" style="margin-bottom:48px">${posts().filter(p => p.teams.includes(t.id)).map(news).join('')}</div>`;
@@ -272,7 +293,7 @@ function teamPage(t) {
 function rankPage() {
   const r = D.rankings[0];
   return `<div class="page-head"><span class="eyebrow">${esc(r.label)} · ${fmtDate(r.date)}</span><h1>${esc(r.title)}</h1><p class="lead-text">Opinión editorial entre los cuatro equipos. No es la clasificación oficial ni el resultado de una simulación.</p></div>
-    ${r.entries.map((e, i) => { const t = team(e.team); return `<section class="rank-detail reveal"><span class="rank-num">${i + 1}</span><div>${rankingHeading(t)}<div style="margin:-4px 0 12px">${moveBadge(e, i)}</div><p class="analysis">${esc(e.analysis)}</p><p class="note">${esc(t.strength)} ${esc(t.challenge)}</p></div></section>`; }).join('')}
+    ${r.entries.map((e, i) => { const t = teamAt(e.team, r.date); return `<section class="rank-detail reveal"><span class="rank-num">${i + 1}</span><div>${rankingHeading(t)}<div style="margin:-4px 0 12px">${moveBadge(e, i)}</div><p class="analysis">${esc(e.analysis)}</p><p class="note">${esc(t.strength)} ${esc(t.challenge)}</p></div></section>`; }).join('')}
     <p class="note" style="margin-top:20px">Base: planteles documentados el 20 de octubre de 2026. Proyecciones cualitativas sin estadísticas actuales.</p><a class="link" href="#nota/ranking-pretemporada" style="margin-bottom:40px">Leer la nota de pretemporada</a>`;
 }
 function teamsPage() {
