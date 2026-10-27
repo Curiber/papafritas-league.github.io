@@ -1,0 +1,12 @@
+{
+  "leagueId": 732964684,
+  "seasonId": 2027,
+  "timeZone": "America/Santiago",
+  "scoreboardUrl": "https://fantasy.espn.com/basketball/league/scoreboard?leagueId=732964684",
+  "teams": {
+    "1": { "id": "shockers", "name": "Penalolen Shockers" },
+    "2": { "id": "pilsens", "name": "Cromwell Pilsens" },
+    "3": { "id": "pelafustanes", "name": "Mequetrefes" },
+    "4": { "id": "hipopotamos", "name": "Los Hipopotamos Chuchetumare" }
+  }
+}

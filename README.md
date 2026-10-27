@@ -36,8 +36,30 @@ El récord acumula categorías ganadas, perdidas y empatadas (H2H Each Category)
 
 ## Agregar una semana
 
-Cada fecha dura 6 días (`end` = `start` + 5). Añadir un objeto a `schedule` con `week`, `label`, `start`, `end`, `featured` (id del cruce
+Usar el período oficial de ESPN, sin asumir una duración fija: la primera semana va del 20 al 25 de octubre; la segunda, del 26 de octubre al 1 de noviembre. Añadir un objeto a `schedule` con `week`, `label`, `start`, `end`, `featured` (id del cruce
 destacado en portada) y sus `matchups`.
+
+## Actualización diaria desde ESPN
+
+La tarea de Codex **Actualizar parciales de Papafritas League** está programada todos los días a las **07:00, America/Santiago**. Es una tarea local: requiere el computador encendido, conexión a internet, la aplicación abierta y una sesión de ESPN vigente en el navegador de este chat. Si la sesión caduca, se debe iniciar sesión allí; no guardar contraseñas ni cookies en el repositorio. GitHub Pages publica el resultado del push; no consulta ESPN por su cuenta.
+
+`config/espn.json` identifica liga, temporada y equipos. Abrir su `scoreboardUrl` con el navegador de la conversación y leer los **totales acumulados del período** seleccionado, sus fechas y el marcador de categorías. Los totales diarios del box score pueden estar vacíos antes de los partidos: no sustituir el acumulado por esos ceros. Usar la precisión disponible en el tooltip de FG% y FT% para evitar empates por redondeo. No reconstruir el cómputo fantasy sumando estadísticas NBA: banca y fechas de adquisición pueden excluir actuaciones.
+
+Guardar la lectura como JSON con el mismo formato que `assets/cortes/espn/20261027T133752Z.json`. `capturedAt` debe ser la hora real de consulta, incluso si la tarea de las 07:00 se ejecutó con retraso. Luego ejecutar:
+
+```powershell
+node scripts/update-espn-results.cjs <ruta-del-corte.json>
+node --test tests/partial-results.test.cjs tests/espn-results.test.cjs
+node --check js/data.js
+node --check js/app.js
+git diff --check
+```
+
+El importador comprueba liga, temporada, identidad de los cuatro equipos, fechas, las 36 cifras y ambos marcadores, con TO a la baja. Actualiza exclusivamente el calendario, guarda un corte auditable sin credenciales y renueva la versión de los recursos. Sin cambios de cifras o estado, no escribe archivos ni modifica la hora publicada. Rechaza lecturas anteriores al último corte y correcciones de finales existentes. Las crónicas, planteles, actas y resultados anteriores se conservan.
+
+Durante la semana, usar `status:"partial"`. Al cambiar de período, revisar primero cualquier semana anterior que siga parcial: solo cerrarla con `status:"final"` y `finalConfirmed:true` cuando ESPN confirme el cierre y haya pasado la fecha de término en Chile. Después leer la nueva semana. No inferir un final únicamente por la fecha ni inventar sus totales.
+
+Revisar el diff, hacer commit y push de los archivos de resultados y comprobar que GitHub Pages publique ese commit. Ante un error de acceso o datos incompletos, conservar el último corte visible e informar el problema. Las 07:00 son la hora prevista de consulta, no una promesa de publicación instantánea ni una conexión en tiempo real.
 
 ## Power ranking
 

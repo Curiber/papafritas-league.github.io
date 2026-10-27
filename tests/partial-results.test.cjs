@@ -33,6 +33,7 @@ function app() {
 // Retained Oct 23 snapshot: later final scores must not replace this fixture.
 function partialApp() {
   const a = app();
+  a.data.schedule = [a.data.schedule.find(w => w.week === 1)];
   const stats = {
     hipopotamos: {fgp:.4085,ftp:.6857,tpm:21,reb:80,ast:59,stl:17,blk:8,to:33,pts:179},
     pelafustanes: {fgp:.4626,ftp:.7941,tpm:21,reb:70,ast:21,stl:9,blk:7,to:31,pts:211},
@@ -135,7 +136,7 @@ test('las vistas existentes y los enlaces directos siguen disponibles', () => {
   const a = app();
   const routes = ['', '#calendario', '#reglas', '#noticias', '#ranking', '#equipos',
     ...a.data.teams.map(t => '#equipo/' + t.id), ...a.data.posts.map(p => '#nota/' + p.id),
-    '#cruce/w1-m1', '#cruce/w1-m2'];
+    ...a.data.schedule.flatMap(w => w.matchups.map(m => '#cruce/' + m.id))];
   for (const route of routes) {
     a.ctx.location.hash = route;
     a.run('route()');
@@ -146,7 +147,8 @@ test('las vistas existentes y los enlaces directos siguen disponibles', () => {
 
 test('el cierre reproduce los dos marcadores y la clasificación por categorías de ESPN', () => {
   const a = app();
-  assert.deepEqual(JSON.parse(a.run('JSON.stringify(allMatchups().map(m=>evaluate(m).score))')),
+  a.data.schedule = a.data.schedule.filter(w => w.week === 1);
+  assert.deepEqual(JSON.parse(a.run('JSON.stringify(allMatchups().filter(m=>m.week===1).map(m=>evaluate(m).score))')),
     [{a:7,b:2,t:0},{a:5,b:4,t:0}]);
   assert.deepEqual(JSON.parse(a.run('JSON.stringify(standings().map(r=>[r.id,recordOf(r.id),r.w+r.l+r.t]))')),
     [['hipopotamos','7-2-0',1],['pilsens','5-4-0',1],['shockers','4-5-0',1],['pelafustanes','2-7-0',1]]);
@@ -157,6 +159,28 @@ test('el cierre reproduce los dos marcadores y la clasificación por categorías
     assert.match(html, /<small>Final<\/small>/);
     assert.match(html, /Resultado confirmado: 26 de octubre de 2026/);
     assert.doesNotMatch(html, /Corte manual|aprox\.|Marcador parcial/);
+  }
+});
+
+test('el corte importado de ESPN aparece como parcial con fecha, fuentes y sin alterar la tabla', () => {
+  const a = app();
+  a.data.schedule = a.data.schedule.filter(w => w.week === 1);
+  const before = a.run('JSON.stringify(standings())');
+  const snapshot = require('../assets/cortes/espn/20261027T133752Z.json');
+  a.data.schedule = require('../scripts/update-espn-results.cjs').importSnapshot(a.data, snapshot).schedule;
+  assert.equal(a.run('JSON.stringify(standings())'), before);
+  assert.deepEqual(JSON.parse(a.run('JSON.stringify(allMatchups().filter(m=>m.week===2).map(m=>evaluate(m).score))')),
+    [{ a:6, b:3, t:0 }, { a:3, b:6, t:0 }]);
+  assert.match(a.run('home()'), /Semana 2/);
+  for (const id of ['w2-m1', 'w2-m2']) {
+    const html = a.run(`matchupPage(matchupById('${id}'))`);
+    assert.match(html, /<small>Parcial<\/small>/);
+    assert.match(html, /Corte ESPN:/);
+    assert.match(html, /10:37/);
+    assert.match(html, /Actualización diaria prevista a las 07:00/);
+    assert.match(html, /Ver cruce en ESPN/);
+    assert.match(html, /Datos de este corte/);
+    assert.doesNotMatch(html, /Corte manual|actualización manual|aprox\./);
   }
 });
 
@@ -210,6 +234,7 @@ test('el mercado respeta exclusiones, fuentes, tiers y la distinción entre prop
 
 test('un empate de clasificación comparte posición sin usar el power ranking como desempate', () => {
   const a=app();
+  a.data.schedule = a.data.schedule.filter(w => w.week === 1);
   const [m1,m2]=a.data.schedule[0].matchups;
   m2.stats.pilsens=structuredClone(m1.stats.hipopotamos);
   m2.stats.shockers=structuredClone(m1.stats.pelafustanes);
@@ -231,7 +256,7 @@ test('la previa presenta los dos clásicos con estadísticas del cierre y sin ad
   assert.match(html,/Base estadística: cierre del 25 de octubre de 2026/);
   assert.match(html,/no son resultados ni proyecciones numéricas de la próxima fecha/);
   assert.doesNotMatch(html,/Haliburton|Michael Porter|\bMPJ\b|Trey Murphy/i);
-  assert.equal(a.data.schedule.length,1);
+  assert.equal(p.reportId,'semana-1-final-2026-10-25');
 });
 
 test('los diez waivers respetan los pares de altas/bajas y las pujas de la captura', () => {

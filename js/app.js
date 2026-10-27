@@ -37,7 +37,7 @@ function cutoffText(m) {
 }
 function cutoffNote(m) {
   if (m.updatedDate) return `<span class="snapshot-meta">Resultado confirmado: ${esc(fmtDate(m.updatedDate))}</span>`;
-  return m.updatedAt ? `<span class="snapshot-meta">Corte manual: ${esc(cutoffText(m))}</span>` : '';
+  return m.updatedAt ? `<span class="snapshot-meta">Corte ${m.sourceMode === 'espn' ? 'ESPN' : 'manual'}: ${esc(cutoffText(m))}</span>` : '';
 }
 /** Devuelve, por categoría, quién gana: 'a' | 'b' | 't', y el marcador total. */
 function evaluate(m) {
@@ -200,7 +200,7 @@ function matchupPage(m) {
         const r = ev?.cats[i];
         return `<tr><td class="cat" title="${esc(c.name)}">${esc(c.id)}${c.lowerWins ? ' ↓' : ''}</td><td class="${r ? (r.w === 'a' ? 'w' : r.w === 'b' ? 'l' : '') : ''}">${r ? fmtStat(c, r.va) : '—'}</td><td class="${r ? (r.w === 'b' ? 'w' : r.w === 'a' ? 'l' : '') : ''}">${r ? fmtStat(c, r.vb) : '—'}</td><td>${r ? (r.w === 't' ? '<span class="note">Empate</span>' : `<span class="dot" style="background:${esc((r.w === 'a' ? a : b).colors[0])}"></span>${esc((r.w === 'a' ? a : b).short)}`) : '<span class="note">Pendiente</span>'}</td></tr>`;
       }).join('')}</tbody></table></div>
-    ${cutoffNote(m)}${isPartial(m) ? '<p class="note">Marcador parcial de actualización manual. No suma victorias ni derrotas a la clasificación hasta que se confirme el cierre.</p>' : ''}${m.sourceImage ? `<a class="link" href="${esc(m.sourceImage)}" target="_blank" rel="noopener noreferrer">Ver captura fuente</a>` : ''}${ev ? '' : '<p class="note">Sin totales completos informados para este cruce.</p>'}
+    ${cutoffNote(m)}${isPartial(m) ? `<p class="note">${m.sourceMode === 'espn' ? 'Totales oficiales de ESPN al corte indicado. Actualización diaria prevista a las 07:00, hora de Chile.' : 'Marcador parcial de actualización manual.'} No suma victorias ni derrotas a la clasificación hasta que se confirme el cierre.</p>` : ''}${m.sourceImage ? `<a class="link" href="${esc(m.sourceImage)}" target="_blank" rel="noopener noreferrer">Ver captura fuente</a>` : ''}${m.sourceUrl ? `<p class="note"><a class="link" href="${esc(m.sourceUrl)}" target="_blank" rel="noopener noreferrer">Ver cruce en ESPN</a> (requiere acceso a la liga)${m.sourceSnapshot ? ` · <a class="link" href="${esc(m.sourceSnapshot)}" target="_blank" rel="noopener noreferrer">Datos de este corte</a>` : ''}</p>` : ''}${ev ? '' : '<p class="note">Sin totales completos informados para este cruce.</p>'}
     ${section('Los dos planteles')}<div class="team-detail">${[a, b].map(t => `<section class="panel"><div class="rank-heading" style="margin-top:0">${crest(t, 56)}<h2><a href="#equipo/${t.id}">${esc(t.name)}</a></h2></div><p class="analysis"><strong>Líderes:</strong> ${t.leaders.map(esc).join(' · ')}</p><p class="analysis">${esc(t.strength)}</p></section>`).join('')}</div>`;
 }
 function normalizePlayerName(v) { return String(v).normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/gi, '').toLowerCase(); }

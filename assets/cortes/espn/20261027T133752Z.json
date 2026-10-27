@@ -1,0 +1,43 @@
+{
+  "leagueId": 732964684,
+  "seasonId": 2027,
+  "matchupPeriodId": 2,
+  "start": "2026-10-26",
+  "end": "2026-11-01",
+  "capturedAt": "2026-10-27T13:37:52Z",
+  "status": "partial",
+  "matchups": [
+    {
+      "teams": [
+        {
+          "espnId": 4,
+          "name": "Los Hipopotamos Chuchetumare",
+          "score": [6, 3, 0],
+          "stats": { "fgp": 0.46753247, "ftp": 0.8, "tpm": 16, "reb": 49, "ast": 23, "stl": 7, "blk": 6, "to": 15, "pts": 96 }
+        },
+        {
+          "espnId": 1,
+          "name": "Penalolen Shockers",
+          "score": [3, 6, 0],
+          "stats": { "fgp": 0.4516129, "ftp": 0.78787879, "tpm": 5, "reb": 47, "ast": 29, "stl": 3, "blk": 7, "to": 16, "pts": 115 }
+        }
+      ]
+    },
+    {
+      "teams": [
+        {
+          "espnId": 2,
+          "name": "Cromwell Pilsens",
+          "score": [3, 6, 0],
+          "stats": { "fgp": 0.46153846, "ftp": 0.71794872, "tpm": 13, "reb": 33, "ast": 27, "stl": 9, "blk": 10, "to": 12, "pts": 137 }
+        },
+        {
+          "espnId": 3,
+          "name": "Mequetrefes",
+          "score": [6, 3, 0],
+          "stats": { "fgp": 0.51369863, "ftp": 0.68571429, "tpm": 29, "reb": 64, "ast": 41, "stl": 15, "blk": 9, "to": 24, "pts": 203 }
+        }
+      ]
+    }
+  ]
+}
