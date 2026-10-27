@@ -78,7 +78,7 @@ function importSnapshot(data, snapshot) {
     if (unchanged) continue;
     changed = true;
     Object.assign(m, { status: snapshot.status, stats, updatedAt: snapshot.capturedAt,
-      sourceMode: 'espn', source: 'Totales semanales oficiales de ESPN Fantasy, consultados en el marcador de la liga con sesión autenticada.',
+      sourceMode: 'espn', source: snapshot.retrieval === 'espn-fantasy-api' ? 'Totales semanales oficiales de ESPN Fantasy, obtenidos mediante su API de lectura.' : 'Totales semanales oficiales de ESPN Fantasy, consultados en el marcador de la liga con sesión autenticada.',
       sourceUrl: `https://fantasy.espn.com/basketball/boxscore?leagueId=${config.leagueId}&matchupPeriodId=${week.week}&seasonId=${config.seasonId}&teamId=${input.teams[0].espnId}`,
       sourceSnapshot: `./${snapshotPath(snapshot.capturedAt)}` });
     delete m.updatedDate;
@@ -88,35 +88,48 @@ function importSnapshot(data, snapshot) {
   return { schedule, changed };
 }
 
-function main() {
-  check(process.argv.length === 3, 'Uso: node scripts/update-espn-results.cjs <corte.json>');
-  const root = path.resolve(__dirname, '..');
-  const snapshot = JSON.parse(fs.readFileSync(path.resolve(process.argv[2]), 'utf8'));
+function writeSnapshots(snapshots, root = path.resolve(__dirname, '..')) {
+  check(Array.isArray(snapshots) && snapshots.length > 0, 'Falta un corte para importar.');
   const dataPath = path.join(root, 'js/data.js');
   const original = fs.readFileSync(dataPath, 'utf8');
   const ctx = { window: {} };
   vm.runInNewContext(original, ctx, { filename: dataPath });
-  const result = importSnapshot(ctx.window.LEAGUE_DATA, snapshot);
-  if (!result.changed) { console.log('Sin cambios en los resultados.'); return; }
+  const changed = [];
+  for (const snapshot of snapshots) {
+    const result = importSnapshot(ctx.window.LEAGUE_DATA, snapshot);
+    ctx.window.LEAGUE_DATA.schedule = result.schedule;
+    if (result.changed) changed.push(snapshot);
+  }
+  if (!changed.length) return false;
   const eol = original.includes('\r\n') ? '\r\n' : '\n';
   const normalized = original.replace(/\r\n/g, '\n');
   const pattern = /^schedule: \[[\s\S]*?\n\],(?=\n\n\/\* Power ranking)/m;
   check(pattern.test(normalized), 'No se encontró el bloque de calendario: no se modificó ningún archivo.');
-  const next = normalized.replace(pattern, () => `schedule: ${JSON.stringify(result.schedule, null, 2)},`).replace(/\n/g, eol);
-  const auditPath = path.join(root, snapshotPath(snapshot.capturedAt));
-  const audit = JSON.stringify(snapshot, null, 2) + '\n';
-  check(!fs.existsSync(auditPath) || isDeepStrictEqual(JSON.parse(fs.readFileSync(auditPath, 'utf8')), snapshot),
-    'Ya existe un corte distinto con esa hora.');
-  fs.mkdirSync(path.dirname(auditPath), { recursive: true });
-  if (!fs.existsSync(auditPath)) fs.writeFileSync(auditPath, audit);
+  const next = normalized.replace(pattern, () => `schedule: ${JSON.stringify(ctx.window.LEAGUE_DATA.schedule, null, 2)},`).replace(/\n/g, eol);
+  const audits = changed.map(snapshot => ({ snapshot, file: path.join(root, snapshotPath(snapshot.capturedAt)) }));
+  check(new Set(audits.map(a => a.file)).size === audits.length, 'Cada corte de un lote debe tener una hora distinta.');
+  for (const { snapshot, file } of audits) {
+    check(!fs.existsSync(file) || isDeepStrictEqual(JSON.parse(fs.readFileSync(file, 'utf8')), snapshot),
+      'Ya existe un corte distinto con esa hora.');
+  }
+  for (const { snapshot, file } of audits) {
+    fs.mkdirSync(path.dirname(file), { recursive: true });
+    if (!fs.existsSync(file)) fs.writeFileSync(file, JSON.stringify(snapshot, null, 2) + '\n');
+  }
   fs.writeFileSync(dataPath, next);
   const indexPath = path.join(root, 'index.html');
-  const version = new Date(snapshot.capturedAt).toISOString().replace(/\D/g, '').slice(0, 14);
+  const version = new Date(Math.max(...changed.map(s => Date.parse(s.capturedAt)))).toISOString().replace(/\D/g, '').slice(0, 14);
   fs.writeFileSync(indexPath, fs.readFileSync(indexPath, 'utf8').replace(/(\?v=)\d+/g, (_, prefix) => prefix + version));
-  console.log(`Semana ${snapshot.matchupPeriodId} actualizada (${snapshot.status}). Corte: ${snapshot.capturedAt}`);
+  return true;
 }
 
-module.exports = { importSnapshot };
+function main() {
+  check(process.argv.length === 3, 'Uso: node scripts/update-espn-results.cjs <corte.json>');
+  const snapshot = JSON.parse(fs.readFileSync(path.resolve(process.argv[2]), 'utf8'));
+  console.log(writeSnapshots([snapshot]) ? `Semana ${snapshot.matchupPeriodId} actualizada (${snapshot.status}). Corte: ${snapshot.capturedAt}` : 'Sin cambios en los resultados.');
+}
+
+module.exports = { importSnapshot, writeSnapshots };
 if (require.main === module) {
   try { main(); } catch (error) { console.error(error.message); process.exitCode = 1; }
 }

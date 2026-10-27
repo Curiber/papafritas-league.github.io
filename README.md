@@ -41,7 +41,26 @@ destacado en portada) y sus `matchups`.
 
 ## Actualización diaria desde ESPN
 
-La tarea de Codex **Actualizar parciales de Papafritas League** está programada todos los días a las **07:00, America/Santiago**. Es una tarea local: requiere el computador encendido, conexión a internet, la aplicación abierta y una sesión de ESPN vigente en el navegador de este chat. Si la sesión caduca, se debe iniciar sesión allí; no guardar contraseñas ni cookies en el repositorio. GitHub Pages publica el resultado del push; no consulta ESPN por su cuenta.
+El workflow `.github/workflows/espn-results.yml` programa la consulta todos los días a las **07:00, America/Santiago**, en los servidores de GitHub. La zona horaria del cron contempla el horario de verano; GitHub puede iniciar una ejecución con retraso. Este flujo no necesita el computador encendido ni Codex abierto. También permite **Actions → Actualizar resultados ESPN → Run workflow**. En repositorios públicos, GitHub puede desactivar los schedules tras 60 días sin actividad; revisar Actions si la liga deja de generar cambios durante un período largo.
+
+**Requisito pendiente hasta probar la conexión:** la liga es privada y devuelve HTTP 401 sin autenticación. Crear dos **Repository secrets** en [Settings → Secrets and variables → Actions](https://github.com/Curiber/papafritas-league.github.io/settings/secrets/actions):
+
+| Secret en GitHub | Valor |
+| --- | --- |
+| `ESPN_S2` | Valor de la cookie `espn_s2` de una sesión con acceso a la liga |
+| `ESPN_SWID` | Valor de la cookie `SWID`, incluidas sus llaves |
+
+En Chrome o Edge, abrir ESPN Fantasy con la sesión iniciada, pulsar F12 y buscar **Application → Storage → Cookies → dominio de ESPN**. Copiar únicamente el valor de cada cookie y pegarlo directamente en su secret de GitHub. Son credenciales de sesión: no pegarlas en el chat, archivos, comandos con valores literales, capturas ni logs. No hace falta guardar la contraseña de ESPN. Si ESPN responde 401 o 403 más adelante, renovar ambos secrets. La consulta usa cookies como la [biblioteca de referencia espn-api](https://github.com/cwendt94/espn-api/wiki); el endpoint de ESPN no tiene contrato público estable y puede cambiar.
+
+El flujo ejecuta pruebas, consulta el acumulado oficial, valida los dos cruces y hace commit/push si cambian cifras o estado. Después solicita un build de Pages mediante su API y comprueba los archivos publicados. Esa solicitud explícita es necesaria porque los pushes con `GITHUB_TOKEN` no activan por sí solos otro workflow de publicación. No se necesita un token personal de GitHub adicional. Desmarcar `refresh_results` al ejecutar manualmente permite probar solo las comprobaciones y la publicación del sitio actual, sin consultar ESPN.
+
+La tarea local previa **Actualizar parciales de Papafritas League** se conserva como respaldo mientras se verifica una primera lectura autenticada en Actions. Tras una ejecución completa exitosa, desactivar la tarea local para que quede un único proceso de actualización. Hasta entonces, la sesión del navegador solo sirve para la tarea local; no se transfiere a los servidores de GitHub.
+
+### Fuente e importación
+
+`scripts/fetch-espn-results.cjs` consulta la API de lectura de ESPN con los secrets solo en memoria. Obtiene `cumulativeScore.scoreByStat` y los resultados oficiales por categorías; no utiliza `totalPoints`, estadísticas de jugadores ni banca para reconstruir el marcador. Antes de cambiar de semana comprueba los parciales anteriores, exige un ganador confirmado y conserva todos los finales ya guardados. Un fallo de acceso, esquema o validación conserva los últimos resultados publicados. Solo se guardan cortes de resultados saneados; la respuesta completa, miembros y credenciales no se publican.
+
+`config/espn.json` identifica liga, temporada, equipos y la fecha de la primera jornada de cómputo. Las fechas de los cruces se obtienen del mapa `settings.scheduleSettings.matchupPeriods` de ESPN respecto a esa fecha, sin asumir semanas de siete días. Al cambiar de temporada hay que verificar y actualizar ambos campos. Las pruebas del adaptador usan respuestas sintéticas con las cifras del corte contrastado; no sustituyen la prueba de autenticación real en Actions.
 
 `config/espn.json` identifica liga, temporada y equipos. Abrir su `scoreboardUrl` con el navegador de la conversación y leer los **totales acumulados del período** seleccionado, sus fechas y el marcador de categorías. Los totales diarios del box score pueden estar vacíos antes de los partidos: no sustituir el acumulado por esos ceros. Usar la precisión disponible en el tooltip de FG% y FT% para evitar empates por redondeo. No reconstruir el cómputo fantasy sumando estadísticas NBA: banca y fechas de adquisición pueden excluir actuaciones.
 
@@ -49,7 +68,7 @@ Guardar la lectura como JSON con el mismo formato que `assets/cortes/espn/202610
 
 ```powershell
 node scripts/update-espn-results.cjs <ruta-del-corte.json>
-node --test tests/partial-results.test.cjs tests/espn-results.test.cjs
+node --test tests/*.test.cjs
 node --check js/data.js
 node --check js/app.js
 git diff --check

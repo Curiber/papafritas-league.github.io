@@ -1,0 +1,93 @@
+name: Actualizar resultados ESPN
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+      timezone: America/Santiago
+  workflow_dispatch:
+    inputs:
+      refresh_results:
+        description: Consultar ESPN (desmarcar para probar solo publicación)
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/espn-results.yml'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'config/espn.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: espn-results
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pages: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+      - name: Comprobar código e importación
+        run: |
+          node --test tests/*.test.cjs
+          node --check js/data.js
+          node --check js/app.js
+          node --check scripts/fetch-espn-results.cjs
+      - name: Consultar totales oficiales de ESPN
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh_results)
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: node scripts/fetch-espn-results.cjs
+      - name: Verificar resultados actualizados
+        run: |
+          node --test tests/*.test.cjs
+          node --check js/data.js
+          git diff --check
+      - name: Commit y push si cambiaron los resultados
+        id: commit
+        run: |
+          if git diff --quiet -- js/data.js index.html assets/cortes/espn; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add js/data.js index.html assets/cortes/espn
+          git commit -m 'Update official ESPN Fantasy results'
+          git push origin HEAD:main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+      # GITHUB_TOKEN pushes do not trigger Pages automatically. Request its build explicitly.
+      - name: Publicar y verificar GitHub Pages
+        if: steps.commit.outputs.changed == 'true' || (github.event_name == 'workflow_dispatch' && !inputs.refresh_results)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          expected_commit=$(git rev-parse HEAD)
+          gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" --silent
+          for attempt in $(seq 1 48); do
+            read -r state deployed_commit < <(gh api "repos/$GITHUB_REPOSITORY/pages/builds/latest" --jq '[.status, .commit] | @tsv')
+            if [ "$state" = 'errored' ]; then
+              echo 'GitHub Pages informó un error de publicación.' >&2
+              exit 1
+            fi
+            if [ "$state" = 'built' ] && [ "$deployed_commit" = "$expected_commit" ]; then
+              node scripts/verify-publication.cjs
+              exit 0
+            fi
+            sleep 5
+          done
+          echo 'No se confirmó la publicación del commit esperado.' >&2
+          exit 1

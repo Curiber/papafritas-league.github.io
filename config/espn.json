@@ -1,6 +1,7 @@
 {
   "leagueId": 732964684,
   "seasonId": 2027,
+  "scoringPeriodStartDate": "2026-10-20",
   "timeZone": "America/Santiago",
   "scoreboardUrl": "https://fantasy.espn.com/basketball/league/scoreboard?leagueId=732964684",
   "teams": {
