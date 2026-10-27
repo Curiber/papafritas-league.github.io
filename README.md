@@ -43,7 +43,7 @@ destacado en portada) y sus `matchups`.
 
 El workflow `.github/workflows/espn-results.yml` programa la consulta todos los días a las **07:00, America/Santiago**, en los servidores de GitHub. La zona horaria del cron contempla el horario de verano; GitHub puede iniciar una ejecución con retraso. Este flujo no necesita el computador encendido ni Codex abierto. También permite **Actions → Actualizar resultados ESPN → Run workflow**. En repositorios públicos, GitHub puede desactivar los schedules tras 60 días sin actividad; revisar Actions si la liga deja de generar cambios durante un período largo.
 
-**Requisito pendiente hasta probar la conexión:** la liga es privada y devuelve HTTP 401 sin autenticación. Crear dos **Repository secrets** en [Settings → Secrets and variables → Actions](https://github.com/Curiber/papafritas-league.github.io/settings/secrets/actions):
+**Acceso verificado el 27 de octubre de 2026:** la consulta autenticada desde Actions terminó correctamente en la [prueba real](https://github.com/Curiber/papafritas-league.github.io/actions/runs/40519840276). Los marcadores coincidían con el último corte, por lo que no se creó un commit vacío. La publicación se comprobó también en una [ejecución independiente](https://github.com/Curiber/papafritas-league.github.io/actions/runs/40517901032). La liga es privada y devuelve HTTP 401 sin autenticación. Mantener estos dos **Repository secrets** en [Settings → Secrets and variables → Actions](https://github.com/Curiber/papafritas-league.github.io/settings/secrets/actions):
 
 | Secret en GitHub | Valor |
 | --- | --- |
@@ -54,7 +54,7 @@ En Chrome o Edge, abrir ESPN Fantasy con la sesión iniciada, pulsar F12 y busca
 
 El flujo ejecuta pruebas, consulta el acumulado oficial, valida los dos cruces y hace commit/push si cambian cifras o estado. Después solicita un build de Pages mediante su API y comprueba los archivos publicados. Esa solicitud explícita es necesaria porque los pushes con `GITHUB_TOKEN` no activan por sí solos otro workflow de publicación. No se necesita un token personal de GitHub adicional. Desmarcar `refresh_results` al ejecutar manualmente permite probar solo las comprobaciones y la publicación del sitio actual, sin consultar ESPN.
 
-La tarea local previa **Actualizar parciales de Papafritas League** se conserva como respaldo mientras se verifica una primera lectura autenticada en Actions. Tras una ejecución completa exitosa, desactivar la tarea local para que quede un único proceso de actualización. Hasta entonces, la sesión del navegador solo sirve para la tarea local; no se transfiere a los servidores de GitHub.
+La tarea local previa **Actualizar parciales de Papafritas League** quedó desactivada después de la prueba real. La actualización diaria depende únicamente del cron de GitHub Actions y de los secretos de ESPN; puede ejecutarse con el computador apagado. La sesión del navegador de Codex no se transfiere a los servidores de GitHub.
 
 ### Fuente e importación
 
