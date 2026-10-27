@@ -37,6 +37,13 @@ function workspace(t) {
     const destination = path.join(dir,file); fs.mkdirSync(path.dirname(destination),{recursive:true});
     fs.copyFileSync(path.join(root,file),destination);
   }
+  // Daily updates must not turn today's live scores into tomorrow's test fixtures.
+  const reference = readData(); reference.schedule = reference.schedule.filter(w => w.week === 1);
+  const schedule = importSnapshot(reference, fixture).schedule;
+  const dataFile = path.join(dir,'js/data.js');
+  const source = fs.readFileSync(dataFile,'utf8').replace(/\r\n/g,'\n');
+  fs.writeFileSync(dataFile,source.replace(/^schedule: \[[\s\S]*?\n\],(?=\n\n\/\* Power ranking)/m,
+    () => 'schedule: ' + JSON.stringify(schedule,null,2) + ','));
   t.after(() => {
     assert.equal(path.dirname(path.resolve(dir)),path.resolve(os.tmpdir()));
     assert.ok(path.basename(dir).startsWith('papafritas-api-'));
