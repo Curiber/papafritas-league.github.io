@@ -92,6 +92,7 @@ async function refreshResults({ root = path.resolve(__dirname, '..'), read = rea
   const snapshots = [];
   for (const period of [...pending, current]) {
     const { lastScoringPeriod, start } = periodDates(meta, period);
+    console.log(`Período ${period}: jornadas ${meta.settings.scheduleSettings.matchupPeriods[period].join(',')} desde ${config.scoringPeriodStartDate}.`);
     const stamp = now().toISOString();
     const today = new Intl.DateTimeFormat('en-CA', { timeZone: config.timeZone }).format(new Date(stamp));
     if (today < start) continue;

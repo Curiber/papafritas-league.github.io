@@ -58,7 +58,8 @@ function importSnapshot(data, snapshot) {
     schedule.push(week);
     schedule.sort((a, b) => a.week - b.week);
   }
-  check(week.start === snapshot.start && week.end === snapshot.end, 'El período no coincide con el calendario guardado.');
+  check(week.start === snapshot.start && week.end === snapshot.end,
+    `El período ${snapshot.matchupPeriodId} no coincide con el calendario guardado: consulta ${snapshot.start}–${snapshot.end}; guardado ${week.start}–${week.end}.`);
   let changed = false;
   const matched = new Set();
   for (const input of snapshot.matchups) {
