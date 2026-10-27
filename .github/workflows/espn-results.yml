@@ -17,6 +17,7 @@ on:
       - 'scripts/**'
       - 'tests/**'
       - 'config/espn.json'
+      - 'config/espn-calendar.json'
 
 permissions:
   contents: read

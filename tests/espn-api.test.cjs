@@ -62,6 +62,10 @@ test('convierte el acumulado oficial y comprueba ambos marcadores sin usar banca
   assert.equal(importSnapshot(d,snapshot).changed,true);
   assert.deepEqual(periodDates(metadata(),1),{start:'2026-10-20',end:'2026-10-25',lastScoringPeriod:6});
   assert.deepEqual(periodDates(metadata(),2),{start:'2026-10-26',end:'2026-11-01',lastScoringPeriod:13});
+  const weekly=metadata(); weekly.settings.scheduleSettings.matchupPeriods['2']=[2];
+  assert.deepEqual(periodDates(weekly,2),{start:'2026-10-26',end:'2026-11-01',lastScoringPeriod:2});
+  weekly.settings.scheduleSettings.matchupPeriods['18']=[18];
+  assert.deepEqual(periodDates(weekly,18),{start:'2027-02-15',end:'2027-02-28',lastScoringPeriod:18});
 });
 
 test('rechaza categorías ausentes, identidades cambiadas y un ganador oficial incoherente', () => {

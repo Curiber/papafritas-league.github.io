@@ -4,6 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const config = require('../config/espn.json');
+const calendar = require('../config/espn-calendar.json');
 const { importSnapshot, writeSnapshots } = require('./update-espn-results.cjs');
 const statsMap = { fgp: '19', ftp: '20', tpm: '17', reb: '6', ast: '3', stl: '2', blk: '1', to: '11', pts: '0' };
 const check = (ok, message) => { if (!ok) throw new Error(message); };
@@ -37,12 +38,13 @@ async function readLeague({ views, scoringPeriodId, matchupPeriodId }, { fetchIm
 }
 
 function periodDates(meta, period) {
-  check(meta.status?.firstScoringPeriod === 1, 'Revisar la fecha de inicio de la temporada en config/espn.json.');
+  check(calendar.leagueId === config.leagueId && calendar.seasonId === config.seasonId, 'El calendario corresponde a otra liga o temporada.');
   const days = meta.settings?.scheduleSettings?.matchupPeriods?.[period];
   check(Array.isArray(days) && days.length > 0 && days.every((d, i) => Number.isInteger(d) && d >= 1 && (!i || d === days[i - 1] + 1)),
-    `ESPN no informó las jornadas consecutivas del período ${period}.`);
-  const dateAt = n => new Date(Date.parse(config.scoringPeriodStartDate + 'T12:00:00Z') + (n - 1) * 86400000).toISOString().slice(0, 10);
-  return { start: dateAt(days[0]), end: dateAt(days.at(-1)), lastScoringPeriod: days.at(-1) };
+    `ESPN no informó los períodos de cómputo consecutivos del cruce ${period}.`);
+  const dates = calendar.periods.find(p => p.id === period);
+  check(dates, `Faltan fechas oficiales para el período ${period}; revisar el selector de ESPN y config/espn-calendar.json.`);
+  return { start: dates.start, end: dates.end, lastScoringPeriod: days.at(-1) };
 }
 
 function snapshotFromApi(meta, scores, period, capturedAt, data) {
@@ -91,8 +93,8 @@ async function refreshResults({ root = path.resolve(__dirname, '..'), read = rea
   const pending = data.schedule.filter(w => w.week < current && w.matchups.some(m => ['partial', 'live'].includes(m.status))).map(w => w.week);
   const snapshots = [];
   for (const period of [...pending, current]) {
-    const { lastScoringPeriod, start } = periodDates(meta, period);
-    console.log(`Período ${period}: jornadas ${meta.settings.scheduleSettings.matchupPeriods[period].join(',')} desde ${config.scoringPeriodStartDate}.`);
+    const { lastScoringPeriod, start, end } = periodDates(meta, period);
+    console.log(`Período ${period}: ${start}–${end}; cómputo ESPN ${meta.settings.scheduleSettings.matchupPeriods[period].join(',')}.`);
     const stamp = now().toISOString();
     const today = new Intl.DateTimeFormat('en-CA', { timeZone: config.timeZone }).format(new Date(stamp));
     if (today < start) continue;
