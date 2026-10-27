@@ -61,8 +61,10 @@ function snapshotFromApi(meta, scores, period, capturedAt, data) {
       const identity = meta.teams?.find(team => team.id === t?.teamId);
       const name = identity?.name || [identity?.location, identity?.nickname].filter(Boolean).join(' ');
       check(cumulative?.scoreByStat && identity, 'Faltan totales acumulados o la identidad del equipo.');
-      check(Object.keys(cumulative.scoreByStat).length === 9 && Object.values(statsMap).every(id => Object.hasOwn(cumulative.scoreByStat, id)),
-        'La respuesta no contiene exactamente las nueve categorías de la liga.');
+      // ESPN can also include unscored FGM/FGA/FTM/FTA entries used by percentages.
+      const missing = Object.values(statsMap).filter(id => !Object.hasOwn(cumulative.scoreByStat, id));
+      check(missing.length === 0,
+        `Faltan categorías de la liga (IDs ${missing.join(', ')}; recibidos ${Object.keys(cumulative.scoreByStat).join(', ')}).`);
       const score = [cumulative.wins, m[other]?.cumulativeScore?.wins, cumulative.ties];
       check(cumulative.ties === m[other]?.cumulativeScore?.ties, 'ESPN informó empates inconsistentes.');
       return { espnId: t.teamId, name, score,

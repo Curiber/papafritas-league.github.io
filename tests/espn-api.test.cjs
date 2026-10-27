@@ -68,7 +68,6 @@ test('rechaza categorías ausentes, identidades cambiadas y un ganador oficial i
   const d=readData(); d.schedule=d.schedule.filter(w=>w.week===1);
   const mutations=[
     (meta,s) => { delete s.schedule[0].home.cumulativeScore.scoreByStat['19']; },
-    (meta,s) => { s.schedule[0].home.cumulativeScore.scoreByStat['99']={score:1}; },
     (meta,s) => { s.schedule[0].home.cumulativeScore.wins=1; },
     (meta,s) => { meta.teams[0].name='Otro equipo'; },
     (meta,s) => { s.schedule.pop(); },
@@ -148,9 +147,19 @@ test('un fallo de acceso o del segundo período conserva todo el último corte p
     if(request.matchupPeriodId===2)return scores(2,true);
     const s=scores(3);delete s.schedule[0].home.cumulativeScore.scoreByStat['19'];return s;
   };
-  await assert.rejects(refreshResults({root:dir,read,now:()=>new Date('2026-11-02T10:00:00Z')}),/nueve categorías/);
+  await assert.rejects(refreshResults({root:dir,read,now:()=>new Date('2026-11-02T10:00:00Z')}),/Faltan categorías/);
   assert.deepEqual(fingerprint(dir),before);
   assert.equal(fs.existsSync(path.join(dir,'assets/cortes/espn')),false);
+});
+
+test('ignora los auxiliares de tiro y sigue validando las nueve categorías oficiales', () => {
+  const d=readData();d.schedule=d.schedule.filter(w=>w.week===1);
+  const s=scores();
+  for(const m of s.schedule)for(const side of ['home','away'])Object.assign(m[side].cumulativeScore.scoreByStat,
+    {'13':{score:36},'14':{score:77},'15':{score:8},'16':{score:10}});
+  assert.deepEqual(snapshotFromApi(metadata(),s,2,fixture.capturedAt,d).matchups,fixture.matchups);
+  s.schedule[0].home.cumulativeScore.wins++;
+  assert.throws(()=>snapshotFromApi(metadata(),s,2,fixture.capturedAt,d),/marcador de ESPN/);
 });
 
 test('un lote cierra la semana anterior y agrega la nueva sin reescribir el cierre histórico', async t => {
