@@ -1,0 +1,100 @@
+{
+  "leagueId": 732964684,
+  "seasonId": 2027,
+  "matchupPeriodId": 2,
+  "start": "2026-10-26",
+  "end": "2026-11-01",
+  "capturedAt": "2026-10-28T12:09:50.957Z",
+  "status": "partial",
+  "retrieval": "espn-fantasy-api",
+  "matchups": [
+    {
+      "teams": [
+        {
+          "espnId": 1,
+          "name": "Penalolen Shockers",
+          "score": [
+            2,
+            6,
+            1
+          ],
+          "stats": {
+            "fgp": 0.5,
+            "ftp": 0.80327869,
+            "tpm": 9,
+            "reb": 81,
+            "ast": 43,
+            "stl": 5,
+            "blk": 9,
+            "to": 25,
+            "pts": 204
+          }
+        },
+        {
+          "espnId": 4,
+          "name": "Los Hipopotamos Chuchetumare",
+          "score": [
+            6,
+            2,
+            1
+          ],
+          "stats": {
+            "fgp": 0.5,
+            "ftp": 0.65625,
+            "tpm": 27,
+            "reb": 86,
+            "ast": 50,
+            "stl": 12,
+            "blk": 14,
+            "to": 28,
+            "pts": 208
+          }
+        }
+      ]
+    },
+    {
+      "teams": [
+        {
+          "espnId": 3,
+          "name": "Mequetrefes",
+          "score": [
+            5,
+            4,
+            0
+          ],
+          "stats": {
+            "fgp": 0.50326797,
+            "ftp": 0.68571429,
+            "tpm": 29,
+            "reb": 66,
+            "ast": 47,
+            "stl": 15,
+            "blk": 10,
+            "to": 27,
+            "pts": 207
+          }
+        },
+        {
+          "espnId": 2,
+          "name": "Cromwell Pilsens",
+          "score": [
+            4,
+            5,
+            0
+          ],
+          "stats": {
+            "fgp": 0.51020408,
+            "ftp": 0.74468085,
+            "tpm": 16,
+            "reb": 61,
+            "ast": 42,
+            "stl": 10,
+            "blk": 11,
+            "to": 16,
+            "pts": 201
+          }
+        }
+      ]
+    }
+  ]
+}
