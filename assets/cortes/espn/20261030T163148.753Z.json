@@ -1,0 +1,100 @@
+{
+  "leagueId": 732964684,
+  "seasonId": 2027,
+  "matchupPeriodId": 2,
+  "start": "2026-10-26",
+  "end": "2026-11-01",
+  "capturedAt": "2026-10-30T16:31:48.753Z",
+  "status": "partial",
+  "retrieval": "espn-fantasy-api",
+  "matchups": [
+    {
+      "teams": [
+        {
+          "espnId": 1,
+          "name": "Penalolen Shockers",
+          "score": [
+            4,
+            5,
+            0
+          ],
+          "stats": {
+            "fgp": 0.50179211,
+            "ftp": 0.83673469,
+            "tpm": 27,
+            "reb": 154,
+            "ast": 92,
+            "stl": 23,
+            "blk": 16,
+            "to": 45,
+            "pts": 389
+          }
+        },
+        {
+          "espnId": 4,
+          "name": "Los Hipopotamos Chuchetumare",
+          "score": [
+            5,
+            4,
+            0
+          ],
+          "stats": {
+            "fgp": 0.48701299,
+            "ftp": 0.71014493,
+            "tpm": 44,
+            "reb": 160,
+            "ast": 77,
+            "stl": 22,
+            "blk": 23,
+            "to": 41,
+            "pts": 393
+          }
+        }
+      ]
+    },
+    {
+      "teams": [
+        {
+          "espnId": 3,
+          "name": "Mequetrefes",
+          "score": [
+            7,
+            2,
+            0
+          ],
+          "stats": {
+            "fgp": 0.49211356,
+            "ftp": 0.73333333,
+            "tpm": 52,
+            "reb": 150,
+            "ast": 84,
+            "stl": 28,
+            "blk": 18,
+            "to": 46,
+            "pts": 419
+          }
+        },
+        {
+          "espnId": 2,
+          "name": "Cromwell Pilsens",
+          "score": [
+            2,
+            7,
+            0
+          ],
+          "stats": {
+            "fgp": 0.47651007,
+            "ftp": 0.8,
+            "tpm": 30,
+            "reb": 145,
+            "ast": 103,
+            "stl": 21,
+            "blk": 16,
+            "to": 56,
+            "pts": 378
+          }
+        }
+      ]
+    }
+  ]
+}
