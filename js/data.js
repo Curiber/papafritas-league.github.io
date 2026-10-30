@@ -4904,7 +4904,7 @@ posts: [
   "partial": true,
   "readingMinutes": 5,
   "title": "Mequetrefes aprieta el puño; el clásico familiar queda a cuatro puntos",
-  "excerpt": "Mequetrefes manda 7–2 en Santa María, con rebotes y tapones todavía abiertos. Hipopotamos sostiene un 5–4 ante Shockers en una serie que puede girar con una sola actuación. El domingo decidirá cuánto valían las ventajas del viernes.",
+  "excerpt": "Mequetrefes manda 7–2 y Cromwell debe buscar la reacción sin Edwards, operado de la rodilla. Hipopotamos sostiene un 5–4 ante Shockers: las bajas y cuatro puntos de diferencia marcan un cierre sin margen para distraerse.",
   "teams": [
     "pelafustanes",
     "pilsens",
@@ -4990,7 +4990,7 @@ posts: [
       }
     ]
   },
-  "source": "Crónica parcial con los totales oficiales de ESPN Fantasy del 30 de octubre de 2026 a las 13:31, hora de Chile. Comparación con el corte del jueves 29. Planteles contrastados en ESPN a las 13:41 del viernes y calendario NBA verificado del 30 de octubre al 1 de noviembre. Las apariciones de calendario son oportunidades máximas sobre el plantel al corte: disponibilidad, decisiones de alineación y posteriores movimientos determinan qué cuenta en fantasy. No se atribuyen actuaciones individuales ni lesiones no verificadas. Proyección editorial: todavía no hay ganadores de estas series.",
+  "source": "Marcadores parciales de ESPN Fantasy del 30 de octubre de 2026 a las 13:31, hora de Chile, comparados con el jueves 29. Planteles contrastados a las 13:41. Previa corregida con la lista de lesiones de ESPN actualizada a las 14:00 del viernes, el parte NBA de las 06:00 ET y comunicados sobre bajas prolongadas. Se retiran las apariciones atribuidas a Edwards y el recuento bruto de partidos como medida de disponibilidad. Los partes del sábado y domingo aún requieren actualización; no figurar en la lista no garantiza jugar. Los totales fantasy conservan su corte original.",
   "sources": [
     {
       "title": "ESPN Fantasy · Totales del corte del viernes",
@@ -5023,6 +5023,26 @@ posts: [
     {
       "title": "ESPN NBA · 1 de noviembre",
       "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261101"
+    },
+    {
+      "title": "Timberwolves · Edwards operado el 29 de octubre",
+      "url": "https://www.nba.com/timberwolves/news/anthony-edwards-injury-update-7"
+    },
+    {
+      "title": "NBA · Parte oficial del viernes, 06:00 ET",
+      "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-30_06_00AM.pdf"
+    },
+    {
+      "title": "ESPN · Estado de lesiones de los planteles al corte",
+      "url": "./assets/cortes/semana-2-lesiones-2026-10-30.json"
+    },
+    {
+      "title": "NBA · Baja de Jaren Jackson Jr.",
+      "url": "https://www.nba.com/news/jaren-jackson-jr-torn-mcl-october-2026"
+    },
+    {
+      "title": "NBA · Lesiones de Oklahoma City",
+      "url": "https://www.nba.com/news/oklahoma-city-thunder-jalen-williams-cason-wallace-injuries"
     }
   ],
   "body": [
@@ -5051,10 +5071,21 @@ posts: [
       "La tarea del Rubio es elegir bien dónde gastar sus recursos. Sus 103 asistencias contra 84 y el 80% en libres frente al 73,33% rival sostienen las dos categorías que todavía controla. Perseguir los 22 triples de diferencia como única apuesta puede dispersar el esfuerzo. Rebote, protección del aro y eficiencia ofrecen una conversación más cercana con este marcador. Para Mequetrefes, defender esas dos ventajas mínimas puede valer más que otra exhibición ofensiva."
     ],
     [
+      "p",
+      "La remontada de Cromwell debe plantearse sin Anthony Edwards, operado de la rodilla derecha el jueves y fuera de acción. Sus citas ante Clippers y Spurs no son recursos para este cierre. Además, Jaylen Brown está cuestionable para el viernes por molestias en la rodilla izquierda. El Rubio pierde una de sus mayores fuentes de puntos y triples, y tampoco puede dar por segura la ayuda de Brown: recuperar rebotes, tapones y eficiencia cobra todavía más sentido."
+    ],
+    [
+      "p",
+      "Mequetrefes también tiene motivos para mirar el parte: Alperen Sengun está cuestionable por molestias lumbares y Jalen Smith por un esguince en un dedo de la mano izquierda. Ambas dudas corresponden al viernes. Si Sengun no juega, defender los cinco rebotes de ventaja será una tarea más exigente para el resto del plantel. El 7–2 permite respirar; no permite desatender la alineación."
+    ],
+    [
       "sources",
       [
         0,
-        2
+        2,
+        8,
+        9,
+        10
       ]
     ],
     [
@@ -5078,11 +5109,19 @@ posts: [
       "El fin de semana exige una lectura fina de las posesiones. Hipopotamos necesita proteger rebotes y puntos sin regalar el control de pérdidas. Shockers debe sostener sus robos y buscar el vuelco en una de esas categorías cercanas. Los libres ofrecen hoy un margen considerable para Patricio; el porcentaje de campo es más sensible a una noche de volumen y poco acierto. La foto favorece a Hipopotamos. El partido sigue teniendo dos manos sobre el volante."
     ],
     [
+      "p",
+      "Las bajas también pesan en el clásico familiar. Shockers no tendrá a Jaren Jackson Jr., lesionado de la rodilla, y Kon Knueppel está descartado para el viernes; su situación del sábado necesita un nuevo parte. Patricio pierde una opción importante para discutir los tapones y llega con menos alternativas de las que sugiere el calendario. Hipopotamos, por su parte, tiene fuera a Cason Wallace por lesión de hombro. Con las rotaciones recortadas, los aportes de quienes sí puedan jugar tendrán más peso sobre esos cuatro puntos de diferencia."
+    ],
+    [
       "sources",
       [
         0,
         1,
-        3
+        3,
+        9,
+        10,
+        11,
+        12
       ]
     ],
     [
@@ -5091,19 +5130,19 @@ posts: [
     ],
     [
       "p",
-      "Esta noche hay focos concretos. Nikola Jokić tiene Denver–Phoenix; Cade Cunningham visita Brooklyn. Cromwell necesita aprovechar la única aparición programada de Jokić antes del cierre, mientras Hipopotamos busca que Cunningham le ayude a defender una ventaja que se mide en cuatro puntos. Anthony Edwards y Jaylen Brown tienen dos encuentros previstos entre viernes y sábado; para el Rubio, ese volumen es una oportunidad de acercarse antes de la jornada final."
+      "El viernes deja dos focos centrales: Nikola Jokić ante Phoenix y Cade Cunningham en Brooklyn. Ninguno figura en la lista de lesiones consultada. Con Edwards fuera y Brown en duda, Cromwell depende más de la producción de Jokić, que tiene esta única cita antes del cierre. Hipopotamos busca que Cunningham le ayude a sostener la anotación sin disparar las pérdidas. Aquí una gran noche puede cambiar una categoría; una estrella ausente no suma por aparecer en la agenda."
     ],
     [
       "p",
-      "El sábado reúne cruces que tocan directamente a los cuatro planteles. Minnesota visita San Antonio, con Edwards y Victor Wembanyama como referencias de franquicias distintas de esta liga. Oklahoma City juega en Houston, con Shai Gilgeous-Alexander entre los nombres a seguir del clásico familiar. Sacramento visita Memphis: Domantas Sabonis tiene allí su única cita programada del fin de semana, una ocasión importante para discutir los rebotes de Santa María. Son oportunidades de calendario, no actuaciones garantizadas."
+      "El sábado, Minnesota visita San Antonio sin Edwards como opción para Cromwell. Victor Wembanyama aparece en la agenda de Hipopotamos, mientras Shai Gilgeous-Alexander tiene Oklahoma City–Houston para Shockers. En Santa María, Domantas Sabonis tiene Sacramento–Memphis como única cita del fin de semana y como posible ocasión para recortar los rebotes. Sus equipos aún no habían presentado los partes del sábado en el informe consultado: esos nombres orientan la previa, pero su participación debe confirmarse."
     ],
     [
       "p",
-      "El domingo quedan solo cuatro partidos NBA y menos lugares para corregir errores. Hipopotamos tiene tres apariciones potenciales de su plantel y Shockers dos; Derrick White y Walker Kessler figuran entre las opciones de Cristóbal, mientras Jayson Tatum y Scottie Barnes tienen encuentros programados para Patricio. En Santa María, cada equipo dispone de dos apariciones: Darius Garland y Sandro Mamukelashvili para Cromwell; Luka Dončić y Payton Pritchard para Mequetrefes. Ese cierre puede pesar mucho si los rebotes, los robos o los puntos llegan separados por una posesión."
+      "El domingo quedan solo cuatro partidos NBA. Derrick White y Walker Kessler aparecen entre los nombres a seguir de Hipopotamos; Jayson Tatum y Scottie Barnes, entre los de Shockers. Kessler está disponible en el parte del viernes, pese a llevar una férula en un dedo de la mano izquierda: esa autorización corresponde a ese partido y habrá que revisar el domingo. Para Santa María, la agenda señala a Darius Garland y Sandro Mamukelashvili en Cromwell, y a Luka Dončić y Payton Pritchard en Mequetrefes. Ninguno de estos nombres tiene una baja registrada para el viernes; los partes del cierre todavía pueden cambiar el panorama."
     ],
     [
       "p",
-      "En todo el tramo de viernes a domingo, el calendario suma un máximo de 20 apariciones para el plantel de Shockers, 19 para Hipopotamos y 17 para cada equipo de Santa María. No son partidos ya contabilizados ni una proyección de puntos: disponibilidad y alineaciones decidirán cuántos aportan de verdad. La agenda importa porque las diferencias son pequeñas, no porque más nombres en cancha aseguren una victoria."
+      "Por eso, el total bruto de encuentros de las franquicias no sirve para repartir ventajas entre estos planteles. Las bajas ya confirmadas reducen las opciones, las dudas del viernes siguen abiertas y los partes de los próximos días aún deben actualizarse. Las decisiones de alineación determinarán qué producción entra en ESPN Fantasy. La agenda importa; para pronosticar este cierre, primero hay que saber quién puede pisar la cancha."
     ],
     [
       "sources",
@@ -5111,7 +5150,9 @@ posts: [
         4,
         5,
         6,
-        7
+        7,
+        9,
+        10
       ]
     ],
     [

@@ -1,0 +1,406 @@
+{
+  "capturedAt": "2026-10-30T17:05:03.382Z",
+  "sourceUpdatedAt": "2026-10-30T17:00:47Z",
+  "timeZone": "America/Santiago",
+  "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries",
+  "rosterSnapshot": "./semana-2-fin-de-semana-2026-10-30.json",
+  "scope": "Revisión de los 52 jugadores del plantel al corte. Out y Day-To-Day son estados de ESPN; not-listed solo indica ausencia en esa lista, no autorización médica ni participación confirmada. Los estados de un partido no se extrapolan al siguiente. Las bajas prolongadas se contrastan con las fuentes NBA enlazadas.",
+  "officialFridayReport": {
+    "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-30_06_00AM.pdf",
+    "publishedAt": "2026-10-30T06:00:00-04:00",
+    "scope": "Parte del viernes. Los equipos del sábado figuran como NOT YET SUBMITTED; no confirma estados del domingo."
+  },
+  "additionalSources": [
+    {
+      "name": "Anthony Edwards",
+      "url": "https://www.nba.com/timberwolves/news/anthony-edwards-injury-update-7"
+    },
+    {
+      "name": "Jaren Jackson Jr.",
+      "url": "https://www.nba.com/news/jaren-jackson-jr-torn-mcl-october-2026"
+    },
+    {
+      "name": "Cason Wallace",
+      "url": "https://www.nba.com/news/oklahoma-city-thunder-jalen-williams-cason-wallace-injuries"
+    },
+    {
+      "name": "Tyrese Haliburton",
+      "url": "https://www.nba.com/pacers/news/rewind-pacers-76ers-261028"
+    }
+  ],
+  "teams": [
+    {
+      "team": "shockers",
+      "name": "Penalolen Shockers",
+      "players": [
+        {
+          "name": "Shai Gilgeous-Alexander",
+          "espnId": 4278073,
+          "nbaTeamId": 25,
+          "status": "not-listed"
+        },
+        {
+          "name": "Jayson Tatum",
+          "espnId": 4065648,
+          "nbaTeamId": 2,
+          "status": "not-listed"
+        },
+        {
+          "name": "Scottie Barnes",
+          "espnId": 4433134,
+          "nbaTeamId": 28,
+          "status": "not-listed"
+        },
+        {
+          "name": "Karl-Anthony Towns",
+          "espnId": 3136195,
+          "nbaTeamId": 18,
+          "status": "not-listed"
+        },
+        {
+          "name": "Jaren Jackson Jr.",
+          "espnId": 4277961,
+          "nbaTeamId": 26,
+          "status": "Out",
+          "reportedAt": "2026-10-27T19:25Z",
+          "injuryType": "Knee",
+          "bodySide": "Right",
+          "designation": "OUT"
+        },
+        {
+          "name": "Amen Thompson",
+          "espnId": 4684740,
+          "nbaTeamId": 10,
+          "status": "not-listed"
+        },
+        {
+          "name": "Dyson Daniels",
+          "espnId": 4869342,
+          "nbaTeamId": 1,
+          "status": "not-listed"
+        },
+        {
+          "name": "Kon Knueppel",
+          "espnId": 5061575,
+          "nbaTeamId": 30,
+          "status": "Out",
+          "reportedAt": "2026-10-30T15:12Z",
+          "injuryType": "Hamstring",
+          "bodySide": "Left",
+          "designation": "OUT",
+          "officialFridayStatus": "Out",
+          "officialFridayReason": "G League - On Assignment",
+          "note": "ESPN informa posteriormente su regreso desde la G League y mantiene la baja para el viernes; no se asume su estado del sábado."
+        },
+        {
+          "name": "Cameron Boozer",
+          "espnId": 5041935,
+          "nbaTeamId": 29,
+          "status": "not-listed"
+        },
+        {
+          "name": "Tari Eason",
+          "espnId": 4433192,
+          "nbaTeamId": 10,
+          "status": "not-listed"
+        },
+        {
+          "name": "Fred VanVleet",
+          "espnId": 2991230,
+          "nbaTeamId": 10,
+          "status": "not-listed"
+        },
+        {
+          "name": "Paul Reed",
+          "espnId": 4278562,
+          "nbaTeamId": 8,
+          "status": "not-listed"
+        },
+        {
+          "name": "Jonathan Kuminga",
+          "espnId": 4433247,
+          "nbaTeamId": 16,
+          "status": "not-listed"
+        }
+      ]
+    },
+    {
+      "team": "pilsens",
+      "name": "Cromwell Pilsens",
+      "players": [
+        {
+          "name": "Nikola Jokic",
+          "espnId": 3112335,
+          "nbaTeamId": 7,
+          "status": "not-listed"
+        },
+        {
+          "name": "Anthony Edwards",
+          "espnId": 4594268,
+          "nbaTeamId": 16,
+          "status": "Out",
+          "reportedAt": "2026-10-29T18:33Z",
+          "injuryType": "Knee",
+          "bodySide": "Right",
+          "designation": "OUT"
+        },
+        {
+          "name": "Jalen Johnson",
+          "espnId": 4701230,
+          "nbaTeamId": 1,
+          "status": "not-listed"
+        },
+        {
+          "name": "Jaylen Brown",
+          "espnId": 3917376,
+          "nbaTeamId": 20,
+          "status": "Day-To-Day",
+          "reportedAt": "2026-10-29T21:34Z",
+          "injuryType": "Knee",
+          "bodySide": null,
+          "designation": "GTD"
+        },
+        {
+          "name": "Dylan Harper",
+          "espnId": 5037871,
+          "nbaTeamId": 24,
+          "status": "not-listed"
+        },
+        {
+          "name": "AJ Dybantsa",
+          "espnId": 5142718,
+          "nbaTeamId": 27,
+          "status": "not-listed"
+        },
+        {
+          "name": "Caleb Wilson",
+          "espnId": 5095151,
+          "nbaTeamId": 4,
+          "status": "not-listed"
+        },
+        {
+          "name": "Sandro Mamukelashvili",
+          "espnId": 4278580,
+          "nbaTeamId": 13,
+          "status": "not-listed"
+        },
+        {
+          "name": "Jaylen Wells",
+          "espnId": 5112087,
+          "nbaTeamId": 29,
+          "status": "not-listed"
+        },
+        {
+          "name": "Keldon Johnson",
+          "espnId": 4395723,
+          "nbaTeamId": 24,
+          "status": "not-listed"
+        },
+        {
+          "name": "Dillon Brooks",
+          "espnId": 3155526,
+          "nbaTeamId": 21,
+          "status": "not-listed"
+        },
+        {
+          "name": "Domantas Sabonis",
+          "espnId": 3155942,
+          "nbaTeamId": 23,
+          "status": "not-listed"
+        },
+        {
+          "name": "Darius Garland",
+          "espnId": 4396907,
+          "nbaTeamId": 12,
+          "status": "not-listed"
+        }
+      ]
+    },
+    {
+      "team": "pelafustanes",
+      "name": "Mequetrefes",
+      "players": [
+        {
+          "name": "Luka Doncic",
+          "espnId": 3945274,
+          "nbaTeamId": 13,
+          "status": "not-listed"
+        },
+        {
+          "name": "Giannis Antetokounmpo",
+          "espnId": 3032977,
+          "nbaTeamId": 14,
+          "status": "not-listed"
+        },
+        {
+          "name": "Donovan Mitchell",
+          "espnId": 3908809,
+          "nbaTeamId": 5,
+          "status": "not-listed"
+        },
+        {
+          "name": "Alperen Sengun",
+          "espnId": 4871144,
+          "nbaTeamId": 10,
+          "status": "Day-To-Day",
+          "reportedAt": "2026-10-29T20:34Z",
+          "injuryType": "Back",
+          "bodySide": null,
+          "designation": "GTD"
+        },
+        {
+          "name": "Brandon Miller",
+          "espnId": 4433287,
+          "nbaTeamId": 30,
+          "status": "not-listed"
+        },
+        {
+          "name": "OG Anunoby",
+          "espnId": 3934719,
+          "nbaTeamId": 18,
+          "status": "not-listed"
+        },
+        {
+          "name": "Payton Pritchard",
+          "espnId": 4066354,
+          "nbaTeamId": 2,
+          "status": "not-listed"
+        },
+        {
+          "name": "Alex Sarr",
+          "espnId": 5160992,
+          "nbaTeamId": 27,
+          "status": "not-listed"
+        },
+        {
+          "name": "Matas Buzelis",
+          "espnId": 4711294,
+          "nbaTeamId": 4,
+          "status": "not-listed"
+        },
+        {
+          "name": "Bobby Portis",
+          "espnId": 3064482,
+          "nbaTeamId": 14,
+          "status": "not-listed"
+        },
+        {
+          "name": "Malik Monk",
+          "espnId": 4066262,
+          "nbaTeamId": 23,
+          "status": "not-listed"
+        },
+        {
+          "name": "Jalen Smith",
+          "espnId": 4397189,
+          "nbaTeamId": 4,
+          "status": "Day-To-Day",
+          "reportedAt": "2026-10-29T18:55Z",
+          "injuryType": "Finger",
+          "bodySide": "Left",
+          "designation": "GTD"
+        },
+        {
+          "name": "Aaron Wiggins",
+          "espnId": 4397183,
+          "nbaTeamId": 1,
+          "status": "not-listed"
+        }
+      ]
+    },
+    {
+      "team": "hipopotamos",
+      "name": "Los Hipopotamos Chuchetumare",
+      "players": [
+        {
+          "name": "Victor Wembanyama",
+          "espnId": 5104157,
+          "nbaTeamId": 24,
+          "status": "not-listed"
+        },
+        {
+          "name": "Cade Cunningham",
+          "espnId": 4432166,
+          "nbaTeamId": 8,
+          "status": "not-listed"
+        },
+        {
+          "name": "Deni Avdija",
+          "espnId": 4683021,
+          "nbaTeamId": 22,
+          "status": "not-listed"
+        },
+        {
+          "name": "Derrick White",
+          "espnId": 3078576,
+          "nbaTeamId": 2,
+          "status": "not-listed"
+        },
+        {
+          "name": "Jaden McDaniels",
+          "espnId": 4431671,
+          "nbaTeamId": 16,
+          "status": "not-listed"
+        },
+        {
+          "name": "VJ Edgecombe",
+          "espnId": 5124612,
+          "nbaTeamId": 20,
+          "status": "not-listed"
+        },
+        {
+          "name": "Naz Reid",
+          "espnId": 4396971,
+          "nbaTeamId": 30,
+          "status": "not-listed"
+        },
+        {
+          "name": "Cason Wallace",
+          "espnId": 4683692,
+          "nbaTeamId": 25,
+          "status": "Out",
+          "reportedAt": "2026-10-26T22:05Z",
+          "injuryType": "Shoulder",
+          "bodySide": "Left",
+          "designation": "OUT"
+        },
+        {
+          "name": "Toumani Camara",
+          "espnId": 4431736,
+          "nbaTeamId": 22,
+          "status": "not-listed"
+        },
+        {
+          "name": "P.J. Washington",
+          "espnId": 4278078,
+          "nbaTeamId": 6,
+          "status": "not-listed"
+        },
+        {
+          "name": "Tyrese Haliburton",
+          "espnId": 4396993,
+          "nbaTeamId": 11,
+          "status": "Out",
+          "reportedAt": "2026-10-28T21:30Z",
+          "injuryType": "Hamstring",
+          "bodySide": "Left",
+          "designation": "OUT"
+        },
+        {
+          "name": "Walker Kessler",
+          "espnId": 4433136,
+          "nbaTeamId": 13,
+          "status": "not-listed",
+          "officialFridayStatus": "Available",
+          "officialFridayReason": "Left Finger Splint"
+        },
+        {
+          "name": "Ace Bailey",
+          "espnId": 4873138,
+          "nbaTeamId": 26,
+          "status": "not-listed"
+        }
+      ]
+    }
+  ]
+}
