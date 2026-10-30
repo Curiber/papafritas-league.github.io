@@ -38,10 +38,21 @@ async function decideRun({ eventName, now = new Date(), repository, runId, token
   }
 }
 
-module.exports = { decideRun };
-if (require.main === module) decideRun({ eventName: process.env.GITHUB_EVENT_NAME,
+function timingSummary(now, eventName, schedule) {
+  const actual = new Intl.DateTimeFormat('es-CL', {timeZone, dateStyle:'short', timeStyle:'medium', hourCycle:'h23'}).format(now);
+  const clean = s => String(s || 'manual / push').replace(/[\r\n|`]/g,' ');
+  return `### Horario de actualización\n\n| Dato | Valor |\n| --- | --- |\n| Objetivo | 07:00 · ${timeZone} |\n| Inicio real del proceso | ${actual} · ${timeZone} |\n| Evento | ${clean(eventName)} |\n| Cron recibido | ${clean(schedule)} |\n\nLa hora programada y la hora de arranque son distintas: GitHub puede entregar el evento con retraso.\n`;
+}
+
+module.exports = { decideRun, timingSummary };
+if (require.main === module) {
+  const timing = timingSummary(new Date(), process.env.GITHUB_EVENT_NAME, process.env.EXPECTED_SCHEDULE);
+  console.log(timing);
+  if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, timing);
+  decideRun({ eventName: process.env.GITHUB_EVENT_NAME,
   repository: process.env.GITHUB_REPOSITORY, runId: process.env.GITHUB_RUN_ID, token: process.env.GH_TOKEN })
   .then(result => {
     if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `run_update=${result.run}\n`);
     console.log(result.reason);
   }).catch(() => { console.error('No se pudo evaluar el horario de actualización.'); process.exitCode = 1; });
+}

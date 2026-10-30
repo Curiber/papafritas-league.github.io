@@ -1,17 +1,22 @@
 name: Actualizar resultados ESPN
+run-name: ESPN · ${{ github.event_name }} · objetivo 07:00 Chile
 
 on:
   schedule:
-    # UTC 10/11 covers 07:00 in Chile in summer/winter. The gate skips pre-07:00
-    # slots and stops retries after today's first fully successful ESPN update.
-    - cron: '0 10,11 * * *'
-    - cron: '17,47 10,11 * * *'
+    - cron: '0 7 * * *'
+      timezone: America/Santiago
+    - cron: '17,47 7 * * *'
+      timezone: America/Santiago
   workflow_dispatch:
     inputs:
       refresh_results:
         description: Consultar ESPN (desmarcar para probar solo publicación)
         type: boolean
         default: true
+      export_editorial:
+        description: Exportar planteles e identificadores NBA para preparar una crónica
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -47,6 +52,7 @@ jobs:
         id: gate
         env:
           GH_TOKEN: ${{ github.token }}
+          EXPECTED_SCHEDULE: ${{ github.event.schedule }}
         run: node scripts/espn-schedule-gate.cjs
       - name: Comprobar código e importación
         if: steps.gate.outputs.run_update == 'true'
@@ -61,6 +67,19 @@ jobs:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
         run: node scripts/fetch-espn-results.cjs
+      - name: Exportar datos editoriales sin credenciales
+        if: steps.gate.outputs.run_update == 'true' && github.event_name == 'workflow_dispatch' && inputs.export_editorial
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: node scripts/export-espn-editorial.cjs "$RUNNER_TEMP/espn-editorial.json"
+      - name: Conservar el corte editorial para revisión
+        if: steps.gate.outputs.run_update == 'true' && github.event_name == 'workflow_dispatch' && inputs.export_editorial
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: espn-editorial
+          path: ${{ runner.temp }}/espn-editorial.json
+          retention-days: 1
       - name: Verificar resultados actualizados
         if: steps.gate.outputs.run_update == 'true'
         run: |
