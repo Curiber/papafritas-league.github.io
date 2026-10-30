@@ -4898,6 +4898,229 @@ draft: {
 /* Publicaciones ------------------------------------------------------------- */
 posts: [
 {
+  "id": "clasicos-al-limite-viernes-30-octubre",
+  "date": "2026-10-30",
+  "category": "Crónicas",
+  "partial": true,
+  "readingMinutes": 5,
+  "title": "Mequetrefes aprieta el puño; el clásico familiar queda a cuatro puntos",
+  "excerpt": "Mequetrefes manda 7–2 en Santa María, con rebotes y tapones todavía abiertos. Hipopotamos sostiene un 5–4 ante Shockers en una serie que puede girar con una sola actuación. El domingo decidirá cuánto valían las ventajas del viernes.",
+  "teams": [
+    "pelafustanes",
+    "pilsens",
+    "hipopotamos",
+    "shockers"
+  ],
+  "rulesLink": true,
+  "fantasySnapshot": {
+    "week": 2,
+    "weekLabel": "Semana 2",
+    "start": "2026-10-26",
+    "end": "2026-11-01",
+    "updatedAt": "2026-10-30T16:31:48.753Z",
+    "sourceSnapshot": "./assets/cortes/espn/20261030T163148.753Z.json",
+    "matchups": [
+      {
+        "id": "w2-m1",
+        "teams": [
+          "hipopotamos",
+          "shockers"
+        ],
+        "status": "partial",
+        "stats": {
+          "hipopotamos": {
+            "fgp": 0.48701299,
+            "ftp": 0.71014493,
+            "tpm": 44,
+            "reb": 160,
+            "ast": 77,
+            "stl": 22,
+            "blk": 23,
+            "to": 41,
+            "pts": 393
+          },
+          "shockers": {
+            "fgp": 0.50179211,
+            "ftp": 0.83673469,
+            "tpm": 27,
+            "reb": 154,
+            "ast": 92,
+            "stl": 23,
+            "blk": 16,
+            "to": 45,
+            "pts": 389
+          }
+        },
+        "updatedAt": "2026-10-30T16:31:48.753Z",
+        "sourceMode": "espn"
+      },
+      {
+        "id": "w2-m2",
+        "teams": [
+          "pilsens",
+          "pelafustanes"
+        ],
+        "status": "partial",
+        "stats": {
+          "pilsens": {
+            "fgp": 0.47651007,
+            "ftp": 0.8,
+            "tpm": 30,
+            "reb": 145,
+            "ast": 103,
+            "stl": 21,
+            "blk": 16,
+            "to": 56,
+            "pts": 378
+          },
+          "pelafustanes": {
+            "fgp": 0.49211356,
+            "ftp": 0.73333333,
+            "tpm": 52,
+            "reb": 150,
+            "ast": 84,
+            "stl": 28,
+            "blk": 18,
+            "to": 46,
+            "pts": 419
+          }
+        },
+        "updatedAt": "2026-10-30T16:31:48.753Z",
+        "sourceMode": "espn"
+      }
+    ]
+  },
+  "source": "Crónica parcial con los totales oficiales de ESPN Fantasy del 30 de octubre de 2026 a las 13:31, hora de Chile. Comparación con el corte del jueves 29. Planteles contrastados en ESPN a las 13:41 del viernes y calendario NBA verificado del 30 de octubre al 1 de noviembre. Las apariciones de calendario son oportunidades máximas sobre el plantel al corte: disponibilidad, decisiones de alineación y posteriores movimientos determinan qué cuenta en fantasy. No se atribuyen actuaciones individuales ni lesiones no verificadas. Proyección editorial: todavía no hay ganadores de estas series.",
+  "sources": [
+    {
+      "title": "ESPN Fantasy · Totales del corte del viernes",
+      "url": "./assets/cortes/espn/20261030T163148.753Z.json"
+    },
+    {
+      "title": "ESPN Fantasy · Corte del jueves 29",
+      "url": "./assets/cortes/espn/20261029T124922.782Z.json"
+    },
+    {
+      "title": "ESPN Fantasy · Clásico Santa María",
+      "url": "https://fantasy.espn.com/basketball/boxscore?leagueId=732964684&matchupPeriodId=2&seasonId=2027&teamId=3"
+    },
+    {
+      "title": "ESPN Fantasy · Clásico familiar",
+      "url": "https://fantasy.espn.com/basketball/boxscore?leagueId=732964684&matchupPeriodId=2&seasonId=2027&teamId=1"
+    },
+    {
+      "title": "Calendario y planteles contrastados para este fin de semana",
+      "url": "./assets/cortes/semana-2-fin-de-semana-2026-10-30.json"
+    },
+    {
+      "title": "ESPN NBA · 30 de octubre",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261030"
+    },
+    {
+      "title": "ESPN NBA · 31 de octubre",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261031"
+    },
+    {
+      "title": "ESPN NBA · 1 de noviembre",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261101"
+    }
+  ],
+  "body": [
+    [
+      "p",
+      "Papafritas League llega al viernes con dos clásicos y ninguna licencia para celebrar antes de tiempo. Mequetrefes tiene el marcador más contundente; Hipopotamos, la ventaja más delicada. Entre ambos escenarios hay un punto en común: los márgenes que parecen secundarios pueden terminar contando la historia del domingo. Las cargadas tendrán que esperar un poco."
+    ],
+    [
+      "h2",
+      "Santa María: un 7–2 con letra chica"
+    ],
+    [
+      "matchup-cut",
+      "w2-m2"
+    ],
+    [
+      "p",
+      "Mequetrefes está imponiendo condiciones ante Cromwell Pilsens. Sus 52 triples contra 30 y sus 419 puntos frente a 378 le dan volumen y capacidad de presión. También manda en robos, 28–21, y cuida mejor la pelota: 46 pérdidas contra 56. El equipo del Chino llega al tramo decisivo con siete categorías de su lado y una respuesta convincente al 2–7 del debut."
+    ],
+    [
+      "p",
+      "Pero el 7–2 no tiene siete candados. Los rebotes están 150–145 y los tapones, 18–16. Cromwell necesita recuperar apenas esos dos frentes para transformar una desventaja amplia en un 4–5. Si además revierte el porcentaje de campo, hoy 47,65% contra 49,21%, podría pasar al frente, siempre que conserve sus ventajas en libres y asistencias. Es un camino estrecho; sigue siendo un camino."
+    ],
+    [
+      "p",
+      "La tarea del Rubio es elegir bien dónde gastar sus recursos. Sus 103 asistencias contra 84 y el 80% en libres frente al 73,33% rival sostienen las dos categorías que todavía controla. Perseguir los 22 triples de diferencia como única apuesta puede dispersar el esfuerzo. Rebote, protección del aro y eficiencia ofrecen una conversación más cercana con este marcador. Para Mequetrefes, defender esas dos ventajas mínimas puede valer más que otra exhibición ofensiva."
+    ],
+    [
+      "sources",
+      [
+        0,
+        2
+      ]
+    ],
+    [
+      "h2",
+      "Clásico familiar: cuatro puntos y la calculadora encendida"
+    ],
+    [
+      "matchup-cut",
+      "w2-m1"
+    ],
+    [
+      "p",
+      "Hipopotamos gana 5–4 a Penalolen Shockers, pero basta mirar el 393–389 en puntos para entender la tensión. El jueves, Shockers llevaba once de ventaja en anotación; ahora el líder del debut aparece cuatro arriba y esa categoría ha cambiado de dueño. Un adelantamiento de Patricio en puntos devolvería el 5–4 a su lado si el resto se mantiene igual. En este clásico, una buena noche no solo engorda el box score: puede cambiar al equipo que encabeza la serie."
+    ],
+    [
+      "p",
+      "Cristóbal tiene respaldo en triples, 44–27, y tapones, 23–16. En rebotes se sostiene por seis, 160–154, y en pérdidas por cuatro, 41–45. Shockers responde con mejores porcentajes, 50,18% de campo y 83,67% en libres, y con 92 asistencias frente a 77. Su ventaja en robos es mínima: 23–22. Hipopotamos necesita recuperar un robo para empatar esa columna y dos para ponerse arriba, si el resto se mantiene. Nadie tiene espacio para distraerse con una sola columna."
+    ],
+    [
+      "p",
+      "El fin de semana exige una lectura fina de las posesiones. Hipopotamos necesita proteger rebotes y puntos sin regalar el control de pérdidas. Shockers debe sostener sus robos y buscar el vuelco en una de esas categorías cercanas. Los libres ofrecen hoy un margen considerable para Patricio; el porcentaje de campo es más sensible a una noche de volumen y poco acierto. La foto favorece a Hipopotamos. El partido sigue teniendo dos manos sobre el volante."
+    ],
+    [
+      "sources",
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    [
+      "h2",
+      "La agenda: viernes de figuras, sábado de presión y domingo de cierre"
+    ],
+    [
+      "p",
+      "Esta noche hay focos concretos. Nikola Jokić tiene Denver–Phoenix; Cade Cunningham visita Brooklyn. Cromwell necesita aprovechar la única aparición programada de Jokić antes del cierre, mientras Hipopotamos busca que Cunningham le ayude a defender una ventaja que se mide en cuatro puntos. Anthony Edwards y Jaylen Brown tienen dos encuentros previstos entre viernes y sábado; para el Rubio, ese volumen es una oportunidad de acercarse antes de la jornada final."
+    ],
+    [
+      "p",
+      "El sábado reúne cruces que tocan directamente a los cuatro planteles. Minnesota visita San Antonio, con Edwards y Victor Wembanyama como referencias de franquicias distintas de esta liga. Oklahoma City juega en Houston, con Shai Gilgeous-Alexander entre los nombres a seguir del clásico familiar. Sacramento visita Memphis: Domantas Sabonis tiene allí su única cita programada del fin de semana, una ocasión importante para discutir los rebotes de Santa María. Son oportunidades de calendario, no actuaciones garantizadas."
+    ],
+    [
+      "p",
+      "El domingo quedan solo cuatro partidos NBA y menos lugares para corregir errores. Hipopotamos tiene tres apariciones potenciales de su plantel y Shockers dos; Derrick White y Walker Kessler figuran entre las opciones de Cristóbal, mientras Jayson Tatum y Scottie Barnes tienen encuentros programados para Patricio. En Santa María, cada equipo dispone de dos apariciones: Darius Garland y Sandro Mamukelashvili para Cromwell; Luka Dončić y Payton Pritchard para Mequetrefes. Ese cierre puede pesar mucho si los rebotes, los robos o los puntos llegan separados por una posesión."
+    ],
+    [
+      "p",
+      "En todo el tramo de viernes a domingo, el calendario suma un máximo de 20 apariciones para el plantel de Shockers, 19 para Hipopotamos y 17 para cada equipo de Santa María. No son partidos ya contabilizados ni una proyección de puntos: disponibilidad y alineaciones decidirán cuántos aportan de verdad. La agenda importa porque las diferencias son pequeñas, no porque más nombres en cancha aseguren una victoria."
+    ],
+    [
+      "sources",
+      [
+        4,
+        5,
+        6,
+        7
+      ]
+    ],
+    [
+      "p",
+      "El domingo 1 de noviembre cerrará estas series. Hasta entonces, Mequetrefes debe defender las costuras de su 7–2 y Cromwell necesita convertir margen de reacción en categorías recuperadas. Hipopotamos y Shockers tienen un clásico familiar abierto de par en par. Por ahora manda la calculadora; el derecho a cargar al rival todavía está en juego."
+    ]
+  ]
+},
+{
   "id": "waivers-26-octubre-haliburton-sabonis-kessler",
   "date": "2026-10-26",
   "category": "Trades",

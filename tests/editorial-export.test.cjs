@@ -18,4 +18,5 @@ test('el resumen distingue el objetivo 07:00 del inicio real tardío en Chile',(
   const text=timingSummary(new Date('2026-10-30T16:31:39Z'),'schedule','0 7 * * *');
   assert.match(text,/07:00/);assert.match(text,/13:31:39/);assert.match(text,/America\/Santiago/);
   assert.match(text,/Cron recibido/);assert.match(text,/0 7 \* \* \*/);
+  assert.match(timingSummary(new Date('2026-10-30T16:31:39Z'),'workflow_dispatch',''),/A demanda/);
 });

@@ -41,7 +41,8 @@ async function decideRun({ eventName, now = new Date(), repository, runId, token
 function timingSummary(now, eventName, schedule) {
   const actual = new Intl.DateTimeFormat('es-CL', {timeZone, dateStyle:'short', timeStyle:'medium', hourCycle:'h23'}).format(now);
   const clean = s => String(s || 'manual / push').replace(/[\r\n|`]/g,' ');
-  return `### Horario de actualización\n\n| Dato | Valor |\n| --- | --- |\n| Objetivo | 07:00 · ${timeZone} |\n| Inicio real del proceso | ${actual} · ${timeZone} |\n| Evento | ${clean(eventName)} |\n| Cron recibido | ${clean(schedule)} |\n\nLa hora programada y la hora de arranque son distintas: GitHub puede entregar el evento con retraso.\n`;
+  const target = eventName === 'schedule' ? `07:00 · ${timeZone}` : 'A demanda: esta ejecución no es el cron diario';
+  return `### Horario de actualización\n\n| Dato | Valor |\n| --- | --- |\n| Objetivo | ${target} |\n| Inicio real del proceso | ${actual} · ${timeZone} |\n| Evento | ${clean(eventName)} |\n| Cron recibido | ${clean(schedule)} |\n\nLa hora programada y la hora de arranque son distintas: GitHub puede entregar el evento con retraso.\n`;
 }
 
 module.exports = { decideRun, timingSummary };

@@ -1,5 +1,5 @@
 name: Actualizar resultados ESPN
-run-name: ESPN · ${{ github.event_name }} · objetivo 07:00 Chile
+run-name: ${{ github.event_name == 'schedule' && 'ESPN · automático · objetivo 07:00 Chile' || github.event_name == 'workflow_dispatch' && 'ESPN · ejecución manual' || 'ESPN · comprobación de código' }}
 
 on:
   schedule:

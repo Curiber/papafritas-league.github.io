@@ -184,6 +184,25 @@ test('el corte importado de ESPN aparece como parcial con fecha, fuentes y sin a
   }
 });
 
+test('la crónica del viernes conserva sus parciales y su agenda cuando cambia el marcador en vivo', () => {
+  const a=app(),p=a.data.posts.find(p=>p.id==='clasicos-al-limite-viernes-30-octubre');
+  const html=()=>a.run("article(D.posts.find(p=>p.id==='clasicos-al-limite-viernes-30-octubre'))");
+  const before=html();
+  assert.equal(p.partial,true);assert.equal(p.date,'2026-10-30');
+  assert.match(before,/Crónica parcial/);assert.match(before,/Corte ESPN/);assert.match(before,/13:31/);
+  assert.equal((before.match(/class="match reveal"/g)||[]).length,2);
+  assert.equal(a.run("evaluate(D.posts.find(p=>p.id==='clasicos-al-limite-viernes-30-octubre').fantasySnapshot.matchups[0]).score.a"),5);
+  assert.equal(a.run("evaluate(D.posts.find(p=>p.id==='clasicos-al-limite-viernes-30-octubre').fantasySnapshot.matchups[1]).score.b"),7);
+  for(const team of a.data.teams)assert.ok(before.includes(team.name));
+  a.data.schedule.find(w=>w.week===2).matchups[0].stats.hipopotamos.pts=100000;
+  assert.equal(html(),before,'los cortes archivados no siguen el marcador en vivo');
+  const calendar=JSON.parse(fs.readFileSync(path.join(root,'assets/cortes/semana-2-fin-de-semana-2026-10-30.json'),'utf8'));
+  assert.equal(calendar.schedule.reduce((n,d)=>n+d.events.length,0),21);
+  const expected={shockers:20,pilsens:17,pelafustanes:17,hipopotamos:19};
+  for(const t of calendar.teams)assert.equal(t.players.reduce((n,p)=>n+p.scheduledGames.length,0),expected[t.team]);
+  for(const source of p.sources.filter(s=>s.url.startsWith('./')))assert.ok(fs.existsSync(path.join(root,source.url)));
+});
+
 test('los 50 cómputos finales reconstruyen las 36 cifras sin confundir partidos NBA con fantasy', () => {
   const a = app(), r = a.data.statisticsReports.find(r=>r.status==='final');
   assert.equal(r.players.length,52);
