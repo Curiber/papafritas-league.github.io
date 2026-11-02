@@ -39,8 +39,8 @@ if (require.main === module) (async()=>{
   const days = meta.settings.scheduleSettings.matchupPeriods[period];
   const daily=[];
   for (const day of days) {
-    const raw = await readLeague({views:['mRoster','mBoxscore','mMatchupScore','mSettings'],scoringPeriodId:day,matchupPeriodId:period});
-    daily.push(dailyRoster(raw,day));
+    const raw = await readLeague({views:['mMatchupScore','mScoreboard'],scoringPeriodId:day,matchupPeriodId:period});
+    daily.push(dailyRoster({...raw,teams:raw.teams?.length===4?raw.teams:meta.teams,settings:meta.settings},day));
   }
   const report = {leagueId:config.leagueId,seasonId:config.seasonId,matchupPeriodId:period,start,end,
     capturedAt:new Date().toISOString(),sourceUrl:config.scoreboardUrl,
