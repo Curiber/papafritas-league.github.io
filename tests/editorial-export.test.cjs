@@ -3,6 +3,22 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const config=require('../config/espn.json');
 const {editorialRoster}=require('../scripts/export-espn-editorial.cjs');
 const {timingSummary}=require('../scripts/espn-schedule-gate.cjs');
+const {dailyRoster}=require('../scripts/export-espn-week.cjs');
+
+test('el acta diaria excluye proyecciones, acumulados y datos privados de ESPN',()=>{
+  const raw={id:config.leagueId,seasonId:config.seasonId,members:[{email:'private@example.test'}],
+    teams:Object.entries(config.teams).map(([id])=>({id:Number(id),owners:['private-id'],roster:{entries:[{
+      lineupSlotId:5,playerPoolEntry:{player:{id:Number(id),fullName:'Jugador '+id,proTeamId:1,stats:[
+        {statSourceId:0,statSplitTypeId:1,scoringPeriodId:13,stats:{0:20,3:7,bad:'private'}},
+        {statSourceId:1,statSplitTypeId:1,scoringPeriodId:13,stats:{0:99}},
+        {statSourceId:0,statSplitTypeId:0,scoringPeriodId:13,stats:{0:300}},
+        {statSourceId:0,statSplitTypeId:1,scoringPeriodId:12,stats:{0:15}}
+      ]}}}]}}))};
+  const cut=dailyRoster(raw,13);
+  assert.deepEqual(cut.teams[0].players[0].actualStats,[{scoringPeriodId:13,stats:{0:20,3:7}}]);
+  assert.doesNotMatch(JSON.stringify(cut),/members|email|owners|private|99|300/);
+  assert.throws(()=>dailyRoster({...raw,id:123},13),/liga/);
+});
 
 test('el corte editorial proyecta solo planteles e identidades NBA',()=>{
   const raw={id:config.leagueId,seasonId:config.seasonId,members:[{email:'private@example.test'}],
