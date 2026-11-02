@@ -25,7 +25,8 @@ function dailyRoster(data, scoringPeriodId) {
     matchupRosters:(data.schedule || []).map(m => ({ matchupPeriodId:m.matchupPeriodId,
       sides:['home','away'].filter(side=>m[side]).map(side=>({ espnTeamId:m[side].teamId,
         rosterFields:Object.keys(m[side]).filter(key=>key.startsWith('roster')),
-        current:entries(m[side].rosterForCurrentScoringPeriod) })) })) };
+        rosters:Object.fromEntries(Object.entries(m[side]).filter(([key,value]) => key.startsWith('roster') && Array.isArray(value?.entries))
+          .map(([key,value]) => [key,entries(value)])) })) })) };
 }
 
 module.exports = { dailyRoster };
@@ -38,12 +39,12 @@ if (require.main === module) (async()=>{
   const days = meta.settings.scheduleSettings.matchupPeriods[period];
   const daily=[];
   for (const day of days) {
-    const raw = await readLeague({views:['mRoster','mMatchupScore','mSettings'],scoringPeriodId:day,matchupPeriodId:period});
+    const raw = await readLeague({views:['mRoster','mBoxscore','mMatchupScore','mSettings'],scoringPeriodId:day,matchupPeriodId:period});
     daily.push(dailyRoster(raw,day));
   }
   const report = {leagueId:config.leagueId,seasonId:config.seasonId,matchupPeriodId:period,start,end,
     capturedAt:new Date().toISOString(),sourceUrl:config.scoreboardUrl,
-    scope:'Actas diarias de ESPN, estadísticas reales del período consultado y posiciones de alineación. Se deben contrastar con los acumulados oficiales antes de atribuir producción fantasy.',daily};
+    scope:'Actas de los períodos de cómputo informados por ESPN: pueden representar días o semanas según la configuración de la liga. Solo estadísticas reales del período consultado. Se deben contrastar con los acumulados oficiales antes de atribuir producción fantasy.',daily};
   const destination=path.resolve(process.argv[2]);
   fs.mkdirSync(path.dirname(destination),{recursive:true});
   fs.writeFileSync(destination,JSON.stringify(report,null,2)+'\n');

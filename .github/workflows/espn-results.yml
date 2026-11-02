@@ -14,7 +14,7 @@ on:
         type: boolean
         default: true
       export_editorial:
-        description: Exportar planteles y actas diarias de la semana anterior para una crónica
+        description: Exportar planteles y actas de la semana anterior para una crónica
         type: boolean
         default: false
   push:
