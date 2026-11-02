@@ -203,6 +203,51 @@ test('la crónica del viernes conserva sus parciales y su agenda cuando cambia e
   for(const source of p.sources.filter(s=>s.url.startsWith('./')))assert.ok(fs.existsSync(path.join(root,source.url)));
 });
 
+test('el cierre de la semana 2 reconstruye las nueve categorías sin sumar actas NBA ajenas al cómputo',()=>{
+  const a=app(),r=a.data.statisticsReports.find(r=>r.id==='semana-2-final-2026-11-01');
+  assert.equal(r.players.length,52);
+  for(const t of a.data.teams){
+    const sum=Object.fromEntries(['fgm','fga','ftm','fta','tpm','reb','ast','stl','blk','to','pts'].map(k=>[k,0]));
+    for(const p of r.players.filter(p=>p.team===t.id)){
+      assert.equal(p.gp,p.games.length);assert.equal(p.nbaGp,p.nbaGames.length);
+      assert.ok(p.gp<=p.nbaGp);assert.ok(p.games.every(id=>p.nbaGames.includes(id)));
+      for(const k in sum)sum[k]+=p.stats[k];
+    }
+    const total=r.teamTotals[t.id];
+    for(const k of ['tpm','reb','ast','stl','blk','to','pts'])assert.equal(sum[k],total[k],t.id+': '+k);
+    assert.ok(Math.abs(sum.fgm/sum.fga-total.fgp)<1e-8);
+    assert.ok(Math.abs(sum.ftm/sum.fta-total.ftp)<1e-8);
+  }
+  const luka=r.players.find(p=>p.espnId===3945274);
+  assert.ok(luka.nbaStats.pts>luka.stats.pts,'NBA y fantasy no son intercambiables');
+  const html=a.run("article(D.posts.find(p=>p.id==='cierre-semana-2-shockers-mequetrefes'))");
+  assert.equal((html.match(/class="report-scroll"/g)||[]).length,4);
+  assert.match(html,/Cierre verificado/);assert.match(html,/No se atribuye un motivo de alineación/);
+  assert.doesNotMatch(html,/las capturas no incluyen una hora|Portis, Klay Thompson y Gafford/);
+});
+
+test('la previa de la semana 3 no adelanta resultados y las rutas de mercado respetan tiers y franquicias',()=>{
+  const a=app(),w=a.data.schedule.find(w=>w.week===3);
+  assert.deepEqual(Array.from(w.matchups,m=>Array.from(m.teams)),[['pilsens','hipopotamos'],['shockers','pelafustanes']]);
+  for(const m of w.matchups){assert.equal(m.status,'scheduled');assert.equal(a.run(`evaluate(matchupById('${m.id}'))`),null);}
+  assert.match(a.run("article(D.posts.find(p=>p.id==='previa-semana-3-pilsens-hipopotamos-shockers-mequetrefes'))"),/todavía sin resultado/);
+  const cut=JSON.parse(fs.readFileSync(path.join(root,'assets/cortes/semana-3-previa-mercado-2026-11-02.json'),'utf8'));
+  const routes=[['shockers','Jaren Jackson Jr.','Jarrett Allen'],['shockers','Kon Knueppel','Ayo Dosunmu'],['pilsens','Jaylen Wells','Moussa Diabate'],['hipopotamos','Cason Wallace','Cam Spencer'],['hipopotamos','Naz Reid','Darius Acuff Jr.'],['pelafustanes','Malik Monk','Cam Spencer']];
+  for(const [team,out,incoming]of routes){
+    const roster=cut.teams.find(t=>t.team===team).players.filter(p=>p.name!==out);
+    assert.equal(roster.length,12);roster.push(cut.marketCandidates.find(p=>p.name===incoming));
+    const franchises=new Set();
+    for(const tier of a.data.rules.tiers)assert.ok(roster.filter(p=>a.run(`playerTier(${JSON.stringify(p.name)})`)===tier.id).length<=tier.limit);
+    for(const p of roster)if(a.run(`playerTier(${JSON.stringify(p.name)})`)){
+      assert.ok(!franchises.has(p.nbaTeamId),incoming+': franquicia repetida');franchises.add(p.nbaTeamId);
+    }
+  }
+  const market=a.data.posts.find(p=>p.id==='mercado-semana-3-flagg-especialistas-lesiones');
+  const html=a.run("article(D.posts.find(p=>p.id==='mercado-semana-3-flagg-especialistas-lesiones'))");
+  assert.match(html,/No hay ofertas confirmadas/);assert.doesNotMatch(html,/Haliburton|Michael Porter|\bMPJ\b|Trey Murphy/i);
+  for(const file of [market.image.src,market.image.small])assert.ok(fs.existsSync(path.join(root,file)));
+});
+
 test('los 50 cómputos finales reconstruyen las 36 cifras sin confundir partidos NBA con fantasy', () => {
   const a = app(), r = a.data.statisticsReports.find(r=>r.status==='final');
   assert.equal(r.players.length,52);

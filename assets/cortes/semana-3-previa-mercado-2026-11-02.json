@@ -1,0 +1,2133 @@
+{
+  "capturedAt": "2026-11-02T16:25:56.116Z",
+  "rosterCapturedAt": "2026-11-02T16:03:27.772Z",
+  "injuriesUpdatedAt": "2026-11-02T16:05:33Z",
+  "scope": "Previa y análisis editorial. Los partidos programados no confirman participación. not-listed significa ausencia en la lista de lesiones de ESPN, no alta médica. Los candidatos no figuran entre los 52 jugadores contrastados; su disponibilidad para incorporar debe comprobarse en ESPN. No hay ofertas ni operaciones confirmadas en este informe.",
+  "sourceUrls": [
+    "https://fantasy.espn.com/basketball/league/scoreboard?leagueId=732964684",
+    "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries",
+    "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261102",
+    "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261103",
+    "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261104",
+    "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261105",
+    "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261106",
+    "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261107",
+    "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261108"
+  ],
+  "teams": [
+    {
+      "team": "shockers",
+      "espnTeamId": 1,
+      "name": "Penalolen Shockers",
+      "players": [
+        {
+          "name": "Shai Gilgeous-Alexander",
+          "espnId": 4278073,
+          "nbaTeamId": 25,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Jayson Tatum",
+          "espnId": 4065648,
+          "nbaTeamId": 2,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Scottie Barnes",
+          "espnId": 4433134,
+          "nbaTeamId": 28,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Karl-Anthony Towns",
+          "espnId": 3136195,
+          "nbaTeamId": 18,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Jaren Jackson Jr.",
+          "espnId": 4277961,
+          "nbaTeamId": 26,
+          "injuryStatus": "Out",
+          "injuryUpdatedAt": "2026-10-27T19:25Z",
+          "injuryType": "Knee",
+          "availabilityNote": "Fuera por lesión de rodilla."
+        },
+        {
+          "name": "Amen Thompson",
+          "espnId": 4684740,
+          "nbaTeamId": 10,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Dyson Daniels",
+          "espnId": 4869342,
+          "nbaTeamId": 1,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Kon Knueppel",
+          "espnId": 5061575,
+          "nbaTeamId": 30,
+          "injuryStatus": "Out",
+          "injuryUpdatedAt": "2026-11-01T22:08Z",
+          "injuryType": "Hamstring",
+          "availabilityNote": "Descartado para el lunes 2 por lesión del isquiotibial."
+        },
+        {
+          "name": "Cameron Boozer",
+          "espnId": 5041935,
+          "nbaTeamId": 29,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Tari Eason",
+          "espnId": 4433192,
+          "nbaTeamId": 10,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Fred VanVleet",
+          "espnId": 2991230,
+          "nbaTeamId": 10,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Paul Reed",
+          "espnId": 4278562,
+          "nbaTeamId": 8,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Jonathan Kuminga",
+          "espnId": 4433247,
+          "nbaTeamId": 16,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        }
+      ]
+    },
+    {
+      "team": "pilsens",
+      "espnTeamId": 2,
+      "name": "Cromwell Pilsens",
+      "players": [
+        {
+          "name": "Nikola Jokic",
+          "espnId": 3112335,
+          "nbaTeamId": 7,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Anthony Edwards",
+          "espnId": 4594268,
+          "nbaTeamId": 16,
+          "injuryStatus": "Out",
+          "injuryUpdatedAt": "2026-10-29T18:33Z",
+          "injuryType": "Knee",
+          "availabilityNote": "Fuera tras la artroscopia de rodilla derecha del jueves 29."
+        },
+        {
+          "name": "Jalen Johnson",
+          "espnId": 4701230,
+          "nbaTeamId": 1,
+          "injuryStatus": "Day-To-Day",
+          "injuryUpdatedAt": "2026-11-01T22:28Z",
+          "injuryType": "Ankle",
+          "availabilityNote": "Cuestionable para el lunes 2 por el tobillo izquierdo."
+        },
+        {
+          "name": "Jaylen Brown",
+          "espnId": 3917376,
+          "nbaTeamId": 20,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Dylan Harper",
+          "espnId": 5037871,
+          "nbaTeamId": 24,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "AJ Dybantsa",
+          "espnId": 5142718,
+          "nbaTeamId": 27,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Caleb Wilson",
+          "espnId": 5095151,
+          "nbaTeamId": 4,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Sandro Mamukelashvili",
+          "espnId": 4278580,
+          "nbaTeamId": 13,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Jaylen Wells",
+          "espnId": 5112087,
+          "nbaTeamId": 29,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Keldon Johnson",
+          "espnId": 4395723,
+          "nbaTeamId": 24,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Dillon Brooks",
+          "espnId": 3155526,
+          "nbaTeamId": 21,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Domantas Sabonis",
+          "espnId": 3155942,
+          "nbaTeamId": 23,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Darius Garland",
+          "espnId": 4396907,
+          "nbaTeamId": 12,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        }
+      ]
+    },
+    {
+      "team": "pelafustanes",
+      "espnTeamId": 3,
+      "name": "Mequetrefes",
+      "players": [
+        {
+          "name": "Luka Doncic",
+          "espnId": 3945274,
+          "nbaTeamId": 13,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Giannis Antetokounmpo",
+          "espnId": 3032977,
+          "nbaTeamId": 14,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Donovan Mitchell",
+          "espnId": 3908809,
+          "nbaTeamId": 5,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Alperen Sengun",
+          "espnId": 4871144,
+          "nbaTeamId": 10,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Brandon Miller",
+          "espnId": 4433287,
+          "nbaTeamId": 30,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "OG Anunoby",
+          "espnId": 3934719,
+          "nbaTeamId": 18,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Payton Pritchard",
+          "espnId": 4066354,
+          "nbaTeamId": 2,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Alex Sarr",
+          "espnId": 5160992,
+          "nbaTeamId": 27,
+          "injuryStatus": "Day-To-Day",
+          "injuryUpdatedAt": "2026-11-01T21:45Z",
+          "injuryType": "Knee",
+          "availabilityNote": "Cuestionable para el lunes 2 por molestias en la rodilla izquierda."
+        },
+        {
+          "name": "Matas Buzelis",
+          "espnId": 4711294,
+          "nbaTeamId": 4,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Bobby Portis",
+          "espnId": 3064482,
+          "nbaTeamId": 14,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Malik Monk",
+          "espnId": 4066262,
+          "nbaTeamId": 23,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Jalen Smith",
+          "espnId": 4397189,
+          "nbaTeamId": 4,
+          "injuryStatus": "Day-To-Day",
+          "injuryUpdatedAt": "2026-11-01T21:40Z",
+          "injuryType": "Finger",
+          "availabilityNote": "Probable para el lunes 2 pese al esguince en un dedo de la mano izquierda."
+        },
+        {
+          "name": "Aaron Wiggins",
+          "espnId": 4397183,
+          "nbaTeamId": 1,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        }
+      ]
+    },
+    {
+      "team": "hipopotamos",
+      "espnTeamId": 4,
+      "name": "Los Hipopotamos Chuchetumare",
+      "players": [
+        {
+          "name": "Victor Wembanyama",
+          "espnId": 5104157,
+          "nbaTeamId": 24,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Cade Cunningham",
+          "espnId": 4432166,
+          "nbaTeamId": 8,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Deni Avdija",
+          "espnId": 4683021,
+          "nbaTeamId": 22,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Derrick White",
+          "espnId": 3078576,
+          "nbaTeamId": 2,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Jaden McDaniels",
+          "espnId": 4431671,
+          "nbaTeamId": 16,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "VJ Edgecombe",
+          "espnId": 5124612,
+          "nbaTeamId": 20,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Naz Reid",
+          "espnId": 4396971,
+          "nbaTeamId": 30,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Cason Wallace",
+          "espnId": 4683692,
+          "nbaTeamId": 25,
+          "injuryStatus": "Out",
+          "injuryUpdatedAt": "2026-10-31T01:16Z",
+          "injuryType": "Shoulder",
+          "availabilityNote": "Fuera por lesión de hombro."
+        },
+        {
+          "name": "Toumani Camara",
+          "espnId": 4431736,
+          "nbaTeamId": 22,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "P.J. Washington",
+          "espnId": 4278078,
+          "nbaTeamId": 6,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Tyrese Haliburton",
+          "espnId": 4396993,
+          "nbaTeamId": 11,
+          "injuryStatus": "Out",
+          "injuryUpdatedAt": "2026-10-28T21:30Z",
+          "injuryType": "Hamstring",
+          "availabilityNote": "Fuera por lesión del isquiotibial."
+        },
+        {
+          "name": "Walker Kessler",
+          "espnId": 4433136,
+          "nbaTeamId": 13,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        },
+        {
+          "name": "Ace Bailey",
+          "espnId": 4873138,
+          "nbaTeamId": 26,
+          "injuryStatus": "not-listed",
+          "injuryUpdatedAt": null,
+          "injuryType": null
+        }
+      ]
+    }
+  ],
+  "schedule": [
+    {
+      "nbaDate": "20261102",
+      "id": "401909907",
+      "date": "2026-11-03T00:00Z",
+      "name": "Oklahoma City Thunder at Cleveland Cavaliers",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 5,
+          "name": "Cleveland Cavaliers"
+        },
+        {
+          "id": 25,
+          "name": "Oklahoma City Thunder"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909908",
+      "date": "2026-11-03T00:30Z",
+      "name": "Detroit Pistons at Charlotte Hornets",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 30,
+          "name": "Charlotte Hornets"
+        },
+        {
+          "id": 8,
+          "name": "Detroit Pistons"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909909",
+      "date": "2026-11-03T00:30Z",
+      "name": "Atlanta Hawks at Indiana Pacers",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 11,
+          "name": "Indiana Pacers"
+        },
+        {
+          "id": 1,
+          "name": "Atlanta Hawks"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909910",
+      "date": "2026-11-03T00:30Z",
+      "name": "Brooklyn Nets at New York Knicks",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 18,
+          "name": "New York Knicks"
+        },
+        {
+          "id": 17,
+          "name": "Brooklyn Nets"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909911",
+      "date": "2026-11-03T00:30Z",
+      "name": "Washington Wizards at Orlando Magic",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 19,
+          "name": "Orlando Magic"
+        },
+        {
+          "id": 27,
+          "name": "Washington Wizards"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909912",
+      "date": "2026-11-03T00:30Z",
+      "name": "Chicago Bulls at Philadelphia 76ers",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 20,
+          "name": "Philadelphia 76ers"
+        },
+        {
+          "id": 4,
+          "name": "Chicago Bulls"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909913",
+      "date": "2026-11-03T01:00Z",
+      "name": "Sacramento Kings at Dallas Mavericks",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 6,
+          "name": "Dallas Mavericks"
+        },
+        {
+          "id": 23,
+          "name": "Sacramento Kings"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909914",
+      "date": "2026-11-03T01:00Z",
+      "name": "New Orleans Pelicans at Memphis Grizzlies",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 29,
+          "name": "Memphis Grizzlies"
+        },
+        {
+          "id": 3,
+          "name": "New Orleans Pelicans"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909915",
+      "date": "2026-11-03T01:00Z",
+      "name": "Milwaukee Bucks at Minnesota Timberwolves",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 16,
+          "name": "Minnesota Timberwolves"
+        },
+        {
+          "id": 15,
+          "name": "Milwaukee Bucks"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909916",
+      "date": "2026-11-03T01:30Z",
+      "name": "Boston Celtics at Houston Rockets",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 10,
+          "name": "Houston Rockets"
+        },
+        {
+          "id": 2,
+          "name": "Boston Celtics"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909917",
+      "date": "2026-11-03T01:30Z",
+      "name": "Utah Jazz at San Antonio Spurs",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 24,
+          "name": "San Antonio Spurs"
+        },
+        {
+          "id": 26,
+          "name": "Utah Jazz"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909918",
+      "date": "2026-11-03T02:00Z",
+      "name": "Portland Trail Blazers at Denver Nuggets",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 7,
+          "name": "Denver Nuggets"
+        },
+        {
+          "id": 22,
+          "name": "Portland Trail Blazers"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909919",
+      "date": "2026-11-03T03:00Z",
+      "name": "Phoenix Suns at Golden State Warriors",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 9,
+          "name": "Golden State Warriors"
+        },
+        {
+          "id": 21,
+          "name": "Phoenix Suns"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909920",
+      "date": "2026-11-03T03:00Z",
+      "name": "Toronto Raptors at LA Clippers",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 12,
+          "name": "LA Clippers"
+        },
+        {
+          "id": 28,
+          "name": "Toronto Raptors"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261102",
+      "id": "401909921",
+      "date": "2026-11-03T03:00Z",
+      "name": "Miami Heat at Los Angeles Lakers",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 13,
+          "name": "Los Angeles Lakers"
+        },
+        {
+          "id": 14,
+          "name": "Miami Heat"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909922",
+      "date": "2026-11-05T00:00Z",
+      "name": "Philadelphia 76ers at Detroit Pistons",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 8,
+          "name": "Detroit Pistons"
+        },
+        {
+          "id": 20,
+          "name": "Philadelphia 76ers"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909923",
+      "date": "2026-11-05T00:00Z",
+      "name": "Atlanta Hawks at Washington Wizards",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 27,
+          "name": "Washington Wizards"
+        },
+        {
+          "id": 1,
+          "name": "Atlanta Hawks"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909924",
+      "date": "2026-11-05T00:30Z",
+      "name": "Milwaukee Bucks at Boston Celtics",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 2,
+          "name": "Boston Celtics"
+        },
+        {
+          "id": 15,
+          "name": "Milwaukee Bucks"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909925",
+      "date": "2026-11-05T00:30Z",
+      "name": "Charlotte Hornets at Brooklyn Nets",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 17,
+          "name": "Brooklyn Nets"
+        },
+        {
+          "id": 30,
+          "name": "Charlotte Hornets"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909926",
+      "date": "2026-11-05T00:30Z",
+      "name": "Chicago Bulls at New York Knicks",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 18,
+          "name": "New York Knicks"
+        },
+        {
+          "id": 4,
+          "name": "Chicago Bulls"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909927",
+      "date": "2026-11-05T01:00Z",
+      "name": "Indiana Pacers at Memphis Grizzlies",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 29,
+          "name": "Memphis Grizzlies"
+        },
+        {
+          "id": 11,
+          "name": "Indiana Pacers"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909928",
+      "date": "2026-11-05T01:00Z",
+      "name": "Utah Jazz at New Orleans Pelicans",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 3,
+          "name": "New Orleans Pelicans"
+        },
+        {
+          "id": 26,
+          "name": "Utah Jazz"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909929",
+      "date": "2026-11-05T01:00Z",
+      "name": "Cleveland Cavaliers at Oklahoma City Thunder",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 25,
+          "name": "Oklahoma City Thunder"
+        },
+        {
+          "id": 5,
+          "name": "Cleveland Cavaliers"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909930",
+      "date": "2026-11-05T01:30Z",
+      "name": "Minnesota Timberwolves at Houston Rockets",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 10,
+          "name": "Houston Rockets"
+        },
+        {
+          "id": 16,
+          "name": "Minnesota Timberwolves"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909931",
+      "date": "2026-11-05T02:00Z",
+      "name": "Toronto Raptors at Denver Nuggets",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 7,
+          "name": "Denver Nuggets"
+        },
+        {
+          "id": 28,
+          "name": "Toronto Raptors"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909932",
+      "date": "2026-11-05T02:00Z",
+      "name": "Portland Trail Blazers at Phoenix Suns",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 21,
+          "name": "Phoenix Suns"
+        },
+        {
+          "id": 22,
+          "name": "Portland Trail Blazers"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909933",
+      "date": "2026-11-05T02:30Z",
+      "name": "Dallas Mavericks at San Antonio Spurs",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 24,
+          "name": "San Antonio Spurs"
+        },
+        {
+          "id": 6,
+          "name": "Dallas Mavericks"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909934",
+      "date": "2026-11-05T03:00Z",
+      "name": "Los Angeles Lakers at Sacramento Kings",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 23,
+          "name": "Sacramento Kings"
+        },
+        {
+          "id": 13,
+          "name": "Los Angeles Lakers"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261104",
+      "id": "401909935",
+      "date": "2026-11-05T03:30Z",
+      "name": "Miami Heat at LA Clippers",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 12,
+          "name": "LA Clippers"
+        },
+        {
+          "id": 14,
+          "name": "Miami Heat"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261105",
+      "id": "401909936",
+      "date": "2026-11-06T02:00Z",
+      "name": "Orlando Magic at Phoenix Suns",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 21,
+          "name": "Phoenix Suns"
+        },
+        {
+          "id": 19,
+          "name": "Orlando Magic"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261105",
+      "id": "401909937",
+      "date": "2026-11-06T03:00Z",
+      "name": "Miami Heat at Golden State Warriors",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 9,
+          "name": "Golden State Warriors"
+        },
+        {
+          "id": 14,
+          "name": "Miami Heat"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261106",
+      "id": "401909287",
+      "date": "2026-11-07T00:00Z",
+      "name": "Washington Wizards at Atlanta Hawks",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 1,
+          "name": "Atlanta Hawks"
+        },
+        {
+          "id": 27,
+          "name": "Washington Wizards"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261106",
+      "id": "401909288",
+      "date": "2026-11-07T00:00Z",
+      "name": "Boston Celtics at Charlotte Hornets",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 30,
+          "name": "Charlotte Hornets"
+        },
+        {
+          "id": 2,
+          "name": "Boston Celtics"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261106",
+      "id": "401909289",
+      "date": "2026-11-07T00:30Z",
+      "name": "Philadelphia 76ers at Cleveland Cavaliers",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 5,
+          "name": "Cleveland Cavaliers"
+        },
+        {
+          "id": 20,
+          "name": "Philadelphia 76ers"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261106",
+      "id": "401909290",
+      "date": "2026-11-07T01:00Z",
+      "name": "Utah Jazz at Dallas Mavericks",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 6,
+          "name": "Dallas Mavericks"
+        },
+        {
+          "id": 26,
+          "name": "Utah Jazz"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261106",
+      "id": "401909291",
+      "date": "2026-11-07T01:00Z",
+      "name": "Oklahoma City Thunder at Memphis Grizzlies",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 29,
+          "name": "Memphis Grizzlies"
+        },
+        {
+          "id": 25,
+          "name": "Oklahoma City Thunder"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261106",
+      "id": "401909292",
+      "date": "2026-11-07T01:00Z",
+      "name": "Toronto Raptors at Milwaukee Bucks",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 15,
+          "name": "Milwaukee Bucks"
+        },
+        {
+          "id": 28,
+          "name": "Toronto Raptors"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261106",
+      "id": "401909293",
+      "date": "2026-11-07T01:00Z",
+      "name": "Minnesota Timberwolves at New Orleans Pelicans",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 3,
+          "name": "New Orleans Pelicans"
+        },
+        {
+          "id": 16,
+          "name": "Minnesota Timberwolves"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261106",
+      "id": "401909294",
+      "date": "2026-11-07T03:00Z",
+      "name": "Portland Trail Blazers at Los Angeles Lakers",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 13,
+          "name": "Los Angeles Lakers"
+        },
+        {
+          "id": 22,
+          "name": "Portland Trail Blazers"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261106",
+      "id": "401909295",
+      "date": "2026-11-07T03:00Z",
+      "name": "San Antonio Spurs at Sacramento Kings",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 23,
+          "name": "Sacramento Kings"
+        },
+        {
+          "id": 24,
+          "name": "San Antonio Spurs"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261107",
+      "id": "401909938",
+      "date": "2026-11-07T22:00Z",
+      "name": "Denver Nuggets at Indiana Pacers",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 11,
+          "name": "Indiana Pacers"
+        },
+        {
+          "id": 7,
+          "name": "Denver Nuggets"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261107",
+      "id": "401909939",
+      "date": "2026-11-08T00:30Z",
+      "name": "Brooklyn Nets at Atlanta Hawks",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 1,
+          "name": "Atlanta Hawks"
+        },
+        {
+          "id": 17,
+          "name": "Brooklyn Nets"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261107",
+      "id": "401909940",
+      "date": "2026-11-08T01:00Z",
+      "name": "New York Knicks at Cleveland Cavaliers",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 5,
+          "name": "Cleveland Cavaliers"
+        },
+        {
+          "id": 18,
+          "name": "New York Knicks"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261107",
+      "id": "401909941",
+      "date": "2026-11-08T01:00Z",
+      "name": "Washington Wizards at Oklahoma City Thunder",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 25,
+          "name": "Oklahoma City Thunder"
+        },
+        {
+          "id": 27,
+          "name": "Washington Wizards"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261107",
+      "id": "401909942",
+      "date": "2026-11-08T01:30Z",
+      "name": "Orlando Magic at Golden State Warriors",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 9,
+          "name": "Golden State Warriors"
+        },
+        {
+          "id": 19,
+          "name": "Orlando Magic"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261107",
+      "id": "401909943",
+      "date": "2026-11-08T02:00Z",
+      "name": "Houston Rockets at Phoenix Suns",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 21,
+          "name": "Phoenix Suns"
+        },
+        {
+          "id": 10,
+          "name": "Houston Rockets"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261107",
+      "id": "401909944",
+      "date": "2026-11-08T03:00Z",
+      "name": "San Antonio Spurs at Portland Trail Blazers",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 22,
+          "name": "Portland Trail Blazers"
+        },
+        {
+          "id": 24,
+          "name": "San Antonio Spurs"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261108",
+      "id": "401909945",
+      "date": "2026-11-08T20:30Z",
+      "name": "Philadelphia 76ers at Chicago Bulls",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 4,
+          "name": "Chicago Bulls"
+        },
+        {
+          "id": 20,
+          "name": "Philadelphia 76ers"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261108",
+      "id": "401909946",
+      "date": "2026-11-08T23:00Z",
+      "name": "Los Angeles Lakers at Detroit Pistons",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 8,
+          "name": "Detroit Pistons"
+        },
+        {
+          "id": 13,
+          "name": "Los Angeles Lakers"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261108",
+      "id": "401909947",
+      "date": "2026-11-09T00:00Z",
+      "name": "Utah Jazz at Minnesota Timberwolves",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 16,
+          "name": "Minnesota Timberwolves"
+        },
+        {
+          "id": 26,
+          "name": "Utah Jazz"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261108",
+      "id": "401909948",
+      "date": "2026-11-09T00:30Z",
+      "name": "Brooklyn Nets at Dallas Mavericks",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 6,
+          "name": "Dallas Mavericks"
+        },
+        {
+          "id": 17,
+          "name": "Brooklyn Nets"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261108",
+      "id": "401909949",
+      "date": "2026-11-09T01:00Z",
+      "name": "Boston Celtics at Milwaukee Bucks",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 15,
+          "name": "Milwaukee Bucks"
+        },
+        {
+          "id": 2,
+          "name": "Boston Celtics"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261108",
+      "id": "401909950",
+      "date": "2026-11-09T02:00Z",
+      "name": "New Orleans Pelicans at LA Clippers",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 12,
+          "name": "LA Clippers"
+        },
+        {
+          "id": 3,
+          "name": "New Orleans Pelicans"
+        }
+      ]
+    },
+    {
+      "nbaDate": "20261108",
+      "id": "401909951",
+      "date": "2026-11-09T02:00Z",
+      "name": "Miami Heat at Sacramento Kings",
+      "status": "STATUS_SCHEDULED",
+      "teams": [
+        {
+          "id": 23,
+          "name": "Sacramento Kings"
+        },
+        {
+          "id": 14,
+          "name": "Miami Heat"
+        }
+      ]
+    }
+  ],
+  "marketCandidates": [
+    {
+      "espnId": 5041939,
+      "name": "Cooper Flagg",
+      "nbaTeamId": 6,
+      "games": [
+        {
+          "id": "401909283",
+          "date": "2026-10-31T00:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909283",
+          "stats": {
+            "pts": 33,
+            "reb": 9,
+            "ast": 6,
+            "stl": 2,
+            "blk": 1,
+            "to": 3,
+            "min": 39,
+            "fgm": 13,
+            "fga": 19,
+            "tpm": 0,
+            "tpa": 4,
+            "ftm": 7,
+            "fta": 10
+          }
+        },
+        {
+          "id": "401909871",
+          "date": "2026-10-26T23:30Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909871",
+          "stats": {
+            "pts": 29,
+            "reb": 6,
+            "ast": 11,
+            "stl": 5,
+            "blk": 3,
+            "to": 5,
+            "min": 40,
+            "fgm": 12,
+            "fga": 23,
+            "tpm": 2,
+            "tpa": 8,
+            "ftm": 3,
+            "fta": 3
+          }
+        },
+        {
+          "id": "401909891",
+          "date": "2026-10-29T01:30Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909891",
+          "stats": {
+            "pts": 26,
+            "reb": 5,
+            "ast": 8,
+            "stl": 0,
+            "blk": 0,
+            "to": 0,
+            "min": 33,
+            "fgm": 10,
+            "fga": 23,
+            "tpm": 2,
+            "tpa": 8,
+            "ftm": 4,
+            "fta": 4
+          }
+        }
+      ],
+      "stats": {
+        "pts": 88,
+        "reb": 20,
+        "ast": 25,
+        "stl": 7,
+        "blk": 4,
+        "to": 8,
+        "min": 112,
+        "fgm": 35,
+        "fga": 65,
+        "tpm": 4,
+        "tpa": 20,
+        "ftm": 14,
+        "fta": 17
+      },
+      "gp": 3,
+      "tier": "A+",
+      "injuryStatus": "not-listed"
+    },
+    {
+      "espnId": 4566434,
+      "name": "Franz Wagner",
+      "nbaTeamId": 19,
+      "games": [
+        {
+          "id": "401909281",
+          "date": "2026-10-30T23:30Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909281",
+          "stats": {
+            "pts": 26,
+            "reb": 5,
+            "ast": 11,
+            "stl": 1,
+            "blk": 0,
+            "to": 4,
+            "min": 39,
+            "fgm": 8,
+            "fga": 18,
+            "tpm": 2,
+            "tpa": 7,
+            "ftm": 8,
+            "fta": 9
+          }
+        },
+        {
+          "id": "401909885",
+          "date": "2026-10-28T23:30Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909885",
+          "stats": {
+            "pts": 15,
+            "reb": 4,
+            "ast": 5,
+            "stl": 2,
+            "blk": 0,
+            "to": 7,
+            "min": 34,
+            "fgm": 4,
+            "fga": 11,
+            "tpm": 0,
+            "tpa": 3,
+            "ftm": 7,
+            "fta": 8
+          }
+        },
+        {
+          "id": "401909903",
+          "date": "2026-11-01T20:30Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909903",
+          "stats": {
+            "pts": 14,
+            "reb": 6,
+            "ast": 12,
+            "stl": 0,
+            "blk": 0,
+            "to": 3,
+            "min": 40,
+            "fgm": 5,
+            "fga": 20,
+            "tpm": 1,
+            "tpa": 4,
+            "ftm": 3,
+            "fta": 4
+          }
+        }
+      ],
+      "stats": {
+        "pts": 55,
+        "reb": 15,
+        "ast": 28,
+        "stl": 3,
+        "blk": 0,
+        "to": 14,
+        "min": 113,
+        "fgm": 17,
+        "fga": 49,
+        "tpm": 3,
+        "tpa": 14,
+        "ftm": 18,
+        "fta": 21
+      },
+      "gp": 3,
+      "tier": "A",
+      "injuryStatus": "not-listed"
+    },
+    {
+      "espnId": 4431678,
+      "name": "Tyrese Maxey",
+      "nbaTeamId": 20,
+      "games": [
+        {
+          "id": "401909280",
+          "date": "2026-10-30T23:30Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909280",
+          "stats": {
+            "pts": 27,
+            "reb": 4,
+            "ast": 4,
+            "stl": 1,
+            "blk": 1,
+            "to": 2,
+            "min": 38,
+            "fgm": 10,
+            "fga": 19,
+            "tpm": 3,
+            "tpa": 8,
+            "ftm": 4,
+            "fta": 7
+          }
+        },
+        {
+          "id": "401909884",
+          "date": "2026-10-28T23:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909884",
+          "stats": {
+            "pts": 27,
+            "reb": 5,
+            "ast": 4,
+            "stl": 1,
+            "blk": 0,
+            "to": 4,
+            "min": 36,
+            "fgm": 8,
+            "fga": 18,
+            "tpm": 3,
+            "tpa": 7,
+            "ftm": 8,
+            "fta": 9
+          }
+        },
+        {
+          "id": "401909897",
+          "date": "2026-10-31T22:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909897",
+          "stats": {
+            "pts": 38,
+            "reb": 4,
+            "ast": 4,
+            "stl": 2,
+            "blk": 0,
+            "to": 2,
+            "min": 38,
+            "fgm": 13,
+            "fga": 23,
+            "tpm": 4,
+            "tpa": 9,
+            "ftm": 8,
+            "fta": 9
+          }
+        }
+      ],
+      "stats": {
+        "pts": 92,
+        "reb": 13,
+        "ast": 12,
+        "stl": 4,
+        "blk": 1,
+        "to": 8,
+        "min": 112,
+        "fgm": 31,
+        "fga": 60,
+        "tpm": 10,
+        "tpa": 24,
+        "ftm": 20,
+        "fta": 25
+      },
+      "gp": 3,
+      "tier": "S",
+      "injuryStatus": "not-listed"
+    },
+    {
+      "espnId": 4066328,
+      "name": "Jarrett Allen",
+      "nbaTeamId": 5,
+      "games": [
+        {
+          "id": "401909869",
+          "date": "2026-10-26T23:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909869",
+          "stats": {
+            "pts": 10,
+            "reb": 9,
+            "ast": 2,
+            "stl": 1,
+            "blk": 2,
+            "to": 0,
+            "min": 27,
+            "fgm": 3,
+            "fga": 7,
+            "tpm": 0,
+            "tpa": 0,
+            "ftm": 4,
+            "fta": 4
+          }
+        },
+        {
+          "id": "401909882",
+          "date": "2026-10-28T23:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909882",
+          "stats": {
+            "pts": 8,
+            "reb": 12,
+            "ast": 2,
+            "stl": 1,
+            "blk": 3,
+            "to": 0,
+            "min": 30,
+            "fgm": 3,
+            "fga": 6,
+            "tpm": 0,
+            "tpa": 0,
+            "ftm": 2,
+            "fta": 2
+          }
+        },
+        {
+          "id": "401909893",
+          "date": "2026-10-30T00:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909893",
+          "stats": {
+            "pts": 14,
+            "reb": 8,
+            "ast": 1,
+            "stl": 0,
+            "blk": 2,
+            "to": 1,
+            "min": 30,
+            "fgm": 5,
+            "fga": 8,
+            "tpm": 1,
+            "tpa": 1,
+            "ftm": 3,
+            "fta": 4
+          }
+        },
+        {
+          "id": "401909900",
+          "date": "2026-11-01T00:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909900",
+          "stats": {
+            "pts": 25,
+            "reb": 11,
+            "ast": 4,
+            "stl": 1,
+            "blk": 0,
+            "to": 2,
+            "min": 24,
+            "fgm": 12,
+            "fga": 16,
+            "tpm": 0,
+            "tpa": 1,
+            "ftm": 1,
+            "fta": 4
+          }
+        }
+      ],
+      "stats": {
+        "pts": 57,
+        "reb": 40,
+        "ast": 9,
+        "stl": 3,
+        "blk": 7,
+        "to": 3,
+        "min": 111,
+        "fgm": 23,
+        "fga": 37,
+        "tpm": 1,
+        "tpa": 2,
+        "ftm": 10,
+        "fta": 14
+      },
+      "gp": 4,
+      "tier": "A",
+      "injuryStatus": "not-listed"
+    },
+    {
+      "espnId": 4397002,
+      "name": "Ayo Dosunmu",
+      "nbaTeamId": 16,
+      "games": [
+        {
+          "id": "401909284",
+          "date": "2026-10-31T00:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909284",
+          "stats": {
+            "pts": 15,
+            "reb": 7,
+            "ast": 2,
+            "stl": 0,
+            "blk": 1,
+            "to": 3,
+            "min": 30,
+            "fgm": 6,
+            "fga": 11,
+            "tpm": 3,
+            "tpa": 4,
+            "ftm": 0,
+            "fta": 0
+          }
+        },
+        {
+          "id": "401909869",
+          "date": "2026-10-26T23:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909869",
+          "stats": {
+            "pts": 9,
+            "reb": 1,
+            "ast": 0,
+            "stl": 1,
+            "blk": 1,
+            "to": 3,
+            "min": 26,
+            "fgm": 4,
+            "fga": 10,
+            "tpm": 1,
+            "tpa": 2,
+            "ftm": 0,
+            "fta": 0
+          }
+        },
+        {
+          "id": "401909888",
+          "date": "2026-10-29T00:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909888",
+          "stats": {
+            "pts": 17,
+            "reb": 3,
+            "ast": 4,
+            "stl": 4,
+            "blk": 0,
+            "to": 0,
+            "min": 32,
+            "fgm": 6,
+            "fga": 12,
+            "tpm": 3,
+            "tpa": 7,
+            "ftm": 2,
+            "fta": 2
+          }
+        },
+        {
+          "id": "401909901",
+          "date": "2026-11-01T00:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909901",
+          "stats": {
+            "pts": 27,
+            "reb": 9,
+            "ast": 3,
+            "stl": 3,
+            "blk": 0,
+            "to": 3,
+            "min": 38,
+            "fgm": 11,
+            "fga": 17,
+            "tpm": 2,
+            "tpa": 5,
+            "ftm": 3,
+            "fta": 3
+          }
+        }
+      ],
+      "stats": {
+        "pts": 68,
+        "reb": 20,
+        "ast": 9,
+        "stl": 8,
+        "blk": 2,
+        "to": 9,
+        "min": 126,
+        "fgm": 27,
+        "fga": 50,
+        "tpm": 9,
+        "tpa": 18,
+        "ftm": 5,
+        "fta": 5
+      },
+      "gp": 4,
+      "tier": "B",
+      "injuryStatus": "not-listed"
+    },
+    {
+      "espnId": 4433249,
+      "name": "Moussa Diabate",
+      "nbaTeamId": 30,
+      "games": [
+        {
+          "id": "401909277",
+          "date": "2026-10-30T23:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909277",
+          "stats": {
+            "pts": 10,
+            "reb": 12,
+            "ast": 1,
+            "stl": 2,
+            "blk": 0,
+            "to": 1,
+            "min": 31,
+            "fgm": 5,
+            "fga": 11,
+            "tpm": 0,
+            "tpa": 0,
+            "ftm": 0,
+            "fta": 0
+          }
+        },
+        {
+          "id": "401909868",
+          "date": "2026-10-26T23:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909868",
+          "stats": {
+            "pts": 11,
+            "reb": 17,
+            "ast": 3,
+            "stl": 1,
+            "blk": 3,
+            "to": 1,
+            "min": 35,
+            "fgm": 4,
+            "fga": 6,
+            "tpm": 0,
+            "tpa": 0,
+            "ftm": 3,
+            "fta": 4
+          }
+        },
+        {
+          "id": "401909883",
+          "date": "2026-10-28T23:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909883",
+          "stats": {
+            "pts": 9,
+            "reb": 9,
+            "ast": 2,
+            "stl": 0,
+            "blk": 1,
+            "to": 5,
+            "min": 35,
+            "fgm": 3,
+            "fga": 4,
+            "tpm": 0,
+            "tpa": 0,
+            "ftm": 3,
+            "fta": 4
+          }
+        },
+        {
+          "id": "401909897",
+          "date": "2026-10-31T22:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909897",
+          "stats": {
+            "pts": 10,
+            "reb": 8,
+            "ast": 3,
+            "stl": 0,
+            "blk": 2,
+            "to": 1,
+            "min": 28,
+            "fgm": 5,
+            "fga": 5,
+            "tpm": 0,
+            "tpa": 0,
+            "ftm": 0,
+            "fta": 0
+          }
+        }
+      ],
+      "stats": {
+        "pts": 40,
+        "reb": 46,
+        "ast": 9,
+        "stl": 3,
+        "blk": 6,
+        "to": 8,
+        "min": 129,
+        "fgm": 17,
+        "fga": 26,
+        "tpm": 0,
+        "tpa": 0,
+        "ftm": 6,
+        "fta": 8
+      },
+      "gp": 4,
+      "tier": null,
+      "injuryStatus": "not-listed"
+    },
+    {
+      "espnId": 4433083,
+      "name": "Cam Spencer",
+      "nbaTeamId": 29,
+      "games": [
+        {
+          "id": "401909875",
+          "date": "2026-10-27T01:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909875",
+          "stats": {
+            "pts": 8,
+            "reb": 5,
+            "ast": 5,
+            "stl": 0,
+            "blk": 0,
+            "to": 0,
+            "min": 18,
+            "fgm": 3,
+            "fga": 5,
+            "tpm": 2,
+            "tpa": 3,
+            "ftm": 0,
+            "fta": 0
+          }
+        },
+        {
+          "id": "401909895",
+          "date": "2026-10-30T02:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909895",
+          "stats": {
+            "pts": 8,
+            "reb": 6,
+            "ast": 8,
+            "stl": 2,
+            "blk": 0,
+            "to": 1,
+            "min": 23,
+            "fgm": 3,
+            "fga": 6,
+            "tpm": 1,
+            "tpa": 2,
+            "ftm": 1,
+            "fta": 1
+          }
+        },
+        {
+          "id": "401909899",
+          "date": "2026-11-01T00:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909899",
+          "stats": {
+            "pts": 10,
+            "reb": 5,
+            "ast": 13,
+            "stl": 1,
+            "blk": 0,
+            "to": 0,
+            "min": 25,
+            "fgm": 4,
+            "fga": 9,
+            "tpm": 2,
+            "tpa": 4,
+            "ftm": 0,
+            "fta": 0
+          }
+        }
+      ],
+      "stats": {
+        "pts": 26,
+        "reb": 16,
+        "ast": 26,
+        "stl": 3,
+        "blk": 0,
+        "to": 1,
+        "min": 66,
+        "fgm": 10,
+        "fga": 20,
+        "tpm": 5,
+        "tpa": 9,
+        "ftm": 1,
+        "fta": 1
+      },
+      "gp": 3,
+      "tier": null,
+      "injuryStatus": "not-listed"
+    },
+    {
+      "espnId": 5142620,
+      "name": "Darius Acuff Jr.",
+      "nbaTeamId": 23,
+      "games": [
+        {
+          "id": "401909879",
+          "date": "2026-10-28T00:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909879",
+          "stats": {
+            "pts": 19,
+            "reb": 3,
+            "ast": 5,
+            "stl": 0,
+            "blk": 0,
+            "to": 3,
+            "min": 33,
+            "fgm": 8,
+            "fga": 20,
+            "tpm": 3,
+            "tpa": 7,
+            "ftm": 0,
+            "fta": 0
+          }
+        },
+        {
+          "id": "401909894",
+          "date": "2026-10-30T00:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909894",
+          "stats": {
+            "pts": 34,
+            "reb": 6,
+            "ast": 14,
+            "stl": 0,
+            "blk": 0,
+            "to": 6,
+            "min": 41,
+            "fgm": 13,
+            "fga": 26,
+            "tpm": 3,
+            "tpa": 11,
+            "ftm": 5,
+            "fta": 5
+          }
+        },
+        {
+          "id": "401909899",
+          "date": "2026-11-01T00:00Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909899",
+          "stats": {
+            "pts": 38,
+            "reb": 5,
+            "ast": 5,
+            "stl": 0,
+            "blk": 0,
+            "to": 3,
+            "min": 37,
+            "fgm": 12,
+            "fga": 25,
+            "tpm": 9,
+            "tpa": 14,
+            "ftm": 5,
+            "fta": 5
+          }
+        }
+      ],
+      "stats": {
+        "pts": 91,
+        "reb": 14,
+        "ast": 24,
+        "stl": 0,
+        "blk": 0,
+        "to": 12,
+        "min": 111,
+        "fgm": 33,
+        "fga": 71,
+        "tpm": 15,
+        "tpa": 32,
+        "ftm": 10,
+        "fta": 10
+      },
+      "gp": 3,
+      "tier": "B",
+      "injuryStatus": "not-listed"
+    }
+  ]
+}

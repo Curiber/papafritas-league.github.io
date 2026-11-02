@@ -14,7 +14,7 @@ on:
         type: boolean
         default: true
       export_editorial:
-        description: Exportar planteles y actas de la semana anterior para una crónica
+        description: Exportar planteles e identificadores NBA para preparar una crónica
         type: boolean
         default: false
   push:
@@ -72,17 +72,13 @@ jobs:
         env:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
-        run: |
-          node scripts/export-espn-editorial.cjs "$RUNNER_TEMP/espn-editorial.json"
-          node scripts/export-espn-week.cjs "$RUNNER_TEMP/espn-week.json"
+        run: node scripts/export-espn-editorial.cjs "$RUNNER_TEMP/espn-editorial.json"
       - name: Conservar el corte editorial para revisión
         if: steps.gate.outputs.run_update == 'true' && github.event_name == 'workflow_dispatch' && inputs.export_editorial
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: espn-editorial
-          path: |
-            ${{ runner.temp }}/espn-editorial.json
-            ${{ runner.temp }}/espn-week.json
+          path: ${{ runner.temp }}/espn-editorial.json
           retention-days: 1
       - name: Verificar resultados actualizados
         if: steps.gate.outputs.run_update == 'true'
