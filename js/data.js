@@ -8214,7 +8214,36 @@ schedule: [
           "pilsens",
           "hipopotamos"
         ],
-        "status": "scheduled"
+        "status": "partial",
+        "stats": {
+          "pilsens": {
+            "fgp": 0.55555556,
+            "ftp": 0.85,
+            "tpm": 16,
+            "reb": 61,
+            "ast": 52,
+            "stl": 18,
+            "blk": 3,
+            "to": 23,
+            "pts": 190
+          },
+          "hipopotamos": {
+            "fgp": 0.44594595,
+            "ftp": 0.72916667,
+            "tpm": 14,
+            "reb": 59,
+            "ast": 36,
+            "stl": 11,
+            "blk": 4,
+            "to": 20,
+            "pts": 181
+          }
+        },
+        "updatedAt": "2026-11-03T18:04:47.066Z",
+        "sourceMode": "espn",
+        "source": "Totales semanales oficiales de ESPN Fantasy, obtenidos mediante su API de lectura.",
+        "sourceUrl": "https://fantasy.espn.com/basketball/boxscore?leagueId=732964684&matchupPeriodId=3&seasonId=2027&teamId=4",
+        "sourceSnapshot": "./assets/cortes/espn/20261103T180447.066Z.json"
       },
       {
         "id": "w3-m2",
@@ -8222,7 +8251,36 @@ schedule: [
           "shockers",
           "pelafustanes"
         ],
-        "status": "scheduled"
+        "status": "partial",
+        "stats": {
+          "shockers": {
+            "fgp": 0.37226277,
+            "ftp": 0.89655172,
+            "tpm": 14,
+            "reb": 51,
+            "ast": 53,
+            "stl": 12,
+            "blk": 8,
+            "to": 24,
+            "pts": 168
+          },
+          "pelafustanes": {
+            "fgp": 0.50393701,
+            "ftp": 0.68085106,
+            "tpm": 22,
+            "reb": 43,
+            "ast": 59,
+            "stl": 8,
+            "blk": 7,
+            "to": 25,
+            "pts": 182
+          }
+        },
+        "updatedAt": "2026-11-03T18:04:47.066Z",
+        "sourceMode": "espn",
+        "source": "Totales semanales oficiales de ESPN Fantasy, obtenidos mediante su API de lectura.",
+        "sourceUrl": "https://fantasy.espn.com/basketball/boxscore?leagueId=732964684&matchupPeriodId=3&seasonId=2027&teamId=3",
+        "sourceSnapshot": "./assets/cortes/espn/20261103T180447.066Z.json"
       }
     ]
   }
