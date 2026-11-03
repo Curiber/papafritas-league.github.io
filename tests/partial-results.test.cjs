@@ -227,10 +227,20 @@ test('el cierre de la semana 2 reconstruye las nueve categorías sin sumar actas
 });
 
 test('la previa de la semana 3 no adelanta resultados y las rutas de mercado respetan tiers y franquicias',()=>{
-  const a=app(),w=a.data.schedule.find(w=>w.week===3);
-  assert.deepEqual(Array.from(w.matchups,m=>Array.from(m.teams)),[['pilsens','hipopotamos'],['shockers','pelafustanes']]);
-  for(const m of w.matchups){assert.equal(m.status,'scheduled');assert.equal(a.run(`evaluate(matchupById('${m.id}'))`),null);}
-  assert.match(a.run("article(D.posts.find(p=>p.id==='previa-semana-3-pilsens-hipopotamos-shockers-mequetrefes'))"),/todavía sin resultado/);
+  const a=app(),preview=a.data.posts.find(p=>p.id==='previa-semana-3-pilsens-hipopotamos-shockers-mequetrefes');
+  const render=()=>a.run("article(D.posts.find(p=>p.id==='previa-semana-3-pilsens-hipopotamos-shockers-mequetrefes'))");
+  const before=render(),announced=preview.fantasySnapshot;
+  assert.deepEqual(Array.from(announced.matchups,m=>Array.from(m.teams)),[['pilsens','hipopotamos'],['shockers','pelafustanes']]);
+  for(const m of announced.matchups){assert.equal(m.status,'scheduled');assert.equal(m.stats,undefined);}
+  assert.match(before,/todavía sin resultado/);
+  // A published preview stays unchanged when the real week starts or finishes.
+  const totals=a.data.statisticsReports.find(r=>r.id==='semana-2-final-2026-11-01').teamTotals;
+  for(const status of ['partial','final']){
+    for(const m of a.data.schedule.find(w=>w.week===3).matchups){
+      m.status=status;m.stats=Object.fromEntries(m.teams.map(id=>[id,structuredClone(totals[id])]));
+    }
+    assert.equal(render(),before);
+  }
   const cut=JSON.parse(fs.readFileSync(path.join(root,'assets/cortes/semana-3-previa-mercado-2026-11-02.json'),'utf8'));
   const routes=[['shockers','Jaren Jackson Jr.','Jarrett Allen'],['shockers','Kon Knueppel','Ayo Dosunmu'],['pilsens','Jaylen Wells','Moussa Diabate'],['hipopotamos','Cason Wallace','Cam Spencer'],['hipopotamos','Naz Reid','Darius Acuff Jr.'],['pelafustanes','Malik Monk','Cam Spencer']];
   for(const [team,out,incoming]of routes){

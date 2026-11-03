@@ -1,7 +1,7 @@
 'use strict';
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { decideRun } = require('../scripts/espn-schedule-gate.cjs');
+const { decideRun, windowDecision } = require('../scripts/espn-schedule-gate.cjs');
 const options = { eventName: 'schedule', now: new Date('2026-10-29T10:17:00Z'), repository: 'Curiber/papafritas-league.github.io', runId: '999' };
 const run = (overrides = {}) => ({ id: 100, head_branch: 'main', event: 'schedule', conclusion: 'success', updated_at: '2026-10-29T10:10:00Z', ...overrides });
 function api(runs, stepOverrides = {}, capture = []) {
@@ -16,6 +16,16 @@ test('los horarios UTC cubren las 07:00 de verano e invierno sin ejecutar antes'
     ['2026-10-29T09:59:00Z',false], ['2026-10-29T10:00:00Z',true],
     ['2027-06-02T10:17:00Z',false], ['2027-06-02T11:00:00Z',true]
   ]) assert.equal((await decideRun({...options,now:new Date(stamp),fetchImpl:api([])})).run,expected);
+});
+
+test('el control previo bloquea la tarde sin consultar GitHub ni ESPN, incluso con retrasos de horas',async()=>{
+  for(const stamp of ['2026-11-03T14:00:00Z','2026-11-03T17:39:50Z','2026-11-03T17:49:13Z','2027-06-02T15:00:00Z']){
+    const now=new Date(stamp);assert.equal(windowDecision('schedule',now).run,false);
+    const result=await decideRun({...options,now,fetchImpl:()=>{throw new Error('No debe consultar historial');}});
+    assert.equal(result.run,false);assert.match(result.reason,/Fuera de la ventana/);
+  }
+  assert.equal(windowDecision('schedule',new Date('2026-11-03T13:59:59Z')).run,true);
+  assert.equal(windowDecision('schedule',new Date('2027-06-02T14:59:59Z')).run,true);
 });
 
 test('un disparo manual o push no se bloquea por hora ni por otra ejecución anterior', async () => {
@@ -36,6 +46,11 @@ test('una prueba solo de publicación y una ejecución fallida no consumen la ac
   assert.equal((await decideRun({...options,fetchImpl:api([run()],{conclusion:'skipped'})})).run,true);
   assert.equal((await decideRun({...options,fetchImpl:api([run({conclusion:'failure'})])})).run,true);
   assert.equal((await decideRun({...options,fetchImpl:api([run({event:'push'})])})).run,true);
+});
+
+test('una actualización manual de madrugada no sustituye al corte de la mañana',async()=>{
+  const result=await decideRun({...options,fetchImpl:api([run({event:'workflow_dispatch',updated_at:'2026-10-29T04:30:00Z'})],{completed_at:'2026-10-29T04:29:00Z'})});
+  assert.equal(result.run,true);
 });
 
 test('no confunde las fechas de Chile con UTC ni los intentos anteriores con el día actual', async () => {

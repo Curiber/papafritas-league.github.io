@@ -1,12 +1,13 @@
 name: Actualizar resultados ESPN
-run-name: ${{ github.event_name == 'schedule' && 'ESPN · automático · objetivo 07:00 Chile' || github.event_name == 'workflow_dispatch' && 'ESPN · ejecución manual' || 'ESPN · comprobación de código' }}
+run-name: ${{ github.event_name == 'schedule' && 'ESPN · control matinal · 07:00–10:59 Chile' || github.event_name == 'workflow_dispatch' && 'ESPN · ejecución manual' || 'ESPN · comprobación de código' }}
 
 on:
   schedule:
     - cron: '0 7 * * *'
       timezone: America/Santiago
-    - cron: '17,47 7 * * *'
-      timezone: America/Santiago
+    # Frequent delivery provides morning retries even when GitHub delays an event for hours.
+    # Only the small window-check job runs outside 07:00–10:59 in Santiago.
+    - cron: '7,37 * * * *'
   workflow_dispatch:
     inputs:
       refresh_results:
@@ -34,7 +35,33 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  window:
+    name: Comprobar ventana matinal
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      allowed: ${{ steps.window.outputs.run_update }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+          sparse-checkout: |
+            scripts/espn-schedule-gate.cjs
+            config/espn.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+      - name: Aceptar solo actualizaciones automáticas de mañana
+        id: window
+        env:
+          EXPECTED_SCHEDULE: ${{ github.event.schedule }}
+        run: node scripts/espn-schedule-gate.cjs --window-only
   update:
+    name: ${{ github.event_name == 'push' && 'Verificar código' || 'Actualizar y publicar resultados' }}
+    needs: window
+    if: needs.window.outputs.allowed == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
