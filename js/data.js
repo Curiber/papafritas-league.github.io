@@ -8281,7 +8281,7 @@ posts: [
   "id": "waivers-2-noviembre-flagg-booker-vestuario",
   "date": "2026-11-03",
   "category": "Trades",
-  "readingMinutes": 5,
+  "readingMinutes": 6,
   "title": "Flagg por $52 y Booker por $2: el mercado abre la novela del vestuario",
   "excerpt": "Ocho altas confirmadas y $96 en pujas: Shockers gana la carrera por Flagg, Pilsens incorpora a Wagner y Maxey, e Hipopotamos ficha a Booker. El registro completo viene acompañado de una novela de vestuario expresamente ficticia, con despedidas, egos y cuentas pendientes.",
   "teams": [
@@ -8431,11 +8431,31 @@ posts: [
     ],
     [
       "h2",
-      "El Rubio cambia el cartel; el Chino mira desde la mesa de al lado"
+      "Pilsens: Maxey descubre que Wagner costó el triple"
     ],
     [
       "p",
-      "En el Cromwell de nuestra novela, el Rubio tapa la oferta fallida de Flagg con dos hojas nuevas: Wagner y Maxey. Lo llama «reconstrucción express» y pide que nadie vuelva a mencionar los $35. Wagner saluda antes de elegir asiento. Maxey pregunta cuándo se juega. Por unos minutos, el vestuario parece un lugar tranquilo. Entonces alguien encuentra una camiseta de Edwards y la conversación vuelve a bajar de volumen."
+      "En el Cromwell imaginario de esta novela, el Rubio presenta a Wagner y Maxey bajo un cartel que dice «reconstrucción express». Habla de equilibrio, ambición y un proyecto cuidadosamente diseñado. Todo marcha bien hasta que alguien pregunta por los $35 que ofreció por Flagg. El Rubio da vuelta el cartel: atrás dice «mirar hacia adelante». La primera norma del nuevo vestuario queda establecida antes del entrenamiento."
+    ],
+    [
+      "p",
+      "Maxey encuentra las dos boletas pegadas en la pizarra: Wagner, $15; Maxey, $5. «¿Él viene con estacionamiento y yo tengo que traer la camiseta?», pregunta su personaje, todavía con el bolso al hombro. El Wagner ficticio responde que las tarifas premium no se explican: se respetan. Maxey le ofrece una solución: si costó el triple, que también haga el triple de los relevos defensivos. Se acaba el aplauso de bienvenida."
+    ],
+    [
+      "p",
+      "La pelea inventada se traslada al primer ejercicio. Wagner pide organizar la jugada; Maxey pide la pelota. Ambos miran al Rubio, que descubre demasiado tarde que fichar a dos creadores también puede crear dos candidatos a jefe. Sabonis se ofrece como mediador hasta que le piden elegir un bando. «Yo doy asistencias, no certificados de superioridad», contesta en esta escena. A partir de ahí, cada pase tiene una pequeña lectura política."
+    ],
+    [
+      "p",
+      "Jokić corta la reunión ficticia sin levantarse de su asiento: «El que esté solo recibe la pelota. El resto puede discutir la boleta después». Nadie se atreve a preguntarle cuánto costó su opinión. Por diez minutos, Pilsens parece haber encontrado una jerarquía razonable. Entonces Maxey bautiza a Wagner como «el premium» y Wagner empieza a llamar a Maxey «la oferta». El Rubio solicita que esos apodos no lleguen al grupo de WhatsApp. Llegan antes que él."
+    ],
+    [
+      "p",
+      "Las despedidas tampoco ayudan en nuestra historia. Garland deja una nota en el casillero: «La contraseña del parlante se la explican al fichaje de $15». El Edwards ficticio manda un mensaje desde su recuperación: «Para cambiar mi nombre de la lista fueron bastante rápidos». El Rubio lo lee, escribe una respuesta larga, la borra y manda un pulgar arriba. En la novela, ese emoji consigue lo que ningún rival había logrado todavía: unir a los recién llegados y los que se fueron en una misma queja contra la directiva."
+    ],
+    [
+      "h2",
+      "El Chino mira desde la mesa de al lado"
     ],
     [
       "p",
