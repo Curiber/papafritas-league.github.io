@@ -227,7 +227,7 @@ function rulesPage() {
 }
 function rankingHeading(t, position) { return `<div class="rank-heading">${crest(t, 64)}<h2><a href="#equipo/${t.id}">${position ? position + '. ' : ''}${esc(t.name)}</a></h2></div>`; }
 
-function postLabel(p) { return p.partial ? 'Crónica parcial' : p.category; }
+function postLabel(p) { return p.partial ? 'Crónica parcial' : p.fiction ? `${p.category} · ${p.fiction.label}` : p.category; }
 function playerReport(reportId, teamId) {
   const report = D.statisticsReports?.find(r => r.id === reportId);
   if (!report) return '';
@@ -252,7 +252,7 @@ function articleSources(p, indexes) {
 function transactionHighlights(id) {
   const report = D.transactionReports?.find(r => r.id === id);
   if (!report) return '';
-  return `<section class="waiver-highlights" aria-label="Adquisiciones destacadas"><h2>Tres incorporaciones para seguir</h2><p class="note">Selección editorial por jerarquía, encaje y producción reciente.</p><ul class="waiver-highlight-grid">${report.highlights.map(h => {
+  return `<section class="waiver-highlights" aria-label="Adquisiciones destacadas"><h2>${report.highlights.length === 3 ? 'Tres incorporaciones para seguir' : 'Las incorporaciones destacadas'}</h2><p class="note">${esc(report.highlightNote || 'Selección editorial por jerarquía, encaje y producción reciente.')}</p><ul class="waiver-highlight-grid${report.highlights.length === 4 ? ' four-up' : ''}">${report.highlights.map(h => {
     const m = report.transactions.find(t => t.id === h.transactionId);
     return `<li><span class="eyebrow">${esc(h.label)}</span><h3>${esc(m.added.name)}</h3><a class="waiver-team" href="#equipo/${esc(m.team)}">${esc(team(m.team).name)}</a><strong class="waiver-bid">$${m.bid}<small>Puja</small></strong><p>${esc(h.reason)}</p></li>`;
   }).join('')}</ul></section>`;
@@ -262,7 +262,21 @@ function transactionTable(id) {
   if (!report) return '';
   const featured = new Set(report.highlights.map(h => h.transactionId));
   const moves = report.transactions.slice().sort((a,b) => b.bid-a.bid);
-  return `<h2>Todos los movimientos confirmados</h2><p class="note">Pujas ordenadas de mayor a menor. Las filas señaladas corresponden a las tres adquisiciones destacadas en el análisis.</p><div class="report-scroll" tabindex="0" role="region" aria-label="Altas y bajas por waivers"><table class="waiver-table"><caption>ESPN Fantasy · ${fmtDate(report.date)} · ${moves.length} incorporaciones</caption><thead><tr><th scope="col">Equipo</th><th scope="col">Alta</th><th scope="col">Baja</th><th scope="col">Puja</th></tr></thead><tbody>${moves.map(m => `<tr${featured.has(m.id) ? ' class="waiver-featured"' : ''}><td><a href="#equipo/${esc(m.team)}">${esc(team(m.team).name)}</a></td><th scope="row">${esc(m.added.name)}${featured.has(m.id) ? '<small class="waiver-tag">Destacada</small>' : ''}</th><td>${esc(m.dropped.name)}</td><td class="waiver-price">$${m.bid}</td></tr>`).join('')}</tbody><tfoot><tr><th scope="row" colspan="3">Suma de las pujas de la captura</th><td class="waiver-price">$${moves.reduce((sum,m) => sum+m.bid,0)}</td></tr></tfoot></table></div><details class="player-report"><summary>Fuente y alcance de los movimientos</summary><p class="note">${esc(report.source)}</p><a class="link" href="${esc(report.sourceImage)}" target="_blank" rel="noopener noreferrer">Ver registro de ESPN Fantasy</a></details>`;
+  return `<h2>Todos los movimientos confirmados</h2><p class="note">Pujas ordenadas de mayor a menor. Las filas señaladas corresponden a las adquisiciones destacadas en el análisis.</p><div class="report-scroll" tabindex="0" role="region" aria-label="Altas y bajas por waivers"><table class="waiver-table"><caption>ESPN Fantasy · ${fmtDate(report.date)} · ${moves.length} incorporaciones</caption><thead><tr><th scope="col">Equipo</th><th scope="col">Alta</th><th scope="col">Baja</th><th scope="col">Puja</th></tr></thead><tbody>${moves.map(m => `<tr${featured.has(m.id) ? ' class="waiver-featured"' : ''}><td><a href="#equipo/${esc(m.team)}">${esc(team(m.team).name)}</a></td><th scope="row">${esc(m.added.name)}${featured.has(m.id) ? '<small class="waiver-tag">Destacada</small>' : ''}</th><td>${esc(m.dropped.name)}</td><td class="waiver-price">$${m.bid}</td></tr>`).join('')}</tbody><tfoot><tr><th scope="row" colspan="3">Suma de las pujas ganadoras</th><td class="waiver-price">$${moves.reduce((sum,m) => sum+m.bid,0)}</td></tr></tfoot></table></div><details class="player-report"><summary>Fuente y alcance de los movimientos</summary><p class="note">${esc(report.source)}</p><a class="link" href="${esc(report.sourceImage)}" target="_blank" rel="noopener noreferrer">Ver registro de ESPN Fantasy</a></details>`;
+}
+
+function offersTable(id) {
+  const report = D.transactionReports?.find(r => r.id === id);
+  if (!report?.offers) return '';
+  return `<details class="player-report"><summary>Ver las ${report.offers.length} ofertas procesadas · altas y fallidas</summary><p class="note">Orden de la captura de ESPN. Solo las ofertas con alta forman parte del gasto de $${report.transactions.reduce((sum,m)=>sum+m.bid,0)}. Las fallidas conservan la causa indicada por la plataforma.</p><div class="report-scroll" tabindex="0" role="region" aria-label="Ofertas completas de agentes libres"><table class="waiver-table offers-table"><caption>Ofertas del ${fmtDate(report.date)}</caption><thead><tr><th scope="col">Equipo</th><th scope="col">Jugador solicitado</th><th scope="col">Puja</th><th scope="col">Resultado</th><th scope="col">Detalle de ESPN</th></tr></thead><tbody>${report.offers.map(o=>{
+    const move = report.transactions.find(m=>m.id===o.transactionId);
+    const added = o.result === 'added';
+    return `<tr${added ? ' class="offer-accepted"' : ''}><td>${esc(team(o.team).name)}</td><th scope="row">${esc(o.claim.name)}</th><td class="waiver-price">$${o.bid}</td><td><strong class="offer-result">${added ? 'Alta' : 'Fallida'}</strong></td><td>${esc(added && move ? `Sale ${move.dropped.name} a waivers.` : o.reason)}</td></tr>`;
+  }).join('')}</tbody></table></div></details>`;
+}
+
+function fictionNotice(p) {
+  return p.fiction?.notice ? `<aside class="fiction-note" role="note" aria-label="Ficción de vestuario"><strong>Ficción de vestuario</strong><p>${esc(p.fiction.notice)}</p></aside>` : '';
 }
 
 function articleMatchup(p, id) {
@@ -275,7 +289,7 @@ function article(p) {
   const report = D.statisticsReports?.find(r => r.id === p.reportId);
   const reportMeta = !report ? (p.fantasySnapshot ? cutoffNote({updatedAt:p.fantasySnapshot.updatedAt,sourceMode:'espn'}) : '') : p.category === 'Previas' ? `<span class="snapshot-meta">Base estadística: cierre del ${esc(fmtDate(report.through))}</span>` : cutoffNote({...report,updatedAtApproximate:report.approximate});
   return `<a class="back" href="#noticias">← Volver al archivo</a><article class="reading"><div class="page-head"><span class="eyebrow">${esc(postLabel(p))}</span><h1>${esc(p.title)}</h1><div class="meta"><time datetime="${p.date}">${fmtDate(p.date)}</time> · Redacción Papafritas${p.readingMinutes ? ` · ${p.readingMinutes} min de lectura` : ''}</div>${reportMeta}</div>${articleCover(p)}<p class="lead">${esc(p.excerpt)}</p>
-    ${p.body.map(([tag, text]) => tag === 'matchup-cut' ? articleMatchup(p,text) : tag === 'transaction-highlights' ? transactionHighlights(text) : tag === 'transaction-table' ? transactionTable(text) : tag === 'sources' ? articleSources(p, text) : tag === 'player-report' ? playerReport(p.reportId, text) : tag === 'draft-order' ? draftOrder() : tag === 'team-heading' ? rankingHeading(team(text)) : `<${tag === 'h2' ? 'h2' : 'p'}>${esc(text)}</${tag === 'h2' ? 'h2' : 'p'}>`).join('')}
+    ${p.body.map(([tag, text]) => tag === 'matchup-cut' ? articleMatchup(p,text) : tag === 'transaction-highlights' ? transactionHighlights(text) : tag === 'transaction-table' ? transactionTable(text) : tag === 'offers-table' ? offersTable(text) : tag === 'fiction-notice' ? fictionNotice(p) : tag === 'sources' ? articleSources(p, text) : tag === 'player-report' ? playerReport(p.reportId, text) : tag === 'draft-order' ? draftOrder() : tag === 'team-heading' ? rankingHeading(team(text)) : `<${tag === 'h2' ? 'h2' : 'p'}>${esc(text)}</${tag === 'h2' ? 'h2' : 'p'}>`).join('')}
     ${r ? r.entries.map((e, i) => `${rankingHeading(team(e.team), i + 1)}<p>${esc(e.analysis)}</p>`).join('') : ''}
     ${reportSources(p)}<p class="source">${esc(p.source ?? 'Base documental: fichas de los cuatro equipos registradas el 20 de octubre de 2026 a partir de capturas proporcionadas por los participantes. Las valoraciones son opinión y proyección editorial: no incorporan estadísticas actuales ni presuponen disponibilidad.')}</p>
     ${p.rulesLink ? '<a class="link" href="#reglas">Consultar el reglamento y los tiers</a>' : ''}

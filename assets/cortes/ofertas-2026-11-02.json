@@ -1,0 +1,388 @@
+{
+  "id": "waivers-2026-11-02",
+  "date": "2026-11-02",
+  "timeZoneShown": false,
+  "sourceImage": "./assets/cortes/ofertas-2026-11-02.png",
+  "source": "Free Agent Offers Report de ESPN Fantasy aportado por el participante. Fecha seleccionada: lunes 2 de noviembre de 2026, ocho altas procesadas. Se transcriben las 18 ofertas visibles, con ocho incorporaciones y sus bajas asociadas. Las pujas ganadoras suman $96; no se dispone del presupuesto inicial ni de los saldos. La captura no muestra hora ni zona horaria. Las etiquetas NBA corresponden a esa fuente. Las causas de las ofertas fallidas se conservan sin inferir qué baja estaba asociada a ellas.",
+  "transactions": [
+    {
+      "id": "waiver-20261102-01",
+      "team": "shockers",
+      "type": "waiver",
+      "added": {
+        "name": "Cooper Flagg",
+        "nbaLabel": "DAL",
+        "position": "SF"
+      },
+      "dropped": {
+        "name": "Karl-Anthony Towns",
+        "nbaLabel": "NY",
+        "position": "C"
+      },
+      "bid": 52
+    },
+    {
+      "id": "waiver-20261102-02",
+      "team": "pilsens",
+      "type": "waiver",
+      "added": {
+        "name": "Franz Wagner",
+        "nbaLabel": "ORL",
+        "position": "SF"
+      },
+      "dropped": {
+        "name": "Darius Garland",
+        "nbaLabel": "LAC",
+        "position": "PG"
+      },
+      "bid": 15
+    },
+    {
+      "id": "waiver-20261102-03",
+      "team": "hipopotamos",
+      "type": "waiver",
+      "added": {
+        "name": "Christian Braun",
+        "nbaLabel": "DEN",
+        "position": "SG"
+      },
+      "dropped": {
+        "name": "Cason Wallace",
+        "nbaLabel": "OKC",
+        "position": "SG"
+      },
+      "bid": 9
+    },
+    {
+      "id": "waiver-20261102-04",
+      "team": "shockers",
+      "type": "waiver",
+      "added": {
+        "name": "Yaxel Lendeborg",
+        "nbaLabel": "GS",
+        "position": "SF"
+      },
+      "dropped": {
+        "name": "Kon Knueppel",
+        "nbaLabel": "CHA",
+        "position": "SF"
+      },
+      "bid": 7
+    },
+    {
+      "id": "waiver-20261102-05",
+      "team": "pilsens",
+      "type": "waiver",
+      "added": {
+        "name": "Tyrese Maxey",
+        "nbaLabel": "PHI",
+        "position": "PG"
+      },
+      "dropped": {
+        "name": "Anthony Edwards",
+        "nbaLabel": "MIN",
+        "position": "SG"
+      },
+      "bid": 5
+    },
+    {
+      "id": "waiver-20261102-06",
+      "team": "hipopotamos",
+      "type": "waiver",
+      "added": {
+        "name": "Ajay Mitchell",
+        "nbaLabel": "OKC",
+        "position": "PG"
+      },
+      "dropped": {
+        "name": "VJ Edgecombe",
+        "nbaLabel": "PHI",
+        "position": "SG"
+      },
+      "bid": 5
+    },
+    {
+      "id": "waiver-20261102-07",
+      "team": "hipopotamos",
+      "type": "waiver",
+      "added": {
+        "name": "Devin Booker",
+        "nbaLabel": "PHX",
+        "position": "PG"
+      },
+      "dropped": {
+        "name": "Tyrese Haliburton",
+        "nbaLabel": "IND",
+        "position": "PG"
+      },
+      "bid": 2
+    },
+    {
+      "id": "waiver-20261102-08",
+      "team": "shockers",
+      "type": "waiver",
+      "added": {
+        "name": "Jarrett Allen",
+        "nbaLabel": "CLE",
+        "position": "C"
+      },
+      "dropped": {
+        "name": "Jaren Jackson Jr.",
+        "nbaLabel": "UTAH",
+        "position": "C"
+      },
+      "bid": 1
+    }
+  ],
+  "offers": [
+    {
+      "order": 1,
+      "team": "shockers",
+      "claim": {
+        "name": "Cooper Flagg",
+        "nbaLabel": "DAL",
+        "position": "SF"
+      },
+      "bid": 52,
+      "result": "added",
+      "transactionId": "waiver-20261102-01"
+    },
+    {
+      "order": 2,
+      "team": "pilsens",
+      "claim": {
+        "name": "Cooper Flagg",
+        "nbaLabel": "DAL",
+        "position": "SF"
+      },
+      "bid": 35,
+      "result": "unsuccessful",
+      "reasonCode": "already-added",
+      "reason": "El jugador ya había sido incorporado por otro equipo."
+    },
+    {
+      "order": 3,
+      "team": "hipopotamos",
+      "claim": {
+        "name": "Cooper Flagg",
+        "nbaLabel": "DAL",
+        "position": "SF"
+      },
+      "bid": 17,
+      "result": "unsuccessful",
+      "reasonCode": "already-added",
+      "reason": "El jugador ya había sido incorporado por otro equipo."
+    },
+    {
+      "order": 4,
+      "team": "pilsens",
+      "claim": {
+        "name": "Franz Wagner",
+        "nbaLabel": "ORL",
+        "position": "SF"
+      },
+      "bid": 15,
+      "result": "added",
+      "transactionId": "waiver-20261102-02"
+    },
+    {
+      "order": 5,
+      "team": "pilsens",
+      "claim": {
+        "name": "Pascal Siakam",
+        "nbaLabel": "IND",
+        "position": "PF"
+      },
+      "bid": 10,
+      "result": "unsuccessful",
+      "reasonCode": "already-dropped",
+      "reason": "Un jugador involucrado ya había sido cortado."
+    },
+    {
+      "order": 6,
+      "team": "hipopotamos",
+      "claim": {
+        "name": "Christian Braun",
+        "nbaLabel": "DEN",
+        "position": "SG"
+      },
+      "bid": 9,
+      "result": "added",
+      "transactionId": "waiver-20261102-03"
+    },
+    {
+      "order": 7,
+      "team": "shockers",
+      "claim": {
+        "name": "Christian Braun",
+        "nbaLabel": "DEN",
+        "position": "SG"
+      },
+      "bid": 1,
+      "result": "unsuccessful",
+      "reasonCode": "already-added",
+      "reason": "El jugador ya había sido incorporado por otro equipo."
+    },
+    {
+      "order": 8,
+      "team": "shockers",
+      "claim": {
+        "name": "Yaxel Lendeborg",
+        "nbaLabel": "GS",
+        "position": "SF"
+      },
+      "bid": 7,
+      "result": "added",
+      "transactionId": "waiver-20261102-04"
+    },
+    {
+      "order": 9,
+      "team": "pilsens",
+      "claim": {
+        "name": "Tyrese Maxey",
+        "nbaLabel": "PHI",
+        "position": "PG"
+      },
+      "bid": 5,
+      "result": "added",
+      "transactionId": "waiver-20261102-05"
+    },
+    {
+      "order": 10,
+      "team": "hipopotamos",
+      "claim": {
+        "name": "Ajay Mitchell",
+        "nbaLabel": "OKC",
+        "position": "PG"
+      },
+      "bid": 5,
+      "result": "added",
+      "transactionId": "waiver-20261102-06"
+    },
+    {
+      "order": 11,
+      "team": "hipopotamos",
+      "claim": {
+        "name": "Immanuel Quickley",
+        "nbaLabel": "TOR",
+        "position": "PG"
+      },
+      "bid": 5,
+      "result": "unsuccessful",
+      "reasonCode": "already-dropped",
+      "reason": "Un jugador involucrado ya había sido cortado."
+    },
+    {
+      "order": 12,
+      "team": "pilsens",
+      "claim": {
+        "name": "Devin Booker",
+        "nbaLabel": "PHX",
+        "position": "PG"
+      },
+      "bid": 2,
+      "result": "unsuccessful",
+      "reasonCode": "already-dropped",
+      "reason": "Un jugador involucrado ya había sido cortado."
+    },
+    {
+      "order": 13,
+      "team": "hipopotamos",
+      "claim": {
+        "name": "Devin Booker",
+        "nbaLabel": "PHX",
+        "position": "PG"
+      },
+      "bid": 2,
+      "result": "added",
+      "transactionId": "waiver-20261102-07"
+    },
+    {
+      "order": 14,
+      "team": "hipopotamos",
+      "claim": {
+        "name": "Jrue Holiday",
+        "nbaLabel": "POR",
+        "position": "PG"
+      },
+      "bid": 2,
+      "result": "unsuccessful",
+      "reasonCode": "acquisition-limit",
+      "reason": "Se excedería el límite de incorporaciones del cruce."
+    },
+    {
+      "order": 15,
+      "team": "hipopotamos",
+      "claim": {
+        "name": "Jared McCain",
+        "nbaLabel": "OKC",
+        "position": "SG"
+      },
+      "bid": 2,
+      "result": "unsuccessful",
+      "reasonCode": "acquisition-limit",
+      "reason": "Se excedería el límite de incorporaciones del cruce."
+    },
+    {
+      "order": 16,
+      "team": "shockers",
+      "claim": {
+        "name": "Anthony Black",
+        "nbaLabel": "ORL",
+        "position": "PG"
+      },
+      "bid": 1,
+      "result": "unsuccessful",
+      "reasonCode": "already-dropped",
+      "reason": "Un jugador involucrado ya había sido cortado."
+    },
+    {
+      "order": 17,
+      "team": "shockers",
+      "claim": {
+        "name": "Ayo Dosunmu",
+        "nbaLabel": "MIN",
+        "position": "SG"
+      },
+      "bid": 1,
+      "result": "unsuccessful",
+      "reasonCode": "already-dropped",
+      "reason": "Un jugador involucrado ya había sido cortado."
+    },
+    {
+      "order": 18,
+      "team": "shockers",
+      "claim": {
+        "name": "Jarrett Allen",
+        "nbaLabel": "CLE",
+        "position": "C"
+      },
+      "bid": 1,
+      "result": "added",
+      "transactionId": "waiver-20261102-08"
+    }
+  ],
+  "highlights": [
+    {
+      "transactionId": "waiver-20261102-01",
+      "label": "La puja más alta",
+      "reason": "Shockers paga $52 por Flagg y libera a Towns. Supera los $35 de Pilsens y los $17 de Hipopotamos."
+    },
+    {
+      "transactionId": "waiver-20261102-02",
+      "label": "La segunda inversión",
+      "reason": "Wagner llega a Cromwell por $15; Garland sale. Es la segunda puja ganadora más alta del registro."
+    },
+    {
+      "transactionId": "waiver-20261102-05",
+      "label": "Cambio de estrella",
+      "reason": "Maxey entra por $5 y Edwards pasa a waivers. Pilsens cambia una de las figuras de su plantel."
+    },
+    {
+      "transactionId": "waiver-20261102-07",
+      "label": "El fichaje de $2",
+      "reason": "Hipopotamos incorpora a Booker y corta a Haliburton. El registro confirma el intercambio de plaza por $2."
+    }
+  ],
+  "highlightNote": "Selección editorial por importe de la puja y peso del cambio de plantilla."
+}

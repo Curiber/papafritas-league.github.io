@@ -288,6 +288,7 @@ footer .tagline{color:var(--text-2)}
 .article-cover .post-image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface-2)}
 .article-cover figcaption{margin-top:9px;font-size:12px;line-height:1.6;color:var(--muted)}
 .waiver-highlight-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:12px;padding:0;margin:20px 0 32px;list-style:none}
+.waiver-highlight-grid.four-up{grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}
 .waiver-highlight-grid li{min-width:0;padding:20px 16px;border:1px solid var(--line-2);border-top:3px solid var(--orange);border-radius:var(--radius);background:var(--surface)}
 .waiver-highlight-grid h3{font-size:28px;line-height:1.05;margin:12px 0 8px}
 .waiver-highlight-grid .eyebrow{font-size:10px;letter-spacing:.08em}
@@ -302,6 +303,13 @@ footer .tagline{color:var(--text-2)}
 .waiver-table .waiver-featured th{color:var(--orange)}
 .waiver-tag{display:block;margin-top:4px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
 .waiver-table .waiver-price{text-align:right;font-family:var(--display);font-size:20px;font-weight:800;white-space:nowrap}
+.offers-table{min-width:850px}
+.offers-table td:last-child{min-width:230px}
+.offers-table .offer-accepted{background:rgba(255,90,31,.05)}
+.offer-result{font-size:12px;white-space:nowrap}
+.fiction-note{margin:22px 0 28px;padding:18px 20px;border:1px solid var(--line-2);border-left:3px solid var(--orange);border-radius:var(--radius);background:var(--surface)}
+.fiction-note>strong{color:var(--orange);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.reading .fiction-note p{margin:8px 0 0;font-size:14px;line-height:1.65}
 .reading .lead{font-size:21px;line-height:1.5;color:var(--text-2);border-left:3px solid var(--orange);padding-left:18px;margin:8px 0 28px}
 .reading p,.reading li{font-size:17px;line-height:1.8;color:var(--text-2)}
 .reading h2{font-size:32px;margin-top:40px;margin-bottom:10px;color:var(--text)}

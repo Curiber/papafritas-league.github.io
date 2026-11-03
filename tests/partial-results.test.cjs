@@ -347,14 +347,17 @@ test('los diez waivers respetan los pares de altas/bajas y las pujas de la captu
 });
 
 test('el historial de movimientos reconstruye los planteles actuales y conserva los anteriores', () => {
-  const a=app(),r=a.data.transactionReports[0],initial=a.data.rosterSnapshots.find(s=>s.date==='2026-10-20');
+  const a=app(),initial=a.data.rosterSnapshots.find(s=>s.date==='2026-10-20');
+  const reports=Array.from(a.data.transactionReports).sort((x,y)=>x.date.localeCompare(y.date));
   for(const t of a.data.teams){
     const roster=Array.from(initial.teams.find(x=>x.id===t.id).roster);
-    for(const move of r.transactions.filter(m=>m.team===t.id)){
-      const i=roster.indexOf(move.dropped.name);assert.notEqual(i,-1);
-      roster[i]=move.added.name;
-      assert.ok(t.roster.includes(move.added.name));
-      assert.ok(!t.roster.includes(move.dropped.name));
+    for(const r of reports){
+      for(const move of r.transactions.filter(m=>m.team===t.id)){
+        const i=roster.indexOf(move.dropped.name);assert.notEqual(i,-1);
+        roster[i]=move.added.name;
+      }
+      const snapshot=a.data.rosterSnapshots.find(s=>s.date===r.date);
+      assert.deepEqual(roster,Array.from(snapshot.teams.find(x=>x.id===t.id).roster));
     }
     assert.deepEqual(roster,Array.from(t.roster));assert.equal(t.roster.length,13);
   }
@@ -362,6 +365,10 @@ test('el historial de movimientos reconstruye los planteles actuales y conserva 
   assert.equal(a.run("teamAt('hipopotamos','2026-10-25').roster.includes('Josh Giddey')"),true);
   assert.equal(a.run("teamAt('hipopotamos','2026-10-25').roster.includes('Tyrese Haliburton')"),false);
   assert.equal(a.run("teamAt('hipopotamos','2026-10-26').roster.includes('Tyrese Haliburton')"),true);
+  assert.equal(a.run("teamAt('hipopotamos','2026-11-01').roster.includes('Tyrese Haliburton')"),true);
+  assert.equal(a.run("teamAt('hipopotamos','2026-11-02').roster.includes('Devin Booker')"),true);
+  assert.equal(a.run("teamAt('shockers','2026-11-01').roster.includes('Karl-Anthony Towns')"),true);
+  assert.equal(a.run("teamAt('shockers','2026-11-02').roster.includes('Cooper Flagg')"),true);
   assert.match(a.run('rankPage()'),/Brunson/);
   assert.doesNotMatch(a.run('rankPage()'),/Domantas Sabonis/);
   assert.doesNotMatch(a.run("matchupPage(matchupById('w1-m2'))"),/Domantas Sabonis/);
@@ -381,4 +388,47 @@ test('la nueva noticia destaca el impacto deportivo y muestra los diez movimient
   for(const f of [p.image.src,p.image.small])assert.ok(fs.existsSync(path.join(root,f)));
   assert.equal(r.nbaPlayers.length,10);
   for(const [tag,indexes]of p.body)if(tag==='sources')for(const i of indexes)assert.ok(p.sources[i]?.url.startsWith('https://site.api.espn.com/'));
+});
+
+test('el reporte del 2 de noviembre distingue ocho altas de diez ofertas fallidas y suma solo $96',()=>{
+  const a=app(),r=a.data.transactionReports.find(r=>r.id==='waivers-2026-11-02');
+  const expected=[
+    ['shockers','Cooper Flagg','Karl-Anthony Towns',52],
+    ['pilsens','Franz Wagner','Darius Garland',15],
+    ['hipopotamos','Christian Braun','Cason Wallace',9],
+    ['shockers','Yaxel Lendeborg','Kon Knueppel',7],
+    ['pilsens','Tyrese Maxey','Anthony Edwards',5],
+    ['hipopotamos','Ajay Mitchell','VJ Edgecombe',5],
+    ['hipopotamos','Devin Booker','Tyrese Haliburton',2],
+    ['shockers','Jarrett Allen','Jaren Jackson Jr.',1]
+  ];
+  assert.deepEqual(JSON.parse(JSON.stringify(r.transactions.map(m=>[m.team,m.added.name,m.dropped.name,m.bid]))),expected);
+  assert.equal(r.offers.length,18);assert.equal(r.offers.filter(o=>o.result==='added').length,8);
+  assert.equal(r.transactions.reduce((s,m)=>s+m.bid,0),96);
+  assert.deepEqual(Object.fromEntries(a.data.teams.map(t=>[t.id,r.transactions.filter(m=>m.team===t.id).reduce((s,m)=>s+m.bid,0)])),{shockers:60,pilsens:20,hipopotamos:16,pelafustanes:0});
+  for(const o of r.offers){
+    const t=a.data.teams.find(t=>t.id===o.team);
+    if(o.result==='added')assert.ok(r.transactions.some(m=>m.id===o.transactionId&&m.added.name===o.claim.name&&m.bid===o.bid));
+    else{assert.ok(!t.roster.includes(o.claim.name));assert.ok(!o.transactionId);}
+  }
+  const booker=r.offers.filter(o=>o.claim.name==='Devin Booker');
+  assert.equal(booker[0].reasonCode,'already-dropped');assert.equal(booker[1].result,'added');
+  assert.deepEqual(Array.from(r.offers.filter(o=>o.reasonCode==='acquisition-limit'),o=>o.claim.name),['Jrue Holiday','Jared McCain']);
+  assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root,'assets/cortes/ofertas-2026-11-02.json'),'utf8')),JSON.parse(JSON.stringify(r)));
+  assert.ok(fs.existsSync(path.join(root,r.sourceImage)));
+});
+
+test('la novela de vestuario está señalada antes de las escenas y no altera el registro de ESPN',()=>{
+  const a=app(),p=a.data.posts.find(p=>p.id==='waivers-2-noviembre-flagg-booker-vestuario');
+  const html=a.run("article(D.posts.find(p=>p.id==='waivers-2-noviembre-flagg-booker-vestuario'))");
+  assert.match(html,/Incluye ficción de vestuario/);assert.match(html,/No son testimonios/);
+  assert.ok(html.indexOf('class="fiction-note"')<html.indexOf('Towns se lleva el bolso'));
+  assert.match(html,/Me lesioné, no renuncié al equipo/);assert.match(html,/casillero doble/);
+  assert.equal((html.match(/class="waiver-featured"/g)||[]).length,4);
+  const record=a.data.transactionReports.find(r=>r.id===p.transactionReportId);
+  assert.doesNotMatch(JSON.stringify(record),/autoestima|Me lesioné|nuestro vestuario imaginario/);
+  const bad=record.offers.find(o=>o.result==='unsuccessful');bad.reason='<img src=x onerror=alert(1)>';
+  const offers=a.run("offersTable('waivers-2026-11-02')");
+  assert.match(offers,/&lt;img/);assert.doesNotMatch(offers,/<img/);
+  for(const f of [p.image.src,p.image.small])assert.ok(fs.existsSync(path.join(root,f)));
 });

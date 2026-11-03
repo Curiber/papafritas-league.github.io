@@ -7165,6 +7165,394 @@ transactionReports: [
         "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909867"
       }
     ]
+  },
+  {
+    "id": "waivers-2026-11-02",
+    "date": "2026-11-02",
+  "highlightNote": "Selección editorial por importe de la puja y peso del cambio de plantilla.",
+    "timeZoneShown": false,
+    "sourceImage": "./assets/cortes/ofertas-2026-11-02.png",
+    "source": "Free Agent Offers Report de ESPN Fantasy aportado por el participante. Fecha seleccionada: lunes 2 de noviembre de 2026, ocho altas procesadas. Se transcriben las 18 ofertas visibles, con ocho incorporaciones y sus bajas asociadas. Las pujas ganadoras suman $96; no se dispone del presupuesto inicial ni de los saldos. La captura no muestra hora ni zona horaria. Las etiquetas NBA corresponden a esa fuente. Las causas de las ofertas fallidas se conservan sin inferir qué baja estaba asociada a ellas.",
+    "transactions": [
+      {
+        "id": "waiver-20261102-01",
+        "team": "shockers",
+        "type": "waiver",
+        "added": {
+          "name": "Cooper Flagg",
+          "nbaLabel": "DAL",
+          "position": "SF"
+        },
+        "dropped": {
+          "name": "Karl-Anthony Towns",
+          "nbaLabel": "NY",
+          "position": "C"
+        },
+        "bid": 52
+      },
+      {
+        "id": "waiver-20261102-02",
+        "team": "pilsens",
+        "type": "waiver",
+        "added": {
+          "name": "Franz Wagner",
+          "nbaLabel": "ORL",
+          "position": "SF"
+        },
+        "dropped": {
+          "name": "Darius Garland",
+          "nbaLabel": "LAC",
+          "position": "PG"
+        },
+        "bid": 15
+      },
+      {
+        "id": "waiver-20261102-03",
+        "team": "hipopotamos",
+        "type": "waiver",
+        "added": {
+          "name": "Christian Braun",
+          "nbaLabel": "DEN",
+          "position": "SG"
+        },
+        "dropped": {
+          "name": "Cason Wallace",
+          "nbaLabel": "OKC",
+          "position": "SG"
+        },
+        "bid": 9
+      },
+      {
+        "id": "waiver-20261102-04",
+        "team": "shockers",
+        "type": "waiver",
+        "added": {
+          "name": "Yaxel Lendeborg",
+          "nbaLabel": "GS",
+          "position": "SF"
+        },
+        "dropped": {
+          "name": "Kon Knueppel",
+          "nbaLabel": "CHA",
+          "position": "SF"
+        },
+        "bid": 7
+      },
+      {
+        "id": "waiver-20261102-05",
+        "team": "pilsens",
+        "type": "waiver",
+        "added": {
+          "name": "Tyrese Maxey",
+          "nbaLabel": "PHI",
+          "position": "PG"
+        },
+        "dropped": {
+          "name": "Anthony Edwards",
+          "nbaLabel": "MIN",
+          "position": "SG"
+        },
+        "bid": 5
+      },
+      {
+        "id": "waiver-20261102-06",
+        "team": "hipopotamos",
+        "type": "waiver",
+        "added": {
+          "name": "Ajay Mitchell",
+          "nbaLabel": "OKC",
+          "position": "PG"
+        },
+        "dropped": {
+          "name": "VJ Edgecombe",
+          "nbaLabel": "PHI",
+          "position": "SG"
+        },
+        "bid": 5
+      },
+      {
+        "id": "waiver-20261102-07",
+        "team": "hipopotamos",
+        "type": "waiver",
+        "added": {
+          "name": "Devin Booker",
+          "nbaLabel": "PHX",
+          "position": "PG"
+        },
+        "dropped": {
+          "name": "Tyrese Haliburton",
+          "nbaLabel": "IND",
+          "position": "PG"
+        },
+        "bid": 2
+      },
+      {
+        "id": "waiver-20261102-08",
+        "team": "shockers",
+        "type": "waiver",
+        "added": {
+          "name": "Jarrett Allen",
+          "nbaLabel": "CLE",
+          "position": "C"
+        },
+        "dropped": {
+          "name": "Jaren Jackson Jr.",
+          "nbaLabel": "UTAH",
+          "position": "C"
+        },
+        "bid": 1
+      }
+    ],
+    "offers": [
+      {
+        "order": 1,
+        "team": "shockers",
+        "claim": {
+          "name": "Cooper Flagg",
+          "nbaLabel": "DAL",
+          "position": "SF"
+        },
+        "bid": 52,
+        "result": "added",
+        "transactionId": "waiver-20261102-01"
+      },
+      {
+        "order": 2,
+        "team": "pilsens",
+        "claim": {
+          "name": "Cooper Flagg",
+          "nbaLabel": "DAL",
+          "position": "SF"
+        },
+        "bid": 35,
+        "result": "unsuccessful",
+        "reasonCode": "already-added",
+        "reason": "El jugador ya había sido incorporado por otro equipo."
+      },
+      {
+        "order": 3,
+        "team": "hipopotamos",
+        "claim": {
+          "name": "Cooper Flagg",
+          "nbaLabel": "DAL",
+          "position": "SF"
+        },
+        "bid": 17,
+        "result": "unsuccessful",
+        "reasonCode": "already-added",
+        "reason": "El jugador ya había sido incorporado por otro equipo."
+      },
+      {
+        "order": 4,
+        "team": "pilsens",
+        "claim": {
+          "name": "Franz Wagner",
+          "nbaLabel": "ORL",
+          "position": "SF"
+        },
+        "bid": 15,
+        "result": "added",
+        "transactionId": "waiver-20261102-02"
+      },
+      {
+        "order": 5,
+        "team": "pilsens",
+        "claim": {
+          "name": "Pascal Siakam",
+          "nbaLabel": "IND",
+          "position": "PF"
+        },
+        "bid": 10,
+        "result": "unsuccessful",
+        "reasonCode": "already-dropped",
+        "reason": "Un jugador involucrado ya había sido cortado."
+      },
+      {
+        "order": 6,
+        "team": "hipopotamos",
+        "claim": {
+          "name": "Christian Braun",
+          "nbaLabel": "DEN",
+          "position": "SG"
+        },
+        "bid": 9,
+        "result": "added",
+        "transactionId": "waiver-20261102-03"
+      },
+      {
+        "order": 7,
+        "team": "shockers",
+        "claim": {
+          "name": "Christian Braun",
+          "nbaLabel": "DEN",
+          "position": "SG"
+        },
+        "bid": 1,
+        "result": "unsuccessful",
+        "reasonCode": "already-added",
+        "reason": "El jugador ya había sido incorporado por otro equipo."
+      },
+      {
+        "order": 8,
+        "team": "shockers",
+        "claim": {
+          "name": "Yaxel Lendeborg",
+          "nbaLabel": "GS",
+          "position": "SF"
+        },
+        "bid": 7,
+        "result": "added",
+        "transactionId": "waiver-20261102-04"
+      },
+      {
+        "order": 9,
+        "team": "pilsens",
+        "claim": {
+          "name": "Tyrese Maxey",
+          "nbaLabel": "PHI",
+          "position": "PG"
+        },
+        "bid": 5,
+        "result": "added",
+        "transactionId": "waiver-20261102-05"
+      },
+      {
+        "order": 10,
+        "team": "hipopotamos",
+        "claim": {
+          "name": "Ajay Mitchell",
+          "nbaLabel": "OKC",
+          "position": "PG"
+        },
+        "bid": 5,
+        "result": "added",
+        "transactionId": "waiver-20261102-06"
+      },
+      {
+        "order": 11,
+        "team": "hipopotamos",
+        "claim": {
+          "name": "Immanuel Quickley",
+          "nbaLabel": "TOR",
+          "position": "PG"
+        },
+        "bid": 5,
+        "result": "unsuccessful",
+        "reasonCode": "already-dropped",
+        "reason": "Un jugador involucrado ya había sido cortado."
+      },
+      {
+        "order": 12,
+        "team": "pilsens",
+        "claim": {
+          "name": "Devin Booker",
+          "nbaLabel": "PHX",
+          "position": "PG"
+        },
+        "bid": 2,
+        "result": "unsuccessful",
+        "reasonCode": "already-dropped",
+        "reason": "Un jugador involucrado ya había sido cortado."
+      },
+      {
+        "order": 13,
+        "team": "hipopotamos",
+        "claim": {
+          "name": "Devin Booker",
+          "nbaLabel": "PHX",
+          "position": "PG"
+        },
+        "bid": 2,
+        "result": "added",
+        "transactionId": "waiver-20261102-07"
+      },
+      {
+        "order": 14,
+        "team": "hipopotamos",
+        "claim": {
+          "name": "Jrue Holiday",
+          "nbaLabel": "POR",
+          "position": "PG"
+        },
+        "bid": 2,
+        "result": "unsuccessful",
+        "reasonCode": "acquisition-limit",
+        "reason": "Se excedería el límite de incorporaciones del cruce."
+      },
+      {
+        "order": 15,
+        "team": "hipopotamos",
+        "claim": {
+          "name": "Jared McCain",
+          "nbaLabel": "OKC",
+          "position": "SG"
+        },
+        "bid": 2,
+        "result": "unsuccessful",
+        "reasonCode": "acquisition-limit",
+        "reason": "Se excedería el límite de incorporaciones del cruce."
+      },
+      {
+        "order": 16,
+        "team": "shockers",
+        "claim": {
+          "name": "Anthony Black",
+          "nbaLabel": "ORL",
+          "position": "PG"
+        },
+        "bid": 1,
+        "result": "unsuccessful",
+        "reasonCode": "already-dropped",
+        "reason": "Un jugador involucrado ya había sido cortado."
+      },
+      {
+        "order": 17,
+        "team": "shockers",
+        "claim": {
+          "name": "Ayo Dosunmu",
+          "nbaLabel": "MIN",
+          "position": "SG"
+        },
+        "bid": 1,
+        "result": "unsuccessful",
+        "reasonCode": "already-dropped",
+        "reason": "Un jugador involucrado ya había sido cortado."
+      },
+      {
+        "order": 18,
+        "team": "shockers",
+        "claim": {
+          "name": "Jarrett Allen",
+          "nbaLabel": "CLE",
+          "position": "C"
+        },
+        "bid": 1,
+        "result": "added",
+        "transactionId": "waiver-20261102-08"
+      }
+    ],
+    "highlights": [
+      {
+        "transactionId": "waiver-20261102-01",
+        "label": "La puja más alta",
+        "reason": "Shockers paga $52 por Flagg y libera a Towns. Supera los $35 de Pilsens y los $17 de Hipopotamos."
+      },
+      {
+        "transactionId": "waiver-20261102-02",
+        "label": "La segunda inversión",
+        "reason": "Wagner llega a Cromwell por $15; Garland sale. Es la segunda puja ganadora más alta del registro."
+      },
+      {
+        "transactionId": "waiver-20261102-05",
+        "label": "Cambio de estrella",
+        "reason": "Maxey entra por $5 y Edwards pasa a waivers. Pilsens cambia una de las figuras de su plantel."
+      },
+      {
+        "transactionId": "waiver-20261102-07",
+        "label": "El fichaje de $2",
+        "reason": "Hipopotamos incorpora a Booker y corta a Haliburton. El registro confirma el intercambio de plaza por $2."
+      }
+    ]
   }
 ],
 
@@ -7381,6 +7769,112 @@ rosterSnapshots: [
         "challenge": "La mejora de la segunda línea debe acompañarse de control de pérdidas y mejores porcentajes. La salida de Klay Thompson obliga a redistribuir sus triples; no toda la anotación nueva sustituye el mismo perfil."
       }
     ]
+  },
+  {
+    "date": "2026-11-02",
+    "source": "Planteles tras las ocho altas y bajas confirmadas en el reporte de ofertas de ESPN del 2 de noviembre de 2026. Las ofertas fallidas no alteran las plantillas.",
+    "teams": [
+      {
+        "id": "shockers",
+        "roster": [
+          "Shai Gilgeous-Alexander",
+          "Scottie Barnes",
+          "Jayson Tatum",
+          "Jarrett Allen",
+          "Cooper Flagg",
+          "Amen Thompson",
+          "Yaxel Lendeborg",
+          "Dyson Daniels",
+          "Cameron Boozer",
+          "Paul Reed",
+          "Jonathan Kuminga",
+          "Fred VanVleet",
+          "Tari Eason"
+        ],
+        "leaders": [
+          "Shai Gilgeous-Alexander",
+          "Jayson Tatum",
+          "Cooper Flagg"
+        ],
+        "strength": "Gilgeous-Alexander y Tatum conservan el liderazgo. Flagg ocupa la plaza de Towns; Allen refuerza el juego interior y Lendeborg amplía la rotación exterior junto a Barnes, Daniels y Amen Thompson.",
+        "challenge": "La salida de Towns cambia el reparto de rebotes y porcentajes. Allen debe sostener presencia interior tras el corte de Jackson Jr.; Flagg y Lendeborg añaden un nuevo reparto de creación y pérdidas que habrá que seguir."
+      },
+      {
+        "id": "pilsens",
+        "roster": [
+          "Domantas Sabonis",
+          "Dylan Harper",
+          "Jaylen Brown",
+          "Keldon Johnson",
+          "Nikola Jokić",
+          "Tyrese Maxey",
+          "Franz Wagner",
+          "AJ Dybantsa",
+          "Caleb Wilson",
+          "Sandro Mamukelashvili",
+          "Jalen Johnson",
+          "Jaylen Wells",
+          "Dillon Brooks"
+        ],
+        "leaders": [
+          "Nikola Jokić",
+          "Tyrese Maxey",
+          "Domantas Sabonis"
+        ],
+        "strength": "Jokić y Sabonis sostienen el pase y el rebote interior. Maxey ocupa la plaza de Edwards y Wagner la de Garland: la nueva rotación reúne creación desde el perímetro y el alero, con Brown y Jalen Johnson como apoyos.",
+        "challenge": "Los cambios de Edwards por Maxey y de Garland por Wagner exigen comprobar cómo se distribuyen triples, asistencias y eficiencia. La respuesta en tapones y el control de pérdidas continúan siendo áreas importantes."
+      },
+      {
+        "id": "hipopotamos",
+        "roster": [
+          "Cade Cunningham",
+          "Derrick White",
+          "Deni Avdija",
+          "Naz Reid",
+          "Victor Wembanyama",
+          "Ajay Mitchell",
+          "Jaden McDaniels",
+          "Devin Booker",
+          "Christian Braun",
+          "Ace Bailey",
+          "Walker Kessler",
+          "Toumani Camara",
+          "P.J. Washington"
+        ],
+        "leaders": [
+          "Victor Wembanyama",
+          "Cade Cunningham",
+          "Devin Booker"
+        ],
+        "strength": "Wembanyama y Kessler conservan el núcleo de protección del aro. Cunningham y Booker encabezan la creación exterior, con Avdija como apoyo; Braun y Ajay Mitchell amplían las opciones de rotación.",
+        "challenge": "Booker sustituye a Haliburton, mientras Braun y Ajay Mitchell ocupan las plazas de Wallace y Edgecombe. Hay que seguir el nuevo reparto de asistencias y anotación, junto al control de pérdidas y los tiros libres de los interiores."
+      },
+      {
+        "id": "pelafustanes",
+        "roster": [
+          "Luka Dončić",
+          "Donovan Mitchell",
+          "Brandon Miller",
+          "Giannis Antetokounmpo",
+          "Alperen Sengun",
+          "Payton Pritchard",
+          "OG Anunoby",
+          "Alex Sarr",
+          "Matas Buzelis",
+          "Bobby Portis",
+          "Malik Monk",
+          "Aaron Wiggins",
+          "Jalen Smith"
+        ],
+        "leaders": [
+          "Luka Dončić",
+          "Donovan Mitchell",
+          "Giannis Antetokounmpo"
+        ],
+        "strength": "Dončić y Mitchell sostienen PTS, AST y 3PM, con Antetokounmpo y Sengun como apoyos interiores. Aaron Wiggins suma una opción exterior y Jalen Smith amplía la rotación de rebote, junto a Sarr y Portis.",
+        "challenge": "La mejora de la segunda línea debe acompañarse de control de pérdidas y mejores porcentajes. La salida de Klay Thompson obliga a redistribuir sus triples; no toda la anotación nueva sustituye el mismo perfil."
+      }
+    ]
   }
 ],
 
@@ -7402,16 +7896,16 @@ teams: [
     "leaders": [
       "Shai Gilgeous-Alexander",
       "Jayson Tatum",
-      "Karl-Anthony Towns"
+      "Cooper Flagg"
     ],
     "roster": [
       "Shai Gilgeous-Alexander",
       "Scottie Barnes",
       "Jayson Tatum",
-      "Jaren Jackson Jr.",
-      "Karl-Anthony Towns",
+      "Jarrett Allen",
+      "Cooper Flagg",
       "Amen Thompson",
-      "Kon Knueppel",
+      "Yaxel Lendeborg",
       "Dyson Daniels",
       "Cameron Boozer",
       "Paul Reed",
@@ -7419,10 +7913,10 @@ teams: [
       "Fred VanVleet",
       "Tari Eason"
     ],
-    "strength": "Gilgeous-Alexander, Tatum y Towns ofrecen recursos en anotación y porcentajes. VanVleet amplía la creación; Daniels y Kuminga aportan alternativas en robos. Reed agrega profundidad interior junto a Towns y Jackson Jr.",
-    "challenge": "La llegada de VanVleet debe equilibrar creación y eficiencia de tiro. El nuevo reparto de minutos interiores tras la salida de Gafford exige seguir REB y BLK; el tiro exterior continúa siendo una categoría a mejorar.",
-    "rosterUpdatedDate": "2026-10-26",
-    "rosterReportId": "waivers-2026-10-26"
+    "strength": "Gilgeous-Alexander y Tatum conservan el liderazgo. Flagg ocupa la plaza de Towns; Allen refuerza el juego interior y Lendeborg amplía la rotación exterior junto a Barnes, Daniels y Amen Thompson.",
+    "challenge": "La salida de Towns cambia el reparto de rebotes y porcentajes. Allen debe sostener presencia interior tras el corte de Jackson Jr.; Flagg y Lendeborg añaden un nuevo reparto de creación y pérdidas que habrá que seguir.",
+    "rosterUpdatedDate": "2026-11-02",
+    "rosterReportId": "waivers-2026-11-02"
   },
   {
     "id": "pilsens",
@@ -7439,7 +7933,7 @@ teams: [
     "logo": "./assets/cromwell-pilsens.webp",
     "leaders": [
       "Nikola Jokić",
-      "Anthony Edwards",
+      "Tyrese Maxey",
       "Domantas Sabonis"
     ],
     "roster": [
@@ -7448,8 +7942,8 @@ teams: [
       "Jaylen Brown",
       "Keldon Johnson",
       "Nikola Jokić",
-      "Anthony Edwards",
-      "Darius Garland",
+      "Tyrese Maxey",
+      "Franz Wagner",
       "AJ Dybantsa",
       "Caleb Wilson",
       "Sandro Mamukelashvili",
@@ -7457,10 +7951,10 @@ teams: [
       "Jaylen Wells",
       "Dillon Brooks"
     ],
-    "strength": "Jokić y Sabonis permiten construir alrededor del rebote y el pase desde el juego interior. Garland añade creación y tiro exterior; Edwards, Brown y Jalen Johnson sostienen una ofensiva con varias vías de producción.",
-    "challenge": "La salida de Brunson y Banchero cambia el reparto de anotación. Sabonis amplía REB y AST, pero la respuesta en BLK continúa pendiente; Garland exige especial atención a TO.",
-    "rosterUpdatedDate": "2026-10-26",
-    "rosterReportId": "waivers-2026-10-26"
+    "strength": "Jokić y Sabonis sostienen el pase y el rebote interior. Maxey ocupa la plaza de Edwards y Wagner la de Garland: la nueva rotación reúne creación desde el perímetro y el alero, con Brown y Jalen Johnson como apoyos.",
+    "challenge": "Los cambios de Edwards por Maxey y de Garland por Wagner exigen comprobar cómo se distribuyen triples, asistencias y eficiencia. La respuesta en tapones y el control de pérdidas continúan siendo áreas importantes.",
+    "rosterUpdatedDate": "2026-11-02",
+    "rosterReportId": "waivers-2026-11-02"
   },
   {
     "id": "hipopotamos",
@@ -7478,7 +7972,7 @@ teams: [
     "leaders": [
       "Victor Wembanyama",
       "Cade Cunningham",
-      "Tyrese Haliburton"
+      "Devin Booker"
     ],
     "roster": [
       "Cade Cunningham",
@@ -7486,19 +7980,19 @@ teams: [
       "Deni Avdija",
       "Naz Reid",
       "Victor Wembanyama",
-      "VJ Edgecombe",
+      "Ajay Mitchell",
       "Jaden McDaniels",
-      "Tyrese Haliburton",
-      "Cason Wallace",
+      "Devin Booker",
+      "Christian Braun",
       "Ace Bailey",
       "Walker Kessler",
       "Toumani Camara",
       "P.J. Washington"
     ],
-    "strength": "Wembanyama y Kessler refuerzan la protección del aro y el rebote. Cunningham y Haliburton amplían la creación; White, McDaniels y Wallace ofrecen alternativas en defensa y robos. Bailey agrega una apuesta de desarrollo a la rotación.",
-    "challenge": "La presencia de dos interiores con volumen cerca del aro exige vigilar FT%. La creación de Cunningham y Haliburton debe acompañarse de control de pérdidas; la anotación de la segunda línea sigue siendo importante.",
-    "rosterUpdatedDate": "2026-10-26",
-    "rosterReportId": "waivers-2026-10-26"
+    "strength": "Wembanyama y Kessler conservan el núcleo de protección del aro. Cunningham y Booker encabezan la creación exterior, con Avdija como apoyo; Braun y Ajay Mitchell amplían las opciones de rotación.",
+    "challenge": "Booker sustituye a Haliburton, mientras Braun y Ajay Mitchell ocupan las plazas de Wallace y Edgecombe. Hay que seguir el nuevo reparto de asistencias y anotación, junto al control de pérdidas y los tiros libres de los interiores.",
+    "rosterUpdatedDate": "2026-11-02",
+    "rosterReportId": "waivers-2026-11-02"
   },
   {
     "id": "pelafustanes",
@@ -7783,6 +8277,172 @@ draft: {
 
 /* Publicaciones ------------------------------------------------------------- */
 posts: [
+{
+  "id": "waivers-2-noviembre-flagg-booker-vestuario",
+  "date": "2026-11-03",
+  "category": "Trades",
+  "readingMinutes": 5,
+  "title": "Flagg por $52 y Booker por $2: el mercado abre la novela del vestuario",
+  "excerpt": "Ocho altas confirmadas y $96 en pujas: Shockers gana la carrera por Flagg, Pilsens incorpora a Wagner y Maxey, e Hipopotamos ficha a Booker. El registro completo viene acompañado de una novela de vestuario expresamente ficticia, con despedidas, egos y cuentas pendientes.",
+  "teams": [
+    "shockers",
+    "pilsens",
+    "hipopotamos",
+    "pelafustanes"
+  ],
+  "transactionReportId": "waivers-2026-11-02",
+  "rulesLink": true,
+  "fiction": {
+    "label": "Incluye ficción de vestuario",
+    "notice": "Las escenas, emociones y diálogos de esta sección son inventados para los equipos fantasy de Papafritas League. No son testimonios ni describen sucesos de los vestuarios reales de la NBA."
+  },
+  "image": {
+    "src": "./assets/editorial/waivers-vestuario-2026-11-02.webp",
+    "small": "./assets/editorial/waivers-vestuario-2026-11-02-640.webp",
+    "width": 1280,
+    "height": 720,
+    "alt": "Ilustración de Cooper Flagg y Devin Booker como nuevas caras de una liga fantasy, con despedidas imaginarias al fondo.",
+    "caption": "Flagg y Booker, nuevas caras del mercado fantasy. Ilustración de una escena ficticia; no representa un vestuario real de la NBA."
+  },
+  "source": "Ofertas, importes, incorporaciones y bajas: captura de ESPN Fantasy del lunes 2 de noviembre de 2026 aportada por el participante. Publicación del 3 de noviembre. El relato de vestuario está señalado como ficción y no se usa como fuente de los movimientos. Los $96 corresponden solo a las ocho pujas ganadoras; las fallidas no se cuentan como gasto.",
+  "sources": [
+    {
+      "title": "ESPN Fantasy · Captura completa de las ofertas",
+      "url": "./assets/cortes/ofertas-2026-11-02.png"
+    },
+    {
+      "title": "Transcripción de las 18 ofertas y ocho altas",
+      "url": "./assets/cortes/ofertas-2026-11-02.json"
+    },
+    {
+      "title": "Cierre de la semana 2 · Actas y cómputo fantasy",
+      "url": "./assets/cortes/semana-2-final-reconstruccion-2026-11-02.json"
+    },
+    {
+      "title": "Adquisiciones del 26 de octubre",
+      "url": "#nota/waivers-26-octubre-haliburton-sabonis-kessler"
+    }
+  ],
+  "body": [
+    [
+      "p",
+      "Cooper Flagg tuvo tres pretendientes y una oferta que rompió la fila: los $52 de Penalolen Shockers dejaron atrás los $35 de Cromwell Pilsens y los $17 de Hipopotamos. El reporte de waivers del lunes 2 de noviembre terminó con ocho incorporaciones y $96 en pujas ganadoras. La planilla confirma los movimientos. Más abajo, la imaginación de Papafritas se encarga de los portazos."
+    ],
+    [
+      "transaction-highlights",
+      "waivers-2026-11-02"
+    ],
+    [
+      "h2",
+      "Shockers paga fuerte y Towns entrega su plaza"
+    ],
+    [
+      "p",
+      "Flagg entra por Karl-Anthony Towns, una salida que cambia una pieza importante del equipo de Patricio. Towns acababa de aportar 45 rebotes en el triunfo del clásico familiar. La inversión supera en $17 a la segunda oferta por Flagg y concentra $52 de los $60 que Shockers gastó en esta tanda. Es el movimiento que marca el pulso del mercado."
+    ],
+    [
+      "p",
+      "El resto de la cuenta tiene dos incorporaciones: Yaxel Lendeborg por $7, con Kon Knueppel de salida, y Jarrett Allen por $1, en reemplazo de Jaren Jackson Jr. Shockers cambia tres plazas después de ganar. El precio de Allen queda en el extremo opuesto al de Flagg, pero su llegada también modifica la estructura interior del plantel."
+    ],
+    [
+      "h2",
+      "Pilsens cambia estrellas; Hipopotamos consigue a Booker"
+    ],
+    [
+      "p",
+      "Cromwell no se quedó con Flagg, pero terminó el proceso con Franz Wagner por $15 y Tyrese Maxey por $5. Las bajas asociadas fueron Darius Garland y Anthony Edwards. Son $20 para cambiar dos nombres de peso en el perímetro y el alero del Rubio. Su intento por Pascal Siakam, de $10, figura fallido porque un jugador involucrado ya había sido cortado."
+    ],
+    [
+      "p",
+      "Hipopotamos cerró tres altas por $16: Christian Braun por $9 en lugar de Cason Wallace, Ajay Mitchell por $5 en lugar de VJ Edgecombe y Devin Booker por $2 en lugar de Tyrese Haliburton. Braun también recibió una oferta de Shockers por $1. En el caso de Booker, Pilsens presentó otros $2, pero esa oferta aparece fallida por un jugador involucrado ya cortado."
+    ],
+    [
+      "p",
+      "La salida de Haliburton tiene un antecedente que explica el peso del cambio: Hipopotamos había pagado $31 por incorporarlo el 26 de octubre. Una semana después, su plaza pasó a Booker por $2. Es una diferencia entre dos operaciones concretas, no una devolución de dinero ni una medida del presupuesto que queda disponible."
+    ],
+    [
+      "sources",
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ],
+    [
+      "transaction-table",
+      "waivers-2026-11-02"
+    ],
+    [
+      "h2",
+      "Las ofertas que quedaron en el camino"
+    ],
+    [
+      "p",
+      "El sistema frenó las solicitudes de Hipopotamos por Jrue Holiday y Jared McCain, ambas de $2, por el límite de incorporaciones del cruce. Los intentos por Quickley, Anthony Black y Ayo Dosunmu también quedaron sin alta: ESPN señala que un jugador involucrado ya había sido cortado. Mequetrefes no aparece entre las 18 ofertas visibles de este reporte."
+    ],
+    [
+      "offers-table",
+      "waivers-2026-11-02"
+    ],
+    [
+      "h2",
+      "Vestuario Papafritas: la novela de los recién llegados"
+    ],
+    [
+      "fiction-notice",
+      ""
+    ],
+    [
+      "h2",
+      "Towns se lleva el bolso; los amigos se quedan"
+    ],
+    [
+      "p",
+      "En nuestro vestuario imaginario, Towns descubre la llegada de Flagg cuando encuentra una caja vacía bajo su casillero. No le molestan los $52: le duele que nadie le haya avisado antes de empezar a despegar su nombre. Tatum le guarda el asiento de siempre durante unos segundos; Barnes lo acompaña hasta la puerta. Hay bromas que esta vez no salen."
+    ],
+    [
+      "p",
+      "«Pensé que los rebotes también compraban un poco de cariño», dice el Towns de esta historia mientras cierra el bolso. Flagg espera al otro lado con una sonrisa que todavía no sabe dónde poner. Nadie le discute el talento, pero acaba de llegar al casillero de un amigo. Su primer desafío en Shockers será bastante menos televisivo que una volcada: lograr que la sobremesa deje de quedarse en silencio cuando se sienta."
+    ],
+    [
+      "h2",
+      "Haliburton: «Me lesioné, no renuncié al equipo»"
+    ],
+    [
+      "p",
+      "El Haliburton de nuestra ficción no hace una despedida suave. Deja las zapatillas sobre la banca y pide que alguien le explique cuándo una lesión se convirtió en una carta de salida. «Me lesioné, no renuncié al equipo», protesta. Recuerda los $31 de la semana anterior como quien encuentra una foto de unas vacaciones felices justo después de una ruptura. La directiva imaginaria responde hablando de categorías; él estaba hablando de lealtad."
+    ],
+    [
+      "p",
+      "La tensión sube cuando ve el precio del reemplazo. Dos dólares. En su versión de los hechos, no perdió el puesto ante una superoferta: lo cambiaron por menos de lo que cuesta discutir un café. Sale convencido de que la vuelta contra Hipopotamos ya tiene una fecha marcada, aunque todavía no tenga otro casillero. En la novela, ese es el tipo de despedida que promete un segundo capítulo."
+    ],
+    [
+      "h2",
+      "Booker llega barato; su ego pide un casillero doble"
+    ],
+    [
+      "p",
+      "El Booker de esta comedia entra preguntando dónde queda su lugar y quién decide el último tiro. Cunningham levanta la mirada. Wembanyama señala una silla libre, no un trono. La bienvenida imaginaria se enfría antes de que termine de apoyar el bolso: nadie cuestiona su talento, pero ya parece haber reservado dos casilleros, uno para él y otro para su autoestima."
+    ],
+    [
+      "p",
+      "«Primero aprende los nombres; después hablamos del último tiro», le suelta el Cunningham ficticio. Booker sonríe como si la frase también fuera parte de su presentación. Hipopotamos acaba de conseguir un nombre grande por $2; en esta escena inventada, integrarlo al grupo sale bastante más caro. En una esquina todavía están borrando el nombre de Haliburton. No ayuda entrar pidiendo que suban el volumen de la música."
+    ],
+    [
+      "h2",
+      "El Rubio cambia el cartel; el Chino mira desde la mesa de al lado"
+    ],
+    [
+      "p",
+      "En el Cromwell de nuestra novela, el Rubio tapa la oferta fallida de Flagg con dos hojas nuevas: Wagner y Maxey. Lo llama «reconstrucción express» y pide que nadie vuelva a mencionar los $35. Wagner saluda antes de elegir asiento. Maxey pregunta cuándo se juega. Por unos minutos, el vestuario parece un lugar tranquilo. Entonces alguien encuentra una camiseta de Edwards y la conversación vuelve a bajar de volumen."
+    ],
+    [
+      "p",
+      "Mequetrefes tiene otra escena ficticia: el Chino pasa la lista sin estrenar un solo nombre de este reporte. Dončić lee lo de los $52 y Miller pregunta si ahora habrá que saludar a Flagg con tratamiento de gerente. Giannis sigue con lo suyo. Desde esa mesa, los movimientos ajenos parecen una buena teleserie; el problema de Papafritas es que el domingo siempre termina poniendo a los espectadores dentro del capítulo."
+    ]
+  ]
+},
 {
   "id": "cierre-semana-2-shockers-mequetrefes",
   "date": "2026-11-02",
