@@ -8282,8 +8282,8 @@ posts: [
   "date": "2026-11-03",
   "category": "Trades",
   "readingMinutes": 6,
-  "title": "Flagg por $52 y Booker por $2: el mercado abre la novela del vestuario",
-  "excerpt": "Ocho altas confirmadas y $96 en pujas: Shockers gana la carrera por Flagg, Pilsens incorpora a Wagner y Maxey, e Hipopotamos ficha a Booker. El registro completo viene acompañado de una novela de vestuario expresamente ficticia, con despedidas, egos y cuentas pendientes.",
+  "title": "Flagg por $52 y Booker por $2: el mercado sacude los vestuarios",
+  "excerpt": "Ocho altas confirmadas y $96 en pujas: Shockers gana la carrera por Flagg, Pilsens incorpora a Wagner y Maxey, e Hipopotamos ficha a Booker. Con los fichajes llegan despedidas, egos y cuentas pendientes en los vestuarios de Papafritas League.",
   "teams": [
     "shockers",
     "pilsens",
@@ -8292,19 +8292,15 @@ posts: [
   ],
   "transactionReportId": "waivers-2026-11-02",
   "rulesLink": true,
-  "fiction": {
-    "label": "Incluye ficción de vestuario",
-    "notice": "Las escenas, emociones y diálogos de esta sección son inventados para los equipos fantasy de Papafritas League. No son testimonios ni describen sucesos de los vestuarios reales de la NBA."
-  },
   "image": {
     "src": "./assets/editorial/waivers-vestuario-2026-11-02.webp",
     "small": "./assets/editorial/waivers-vestuario-2026-11-02-640.webp",
     "width": 1280,
     "height": 720,
-    "alt": "Ilustración de Cooper Flagg y Devin Booker como nuevas caras de una liga fantasy, con despedidas imaginarias al fondo.",
-    "caption": "Flagg y Booker, nuevas caras del mercado fantasy. Ilustración de una escena ficticia; no representa un vestuario real de la NBA."
+    "alt": "Ilustración de Cooper Flagg y Devin Booker en los vestuarios de Papafritas League, con dos jugadores que se marchan al fondo.",
+    "caption": "Flagg y Booker, nuevas caras del mercado de Papafritas League. Ilustración editorial."
   },
-  "source": "Ofertas, importes, incorporaciones y bajas: captura de ESPN Fantasy del lunes 2 de noviembre de 2026 aportada por el participante. Publicación del 3 de noviembre. El relato de vestuario está señalado como ficción y no se usa como fuente de los movimientos. Los $96 corresponden solo a las ocho pujas ganadoras; las fallidas no se cuentan como gasto.",
+  "source": "Ofertas, importes, incorporaciones y bajas: captura de ESPN Fantasy del lunes 2 de noviembre de 2026 aportada por el participante. Publicación del 3 de noviembre. Los $96 corresponden solo a las ocho pujas ganadoras; las fallidas no se cuentan como gasto.",
   "sources": [
     {
       "title": "ESPN Fantasy · Captura completa de las ofertas",
@@ -8326,7 +8322,7 @@ posts: [
   "body": [
     [
       "p",
-      "Cooper Flagg tuvo tres pretendientes y una oferta que rompió la fila: los $52 de Penalolen Shockers dejaron atrás los $35 de Cromwell Pilsens y los $17 de Hipopotamos. El reporte de waivers del lunes 2 de noviembre terminó con ocho incorporaciones y $96 en pujas ganadoras. La planilla confirma los movimientos. Más abajo, la imaginación de Papafritas se encarga de los portazos."
+      "Cooper Flagg tuvo tres pretendientes y una oferta que rompió la fila: los $52 de Penalolen Shockers dejaron atrás los $35 de Cromwell Pilsens y los $17 de Hipopotamos. El reporte de waivers del lunes 2 de noviembre terminó con ocho incorporaciones y $96 en pujas ganadoras. Los movimientos ya cambiaron los planteles y dejaron los camarines con bastante más ruido que antes."
     ],
     [
       "transaction-highlights",
@@ -8387,11 +8383,7 @@ posts: [
     ],
     [
       "h2",
-      "Vestuario Papafritas: la novela de los recién llegados"
-    ],
-    [
-      "fiction-notice",
-      ""
+      "Vestuario Papafritas: despedidas y luchas por el mando"
     ],
     [
       "h2",
@@ -8399,11 +8391,11 @@ posts: [
     ],
     [
       "p",
-      "En nuestro vestuario imaginario, Towns descubre la llegada de Flagg cuando encuentra una caja vacía bajo su casillero. No le molestan los $52: le duele que nadie le haya avisado antes de empezar a despegar su nombre. Tatum le guarda el asiento de siempre durante unos segundos; Barnes lo acompaña hasta la puerta. Hay bromas que esta vez no salen."
+      "Towns descubre la llegada de Flagg cuando encuentra una caja vacía bajo su casillero. No le molestan los $52: le duele que nadie le haya avisado antes de empezar a despegar su nombre. Tatum le guarda el asiento de siempre durante unos segundos; Barnes lo acompaña hasta la puerta. Hay bromas que esta vez no salen."
     ],
     [
       "p",
-      "«Pensé que los rebotes también compraban un poco de cariño», dice el Towns de esta historia mientras cierra el bolso. Flagg espera al otro lado con una sonrisa que todavía no sabe dónde poner. Nadie le discute el talento, pero acaba de llegar al casillero de un amigo. Su primer desafío en Shockers será bastante menos televisivo que una volcada: lograr que la sobremesa deje de quedarse en silencio cuando se sienta."
+      "«Pensé que los rebotes también compraban un poco de cariño», dice Towns mientras cierra el bolso. Flagg espera al otro lado con una sonrisa que todavía no sabe dónde poner. Nadie le discute el talento, pero acaba de llegar al casillero de un amigo. Su primer desafío en Shockers será bastante menos televisivo que una volcada: lograr que la sobremesa deje de quedarse en silencio cuando se sienta."
     ],
     [
       "h2",
@@ -8411,11 +8403,11 @@ posts: [
     ],
     [
       "p",
-      "El Haliburton de nuestra ficción no hace una despedida suave. Deja las zapatillas sobre la banca y pide que alguien le explique cuándo una lesión se convirtió en una carta de salida. «Me lesioné, no renuncié al equipo», protesta. Recuerda los $31 de la semana anterior como quien encuentra una foto de unas vacaciones felices justo después de una ruptura. La directiva imaginaria responde hablando de categorías; él estaba hablando de lealtad."
+      "Haliburton no hace una despedida suave. Deja las zapatillas sobre la banca y pide que alguien le explique cuándo una lesión se convirtió en una carta de salida. «Me lesioné, no renuncié al equipo», protesta. Recuerda los $31 de la semana anterior como quien encuentra una foto de unas vacaciones felices justo después de una ruptura. La directiva responde hablando de categorías; él estaba hablando de lealtad."
     ],
     [
       "p",
-      "La tensión sube cuando ve el precio del reemplazo. Dos dólares. En su versión de los hechos, no perdió el puesto ante una superoferta: lo cambiaron por menos de lo que cuesta discutir un café. Sale convencido de que la vuelta contra Hipopotamos ya tiene una fecha marcada, aunque todavía no tenga otro casillero. En la novela, ese es el tipo de despedida que promete un segundo capítulo."
+      "La tensión sube cuando ve el precio del reemplazo. Dos dólares. En su versión de los hechos, no perdió el puesto ante una superoferta: lo cambiaron por menos de lo que cuesta discutir un café. Sale convencido de que la vuelta contra Hipopotamos ya tiene una fecha marcada, aunque todavía no tenga otro casillero. Es el tipo de despedida que promete un segundo capítulo."
     ],
     [
       "h2",
@@ -8423,11 +8415,11 @@ posts: [
     ],
     [
       "p",
-      "El Booker de esta comedia entra preguntando dónde queda su lugar y quién decide el último tiro. Cunningham levanta la mirada. Wembanyama señala una silla libre, no un trono. La bienvenida imaginaria se enfría antes de que termine de apoyar el bolso: nadie cuestiona su talento, pero ya parece haber reservado dos casilleros, uno para él y otro para su autoestima."
+      "Booker entra preguntando dónde queda su lugar y quién decide el último tiro. Cunningham levanta la mirada. Wembanyama señala una silla libre, no un trono. La bienvenida se enfría antes de que termine de apoyar el bolso: nadie cuestiona su talento, pero ya parece haber reservado dos casilleros, uno para él y otro para su autoestima."
     ],
     [
       "p",
-      "«Primero aprende los nombres; después hablamos del último tiro», le suelta el Cunningham ficticio. Booker sonríe como si la frase también fuera parte de su presentación. Hipopotamos acaba de conseguir un nombre grande por $2; en esta escena inventada, integrarlo al grupo sale bastante más caro. En una esquina todavía están borrando el nombre de Haliburton. No ayuda entrar pidiendo que suban el volumen de la música."
+      "«Primero aprende los nombres; después hablamos del último tiro», le suelta Cunningham. Booker sonríe como si la frase también fuera parte de su presentación. Hipopotamos acaba de conseguir un nombre grande por $2; integrarlo al grupo sale bastante más caro. En una esquina todavía están borrando el nombre de Haliburton. No ayuda entrar pidiendo que suban el volumen de la música."
     ],
     [
       "h2",
@@ -8435,23 +8427,23 @@ posts: [
     ],
     [
       "p",
-      "En el Cromwell imaginario de esta novela, el Rubio presenta a Wagner y Maxey bajo un cartel que dice «reconstrucción express». Habla de equilibrio, ambición y un proyecto cuidadosamente diseñado. Todo marcha bien hasta que alguien pregunta por los $35 que ofreció por Flagg. El Rubio da vuelta el cartel: atrás dice «mirar hacia adelante». La primera norma del nuevo vestuario queda establecida antes del entrenamiento."
+      "En Cromwell, el Rubio presenta a Wagner y Maxey bajo un cartel que dice «reconstrucción express». Habla de equilibrio, ambición y un proyecto cuidadosamente diseñado. Todo marcha bien hasta que alguien pregunta por los $35 que ofreció por Flagg. El Rubio da vuelta el cartel: atrás dice «mirar hacia adelante». La primera norma del nuevo vestuario queda establecida antes del entrenamiento."
     ],
     [
       "p",
-      "Maxey encuentra las dos boletas pegadas en la pizarra: Wagner, $15; Maxey, $5. «¿Él viene con estacionamiento y yo tengo que traer la camiseta?», pregunta su personaje, todavía con el bolso al hombro. El Wagner ficticio responde que las tarifas premium no se explican: se respetan. Maxey le ofrece una solución: si costó el triple, que también haga el triple de los relevos defensivos. Se acaba el aplauso de bienvenida."
+      "Maxey encuentra las dos boletas pegadas en la pizarra: Wagner, $15; Maxey, $5. «¿Él viene con estacionamiento y yo tengo que traer la camiseta?», pregunta Maxey, todavía con el bolso al hombro. Wagner responde que las tarifas premium no se explican: se respetan. Maxey le ofrece una solución: si costó el triple, que también haga el triple de los relevos defensivos. Se acaba el aplauso de bienvenida."
     ],
     [
       "p",
-      "La pelea inventada se traslada al primer ejercicio. Wagner pide organizar la jugada; Maxey pide la pelota. Ambos miran al Rubio, que descubre demasiado tarde que fichar a dos creadores también puede crear dos candidatos a jefe. Sabonis se ofrece como mediador hasta que le piden elegir un bando. «Yo doy asistencias, no certificados de superioridad», contesta en esta escena. A partir de ahí, cada pase tiene una pequeña lectura política."
+      "La pelea se traslada al primer ejercicio. Wagner pide organizar la jugada; Maxey pide la pelota. Ambos miran al Rubio, que descubre demasiado tarde que fichar a dos creadores también puede crear dos candidatos a jefe. Sabonis se ofrece como mediador hasta que le piden elegir un bando. «Yo doy asistencias, no certificados de superioridad», contesta. A partir de ahí, cada pase tiene una pequeña lectura política."
     ],
     [
       "p",
-      "Jokić corta la reunión ficticia sin levantarse de su asiento: «El que esté solo recibe la pelota. El resto puede discutir la boleta después». Nadie se atreve a preguntarle cuánto costó su opinión. Por diez minutos, Pilsens parece haber encontrado una jerarquía razonable. Entonces Maxey bautiza a Wagner como «el premium» y Wagner empieza a llamar a Maxey «la oferta». El Rubio solicita que esos apodos no lleguen al grupo de WhatsApp. Llegan antes que él."
+      "Jokić corta la reunión sin levantarse de su asiento: «El que esté solo recibe la pelota. El resto puede discutir la boleta después». Nadie se atreve a preguntarle cuánto costó su opinión. Por diez minutos, Pilsens parece haber encontrado una jerarquía razonable. Entonces Maxey bautiza a Wagner como «el premium» y Wagner empieza a llamar a Maxey «la oferta». El Rubio solicita que esos apodos no lleguen al grupo de WhatsApp. Llegan antes que él."
     ],
     [
       "p",
-      "Las despedidas tampoco ayudan en nuestra historia. Garland deja una nota en el casillero: «La contraseña del parlante se la explican al fichaje de $15». El Edwards ficticio manda un mensaje desde su recuperación: «Para cambiar mi nombre de la lista fueron bastante rápidos». El Rubio lo lee, escribe una respuesta larga, la borra y manda un pulgar arriba. En la novela, ese emoji consigue lo que ningún rival había logrado todavía: unir a los recién llegados y los que se fueron en una misma queja contra la directiva."
+      "Las despedidas tampoco ayudan. Garland deja una nota en el casillero: «La contraseña del parlante se la explican al fichaje de $15». Edwards manda un mensaje desde su recuperación: «Para cambiar mi nombre de la lista fueron bastante rápidos». El Rubio lo lee, escribe una respuesta larga, la borra y manda un pulgar arriba. Ese emoji consigue lo que ningún rival había logrado todavía: unir a los recién llegados y los que se fueron en una misma queja contra la directiva."
     ],
     [
       "h2",
@@ -8459,7 +8451,7 @@ posts: [
     ],
     [
       "p",
-      "Mequetrefes tiene otra escena ficticia: el Chino pasa la lista sin estrenar un solo nombre de este reporte. Dončić lee lo de los $52 y Miller pregunta si ahora habrá que saludar a Flagg con tratamiento de gerente. Giannis sigue con lo suyo. Desde esa mesa, los movimientos ajenos parecen una buena teleserie; el problema de Papafritas es que el domingo siempre termina poniendo a los espectadores dentro del capítulo."
+      "En Mequetrefes, el Chino pasa la lista sin estrenar un solo nombre de este reporte. Dončić lee lo de los $52 y Miller pregunta si ahora habrá que saludar a Flagg con tratamiento de gerente. Giannis sigue con lo suyo. Desde esa mesa, los movimientos ajenos parecen una buena teleserie; el problema de Papafritas es que el domingo siempre termina poniendo a los espectadores dentro del capítulo."
     ]
   ]
 },

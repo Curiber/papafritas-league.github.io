@@ -418,11 +418,11 @@ test('el reporte del 2 de noviembre distingue ocho altas de diez ofertas fallida
   assert.ok(fs.existsSync(path.join(root,r.sourceImage)));
 });
 
-test('la novela de vestuario está señalada antes de las escenas y no altera el registro de ESPN',()=>{
+test('el vestuario se narra en voz directa dentro de Papafritas y conserva el registro de ESPN',()=>{
   const a=app(),p=a.data.posts.find(p=>p.id==='waivers-2-noviembre-flagg-booker-vestuario');
   const html=a.run("article(D.posts.find(p=>p.id==='waivers-2-noviembre-flagg-booker-vestuario'))");
-  assert.match(html,/Incluye ficción de vestuario/);assert.match(html,/No son testimonios/);
-  assert.ok(html.indexOf('class="fiction-note"')<html.indexOf('Towns se lleva el bolso'));
+  assert.match(html,/Vestuario Papafritas: despedidas y luchas por el mando/);
+  assert.doesNotMatch(html,/ficci|fictic|imaginari|inventad|No son testimonios|fiction-note/i);
   assert.match(html,/Me lesioné, no renuncié al equipo/);assert.match(html,/casillero doble/);
   assert.equal((html.match(/class="waiver-featured"/g)||[]).length,4);
   const record=a.data.transactionReports.find(r=>r.id===p.transactionReportId);

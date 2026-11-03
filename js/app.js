@@ -227,7 +227,7 @@ function rulesPage() {
 }
 function rankingHeading(t, position) { return `<div class="rank-heading">${crest(t, 64)}<h2><a href="#equipo/${t.id}">${position ? position + '. ' : ''}${esc(t.name)}</a></h2></div>`; }
 
-function postLabel(p) { return p.partial ? 'Crónica parcial' : p.fiction ? `${p.category} · ${p.fiction.label}` : p.category; }
+function postLabel(p) { return p.partial ? 'Crónica parcial' : p.category; }
 function playerReport(reportId, teamId) {
   const report = D.statisticsReports?.find(r => r.id === reportId);
   if (!report) return '';
@@ -275,10 +275,6 @@ function offersTable(id) {
   }).join('')}</tbody></table></div></details>`;
 }
 
-function fictionNotice(p) {
-  return p.fiction?.notice ? `<aside class="fiction-note" role="note" aria-label="Ficción de vestuario"><strong>Ficción de vestuario</strong><p>${esc(p.fiction.notice)}</p></aside>` : '';
-}
-
 function articleMatchup(p, id) {
   const cut = p.fantasySnapshot, m = cut?.matchups.find(m => m.id === id);
   if (!m) return '';
@@ -289,7 +285,7 @@ function article(p) {
   const report = D.statisticsReports?.find(r => r.id === p.reportId);
   const reportMeta = !report ? (p.fantasySnapshot ? cutoffNote({updatedAt:p.fantasySnapshot.updatedAt,sourceMode:'espn'}) : '') : p.category === 'Previas' ? `<span class="snapshot-meta">Base estadística: cierre del ${esc(fmtDate(report.through))}</span>` : cutoffNote({...report,updatedAtApproximate:report.approximate});
   return `<a class="back" href="#noticias">← Volver al archivo</a><article class="reading"><div class="page-head"><span class="eyebrow">${esc(postLabel(p))}</span><h1>${esc(p.title)}</h1><div class="meta"><time datetime="${p.date}">${fmtDate(p.date)}</time> · Redacción Papafritas${p.readingMinutes ? ` · ${p.readingMinutes} min de lectura` : ''}</div>${reportMeta}</div>${articleCover(p)}<p class="lead">${esc(p.excerpt)}</p>
-    ${p.body.map(([tag, text]) => tag === 'matchup-cut' ? articleMatchup(p,text) : tag === 'transaction-highlights' ? transactionHighlights(text) : tag === 'transaction-table' ? transactionTable(text) : tag === 'offers-table' ? offersTable(text) : tag === 'fiction-notice' ? fictionNotice(p) : tag === 'sources' ? articleSources(p, text) : tag === 'player-report' ? playerReport(p.reportId, text) : tag === 'draft-order' ? draftOrder() : tag === 'team-heading' ? rankingHeading(team(text)) : `<${tag === 'h2' ? 'h2' : 'p'}>${esc(text)}</${tag === 'h2' ? 'h2' : 'p'}>`).join('')}
+    ${p.body.map(([tag, text]) => tag === 'matchup-cut' ? articleMatchup(p,text) : tag === 'transaction-highlights' ? transactionHighlights(text) : tag === 'transaction-table' ? transactionTable(text) : tag === 'offers-table' ? offersTable(text) : tag === 'sources' ? articleSources(p, text) : tag === 'player-report' ? playerReport(p.reportId, text) : tag === 'draft-order' ? draftOrder() : tag === 'team-heading' ? rankingHeading(team(text)) : `<${tag === 'h2' ? 'h2' : 'p'}>${esc(text)}</${tag === 'h2' ? 'h2' : 'p'}>`).join('')}
     ${r ? r.entries.map((e, i) => `${rankingHeading(team(e.team), i + 1)}<p>${esc(e.analysis)}</p>`).join('') : ''}
     ${reportSources(p)}<p class="source">${esc(p.source ?? 'Base documental: fichas de los cuatro equipos registradas el 20 de octubre de 2026 a partir de capturas proporcionadas por los participantes. Las valoraciones son opinión y proyección editorial: no incorporan estadísticas actuales ni presuponen disponibilidad.')}</p>
     ${p.rulesLink ? '<a class="link" href="#reglas">Consultar el reglamento y los tiers</a>' : ''}
