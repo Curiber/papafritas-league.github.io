@@ -1,13 +1,15 @@
 name: Actualizar resultados ESPN
-run-name: ${{ github.event_name == 'schedule' && 'ESPN · control matinal · 07:00–10:59 Chile' || github.event_name == 'workflow_dispatch' && 'ESPN · ejecución manual' || 'ESPN · comprobación de código' }}
+run-name: ${{ github.event_name == 'schedule' && 'ESPN · automático · desde las 02:00 Chile' || github.event_name == 'workflow_dispatch' && 'ESPN · ejecución manual' || 'ESPN · comprobación de código' }}
 
 on:
   schedule:
-    - cron: '0 7 * * *'
+    - cron: '0 2 * * *'
       timezone: America/Santiago
-    # Frequent delivery provides morning retries even when GitHub delays an event for hours.
-    # Only the small window-check job runs outside 07:00–10:59 in Santiago.
-    - cron: '7,37 * * * *'
+    # Morning refreshes also retry a missed overnight update. Delayed events still run.
+    - cron: '17 6 * * *'
+      timezone: America/Santiago
+    - cron: '37 9 * * *'
+      timezone: America/Santiago
   workflow_dispatch:
     inputs:
       refresh_results:
@@ -35,39 +37,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  window:
-    name: Comprobar ventana matinal
-    runs-on: ubuntu-latest
-    timeout-minutes: 3
-    outputs:
-      allowed: ${{ steps.window.outputs.run_update }}
-    steps:
-      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
-        with:
-          ref: main
-          sparse-checkout: |
-            scripts/espn-schedule-gate.cjs
-            config/espn.json
-          sparse-checkout-cone-mode: false
-          persist-credentials: false
-      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
-        with:
-          node-version: '22'
-      - name: Aceptar solo actualizaciones automáticas de mañana
-        id: window
-        env:
-          EXPECTED_SCHEDULE: ${{ github.event.schedule }}
-        run: node scripts/espn-schedule-gate.cjs --window-only
   update:
     name: ${{ github.event_name == 'push' && 'Verificar código' || 'Actualizar y publicar resultados' }}
-    needs: window
-    if: needs.window.outputs.allowed == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
       contents: write
       pages: write
-      actions: read
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
@@ -75,47 +51,42 @@ jobs:
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
           node-version: '22'
-      - name: Comprobar horario y actualización diaria previa
-        id: gate
+      - name: Registrar horario de la ejecución
         env:
-          GH_TOKEN: ${{ github.token }}
           EXPECTED_SCHEDULE: ${{ github.event.schedule }}
-        run: node scripts/espn-schedule-gate.cjs
+        run: node scripts/espn-run-summary.cjs
       - name: Comprobar código e importación
-        if: steps.gate.outputs.run_update == 'true'
         run: |
           node --test tests/*.test.cjs
           node --check js/data.js
           node --check js/app.js
           node --check scripts/fetch-espn-results.cjs
       - name: Consultar totales oficiales de ESPN
-        if: steps.gate.outputs.run_update == 'true' && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh_results))
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh_results)
         env:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
         run: node scripts/fetch-espn-results.cjs
       - name: Exportar datos editoriales sin credenciales
-        if: steps.gate.outputs.run_update == 'true' && github.event_name == 'workflow_dispatch' && inputs.export_editorial
+        if: github.event_name == 'workflow_dispatch' && inputs.export_editorial
         env:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
         run: node scripts/export-espn-editorial.cjs "$RUNNER_TEMP/espn-editorial.json"
       - name: Conservar el corte editorial para revisión
-        if: steps.gate.outputs.run_update == 'true' && github.event_name == 'workflow_dispatch' && inputs.export_editorial
+        if: github.event_name == 'workflow_dispatch' && inputs.export_editorial
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: espn-editorial
           path: ${{ runner.temp }}/espn-editorial.json
           retention-days: 1
       - name: Verificar resultados actualizados
-        if: steps.gate.outputs.run_update == 'true'
         run: |
           node --test tests/*.test.cjs
           node --check js/data.js
           git diff --check
       - name: Commit y push si cambiaron los resultados
         id: commit
-        if: steps.gate.outputs.run_update == 'true'
         run: |
           if git diff --quiet -- js/data.js index.html assets/cortes/espn; then
             echo 'changed=false' >> "$GITHUB_OUTPUT"
@@ -129,7 +100,7 @@ jobs:
           echo 'changed=true' >> "$GITHUB_OUTPUT"
       # GITHUB_TOKEN pushes do not trigger Pages automatically. Request its build explicitly.
       - name: Publicar y verificar GitHub Pages
-        if: steps.gate.outputs.run_update == 'true' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

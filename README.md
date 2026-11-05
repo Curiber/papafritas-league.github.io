@@ -41,13 +41,13 @@ destacado en portada) y sus `matchups`.
 
 ## Actualización diaria desde ESPN
 
-El workflow `.github/workflows/espn-results.yml` mantiene el objetivo de las **07:00 con `timezone: America/Santiago`**, con comprobaciones adicionales a los minutos 7 y 37 de cada hora UTC. Estos disparos frecuentes, incluidos los nocturnos, permiten recibir reintentos durante la mañana aunque GitHub entregue eventos con horas de retraso. La zona IANA contempla el horario de verano.
+El workflow `.github/workflows/espn-results.yml` está programado diariamente a las **02:00 con `timezone: America/Santiago`**, con refuerzos a las **06:17 y 09:37 de Chile**. La zona IANA contempla el horario de verano. Los refuerzos vuelven a consultar los resultados de la noche y permiten recuperar una ejecución fallida u omitida.
 
-El job **Comprobar ventana matinal** descarga únicamente el control horario y su configuración. Usa `scripts/espn-schedule-gate.cjs --window-only`; si el disparo automático llega fuera de **07:00–10:59 de Chile**, el job **Actualizar y publicar resultados** queda omitido: no consulta ESPN ni publica por la tarde. El control se repite dentro del job de actualización por si la cola de runners retrasa su arranque. El timeout de diez minutos limita la duración del proceso iniciado durante esa ventana. Las ejecuciones manuales y las comprobaciones por push se conservan.
+**Cada disparo automático consulta ESPN y publica los cambios, aunque llegue de tarde o ya haya habido una actualización ese día.** Se eliminaron la ventana horaria y el control que omitía consultas posteriores a una ejecución exitosa. Una respuesta sin cambios conserva la fecha del último cambio y no genera commits vacíos; el log confirma que se consultó ESPN. Las validaciones de acceso, identidad, categorías y cierres se mantienen: ante un error se conserva el último corte válido y el run falla.
 
-Los reintentos se omiten cuando ya hubo una consulta matinal y una ejecución completas exitosas ese día. Una consulta manual de madrugada no consume el corte de la mañana. El resumen de cada run muestra objetivo, ventana admitida, hora real de inicio, evento y cron recibido. No es necesario un token adicional ni mantener un equipo encendido.
+`scripts/espn-run-summary.cjs` registra el objetivo, los refuerzos, la hora real de inicio, el evento y el cron recibido. Es informativo y no decide si se ejecuta la consulta. No es necesario un token adicional ni mantener un equipo encendido. Las ejecuciones manuales y las comprobaciones por push se conservan.
 
-El historial confirmó disparos automáticos a las **14:39 y 14:49 de Chile el 3 de noviembre**, además de los retrasos de octubre. [GitHub advierte](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule) que los schedules pueden retrasarse u omitirse bajo carga, especialmente al inicio de hora. Los reintentos reducen la dependencia de un solo disparo; Actions no garantiza las 07:00 exactas ni la entrega de cada evento. Una comprobación horaria por la tarde con el job de actualización omitido es el resultado esperado, no una actualización tardía. También permite **Actions → Actualizar resultados ESPN → Run workflow**. En repositorios públicos, GitHub puede desactivar los schedules tras 60 días sin actividad.
+El historial confirmó disparos automáticos a las **14:39 y 14:49 de Chile el 3 de noviembre**, además de los retrasos de octubre. [GitHub advierte](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule) que los schedules pueden retrasarse u omitirse bajo carga, especialmente al inicio de hora. Adelantar el primer disparo y añadir refuerzos reduce la dependencia de un solo evento, pero Actions no garantiza puntualidad ni la entrega de cada evento. Una ejecución que llegue tarde debe actualizar igual. También permite **Actions → Actualizar resultados ESPN → Run workflow**. En repositorios públicos, GitHub puede desactivar los schedules tras 60 días sin actividad.
 
 La opción manual `export_editorial` guarda durante un día un artifact `espn-editorial` con los planteles al corte y los identificadores NBA necesarios para contrastar el calendario de una crónica. No exporta miembros, credenciales, alineaciones ni la respuesta completa de ESPN; no modifica los planteles publicados ni atribuye estadísticas individuales al marcador fantasy.
 
@@ -72,7 +72,7 @@ La tarea local previa **Actualizar parciales de Papafritas League** quedó desac
 
 `config/espn.json` identifica liga, temporada y equipos. Abrir su `scoreboardUrl` con el navegador de la conversación y leer los **totales acumulados del período** seleccionado, sus fechas y el marcador de categorías. Los totales diarios del box score pueden estar vacíos antes de los partidos: no sustituir el acumulado por esos ceros. Usar la precisión disponible en el tooltip de FG% y FT% para evitar empates por redondeo. No reconstruir el cómputo fantasy sumando estadísticas NBA: banca y fechas de adquisición pueden excluir actuaciones.
 
-Guardar la lectura como JSON con el mismo formato que `assets/cortes/espn/20261027T133752Z.json`. `capturedAt` debe ser la hora real de consulta, incluso si la tarea de las 07:00 se ejecutó con retraso. Luego ejecutar:
+Guardar la lectura como JSON con el mismo formato que `assets/cortes/espn/20261027T133752Z.json`. `capturedAt` debe ser la hora real de consulta, incluso si la tarea de las 02:00 se ejecutó con retraso. Luego ejecutar:
 
 ```powershell
 node scripts/update-espn-results.cjs <ruta-del-corte.json>
@@ -86,7 +86,7 @@ El importador comprueba liga, temporada, identidad de los cuatro equipos, fechas
 
 Durante la semana, usar `status:"partial"`. Al cambiar de período, revisar primero cualquier semana anterior que siga parcial: solo cerrarla con `status:"final"` y `finalConfirmed:true` cuando ESPN confirme el cierre y haya pasado la fecha de término en Chile. Después leer la nueva semana. No inferir un final únicamente por la fecha ni inventar sus totales.
 
-Revisar el diff, hacer commit y push de los archivos de resultados y comprobar que GitHub Pages publique ese commit. Ante un error de acceso o datos incompletos, conservar el último corte visible e informar el problema. Las 07:00 son la hora prevista de consulta, no una promesa de publicación instantánea ni una conexión en tiempo real.
+Revisar el diff, hacer commit y push de los archivos de resultados y comprobar que GitHub Pages publique ese commit. Ante un error de acceso o datos incompletos, conservar el último corte visible e informar el problema. Las 02:00 son la hora prevista de la primera consulta, no una promesa de publicación instantánea ni una conexión en tiempo real.
 
 ## Power ranking
 

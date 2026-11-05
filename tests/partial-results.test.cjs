@@ -177,7 +177,7 @@ test('el corte importado de ESPN aparece como parcial con fecha, fuentes y sin a
     assert.match(html, /<small>Parcial<\/small>/);
     assert.match(html, /Corte ESPN:/);
     assert.match(html, /10:37/);
-    assert.match(html, /Actualización diaria prevista a las 07:00/);
+    assert.match(html, /Actualizaciones previstas a las 02:00, 06:17 y 09:37/);
     assert.match(html, /Ver cruce en ESPN/);
     assert.match(html, /Datos de este corte/);
     assert.doesNotMatch(html, /Corte manual|actualización manual|aprox\./);
