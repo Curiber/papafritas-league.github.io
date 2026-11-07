@@ -1,0 +1,100 @@
+{
+  "leagueId": 732964684,
+  "seasonId": 2027,
+  "matchupPeriodId": 3,
+  "start": "2026-11-02",
+  "end": "2026-11-08",
+  "capturedAt": "2026-11-07T11:33:58.851Z",
+  "status": "partial",
+  "retrieval": "espn-fantasy-api",
+  "matchups": [
+    {
+      "teams": [
+        {
+          "espnId": 3,
+          "name": "Mequetrefes",
+          "score": [
+            5,
+            3,
+            1
+          ],
+          "stats": {
+            "fgp": 0.45698925,
+            "ftp": 0.80136986,
+            "tpm": 56,
+            "reb": 158,
+            "ast": 139,
+            "stl": 25,
+            "blk": 20,
+            "to": 68,
+            "pts": 513
+          }
+        },
+        {
+          "espnId": 1,
+          "name": "Penalolen Shockers",
+          "score": [
+            3,
+            5,
+            1
+          ],
+          "stats": {
+            "fgp": 0.39410188,
+            "ftp": 0.83453237,
+            "tpm": 38,
+            "reb": 176,
+            "ast": 139,
+            "stl": 30,
+            "blk": 13,
+            "to": 69,
+            "pts": 448
+          }
+        }
+      ]
+    },
+    {
+      "teams": [
+        {
+          "espnId": 4,
+          "name": "Los Hipopotamos Chuchetumare",
+          "score": [
+            7,
+            2,
+            0
+          ],
+          "stats": {
+            "fgp": 0.5,
+            "ftp": 0.78698225,
+            "tpm": 49,
+            "reb": 202,
+            "ast": 124,
+            "stl": 32,
+            "blk": 25,
+            "to": 65,
+            "pts": 646
+          }
+        },
+        {
+          "espnId": 2,
+          "name": "Cromwell Pilsens",
+          "score": [
+            2,
+            7,
+            0
+          ],
+          "stats": {
+            "fgp": 0.49035813,
+            "ftp": 0.78571429,
+            "tpm": 37,
+            "reb": 172,
+            "ast": 122,
+            "stl": 39,
+            "blk": 6,
+            "to": 59,
+            "pts": 481
+          }
+        }
+      ]
+    }
+  ]
+}
