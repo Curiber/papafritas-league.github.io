@@ -33,5 +33,11 @@
     "tool": "image_gen (herramienta integrada)",
     "createdAt": "2026-11-09",
     "alt": "Cuatro manos se disputan una ficha en una mesa con una pizarra de básquet y papas fritas."
+  },
+  "waivers-curry-2026-11-09": {
+    "prompt": "Use case: illustration-story. Create a single widescreen 16:9 editorial cover for a serious Chilean fantasy basketball news site. Stephen Curry is the unmistakable protagonist, a recognizable illustrated portrait in a poised long-range jump-shot follow-through, with a plain deep blue jersey trimmed in warm gold, no team logo or jersey lettering. His upper body, calm expression, and shooting hand dominate the center. An orange ball rises along one restrained golden arc toward a small hoop in the background of a dark gym. Under the lights, subtly suggest the fantasy waivers setting with an empty scouting clipboard on the bench and a tiny fries carton, kept secondary. Sophisticated sports-magazine ink and paint with textured halftone grain, clear silhouette and warm face highlights, charcoal and midnight navy with controlled gold and orange. Center the face, hand and ball to survive a 2:1 card crop and read on mobile. This is an illustration of a fantasy signing, no press conference, no handshake, no text, no numbers, no NBA or fantasy crests, no sponsor marks, no watermark, no other player portraits.",
+    "tool": "image_gen (herramienta integrada)",
+    "createdAt": "2026-11-09",
+    "alt": "Stephen Curry sostiene el gesto de lanzamiento mientras la pelota vuela hacia el aro."
   }
 }

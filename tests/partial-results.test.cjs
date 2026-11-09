@@ -416,8 +416,9 @@ test('el reporte del 2 de noviembre distingue ocho altas de diez ofertas fallida
   assert.equal(r.offers.length,18);assert.equal(r.offers.filter(o=>o.result==='added').length,8);
   assert.equal(r.transactions.reduce((s,m)=>s+m.bid,0),96);
   assert.deepEqual(Object.fromEntries(a.data.teams.map(t=>[t.id,r.transactions.filter(m=>m.team===t.id).reduce((s,m)=>s+m.bid,0)])),{shockers:60,pilsens:20,hipopotamos:16,pelafustanes:0});
+  const rosterAtReport=a.data.rosterSnapshots.find(s=>s.date===r.date);
   for(const o of r.offers){
-    const t=a.data.teams.find(t=>t.id===o.team);
+    const t=rosterAtReport.teams.find(t=>t.id===o.team);
     if(o.result==='added')assert.ok(r.transactions.some(m=>m.id===o.transactionId&&m.added.name===o.claim.name&&m.bid===o.bid));
     else{assert.ok(!t.roster.includes(o.claim.name));assert.ok(!o.transactionId);}
   }

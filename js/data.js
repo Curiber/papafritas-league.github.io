@@ -7169,7 +7169,7 @@ transactionReports: [
   {
     "id": "waivers-2026-11-02",
     "date": "2026-11-02",
-  "highlightNote": "Selección editorial por importe de la puja y peso del cambio de plantilla.",
+    "highlightNote": "Selección editorial por importe de la puja y peso del cambio de plantilla.",
     "timeZoneShown": false,
     "sourceImage": "./assets/cortes/ofertas-2026-11-02.png",
     "source": "Free Agent Offers Report de ESPN Fantasy aportado por el participante. Fecha seleccionada: lunes 2 de noviembre de 2026, ocho altas procesadas. Se transcriben las 18 ofertas visibles, con ocho incorporaciones y sus bajas asociadas. Las pujas ganadoras suman $96; no se dispone del presupuesto inicial ni de los saldos. La captura no muestra hora ni zona horaria. Las etiquetas NBA corresponden a esa fuente. Las causas de las ofertas fallidas se conservan sin inferir qué baja estaba asociada a ellas.",
@@ -7553,6 +7553,370 @@ transactionReports: [
         "reason": "Hipopotamos incorpora a Booker y corta a Haliburton. El registro confirma el intercambio de plaza por $2."
       }
     ]
+  },
+  {
+    "id": "waivers-2026-11-09",
+    "date": "2026-11-09",
+    "timeZoneShown": false,
+    "sourceImage": "./assets/cortes/ofertas-2026-11-09.png",
+    "source": "Free Agent Offers Report de ESPN Fantasy aportado por el participante. Fecha seleccionada: lunes 9 de noviembre de 2026. Se transcriben las 15 ofertas visibles, con nueve altas, seis ofertas fallidas y $24 en pujas ganadoras. La captura no muestra hora ni zona horaria. Las etiquetas NBA y las causas de las ofertas fallidas corresponden al registro. No se infieren las bajas asociadas a solicitudes fallidas.",
+    "transactions": [
+      {
+        "id": "waiver-20261109-01",
+        "team": "pilsens",
+        "type": "waiver",
+        "added": {
+          "name": "Paul George",
+          "nbaLabel": "BOS",
+          "position": "SF"
+        },
+        "dropped": {
+          "name": "AJ Dybantsa",
+          "nbaLabel": "WSH",
+          "position": "SF"
+        },
+        "bid": 6
+      },
+      {
+        "id": "waiver-20261109-02",
+        "team": "pilsens",
+        "type": "waiver",
+        "added": {
+          "name": "Davion Mitchell",
+          "nbaLabel": "MIA",
+          "position": "PG"
+        },
+        "dropped": {
+          "name": "Sandro Mamukelashvili",
+          "nbaLabel": "LAL",
+          "position": "C"
+        },
+        "bid": 5
+      },
+      {
+        "id": "waiver-20261109-03",
+        "team": "pilsens",
+        "type": "waiver",
+        "added": {
+          "name": "Pascal Siakam",
+          "nbaLabel": "IND",
+          "position": "PF"
+        },
+        "dropped": {
+          "name": "Jaylen Brown",
+          "nbaLabel": "PHI",
+          "position": "SF"
+        },
+        "bid": 5
+      },
+      {
+        "id": "waiver-20261109-04",
+        "team": "shockers",
+        "type": "waiver",
+        "added": {
+          "name": "Bam Adebayo",
+          "nbaLabel": "MIA",
+          "position": "C"
+        },
+        "dropped": {
+          "name": "Jarrett Allen",
+          "nbaLabel": "CLE",
+          "position": "C"
+        },
+        "bid": 2
+      },
+      {
+        "id": "waiver-20261109-05",
+        "team": "hipopotamos",
+        "type": "waiver",
+        "added": {
+          "name": "Stephen Curry",
+          "nbaLabel": "GS",
+          "position": "PG"
+        },
+        "dropped": {
+          "name": "Deni Avdija",
+          "nbaLabel": "POR",
+          "position": "SF"
+        },
+        "bid": 2
+      },
+      {
+        "id": "waiver-20261109-06",
+        "team": "hipopotamos",
+        "type": "waiver",
+        "added": {
+          "name": "Jabari Smith Jr.",
+          "nbaLabel": "HOU",
+          "position": "PF"
+        },
+        "dropped": {
+          "name": "Naz Reid",
+          "nbaLabel": "CHA",
+          "position": "C"
+        },
+        "bid": 2
+      },
+      {
+        "id": "waiver-20261109-07",
+        "team": "shockers",
+        "type": "waiver",
+        "added": {
+          "name": "Donovan Clingan",
+          "nbaLabel": "POR",
+          "position": "C"
+        },
+        "dropped": {
+          "name": "Cameron Boozer",
+          "nbaLabel": "MEM",
+          "position": "PF"
+        },
+        "bid": 1
+      },
+      {
+        "id": "waiver-20261109-08",
+        "team": "hipopotamos",
+        "type": "waiver",
+        "added": {
+          "name": "Kris Dunn",
+          "nbaLabel": "LAC",
+          "position": "PG"
+        },
+        "dropped": {
+          "name": "Toumani Camara",
+          "nbaLabel": "POR",
+          "position": "SF"
+        },
+        "bid": 1
+      },
+      {
+        "id": "waiver-20261109-09",
+        "team": "shockers",
+        "type": "waiver",
+        "added": {
+          "name": "Collin Murray-Boyles",
+          "nbaLabel": "TOR",
+          "position": "PF"
+        },
+        "dropped": {
+          "name": "Tari Eason",
+          "nbaLabel": "HOU",
+          "position": "SF"
+        },
+        "bid": 0
+      }
+    ],
+    "offers": [
+      {
+        "order": 1,
+        "team": "pilsens",
+        "claim": {
+          "name": "Paul George",
+          "nbaLabel": "BOS",
+          "position": "SF"
+        },
+        "bid": 6,
+        "result": "added",
+        "transactionId": "waiver-20261109-01"
+      },
+      {
+        "order": 2,
+        "team": "pilsens",
+        "claim": {
+          "name": "Ty Jerome",
+          "nbaLabel": "MEM",
+          "position": "SG"
+        },
+        "bid": 5,
+        "result": "unsuccessful",
+        "reasonCode": "already-dropped",
+        "reason": "Un jugador involucrado ya había sido cortado."
+      },
+      {
+        "order": 3,
+        "team": "pilsens",
+        "claim": {
+          "name": "Davion Mitchell",
+          "nbaLabel": "MIA",
+          "position": "PG"
+        },
+        "bid": 5,
+        "result": "added",
+        "transactionId": "waiver-20261109-02"
+      },
+      {
+        "order": 4,
+        "team": "pilsens",
+        "claim": {
+          "name": "Pascal Siakam",
+          "nbaLabel": "IND",
+          "position": "PF"
+        },
+        "bid": 5,
+        "result": "added",
+        "transactionId": "waiver-20261109-03"
+      },
+      {
+        "order": 5,
+        "team": "shockers",
+        "claim": {
+          "name": "Bam Adebayo",
+          "nbaLabel": "MIA",
+          "position": "C"
+        },
+        "bid": 2,
+        "result": "added",
+        "transactionId": "waiver-20261109-04"
+      },
+      {
+        "order": 6,
+        "team": "hipopotamos",
+        "claim": {
+          "name": "Stephen Curry",
+          "nbaLabel": "GS",
+          "position": "PG"
+        },
+        "bid": 2,
+        "result": "added",
+        "transactionId": "waiver-20261109-05"
+      },
+      {
+        "order": 7,
+        "team": "hipopotamos",
+        "claim": {
+          "name": "Jabari Smith Jr.",
+          "nbaLabel": "HOU",
+          "position": "PF"
+        },
+        "bid": 2,
+        "result": "added",
+        "transactionId": "waiver-20261109-06"
+      },
+      {
+        "order": 8,
+        "team": "pilsens",
+        "claim": {
+          "name": "Zion Williamson",
+          "nbaLabel": "NO",
+          "position": "PF"
+        },
+        "bid": 1,
+        "result": "unsuccessful",
+        "reasonCode": "acquisition-limit",
+        "reason": "Se excedería el límite de incorporaciones del cruce."
+      },
+      {
+        "order": 9,
+        "team": "shockers",
+        "claim": {
+          "name": "Zion Williamson",
+          "nbaLabel": "NO",
+          "position": "PF"
+        },
+        "bid": 1,
+        "result": "unsuccessful",
+        "reasonCode": "already-dropped",
+        "reason": "Un jugador involucrado ya había sido cortado."
+      },
+      {
+        "order": 10,
+        "team": "shockers",
+        "claim": {
+          "name": "Donovan Clingan",
+          "nbaLabel": "POR",
+          "position": "C"
+        },
+        "bid": 1,
+        "result": "added",
+        "transactionId": "waiver-20261109-07"
+      },
+      {
+        "order": 11,
+        "team": "hipopotamos",
+        "claim": {
+          "name": "Kris Dunn",
+          "nbaLabel": "LAC",
+          "position": "PG"
+        },
+        "bid": 1,
+        "result": "added",
+        "transactionId": "waiver-20261109-08"
+      },
+      {
+        "order": 12,
+        "team": "shockers",
+        "claim": {
+          "name": "Miles Bridges",
+          "nbaLabel": "PHX",
+          "position": "SF"
+        },
+        "bid": 0,
+        "result": "unsuccessful",
+        "reasonCode": "already-dropped",
+        "reason": "Un jugador involucrado ya había sido cortado."
+      },
+      {
+        "order": 13,
+        "team": "shockers",
+        "claim": {
+          "name": "Ayo Dosunmu",
+          "nbaLabel": "MIN",
+          "position": "SG"
+        },
+        "bid": 0,
+        "result": "unsuccessful",
+        "reasonCode": "already-dropped",
+        "reason": "Un jugador involucrado ya había sido cortado."
+      },
+      {
+        "order": 14,
+        "team": "shockers",
+        "claim": {
+          "name": "Collin Murray-Boyles",
+          "nbaLabel": "TOR",
+          "position": "PF"
+        },
+        "bid": 0,
+        "result": "added",
+        "transactionId": "waiver-20261109-09"
+      },
+      {
+        "order": 15,
+        "team": "shockers",
+        "claim": {
+          "name": "Wendell Carter Jr.",
+          "nbaLabel": "ORL",
+          "position": "C"
+        },
+        "bid": 0,
+        "result": "unsuccessful",
+        "reasonCode": "acquisition-limit",
+        "reason": "Se excedería el límite de incorporaciones del cruce."
+      }
+    ],
+    "highlights": [
+      {
+        "transactionId": "waiver-20261109-05",
+        "label": "El mejor tirador",
+        "reason": "Hipopotamos ficha al líder histórico de triples de la NBA por $2 y libera la plaza de Deni Avdija."
+      },
+      {
+        "transactionId": "waiver-20261109-04",
+        "label": "El nuevo eje interior",
+        "reason": "Shockers paga $2 por Adebayo y corta a Jarrett Allen. Bam amplía el repertorio del equipo en rebote, campo y defensa."
+      },
+      {
+        "transactionId": "waiver-20261109-01",
+        "label": "La mayor puja",
+        "reason": "Pilsens paga $6 y deja ir a AJ Dybantsa. George viene de 12 triples y siete robos en tres partidos NBA."
+      },
+      {
+        "transactionId": "waiver-20261109-03",
+        "label": "El cambio de jerarquía",
+        "reason": "Siakam llega a Cromwell por $5 a cambio de la plaza de Jaylen Brown. La apuesta agrega otra vía de ataque interior."
+      }
+    ],
+    "highlightNote": "Stephen Curry encabeza la tanda. Bam Adebayo representa a Shockers y Cromwell aporta dos de los cambios destacados. Mequetrefes no registra altas en este reporte."
   }
 ],
 
@@ -7875,6 +8239,112 @@ rosterSnapshots: [
         "challenge": "La mejora de la segunda línea debe acompañarse de control de pérdidas y mejores porcentajes. La salida de Klay Thompson obliga a redistribuir sus triples; no toda la anotación nueva sustituye el mismo perfil."
       }
     ]
+  },
+  {
+    "date": "2026-11-09",
+    "source": "Planteles tras las nueve altas del reporte de ofertas de ESPN Fantasy del lunes 9 de noviembre de 2026. Las bajas se aplican solo a las solicitudes ganadoras.",
+    "teams": [
+      {
+        "id": "shockers",
+        "roster": [
+          "Shai Gilgeous-Alexander",
+          "Scottie Barnes",
+          "Jayson Tatum",
+          "Bam Adebayo",
+          "Cooper Flagg",
+          "Amen Thompson",
+          "Yaxel Lendeborg",
+          "Dyson Daniels",
+          "Donovan Clingan",
+          "Paul Reed",
+          "Jonathan Kuminga",
+          "Fred VanVleet",
+          "Collin Murray-Boyles"
+        ],
+        "leaders": [
+          "Shai Gilgeous-Alexander",
+          "Jayson Tatum",
+          "Cooper Flagg"
+        ],
+        "strength": "Gilgeous-Alexander, Tatum y Flagg sostienen la creación. Bam Adebayo y Donovan Clingan amplían los recursos interiores, con Murray-Boyles como otra opción de rotación junto a Barnes, Daniels y Amen Thompson.",
+        "challenge": "El recambio interior modifica las fuentes de rebotes y tapones. Shockers necesita conservar su ventaja en robos y elevar la eficiencia de campo, la categoría que cedió ante Mequetrefes."
+      },
+      {
+        "id": "pilsens",
+        "roster": [
+          "Domantas Sabonis",
+          "Dylan Harper",
+          "Pascal Siakam",
+          "Keldon Johnson",
+          "Nikola Jokić",
+          "Tyrese Maxey",
+          "Franz Wagner",
+          "Paul George",
+          "Caleb Wilson",
+          "Davion Mitchell",
+          "Jalen Johnson",
+          "Jaylen Wells",
+          "Dillon Brooks"
+        ],
+        "leaders": [
+          "Nikola Jokić",
+          "Tyrese Maxey",
+          "Pascal Siakam"
+        ],
+        "strength": "Jokić y Sabonis conservan la creación interior. Siakam amplía las opciones de ataque desde el ala pívot, George aporta tiro y manos en el perímetro y Davion Mitchell agrega otra vía de pase.",
+        "challenge": "Salen Brown, Dybantsa y Mamukelashvili. Cromwell necesita repartir la anotación que aportaba Brown y sostener la defensa interior mientras integra tres perfiles nuevos."
+      },
+      {
+        "id": "hipopotamos",
+        "roster": [
+          "Cade Cunningham",
+          "Derrick White",
+          "Stephen Curry",
+          "Jabari Smith Jr.",
+          "Victor Wembanyama",
+          "Ajay Mitchell",
+          "Jaden McDaniels",
+          "Devin Booker",
+          "Christian Braun",
+          "Ace Bailey",
+          "Walker Kessler",
+          "Kris Dunn",
+          "P.J. Washington"
+        ],
+        "leaders": [
+          "Victor Wembanyama",
+          "Cade Cunningham",
+          "Stephen Curry"
+        ],
+        "strength": "Wembanyama y Kessler sostienen el aro. Curry se suma a Cunningham y Booker para ampliar el tiro y la creación exterior. Jabari Smith Jr. aporta alcance desde el puesto de ala pívot y Kris Dunn suma una opción defensiva en el perímetro.",
+        "challenge": "La salida de Avdija reduce la creación desde el alero. Las de Reid y Camara cambian el reparto de rebotes y defensa. Integrar a Curry exige repartir la pelota y sostener el equilibrio que llevó al equipo al primer lugar."
+      },
+      {
+        "id": "pelafustanes",
+        "roster": [
+          "Luka Dončić",
+          "Donovan Mitchell",
+          "Brandon Miller",
+          "Giannis Antetokounmpo",
+          "Alperen Sengun",
+          "Payton Pritchard",
+          "OG Anunoby",
+          "Alex Sarr",
+          "Matas Buzelis",
+          "Bobby Portis",
+          "Malik Monk",
+          "Aaron Wiggins",
+          "Jalen Smith"
+        ],
+        "leaders": [
+          "Luka Dončić",
+          "Donovan Mitchell",
+          "Giannis Antetokounmpo"
+        ],
+        "strength": "Dončić y Mitchell sostienen PTS, AST y 3PM, con Antetokounmpo y Sengun como apoyos interiores. Aaron Wiggins suma una opción exterior y Jalen Smith amplía la rotación de rebote, junto a Sarr y Portis.",
+        "challenge": "La mejora de la segunda línea debe acompañarse de control de pérdidas y mejores porcentajes. La salida de Klay Thompson obliga a redistribuir sus triples; no toda la anotación nueva sustituye el mismo perfil."
+      }
+    ]
   }
 ],
 
@@ -7902,21 +8372,21 @@ teams: [
       "Shai Gilgeous-Alexander",
       "Scottie Barnes",
       "Jayson Tatum",
-      "Jarrett Allen",
+      "Bam Adebayo",
       "Cooper Flagg",
       "Amen Thompson",
       "Yaxel Lendeborg",
       "Dyson Daniels",
-      "Cameron Boozer",
+      "Donovan Clingan",
       "Paul Reed",
       "Jonathan Kuminga",
       "Fred VanVleet",
-      "Tari Eason"
+      "Collin Murray-Boyles"
     ],
-    "strength": "Gilgeous-Alexander y Tatum conservan el liderazgo. Flagg ocupa la plaza de Towns; Allen refuerza el juego interior y Lendeborg amplía la rotación exterior junto a Barnes, Daniels y Amen Thompson.",
-    "challenge": "La salida de Towns cambia el reparto de rebotes y porcentajes. Allen debe sostener presencia interior tras el corte de Jackson Jr.; Flagg y Lendeborg añaden un nuevo reparto de creación y pérdidas que habrá que seguir.",
-    "rosterUpdatedDate": "2026-11-02",
-    "rosterReportId": "waivers-2026-11-02"
+    "strength": "Gilgeous-Alexander, Tatum y Flagg sostienen la creación. Bam Adebayo y Donovan Clingan amplían los recursos interiores, con Murray-Boyles como otra opción de rotación junto a Barnes, Daniels y Amen Thompson.",
+    "challenge": "El recambio interior modifica las fuentes de rebotes y tapones. Shockers necesita conservar su ventaja en robos y elevar la eficiencia de campo, la categoría que cedió ante Mequetrefes.",
+    "rosterUpdatedDate": "2026-11-09",
+    "rosterReportId": "waivers-2026-11-09"
   },
   {
     "id": "pilsens",
@@ -7934,27 +8404,27 @@ teams: [
     "leaders": [
       "Nikola Jokić",
       "Tyrese Maxey",
-      "Domantas Sabonis"
+      "Pascal Siakam"
     ],
     "roster": [
       "Domantas Sabonis",
       "Dylan Harper",
-      "Jaylen Brown",
+      "Pascal Siakam",
       "Keldon Johnson",
       "Nikola Jokić",
       "Tyrese Maxey",
       "Franz Wagner",
-      "AJ Dybantsa",
+      "Paul George",
       "Caleb Wilson",
-      "Sandro Mamukelashvili",
+      "Davion Mitchell",
       "Jalen Johnson",
       "Jaylen Wells",
       "Dillon Brooks"
     ],
-    "strength": "Jokić y Sabonis sostienen el pase y el rebote interior. Maxey ocupa la plaza de Edwards y Wagner la de Garland: la nueva rotación reúne creación desde el perímetro y el alero, con Brown y Jalen Johnson como apoyos.",
-    "challenge": "Los cambios de Edwards por Maxey y de Garland por Wagner exigen comprobar cómo se distribuyen triples, asistencias y eficiencia. La respuesta en tapones y el control de pérdidas continúan siendo áreas importantes.",
-    "rosterUpdatedDate": "2026-11-02",
-    "rosterReportId": "waivers-2026-11-02"
+    "strength": "Jokić y Sabonis conservan la creación interior. Siakam amplía las opciones de ataque desde el ala pívot, George aporta tiro y manos en el perímetro y Davion Mitchell agrega otra vía de pase.",
+    "challenge": "Salen Brown, Dybantsa y Mamukelashvili. Cromwell necesita repartir la anotación que aportaba Brown y sostener la defensa interior mientras integra tres perfiles nuevos.",
+    "rosterUpdatedDate": "2026-11-09",
+    "rosterReportId": "waivers-2026-11-09"
   },
   {
     "id": "hipopotamos",
@@ -7972,13 +8442,13 @@ teams: [
     "leaders": [
       "Victor Wembanyama",
       "Cade Cunningham",
-      "Devin Booker"
+      "Stephen Curry"
     ],
     "roster": [
       "Cade Cunningham",
       "Derrick White",
-      "Deni Avdija",
-      "Naz Reid",
+      "Stephen Curry",
+      "Jabari Smith Jr.",
       "Victor Wembanyama",
       "Ajay Mitchell",
       "Jaden McDaniels",
@@ -7986,13 +8456,13 @@ teams: [
       "Christian Braun",
       "Ace Bailey",
       "Walker Kessler",
-      "Toumani Camara",
+      "Kris Dunn",
       "P.J. Washington"
     ],
-    "strength": "Wembanyama y Kessler conservan el núcleo de protección del aro. Cunningham y Booker encabezan la creación exterior, con Avdija como apoyo; Braun y Ajay Mitchell amplían las opciones de rotación.",
-    "challenge": "Booker sustituye a Haliburton, mientras Braun y Ajay Mitchell ocupan las plazas de Wallace y Edgecombe. Hay que seguir el nuevo reparto de asistencias y anotación, junto al control de pérdidas y los tiros libres de los interiores.",
-    "rosterUpdatedDate": "2026-11-02",
-    "rosterReportId": "waivers-2026-11-02"
+    "strength": "Wembanyama y Kessler sostienen el aro. Curry se suma a Cunningham y Booker para ampliar el tiro y la creación exterior. Jabari Smith Jr. aporta alcance desde el puesto de ala pívot y Kris Dunn suma una opción defensiva en el perímetro.",
+    "challenge": "La salida de Avdija reduce la creación desde el alero. Las de Reid y Camara cambian el reparto de rebotes y defensa. Integrar a Curry exige repartir la pelota y sostener el equilibrio que llevó al equipo al primer lugar.",
+    "rosterUpdatedDate": "2026-11-09",
+    "rosterReportId": "waivers-2026-11-09"
   },
   {
     "id": "pelafustanes",
@@ -8360,6 +8830,174 @@ draft: {
 
 /* Publicaciones ------------------------------------------------------------- */
 posts: [
+{
+  "id": "waivers-9-noviembre-curry-hipopotamos",
+  "date": "2026-11-09",
+  "category": "Trades",
+  "readingMinutes": 5,
+  "title": "El mejor tirador de la historia llega a Hipopotamos por $2",
+  "excerpt": "Stephen Curry toma la plaza de Deni Avdija y se junta con Wembanyama, Cunningham y Booker. Bam Adebayo cambia el juego interior de Shockers. Cromwell ficha a Paul George y Pascal Siakam en una tanda de nueve altas por $24.",
+  "teams": [
+    "hipopotamos",
+    "shockers",
+    "pilsens",
+    "pelafustanes"
+  ],
+  "transactionReportId": "waivers-2026-11-09",
+  "rulesLink": true,
+  "image": {
+    "src": "./assets/editorial/waivers-curry-2026-11-09.webp",
+    "small": "./assets/editorial/waivers-curry-2026-11-09-640.webp",
+    "width": 1280,
+    "height": 720,
+    "alt": "Stephen Curry sostiene el gesto de lanzamiento mientras la pelota vuela hacia el aro.",
+    "caption": "Stephen Curry, protagonista del mercado de Papafritas. Ilustración editorial."
+  },
+  "source": "Altas, bajas y precios transcritos del Free Agent Offers Report de ESPN Fantasy del 9 de noviembre de 2026. Las cifras individuales citadas corresponden a actuaciones NBA del 2 al 8 de noviembre. Las pujas son unidades del presupuesto fantasy. Las seis solicitudes fallidas quedan fuera del gasto.",
+  "sources": [
+    {
+      "title": "ESPN Fantasy · Captura del reporte de ofertas",
+      "url": "./assets/cortes/ofertas-2026-11-09.png"
+    },
+    {
+      "title": "Registro de las 15 ofertas y nueve altas",
+      "url": "./assets/cortes/ofertas-2026-11-09.json"
+    },
+    {
+      "title": "NBA · Curry y el récord histórico de triples",
+      "url": "https://api-hub.nba.com/news/nba-players-with-multiple-3-point-scoring-titles"
+    },
+    {
+      "title": "Warriors · Los 29 puntos de Curry ante Miami",
+      "url": "https://www.nba.com/warriors/game/0022600188-heat-vs-warriors-san-francisco-ca-11-05-2026/event-details"
+    },
+    {
+      "title": "ESPN · Acta NBA Warriors–Suns",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909919"
+    },
+    {
+      "title": "ESPN · Acta NBA Warriors–Magic",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909942"
+    },
+    {
+      "title": "Papafritas · El cómputo y las actas del cierre anterior",
+      "url": "./assets/cortes/semana-4-fuentes-2026-11-09.json"
+    },
+    {
+      "title": "ESPN Fantasy · El mercado del 2 de noviembre",
+      "url": "./assets/cortes/ofertas-2026-11-02.json"
+    },
+    {
+      "title": "ESPN · Actuaciones NBA de Bam Adebayo",
+      "url": "https://www.espn.com/nba/player/gamelog/_/id/4066261/bam-adebayo"
+    },
+    {
+      "title": "ESPN · Actuaciones NBA de Donovan Clingan",
+      "url": "https://www.espn.com/nba/player/gamelog/_/id/5105565/donovan-clingan"
+    },
+    {
+      "title": "ESPN · Actuaciones NBA de Paul George",
+      "url": "https://www.espn.com/nba/player/gamelog/_/id/4251/paul-george"
+    },
+    {
+      "title": "ESPN · Actuaciones NBA de Pascal Siakam",
+      "url": "https://www.espn.com/nba/player/gamelog/_/id/3149673/pascal-siakam"
+    }
+  ],
+  "body": [
+    [
+      "p",
+      "El lunes pasado, Tobi consiguió a Devin Booker por $2. Este lunes repitió el monto y se llevó al líder histórico de triples de la NBA. Stephen Curry llega a Hipopotamos en lugar de Deni Avdija y le da al puntero de Papafritas una combinación que hace una semana solo cabía en el 2K. Wembanyama protege el aro, Cunningham reparte y Booker y Curry obligan a repartir la atención por fuera."
+    ],
+    [
+      "transaction-highlights",
+      "waivers-2026-11-09"
+    ],
+    [
+      "h2",
+      "Curry reabre la discusión del último tiro"
+    ],
+    [
+      "p",
+      "Curry venía de 104 puntos y 16 triples en tres partidos NBA, con 26 de 27 en libres. Contra Miami hizo 29 puntos y seis triples. Su llegada añade tiro a un equipo que ya convirtió 63 triples y anotó 800 puntos en la semana 3. Mequetrefes, el rival de turno, venía de 78 triples. Cristóbal se refuerza justo en la columna donde el Chino tenía un argumento para la revancha."
+    ],
+    [
+      "p",
+      "También hay un costo. Avdija aportó 86 puntos, 23 rebotes y 29 asistencias en el cómputo del último cruce. Jabari Smith Jr., que llega por $2 en la plaza de Naz Reid, ayuda a cubrir tamaño y tiro. Kris Dunn, por $1 en lugar de Toumani Camara, ofrece otra fuente de presión sobre la pelota. Hipopotamos gastó $5 en los tres movimientos y tendrá que redistribuir el pase que salía del alero."
+    ],
+    [
+      "p",
+      "Booker, que ya había negociado dos casilleros, pidió una reunión por el último tiro. Tobi sugirió resolverla con el método que el Chino propuso en 2023 para zanjar lo de Jordan y LeBron. Una cancha de pádel y el ganador se lleva el argumento. Curry pidió conocer primero la distancia desde el fondo de la pista. Wembanyama se ofreció de juez de silla. Booker impugnó el reglamento antes del primer saque."
+    ],
+    [
+      "sources",
+      [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    ],
+    [
+      "h2",
+      "El Pato le entrega la pintura a Bam"
+    ],
+    [
+      "p",
+      "Shockers ficha a Bam Adebayo por $2 y libera a Jarrett Allen. Bam viene de 87 puntos, 37 rebotes y siete robos en cuatro partidos NBA. Donovan Clingan entra por Cameron Boozer a $1 después de una semana NBA de 45 rebotes y nueve tapones. Collin Murray-Boyles completa el recambio a $0 por Tari Eason. El Pato rehace tres plazas interiores después de perder un 5–4 que se decidió en tapones."
+    ],
+    [
+      "p",
+      "En la presentación, Pinki preguntó si Bam iba a poder con el peso de ser el sucesor de Glen Davis en los afectos del perrito Choko. El Pato precisó que Glen conserva su cargo honorario y que la discusión relevante está en la cancha. Para el próximo domingo espera que los encargados de traer el agua también puedan proteger el aro. Bam pidió que le mostraran primero la pizarra."
+    ],
+    [
+      "sources",
+      [
+        8,
+        9
+      ]
+    ],
+    [
+      "h2",
+      "George llega con la puja más alta y Siakam ocupa la plaza de Brown"
+    ],
+    [
+      "p",
+      "Paul George costó $6, la mayor oferta ganadora de la tanda, y entra por AJ Dybantsa. Sus 12 triples en 24 intentos y siete robos en tres partidos NBA recientes apuntan a dos categorías donde Pilsens cedió ante Hipopotamos. Siakam llega por $5 y desplaza a Jaylen Brown, que venía de 104 puntos NBA. Pascal había quedado en una oferta fallida el lunes anterior y esta vez sí entra. Aporta otra vía de ataque junto a Jokić y Sabonis, con 43 puntos y cero pérdidas en sus dos partidos NBA de la semana anterior. Davion Mitchell completa la inversión de $16 en la plaza de Sandro Mamukelashvili."
+    ],
+    [
+      "p",
+      "El Rubio encargó una cortina para presentar al nuevo Cromwell. Quería el reggae que Tobi le debe desde 2024, pero con la condición de que se pudiera cambiar el nombre de los fichajes antes del estribillo. George preguntó si el estreno estaba confirmado. Siakam, que ya había visto su nombre en un intento fallido, dijo que prefería esperar a aparecer en la planilla. Jokić pidió que le avisaran cuando terminaran de discutir la música."
+    ],
+    [
+      "sources",
+      [
+        0,
+        1,
+        7,
+        10,
+        11
+      ]
+    ],
+    [
+      "h2",
+      "El Chino conserva el camarín y toma nota"
+    ],
+    [
+      "p",
+      "Mequetrefes llega a la revancha sin altas en este reporte. Mantiene al equipo que le dio vuelta a Shockers y tiene a Curry al frente desde el otro banco. El Chino pidió que el debate del GOAT quedara fuera de la previa, tal como había propuesto Pinki en 2024. Después mandó a reservar una cancha por si había que apelar. En la lista de asistentes dejó la fecha sin cerrar. Todavía quedaban juntas por negociar."
+    ],
+    [
+      "transaction-table",
+      "waivers-2026-11-09"
+    ],
+    [
+      "offers-table",
+      "waivers-2026-11-09"
+    ]
+  ]
+},
 {
   "id": "previa-semana-4-las-revanchas",
   "date": "2026-11-09",

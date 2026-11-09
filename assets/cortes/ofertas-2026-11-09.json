@@ -1,0 +1,364 @@
+{
+  "id": "waivers-2026-11-09",
+  "date": "2026-11-09",
+  "timeZoneShown": false,
+  "sourceImage": "./assets/cortes/ofertas-2026-11-09.png",
+  "source": "Free Agent Offers Report de ESPN Fantasy aportado por el participante. Fecha seleccionada: lunes 9 de noviembre de 2026. Se transcriben las 15 ofertas visibles, con nueve altas, seis ofertas fallidas y $24 en pujas ganadoras. La captura no muestra hora ni zona horaria. Las etiquetas NBA y las causas de las ofertas fallidas corresponden al registro. No se infieren las bajas asociadas a solicitudes fallidas.",
+  "transactions": [
+    {
+      "id": "waiver-20261109-01",
+      "team": "pilsens",
+      "type": "waiver",
+      "added": {
+        "name": "Paul George",
+        "nbaLabel": "BOS",
+        "position": "SF"
+      },
+      "dropped": {
+        "name": "AJ Dybantsa",
+        "nbaLabel": "WSH",
+        "position": "SF"
+      },
+      "bid": 6
+    },
+    {
+      "id": "waiver-20261109-02",
+      "team": "pilsens",
+      "type": "waiver",
+      "added": {
+        "name": "Davion Mitchell",
+        "nbaLabel": "MIA",
+        "position": "PG"
+      },
+      "dropped": {
+        "name": "Sandro Mamukelashvili",
+        "nbaLabel": "LAL",
+        "position": "C"
+      },
+      "bid": 5
+    },
+    {
+      "id": "waiver-20261109-03",
+      "team": "pilsens",
+      "type": "waiver",
+      "added": {
+        "name": "Pascal Siakam",
+        "nbaLabel": "IND",
+        "position": "PF"
+      },
+      "dropped": {
+        "name": "Jaylen Brown",
+        "nbaLabel": "PHI",
+        "position": "SF"
+      },
+      "bid": 5
+    },
+    {
+      "id": "waiver-20261109-04",
+      "team": "shockers",
+      "type": "waiver",
+      "added": {
+        "name": "Bam Adebayo",
+        "nbaLabel": "MIA",
+        "position": "C"
+      },
+      "dropped": {
+        "name": "Jarrett Allen",
+        "nbaLabel": "CLE",
+        "position": "C"
+      },
+      "bid": 2
+    },
+    {
+      "id": "waiver-20261109-05",
+      "team": "hipopotamos",
+      "type": "waiver",
+      "added": {
+        "name": "Stephen Curry",
+        "nbaLabel": "GS",
+        "position": "PG"
+      },
+      "dropped": {
+        "name": "Deni Avdija",
+        "nbaLabel": "POR",
+        "position": "SF"
+      },
+      "bid": 2
+    },
+    {
+      "id": "waiver-20261109-06",
+      "team": "hipopotamos",
+      "type": "waiver",
+      "added": {
+        "name": "Jabari Smith Jr.",
+        "nbaLabel": "HOU",
+        "position": "PF"
+      },
+      "dropped": {
+        "name": "Naz Reid",
+        "nbaLabel": "CHA",
+        "position": "C"
+      },
+      "bid": 2
+    },
+    {
+      "id": "waiver-20261109-07",
+      "team": "shockers",
+      "type": "waiver",
+      "added": {
+        "name": "Donovan Clingan",
+        "nbaLabel": "POR",
+        "position": "C"
+      },
+      "dropped": {
+        "name": "Cameron Boozer",
+        "nbaLabel": "MEM",
+        "position": "PF"
+      },
+      "bid": 1
+    },
+    {
+      "id": "waiver-20261109-08",
+      "team": "hipopotamos",
+      "type": "waiver",
+      "added": {
+        "name": "Kris Dunn",
+        "nbaLabel": "LAC",
+        "position": "PG"
+      },
+      "dropped": {
+        "name": "Toumani Camara",
+        "nbaLabel": "POR",
+        "position": "SF"
+      },
+      "bid": 1
+    },
+    {
+      "id": "waiver-20261109-09",
+      "team": "shockers",
+      "type": "waiver",
+      "added": {
+        "name": "Collin Murray-Boyles",
+        "nbaLabel": "TOR",
+        "position": "PF"
+      },
+      "dropped": {
+        "name": "Tari Eason",
+        "nbaLabel": "HOU",
+        "position": "SF"
+      },
+      "bid": 0
+    }
+  ],
+  "offers": [
+    {
+      "order": 1,
+      "team": "pilsens",
+      "claim": {
+        "name": "Paul George",
+        "nbaLabel": "BOS",
+        "position": "SF"
+      },
+      "bid": 6,
+      "result": "added",
+      "transactionId": "waiver-20261109-01"
+    },
+    {
+      "order": 2,
+      "team": "pilsens",
+      "claim": {
+        "name": "Ty Jerome",
+        "nbaLabel": "MEM",
+        "position": "SG"
+      },
+      "bid": 5,
+      "result": "unsuccessful",
+      "reasonCode": "already-dropped",
+      "reason": "Un jugador involucrado ya había sido cortado."
+    },
+    {
+      "order": 3,
+      "team": "pilsens",
+      "claim": {
+        "name": "Davion Mitchell",
+        "nbaLabel": "MIA",
+        "position": "PG"
+      },
+      "bid": 5,
+      "result": "added",
+      "transactionId": "waiver-20261109-02"
+    },
+    {
+      "order": 4,
+      "team": "pilsens",
+      "claim": {
+        "name": "Pascal Siakam",
+        "nbaLabel": "IND",
+        "position": "PF"
+      },
+      "bid": 5,
+      "result": "added",
+      "transactionId": "waiver-20261109-03"
+    },
+    {
+      "order": 5,
+      "team": "shockers",
+      "claim": {
+        "name": "Bam Adebayo",
+        "nbaLabel": "MIA",
+        "position": "C"
+      },
+      "bid": 2,
+      "result": "added",
+      "transactionId": "waiver-20261109-04"
+    },
+    {
+      "order": 6,
+      "team": "hipopotamos",
+      "claim": {
+        "name": "Stephen Curry",
+        "nbaLabel": "GS",
+        "position": "PG"
+      },
+      "bid": 2,
+      "result": "added",
+      "transactionId": "waiver-20261109-05"
+    },
+    {
+      "order": 7,
+      "team": "hipopotamos",
+      "claim": {
+        "name": "Jabari Smith Jr.",
+        "nbaLabel": "HOU",
+        "position": "PF"
+      },
+      "bid": 2,
+      "result": "added",
+      "transactionId": "waiver-20261109-06"
+    },
+    {
+      "order": 8,
+      "team": "pilsens",
+      "claim": {
+        "name": "Zion Williamson",
+        "nbaLabel": "NO",
+        "position": "PF"
+      },
+      "bid": 1,
+      "result": "unsuccessful",
+      "reasonCode": "acquisition-limit",
+      "reason": "Se excedería el límite de incorporaciones del cruce."
+    },
+    {
+      "order": 9,
+      "team": "shockers",
+      "claim": {
+        "name": "Zion Williamson",
+        "nbaLabel": "NO",
+        "position": "PF"
+      },
+      "bid": 1,
+      "result": "unsuccessful",
+      "reasonCode": "already-dropped",
+      "reason": "Un jugador involucrado ya había sido cortado."
+    },
+    {
+      "order": 10,
+      "team": "shockers",
+      "claim": {
+        "name": "Donovan Clingan",
+        "nbaLabel": "POR",
+        "position": "C"
+      },
+      "bid": 1,
+      "result": "added",
+      "transactionId": "waiver-20261109-07"
+    },
+    {
+      "order": 11,
+      "team": "hipopotamos",
+      "claim": {
+        "name": "Kris Dunn",
+        "nbaLabel": "LAC",
+        "position": "PG"
+      },
+      "bid": 1,
+      "result": "added",
+      "transactionId": "waiver-20261109-08"
+    },
+    {
+      "order": 12,
+      "team": "shockers",
+      "claim": {
+        "name": "Miles Bridges",
+        "nbaLabel": "PHX",
+        "position": "SF"
+      },
+      "bid": 0,
+      "result": "unsuccessful",
+      "reasonCode": "already-dropped",
+      "reason": "Un jugador involucrado ya había sido cortado."
+    },
+    {
+      "order": 13,
+      "team": "shockers",
+      "claim": {
+        "name": "Ayo Dosunmu",
+        "nbaLabel": "MIN",
+        "position": "SG"
+      },
+      "bid": 0,
+      "result": "unsuccessful",
+      "reasonCode": "already-dropped",
+      "reason": "Un jugador involucrado ya había sido cortado."
+    },
+    {
+      "order": 14,
+      "team": "shockers",
+      "claim": {
+        "name": "Collin Murray-Boyles",
+        "nbaLabel": "TOR",
+        "position": "PF"
+      },
+      "bid": 0,
+      "result": "added",
+      "transactionId": "waiver-20261109-09"
+    },
+    {
+      "order": 15,
+      "team": "shockers",
+      "claim": {
+        "name": "Wendell Carter Jr.",
+        "nbaLabel": "ORL",
+        "position": "C"
+      },
+      "bid": 0,
+      "result": "unsuccessful",
+      "reasonCode": "acquisition-limit",
+      "reason": "Se excedería el límite de incorporaciones del cruce."
+    }
+  ],
+  "highlights": [
+    {
+      "transactionId": "waiver-20261109-05",
+      "label": "El mejor tirador",
+      "reason": "Hipopotamos ficha al líder histórico de triples de la NBA por $2 y libera la plaza de Deni Avdija."
+    },
+    {
+      "transactionId": "waiver-20261109-04",
+      "label": "El nuevo eje interior",
+      "reason": "Shockers paga $2 por Adebayo y corta a Jarrett Allen. Bam amplía el repertorio del equipo en rebote, campo y defensa."
+    },
+    {
+      "transactionId": "waiver-20261109-01",
+      "label": "La mayor puja",
+      "reason": "Pilsens paga $6 y deja ir a AJ Dybantsa. George viene de 12 triples y siete robos en tres partidos NBA."
+    },
+    {
+      "transactionId": "waiver-20261109-03",
+      "label": "El cambio de jerarquía",
+      "reason": "Siakam llega a Cromwell por $5 a cambio de la plaza de Jaylen Brown. La apuesta agrega otra vía de ataque interior."
+    }
+  ],
+  "highlightNote": "Stephen Curry encabeza la tanda. Bam Adebayo representa a Shockers y Cromwell aporta dos de los cambios destacados. Mequetrefes no registra altas en este reporte."
+}
