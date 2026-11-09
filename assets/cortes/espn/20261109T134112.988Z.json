@@ -1,0 +1,101 @@
+{
+  "leagueId": 732964684,
+  "seasonId": 2027,
+  "matchupPeriodId": 3,
+  "start": "2026-11-02",
+  "end": "2026-11-08",
+  "capturedAt": "2026-11-09T13:41:12.988Z",
+  "status": "final",
+  "retrieval": "espn-fantasy-api",
+  "finalConfirmed": true,
+  "matchups": [
+    {
+      "teams": [
+        {
+          "espnId": 3,
+          "name": "Mequetrefes",
+          "score": [
+            5,
+            4,
+            0
+          ],
+          "stats": {
+            "fgp": 0.45366795,
+            "ftp": 0.75824176,
+            "tpm": 78,
+            "reb": 222,
+            "ast": 170,
+            "stl": 33,
+            "blk": 28,
+            "to": 84,
+            "pts": 686
+          }
+        },
+        {
+          "espnId": 1,
+          "name": "Penalolen Shockers",
+          "score": [
+            4,
+            5,
+            0
+          ],
+          "stats": {
+            "fgp": 0.41330645,
+            "ftp": 0.82634731,
+            "tpm": 55,
+            "reb": 232,
+            "ast": 182,
+            "stl": 40,
+            "blk": 25,
+            "to": 95,
+            "pts": 603
+          }
+        }
+      ]
+    },
+    {
+      "teams": [
+        {
+          "espnId": 4,
+          "name": "Los Hipopotamos Chuchetumare",
+          "score": [
+            6,
+            3,
+            0
+          ],
+          "stats": {
+            "fgp": 0.48414023,
+            "ftp": 0.79695431,
+            "tpm": 63,
+            "reb": 263,
+            "ast": 157,
+            "stl": 50,
+            "blk": 33,
+            "to": 93,
+            "pts": 800
+          }
+        },
+        {
+          "espnId": 2,
+          "name": "Cromwell Pilsens",
+          "score": [
+            3,
+            6,
+            0
+          ],
+          "stats": {
+            "fgp": 0.48399247,
+            "ftp": 0.80254777,
+            "tpm": 54,
+            "reb": 241,
+            "ast": 169,
+            "stl": 48,
+            "blk": 8,
+            "to": 85,
+            "pts": 694
+          }
+        }
+      ]
+    }
+  ]
+}
