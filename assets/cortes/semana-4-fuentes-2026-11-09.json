@@ -1,0 +1,4018 @@
+{
+  "date": "2026-11-09",
+  "officialResults": "./assets/cortes/espn/20261109T134112.988Z.json",
+  "sundayCut": "./assets/cortes/espn/20261108T114602.527Z.json",
+  "roster": {
+    "leagueId": 732964684,
+    "seasonId": 2027,
+    "capturedAt": "2026-11-09T18:01:14.741Z",
+    "sourceUrl": "https://fantasy.espn.com/basketball/league/scoreboard?leagueId=732964684",
+    "scope": "Planteles al corte. Los identificadores NBA permiten consultar el calendario; no garantizan participación ni cómputo fantasy futuro.",
+    "teams": [
+      {
+        "team": "shockers",
+        "espnTeamId": 1,
+        "name": "Penalolen Shockers",
+        "players": [
+          {
+            "name": "Shai Gilgeous-Alexander",
+            "espnId": 4278073,
+            "nbaTeamId": 25
+          },
+          {
+            "name": "Jayson Tatum",
+            "espnId": 4065648,
+            "nbaTeamId": 2
+          },
+          {
+            "name": "Scottie Barnes",
+            "espnId": 4433134,
+            "nbaTeamId": 28
+          },
+          {
+            "name": "Amen Thompson",
+            "espnId": 4684740,
+            "nbaTeamId": 10
+          },
+          {
+            "name": "Dyson Daniels",
+            "espnId": 4869342,
+            "nbaTeamId": 1
+          },
+          {
+            "name": "Cameron Boozer",
+            "espnId": 5041935,
+            "nbaTeamId": 29
+          },
+          {
+            "name": "Tari Eason",
+            "espnId": 4433192,
+            "nbaTeamId": 10
+          },
+          {
+            "name": "Fred VanVleet",
+            "espnId": 2991230,
+            "nbaTeamId": 10
+          },
+          {
+            "name": "Paul Reed",
+            "espnId": 4278562,
+            "nbaTeamId": 8
+          },
+          {
+            "name": "Jonathan Kuminga",
+            "espnId": 4433247,
+            "nbaTeamId": 16
+          },
+          {
+            "name": "Cooper Flagg",
+            "espnId": 5041939,
+            "nbaTeamId": 6
+          },
+          {
+            "name": "Yaxel Lendeborg",
+            "espnId": 5175737,
+            "nbaTeamId": 9
+          },
+          {
+            "name": "Jarrett Allen",
+            "espnId": 4066328,
+            "nbaTeamId": 5
+          }
+        ]
+      },
+      {
+        "team": "pilsens",
+        "espnTeamId": 2,
+        "name": "Cromwell Pilsens",
+        "players": [
+          {
+            "name": "Nikola Jokic",
+            "espnId": 3112335,
+            "nbaTeamId": 7
+          },
+          {
+            "name": "Jalen Johnson",
+            "espnId": 4701230,
+            "nbaTeamId": 1
+          },
+          {
+            "name": "Jaylen Brown",
+            "espnId": 3917376,
+            "nbaTeamId": 20
+          },
+          {
+            "name": "Dylan Harper",
+            "espnId": 5037871,
+            "nbaTeamId": 24
+          },
+          {
+            "name": "AJ Dybantsa",
+            "espnId": 5142718,
+            "nbaTeamId": 27
+          },
+          {
+            "name": "Caleb Wilson",
+            "espnId": 5095151,
+            "nbaTeamId": 4
+          },
+          {
+            "name": "Sandro Mamukelashvili",
+            "espnId": 4278580,
+            "nbaTeamId": 13
+          },
+          {
+            "name": "Jaylen Wells",
+            "espnId": 5112087,
+            "nbaTeamId": 29
+          },
+          {
+            "name": "Keldon Johnson",
+            "espnId": 4395723,
+            "nbaTeamId": 24
+          },
+          {
+            "name": "Dillon Brooks",
+            "espnId": 3155526,
+            "nbaTeamId": 21
+          },
+          {
+            "name": "Domantas Sabonis",
+            "espnId": 3155942,
+            "nbaTeamId": 23
+          },
+          {
+            "name": "Franz Wagner",
+            "espnId": 4566434,
+            "nbaTeamId": 19
+          },
+          {
+            "name": "Tyrese Maxey",
+            "espnId": 4431678,
+            "nbaTeamId": 20
+          }
+        ]
+      },
+      {
+        "team": "pelafustanes",
+        "espnTeamId": 3,
+        "name": "Mequetrefes",
+        "players": [
+          {
+            "name": "Luka Doncic",
+            "espnId": 3945274,
+            "nbaTeamId": 13
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "espnId": 3032977,
+            "nbaTeamId": 14
+          },
+          {
+            "name": "Donovan Mitchell",
+            "espnId": 3908809,
+            "nbaTeamId": 5
+          },
+          {
+            "name": "Alperen Sengun",
+            "espnId": 4871144,
+            "nbaTeamId": 10
+          },
+          {
+            "name": "Brandon Miller",
+            "espnId": 4433287,
+            "nbaTeamId": 30
+          },
+          {
+            "name": "OG Anunoby",
+            "espnId": 3934719,
+            "nbaTeamId": 18
+          },
+          {
+            "name": "Payton Pritchard",
+            "espnId": 4066354,
+            "nbaTeamId": 2
+          },
+          {
+            "name": "Alex Sarr",
+            "espnId": 5160992,
+            "nbaTeamId": 27
+          },
+          {
+            "name": "Matas Buzelis",
+            "espnId": 4711294,
+            "nbaTeamId": 4
+          },
+          {
+            "name": "Bobby Portis",
+            "espnId": 3064482,
+            "nbaTeamId": 14
+          },
+          {
+            "name": "Malik Monk",
+            "espnId": 4066262,
+            "nbaTeamId": 23
+          },
+          {
+            "name": "Jalen Smith",
+            "espnId": 4397189,
+            "nbaTeamId": 4
+          },
+          {
+            "name": "Aaron Wiggins",
+            "espnId": 4397183,
+            "nbaTeamId": 1
+          }
+        ]
+      },
+      {
+        "team": "hipopotamos",
+        "espnTeamId": 4,
+        "name": "Los Hipopotamos Chuchetumare",
+        "players": [
+          {
+            "name": "Victor Wembanyama",
+            "espnId": 5104157,
+            "nbaTeamId": 24
+          },
+          {
+            "name": "Cade Cunningham",
+            "espnId": 4432166,
+            "nbaTeamId": 8
+          },
+          {
+            "name": "Deni Avdija",
+            "espnId": 4683021,
+            "nbaTeamId": 22
+          },
+          {
+            "name": "Derrick White",
+            "espnId": 3078576,
+            "nbaTeamId": 2
+          },
+          {
+            "name": "Jaden McDaniels",
+            "espnId": 4431671,
+            "nbaTeamId": 16
+          },
+          {
+            "name": "Naz Reid",
+            "espnId": 4396971,
+            "nbaTeamId": 30
+          },
+          {
+            "name": "Toumani Camara",
+            "espnId": 4431736,
+            "nbaTeamId": 22
+          },
+          {
+            "name": "P.J. Washington",
+            "espnId": 4278078,
+            "nbaTeamId": 6
+          },
+          {
+            "name": "Walker Kessler",
+            "espnId": 4433136,
+            "nbaTeamId": 13
+          },
+          {
+            "name": "Ace Bailey",
+            "espnId": 4873138,
+            "nbaTeamId": 26
+          },
+          {
+            "name": "Christian Braun",
+            "espnId": 4431767,
+            "nbaTeamId": 7
+          },
+          {
+            "name": "Ajay Mitchell",
+            "espnId": 4900671,
+            "nbaTeamId": 25
+          },
+          {
+            "name": "Devin Booker",
+            "espnId": 3136193,
+            "nbaTeamId": 21
+          }
+        ]
+      }
+    ],
+    "schedule": {
+      "week": 4,
+      "start": "2026-11-09",
+      "end": "2026-11-15",
+      "matchups": [
+        [
+          "shockers",
+          "pilsens"
+        ],
+        [
+          "hipopotamos",
+          "pelafustanes"
+        ]
+      ]
+    }
+  },
+  "individualStats": {
+    "scope": "Las actas NBA de los planteles del corte se contrastaron con los totales de ESPN Fantasy del 2 al 8 de noviembre. Las tres combinaciones únicas reproducen las nueve categorías de cada equipo. Las actas omitidas en esas combinaciones no permiten determinar un motivo de alineación. En Cromwell se citan cifras NBA y se conserva el resultado colectivo de ESPN Fantasy.",
+    "teams": [
+      {
+        "team": "shockers",
+        "total": {
+          "pts": 603,
+          "tpm": 55,
+          "reb": 232,
+          "ast": 182,
+          "stl": 40,
+          "blk": 25,
+          "to": 95,
+          "fgm": 205,
+          "fga": 496,
+          "ftm": 138,
+          "fta": 167
+        },
+        "omitted": [
+          {
+            "player": "Scottie Barnes",
+            "id": "401909920",
+            "stats": {
+              "pts": 22,
+              "reb": 15,
+              "ast": 8,
+              "stl": 2,
+              "blk": 0,
+              "to": 3,
+              "min": 38,
+              "fgm": 7,
+              "fga": 15,
+              "ftm": 8,
+              "fta": 15,
+              "tpm": 0,
+              "tpa": 3
+            }
+          },
+          {
+            "player": "Jonathan Kuminga",
+            "id": "401909930",
+            "stats": {
+              "pts": 16,
+              "reb": 8,
+              "ast": 5,
+              "stl": 1,
+              "blk": 1,
+              "to": 1,
+              "min": 32,
+              "fgm": 5,
+              "fga": 10,
+              "ftm": 2,
+              "fta": 4,
+              "tpm": 4,
+              "tpa": 7
+            }
+          },
+          {
+            "player": "Paul Reed",
+            "id": "401909908",
+            "stats": {
+              "pts": 11,
+              "reb": 5,
+              "ast": 4,
+              "stl": 2,
+              "blk": 2,
+              "to": 1,
+              "min": 28,
+              "fgm": 5,
+              "fga": 6,
+              "ftm": 1,
+              "fta": 2,
+              "tpm": 0,
+              "tpa": 0
+            }
+          },
+          {
+            "player": "Jonathan Kuminga",
+            "id": "401909915",
+            "stats": {
+              "pts": 8,
+              "reb": 10,
+              "ast": 3,
+              "stl": 0,
+              "blk": 4,
+              "to": 4,
+              "min": 33,
+              "fgm": 3,
+              "fga": 8,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 2,
+              "tpa": 4
+            }
+          },
+          {
+            "player": "Jarrett Allen",
+            "id": "401909929",
+            "stats": {
+              "pts": 0,
+              "reb": 1,
+              "ast": 0,
+              "stl": 0,
+              "blk": 0,
+              "to": 0,
+              "min": 7,
+              "fgm": 0,
+              "fga": 1,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 0,
+              "tpa": 0
+            }
+          }
+        ],
+        "players": [
+          {
+            "name": "Shai Gilgeous-Alexander",
+            "espnId": 4278073,
+            "nbaTeamId": 25,
+            "team": "shockers",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 133,
+            "stats": {
+              "pts": 143,
+              "tpm": 15,
+              "reb": 12,
+              "ast": 29,
+              "stl": 3,
+              "blk": 4,
+              "to": 11,
+              "fgm": 47,
+              "fga": 103,
+              "ftm": 34,
+              "fta": 40
+            },
+            "games": [
+              "401909907",
+              "401909929",
+              "401909291",
+              "401909941"
+            ],
+            "nbaGames": [
+              "401909907",
+              "401909929",
+              "401909291",
+              "401909941"
+            ],
+            "nbaStats": {
+              "pts": 143,
+              "tpm": 15,
+              "reb": 12,
+              "ast": 29,
+              "stl": 3,
+              "blk": 4,
+              "to": 11,
+              "fgm": 47,
+              "fga": 103,
+              "ftm": 34,
+              "fta": 40
+            }
+          },
+          {
+            "name": "Jayson Tatum",
+            "espnId": 4065648,
+            "nbaTeamId": 2,
+            "team": "shockers",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 90,
+            "stats": {
+              "pts": 74,
+              "tpm": 11,
+              "reb": 18,
+              "ast": 24,
+              "stl": 3,
+              "blk": 2,
+              "to": 10,
+              "fgm": 20,
+              "fga": 51,
+              "ftm": 23,
+              "fta": 23
+            },
+            "games": [
+              "401909916",
+              "401909288",
+              "401909949"
+            ],
+            "nbaGames": [
+              "401909916",
+              "401909288",
+              "401909949"
+            ],
+            "nbaStats": {
+              "pts": 74,
+              "tpm": 11,
+              "reb": 18,
+              "ast": 24,
+              "stl": 3,
+              "blk": 2,
+              "to": 10,
+              "fgm": 20,
+              "fga": 51,
+              "ftm": 23,
+              "fta": 23
+            }
+          },
+          {
+            "name": "Scottie Barnes",
+            "espnId": 4433134,
+            "nbaTeamId": 28,
+            "team": "shockers",
+            "gp": 1,
+            "nbaGp": 2,
+            "minutes": 32,
+            "stats": {
+              "pts": 17,
+              "tpm": 1,
+              "reb": 6,
+              "ast": 6,
+              "stl": 3,
+              "blk": 0,
+              "to": 6,
+              "fgm": 7,
+              "fga": 15,
+              "ftm": 2,
+              "fta": 4
+            },
+            "games": [
+              "401909931"
+            ],
+            "nbaGames": [
+              "401909920",
+              "401909931"
+            ],
+            "nbaStats": {
+              "pts": 39,
+              "tpm": 1,
+              "reb": 21,
+              "ast": 14,
+              "stl": 5,
+              "blk": 0,
+              "to": 9,
+              "fgm": 14,
+              "fga": 30,
+              "ftm": 10,
+              "fta": 19
+            }
+          },
+          {
+            "name": "Amen Thompson",
+            "espnId": 4684740,
+            "nbaTeamId": 10,
+            "team": "shockers",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 96,
+            "stats": {
+              "pts": 42,
+              "tpm": 0,
+              "reb": 19,
+              "ast": 4,
+              "stl": 2,
+              "blk": 4,
+              "to": 6,
+              "fgm": 15,
+              "fga": 33,
+              "ftm": 12,
+              "fta": 15
+            },
+            "games": [
+              "401909916",
+              "401909930",
+              "401909943"
+            ],
+            "nbaGames": [
+              "401909916",
+              "401909930",
+              "401909943"
+            ],
+            "nbaStats": {
+              "pts": 42,
+              "tpm": 0,
+              "reb": 19,
+              "ast": 4,
+              "stl": 2,
+              "blk": 4,
+              "to": 6,
+              "fgm": 15,
+              "fga": 33,
+              "ftm": 12,
+              "fta": 15
+            }
+          },
+          {
+            "name": "Dyson Daniels",
+            "espnId": 4869342,
+            "nbaTeamId": 1,
+            "team": "shockers",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 131,
+            "stats": {
+              "pts": 36,
+              "tpm": 0,
+              "reb": 44,
+              "ast": 31,
+              "stl": 11,
+              "blk": 2,
+              "to": 8,
+              "fgm": 17,
+              "fga": 41,
+              "ftm": 2,
+              "fta": 3
+            },
+            "games": [
+              "401909909",
+              "401909923",
+              "401909287",
+              "401909939"
+            ],
+            "nbaGames": [
+              "401909909",
+              "401909923",
+              "401909287",
+              "401909939"
+            ],
+            "nbaStats": {
+              "pts": 36,
+              "tpm": 0,
+              "reb": 44,
+              "ast": 31,
+              "stl": 11,
+              "blk": 2,
+              "to": 8,
+              "fgm": 17,
+              "fga": 41,
+              "ftm": 2,
+              "fta": 3
+            }
+          },
+          {
+            "name": "Cameron Boozer",
+            "espnId": 5041935,
+            "nbaTeamId": 29,
+            "team": "shockers",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 102,
+            "stats": {
+              "pts": 36,
+              "tpm": 4,
+              "reb": 27,
+              "ast": 13,
+              "stl": 1,
+              "blk": 2,
+              "to": 10,
+              "fgm": 11,
+              "fga": 39,
+              "ftm": 10,
+              "fta": 11
+            },
+            "games": [
+              "401909914",
+              "401909927",
+              "401909291"
+            ],
+            "nbaGames": [
+              "401909914",
+              "401909927",
+              "401909291"
+            ],
+            "nbaStats": {
+              "pts": 36,
+              "tpm": 4,
+              "reb": 27,
+              "ast": 13,
+              "stl": 1,
+              "blk": 2,
+              "to": 10,
+              "fgm": 11,
+              "fga": 39,
+              "ftm": 10,
+              "fta": 11
+            }
+          },
+          {
+            "name": "Tari Eason",
+            "espnId": 4433192,
+            "nbaTeamId": 10,
+            "team": "shockers",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 74,
+            "stats": {
+              "pts": 24,
+              "tpm": 4,
+              "reb": 17,
+              "ast": 6,
+              "stl": 3,
+              "blk": 3,
+              "to": 6,
+              "fgm": 10,
+              "fga": 26,
+              "ftm": 0,
+              "fta": 0
+            },
+            "games": [
+              "401909916",
+              "401909930",
+              "401909943"
+            ],
+            "nbaGames": [
+              "401909916",
+              "401909930",
+              "401909943"
+            ],
+            "nbaStats": {
+              "pts": 24,
+              "tpm": 4,
+              "reb": 17,
+              "ast": 6,
+              "stl": 3,
+              "blk": 3,
+              "to": 6,
+              "fgm": 10,
+              "fga": 26,
+              "ftm": 0,
+              "fta": 0
+            }
+          },
+          {
+            "name": "Fred VanVleet",
+            "espnId": 2991230,
+            "nbaTeamId": 10,
+            "team": "shockers",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 88,
+            "stats": {
+              "pts": 42,
+              "tpm": 10,
+              "reb": 8,
+              "ast": 16,
+              "stl": 1,
+              "blk": 1,
+              "to": 6,
+              "fgm": 15,
+              "fga": 33,
+              "ftm": 2,
+              "fta": 2
+            },
+            "games": [
+              "401909916",
+              "401909930",
+              "401909943"
+            ],
+            "nbaGames": [
+              "401909916",
+              "401909930",
+              "401909943"
+            ],
+            "nbaStats": {
+              "pts": 42,
+              "tpm": 10,
+              "reb": 8,
+              "ast": 16,
+              "stl": 1,
+              "blk": 1,
+              "to": 6,
+              "fgm": 15,
+              "fga": 33,
+              "ftm": 2,
+              "fta": 2
+            }
+          },
+          {
+            "name": "Paul Reed",
+            "espnId": 4278562,
+            "nbaTeamId": 8,
+            "team": "shockers",
+            "gp": 2,
+            "nbaGp": 3,
+            "minutes": 50,
+            "stats": {
+              "pts": 16,
+              "tpm": 0,
+              "reb": 17,
+              "ast": 4,
+              "stl": 1,
+              "blk": 0,
+              "to": 4,
+              "fgm": 8,
+              "fga": 22,
+              "ftm": 0,
+              "fta": 2
+            },
+            "games": [
+              "401909922",
+              "401909946"
+            ],
+            "nbaGames": [
+              "401909908",
+              "401909922",
+              "401909946"
+            ],
+            "nbaStats": {
+              "pts": 27,
+              "tpm": 0,
+              "reb": 22,
+              "ast": 8,
+              "stl": 3,
+              "blk": 2,
+              "to": 5,
+              "fgm": 13,
+              "fga": 28,
+              "ftm": 1,
+              "fta": 4
+            }
+          },
+          {
+            "name": "Jonathan Kuminga",
+            "espnId": 4433247,
+            "nbaTeamId": 16,
+            "team": "shockers",
+            "gp": 2,
+            "nbaGp": 4,
+            "minutes": 59,
+            "stats": {
+              "pts": 21,
+              "tpm": 1,
+              "reb": 8,
+              "ast": 4,
+              "stl": 1,
+              "blk": 0,
+              "to": 5,
+              "fgm": 7,
+              "fga": 17,
+              "ftm": 6,
+              "fta": 12
+            },
+            "games": [
+              "401909293",
+              "401909947"
+            ],
+            "nbaGames": [
+              "401909915",
+              "401909930",
+              "401909293",
+              "401909947"
+            ],
+            "nbaStats": {
+              "pts": 45,
+              "tpm": 7,
+              "reb": 26,
+              "ast": 12,
+              "stl": 2,
+              "blk": 5,
+              "to": 10,
+              "fgm": 15,
+              "fga": 35,
+              "ftm": 8,
+              "fta": 16
+            }
+          },
+          {
+            "name": "Cooper Flagg",
+            "espnId": 5041939,
+            "nbaTeamId": 6,
+            "team": "shockers",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 141,
+            "stats": {
+              "pts": 82,
+              "tpm": 4,
+              "reb": 29,
+              "ast": 30,
+              "stl": 6,
+              "blk": 1,
+              "to": 13,
+              "fgm": 25,
+              "fga": 67,
+              "ftm": 28,
+              "fta": 30
+            },
+            "games": [
+              "401909913",
+              "401909933",
+              "401909290",
+              "401909948"
+            ],
+            "nbaGames": [
+              "401909913",
+              "401909933",
+              "401909290",
+              "401909948"
+            ],
+            "nbaStats": {
+              "pts": 82,
+              "tpm": 4,
+              "reb": 29,
+              "ast": 30,
+              "stl": 6,
+              "blk": 1,
+              "to": 13,
+              "fgm": 25,
+              "fga": 67,
+              "ftm": 28,
+              "fta": 30
+            }
+          },
+          {
+            "name": "Yaxel Lendeborg",
+            "espnId": 5175737,
+            "nbaTeamId": 9,
+            "team": "shockers",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 96,
+            "stats": {
+              "pts": 56,
+              "tpm": 5,
+              "reb": 21,
+              "ast": 14,
+              "stl": 4,
+              "blk": 5,
+              "to": 10,
+              "fgm": 18,
+              "fga": 39,
+              "ftm": 15,
+              "fta": 19
+            },
+            "games": [
+              "401909919",
+              "401909937",
+              "401909942"
+            ],
+            "nbaGames": [
+              "401909919",
+              "401909937",
+              "401909942"
+            ],
+            "nbaStats": {
+              "pts": 56,
+              "tpm": 5,
+              "reb": 21,
+              "ast": 14,
+              "stl": 4,
+              "blk": 5,
+              "to": 10,
+              "fgm": 18,
+              "fga": 39,
+              "ftm": 15,
+              "fta": 19
+            }
+          },
+          {
+            "name": "Jarrett Allen",
+            "espnId": 4066328,
+            "nbaTeamId": 5,
+            "team": "shockers",
+            "gp": 1,
+            "nbaGp": 2,
+            "minutes": 28,
+            "stats": {
+              "pts": 14,
+              "tpm": 0,
+              "reb": 6,
+              "ast": 1,
+              "stl": 1,
+              "blk": 1,
+              "to": 0,
+              "fgm": 5,
+              "fga": 10,
+              "ftm": 4,
+              "fta": 6
+            },
+            "games": [
+              "401909907"
+            ],
+            "nbaGames": [
+              "401909907",
+              "401909929"
+            ],
+            "nbaStats": {
+              "pts": 14,
+              "tpm": 0,
+              "reb": 7,
+              "ast": 1,
+              "stl": 1,
+              "blk": 1,
+              "to": 0,
+              "fgm": 5,
+              "fga": 11,
+              "ftm": 4,
+              "fta": 6
+            }
+          }
+        ]
+      },
+      {
+        "team": "pelafustanes",
+        "total": {
+          "pts": 686,
+          "tpm": 78,
+          "reb": 222,
+          "ast": 170,
+          "stl": 33,
+          "blk": 28,
+          "to": 84,
+          "fgm": 235,
+          "fga": 518,
+          "ftm": 138,
+          "fta": 182
+        },
+        "omitted": [
+          {
+            "player": "Matas Buzelis",
+            "id": "401909945",
+            "stats": {
+              "pts": 19,
+              "reb": 5,
+              "ast": 2,
+              "stl": 0,
+              "blk": 1,
+              "to": 0,
+              "min": 31,
+              "fgm": 6,
+              "fga": 10,
+              "ftm": 4,
+              "fta": 4,
+              "tpm": 3,
+              "tpa": 7
+            }
+          },
+          {
+            "player": "Malik Monk",
+            "id": "401909934",
+            "stats": {
+              "pts": 13,
+              "reb": 2,
+              "ast": 3,
+              "stl": 0,
+              "blk": 0,
+              "to": 2,
+              "min": 24,
+              "fgm": 5,
+              "fga": 16,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 3,
+              "tpa": 8
+            }
+          },
+          {
+            "player": "Jalen Smith",
+            "id": "401909912",
+            "stats": {
+              "pts": 13,
+              "reb": 7,
+              "ast": 4,
+              "stl": 0,
+              "blk": 0,
+              "to": 0,
+              "min": 28,
+              "fgm": 6,
+              "fga": 10,
+              "ftm": 0,
+              "fta": 1,
+              "tpm": 1,
+              "tpa": 4
+            }
+          },
+          {
+            "player": "Matas Buzelis",
+            "id": "401909926",
+            "stats": {
+              "pts": 12,
+              "reb": 5,
+              "ast": 3,
+              "stl": 1,
+              "blk": 0,
+              "to": 1,
+              "min": 26,
+              "fgm": 5,
+              "fga": 11,
+              "ftm": 1,
+              "fta": 1,
+              "tpm": 1,
+              "tpa": 6
+            }
+          },
+          {
+            "player": "Alex Sarr",
+            "id": "401909923",
+            "stats": {
+              "pts": 11,
+              "reb": 9,
+              "ast": 1,
+              "stl": 2,
+              "blk": 1,
+              "to": 1,
+              "min": 23,
+              "fgm": 3,
+              "fga": 6,
+              "ftm": 5,
+              "fta": 6,
+              "tpm": 0,
+              "tpa": 2
+            }
+          },
+          {
+            "player": "Aaron Wiggins",
+            "id": "401909909",
+            "stats": {
+              "pts": 7,
+              "reb": 3,
+              "ast": 2,
+              "stl": 1,
+              "blk": 0,
+              "to": 2,
+              "min": 24,
+              "fgm": 3,
+              "fga": 12,
+              "ftm": 0,
+              "fta": 1,
+              "tpm": 1,
+              "tpa": 6
+            }
+          },
+          {
+            "player": "Bobby Portis",
+            "id": "401909921",
+            "stats": {
+              "pts": 2,
+              "reb": 3,
+              "ast": 2,
+              "stl": 0,
+              "blk": 0,
+              "to": 0,
+              "min": 18,
+              "fgm": 1,
+              "fga": 3,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 0,
+              "tpa": 2
+            }
+          }
+        ],
+        "players": [
+          {
+            "name": "Luka Doncic",
+            "espnId": 3945274,
+            "nbaTeamId": 13,
+            "team": "pelafustanes",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 109,
+            "stats": {
+              "pts": 135,
+              "tpm": 17,
+              "reb": 21,
+              "ast": 25,
+              "stl": 4,
+              "blk": 1,
+              "to": 11,
+              "fgm": 42,
+              "fga": 80,
+              "ftm": 34,
+              "fta": 41
+            },
+            "games": [
+              "401909921",
+              "401909934",
+              "401909294"
+            ],
+            "nbaGames": [
+              "401909921",
+              "401909934",
+              "401909294"
+            ],
+            "nbaStats": {
+              "pts": 135,
+              "tpm": 17,
+              "reb": 21,
+              "ast": 25,
+              "stl": 4,
+              "blk": 1,
+              "to": 11,
+              "fgm": 42,
+              "fga": 80,
+              "ftm": 34,
+              "fta": 41
+            }
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "espnId": 3032977,
+            "nbaTeamId": 14,
+            "team": "pelafustanes",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 140,
+            "stats": {
+              "pts": 106,
+              "tpm": 1,
+              "reb": 54,
+              "ast": 20,
+              "stl": 5,
+              "blk": 7,
+              "to": 19,
+              "fgm": 39,
+              "fga": 73,
+              "ftm": 27,
+              "fta": 42
+            },
+            "games": [
+              "401909921",
+              "401909935",
+              "401909937",
+              "401909951"
+            ],
+            "nbaGames": [
+              "401909921",
+              "401909935",
+              "401909937",
+              "401909951"
+            ],
+            "nbaStats": {
+              "pts": 106,
+              "tpm": 1,
+              "reb": 54,
+              "ast": 20,
+              "stl": 5,
+              "blk": 7,
+              "to": 19,
+              "fgm": 39,
+              "fga": 73,
+              "ftm": 27,
+              "fta": 42
+            }
+          },
+          {
+            "name": "Donovan Mitchell",
+            "espnId": 3908809,
+            "nbaTeamId": 5,
+            "team": "pelafustanes",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 139,
+            "stats": {
+              "pts": 104,
+              "tpm": 15,
+              "reb": 19,
+              "ast": 29,
+              "stl": 5,
+              "blk": 2,
+              "to": 14,
+              "fgm": 36,
+              "fga": 74,
+              "ftm": 17,
+              "fta": 27
+            },
+            "games": [
+              "401909907",
+              "401909929",
+              "401909289",
+              "401909940"
+            ],
+            "nbaGames": [
+              "401909907",
+              "401909929",
+              "401909289",
+              "401909940"
+            ],
+            "nbaStats": {
+              "pts": 104,
+              "tpm": 15,
+              "reb": 19,
+              "ast": 29,
+              "stl": 5,
+              "blk": 2,
+              "to": 14,
+              "fgm": 36,
+              "fga": 74,
+              "ftm": 17,
+              "fta": 27
+            }
+          },
+          {
+            "name": "Alperen Sengun",
+            "espnId": 4871144,
+            "nbaTeamId": 10,
+            "team": "pelafustanes",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 109,
+            "stats": {
+              "pts": 58,
+              "tpm": 2,
+              "reb": 25,
+              "ast": 25,
+              "stl": 2,
+              "blk": 6,
+              "to": 8,
+              "fgm": 22,
+              "fga": 46,
+              "ftm": 12,
+              "fta": 15
+            },
+            "games": [
+              "401909916",
+              "401909930",
+              "401909943"
+            ],
+            "nbaGames": [
+              "401909916",
+              "401909930",
+              "401909943"
+            ],
+            "nbaStats": {
+              "pts": 58,
+              "tpm": 2,
+              "reb": 25,
+              "ast": 25,
+              "stl": 2,
+              "blk": 6,
+              "to": 8,
+              "fgm": 22,
+              "fga": 46,
+              "ftm": 12,
+              "fta": 15
+            }
+          },
+          {
+            "name": "Brandon Miller",
+            "espnId": 4433287,
+            "nbaTeamId": 30,
+            "team": "pelafustanes",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 71,
+            "stats": {
+              "pts": 35,
+              "tpm": 4,
+              "reb": 7,
+              "ast": 6,
+              "stl": 1,
+              "blk": 0,
+              "to": 4,
+              "fgm": 12,
+              "fga": 43,
+              "ftm": 7,
+              "fta": 7
+            },
+            "games": [
+              "401909908",
+              "401909925",
+              "401909288"
+            ],
+            "nbaGames": [
+              "401909908",
+              "401909925",
+              "401909288"
+            ],
+            "nbaStats": {
+              "pts": 35,
+              "tpm": 4,
+              "reb": 7,
+              "ast": 6,
+              "stl": 1,
+              "blk": 0,
+              "to": 4,
+              "fgm": 12,
+              "fga": 43,
+              "ftm": 7,
+              "fta": 7
+            }
+          },
+          {
+            "name": "OG Anunoby",
+            "espnId": 3934719,
+            "nbaTeamId": 18,
+            "team": "pelafustanes",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 96,
+            "stats": {
+              "pts": 51,
+              "tpm": 7,
+              "reb": 15,
+              "ast": 6,
+              "stl": 6,
+              "blk": 2,
+              "to": 7,
+              "fgm": 11,
+              "fga": 33,
+              "ftm": 22,
+              "fta": 24
+            },
+            "games": [
+              "401909910",
+              "401909926",
+              "401909940"
+            ],
+            "nbaGames": [
+              "401909910",
+              "401909926",
+              "401909940"
+            ],
+            "nbaStats": {
+              "pts": 51,
+              "tpm": 7,
+              "reb": 15,
+              "ast": 6,
+              "stl": 6,
+              "blk": 2,
+              "to": 7,
+              "fgm": 11,
+              "fga": 33,
+              "ftm": 22,
+              "fta": 24
+            }
+          },
+          {
+            "name": "Payton Pritchard",
+            "espnId": 4066354,
+            "nbaTeamId": 2,
+            "team": "pelafustanes",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 100,
+            "stats": {
+              "pts": 38,
+              "tpm": 8,
+              "reb": 15,
+              "ast": 17,
+              "stl": 3,
+              "blk": 0,
+              "to": 3,
+              "fgm": 12,
+              "fga": 36,
+              "ftm": 6,
+              "fta": 8
+            },
+            "games": [
+              "401909916",
+              "401909924",
+              "401909288",
+              "401909949"
+            ],
+            "nbaGames": [
+              "401909916",
+              "401909924",
+              "401909288",
+              "401909949"
+            ],
+            "nbaStats": {
+              "pts": 38,
+              "tpm": 8,
+              "reb": 15,
+              "ast": 17,
+              "stl": 3,
+              "blk": 0,
+              "to": 3,
+              "fgm": 12,
+              "fga": 36,
+              "ftm": 6,
+              "fta": 8
+            }
+          },
+          {
+            "name": "Alex Sarr",
+            "espnId": 5160992,
+            "nbaTeamId": 27,
+            "team": "pelafustanes",
+            "gp": 2,
+            "nbaGp": 3,
+            "minutes": 58,
+            "stats": {
+              "pts": 28,
+              "tpm": 2,
+              "reb": 22,
+              "ast": 4,
+              "stl": 2,
+              "blk": 2,
+              "to": 2,
+              "fgm": 12,
+              "fga": 27,
+              "ftm": 2,
+              "fta": 2
+            },
+            "games": [
+              "401909287",
+              "401909941"
+            ],
+            "nbaGames": [
+              "401909923",
+              "401909287",
+              "401909941"
+            ],
+            "nbaStats": {
+              "pts": 39,
+              "tpm": 2,
+              "reb": 31,
+              "ast": 5,
+              "stl": 4,
+              "blk": 3,
+              "to": 3,
+              "fgm": 15,
+              "fga": 33,
+              "ftm": 7,
+              "fta": 8
+            }
+          },
+          {
+            "name": "Matas Buzelis",
+            "espnId": 4711294,
+            "nbaTeamId": 4,
+            "team": "pelafustanes",
+            "gp": 1,
+            "nbaGp": 3,
+            "minutes": 23,
+            "stats": {
+              "pts": 4,
+              "tpm": 0,
+              "reb": 3,
+              "ast": 2,
+              "stl": 0,
+              "blk": 1,
+              "to": 5,
+              "fgm": 2,
+              "fga": 5,
+              "ftm": 0,
+              "fta": 0
+            },
+            "games": [
+              "401909912"
+            ],
+            "nbaGames": [
+              "401909912",
+              "401909926",
+              "401909945"
+            ],
+            "nbaStats": {
+              "pts": 35,
+              "tpm": 4,
+              "reb": 13,
+              "ast": 7,
+              "stl": 1,
+              "blk": 2,
+              "to": 6,
+              "fgm": 13,
+              "fga": 26,
+              "ftm": 5,
+              "fta": 5
+            }
+          },
+          {
+            "name": "Bobby Portis",
+            "espnId": 3064482,
+            "nbaTeamId": 14,
+            "team": "pelafustanes",
+            "gp": 3,
+            "nbaGp": 4,
+            "minutes": 52,
+            "stats": {
+              "pts": 8,
+              "tpm": 1,
+              "reb": 16,
+              "ast": 6,
+              "stl": 1,
+              "blk": 0,
+              "to": 1,
+              "fgm": 3,
+              "fga": 13,
+              "ftm": 1,
+              "fta": 2
+            },
+            "games": [
+              "401909935",
+              "401909937",
+              "401909951"
+            ],
+            "nbaGames": [
+              "401909921",
+              "401909935",
+              "401909937",
+              "401909951"
+            ],
+            "nbaStats": {
+              "pts": 10,
+              "tpm": 1,
+              "reb": 19,
+              "ast": 8,
+              "stl": 1,
+              "blk": 0,
+              "to": 1,
+              "fgm": 4,
+              "fga": 16,
+              "ftm": 1,
+              "fta": 2
+            }
+          },
+          {
+            "name": "Malik Monk",
+            "espnId": 4066262,
+            "nbaTeamId": 23,
+            "team": "pelafustanes",
+            "gp": 3,
+            "nbaGp": 4,
+            "minutes": 69,
+            "stats": {
+              "pts": 45,
+              "tpm": 7,
+              "reb": 3,
+              "ast": 17,
+              "stl": 1,
+              "blk": 1,
+              "to": 6,
+              "fgm": 15,
+              "fga": 29,
+              "ftm": 8,
+              "fta": 10
+            },
+            "games": [
+              "401909913",
+              "401909295",
+              "401909951"
+            ],
+            "nbaGames": [
+              "401909913",
+              "401909934",
+              "401909295",
+              "401909951"
+            ],
+            "nbaStats": {
+              "pts": 58,
+              "tpm": 10,
+              "reb": 5,
+              "ast": 20,
+              "stl": 1,
+              "blk": 1,
+              "to": 8,
+              "fgm": 20,
+              "fga": 45,
+              "ftm": 8,
+              "fta": 10
+            }
+          },
+          {
+            "name": "Jalen Smith",
+            "espnId": 4397189,
+            "nbaTeamId": 4,
+            "team": "pelafustanes",
+            "gp": 2,
+            "nbaGp": 3,
+            "minutes": 37,
+            "stats": {
+              "pts": 20,
+              "tpm": 3,
+              "reb": 10,
+              "ast": 2,
+              "stl": 0,
+              "blk": 5,
+              "to": 0,
+              "fgm": 8,
+              "fga": 14,
+              "ftm": 1,
+              "fta": 2
+            },
+            "games": [
+              "401909926",
+              "401909945"
+            ],
+            "nbaGames": [
+              "401909912",
+              "401909926",
+              "401909945"
+            ],
+            "nbaStats": {
+              "pts": 33,
+              "tpm": 4,
+              "reb": 17,
+              "ast": 6,
+              "stl": 0,
+              "blk": 5,
+              "to": 0,
+              "fgm": 14,
+              "fga": 24,
+              "ftm": 1,
+              "fta": 3
+            }
+          },
+          {
+            "name": "Aaron Wiggins",
+            "espnId": 4397183,
+            "nbaTeamId": 1,
+            "team": "pelafustanes",
+            "gp": 3,
+            "nbaGp": 4,
+            "minutes": 84,
+            "stats": {
+              "pts": 54,
+              "tpm": 11,
+              "reb": 12,
+              "ast": 11,
+              "stl": 3,
+              "blk": 1,
+              "to": 4,
+              "fgm": 21,
+              "fga": 45,
+              "ftm": 1,
+              "fta": 2
+            },
+            "games": [
+              "401909923",
+              "401909287",
+              "401909939"
+            ],
+            "nbaGames": [
+              "401909909",
+              "401909923",
+              "401909287",
+              "401909939"
+            ],
+            "nbaStats": {
+              "pts": 61,
+              "tpm": 12,
+              "reb": 15,
+              "ast": 13,
+              "stl": 4,
+              "blk": 1,
+              "to": 6,
+              "fgm": 24,
+              "fga": 57,
+              "ftm": 1,
+              "fta": 3
+            }
+          }
+        ]
+      },
+      {
+        "team": "hipopotamos",
+        "total": {
+          "pts": 800,
+          "tpm": 63,
+          "reb": 263,
+          "ast": 157,
+          "stl": 50,
+          "blk": 33,
+          "to": 93,
+          "fgm": 290,
+          "fga": 599,
+          "ftm": 157,
+          "fta": 197
+        },
+        "omitted": [
+          {
+            "player": "P.J. Washington",
+            "id": "401909290",
+            "stats": {
+              "pts": 26,
+              "reb": 6,
+              "ast": 1,
+              "stl": 1,
+              "blk": 1,
+              "to": 0,
+              "min": 33,
+              "fgm": 7,
+              "fga": 14,
+              "ftm": 6,
+              "fta": 7,
+              "tpm": 6,
+              "tpa": 10
+            }
+          },
+          {
+            "player": "P.J. Washington",
+            "id": "401909933",
+            "stats": {
+              "pts": 21,
+              "reb": 10,
+              "ast": 3,
+              "stl": 0,
+              "blk": 1,
+              "to": 1,
+              "min": 39,
+              "fgm": 7,
+              "fga": 18,
+              "ftm": 4,
+              "fta": 5,
+              "tpm": 3,
+              "tpa": 8
+            }
+          },
+          {
+            "player": "Ace Bailey",
+            "id": "401909928",
+            "stats": {
+              "pts": 15,
+              "reb": 5,
+              "ast": 1,
+              "stl": 0,
+              "blk": 1,
+              "to": 3,
+              "min": 35,
+              "fgm": 6,
+              "fga": 14,
+              "ftm": 2,
+              "fta": 3,
+              "tpm": 1,
+              "tpa": 9
+            }
+          },
+          {
+            "player": "P.J. Washington",
+            "id": "401909913",
+            "stats": {
+              "pts": 12,
+              "reb": 5,
+              "ast": 1,
+              "stl": 2,
+              "blk": 0,
+              "to": 2,
+              "min": 38,
+              "fgm": 2,
+              "fga": 9,
+              "ftm": 6,
+              "fta": 8,
+              "tpm": 2,
+              "tpa": 8
+            }
+          },
+          {
+            "player": "Toumani Camara",
+            "id": "401909932",
+            "stats": {
+              "pts": 11,
+              "reb": 4,
+              "ast": 2,
+              "stl": 0,
+              "blk": 0,
+              "to": 2,
+              "min": 32,
+              "fgm": 4,
+              "fga": 9,
+              "ftm": 2,
+              "fta": 6,
+              "tpm": 1,
+              "tpa": 5
+            }
+          },
+          {
+            "player": "Toumani Camara",
+            "id": "401909918",
+            "stats": {
+              "pts": 9,
+              "reb": 5,
+              "ast": 1,
+              "stl": 0,
+              "blk": 0,
+              "to": 4,
+              "min": 31,
+              "fgm": 3,
+              "fga": 8,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 3,
+              "tpa": 7
+            }
+          },
+          {
+            "player": "Ace Bailey",
+            "id": "401909917",
+            "stats": {
+              "pts": 5,
+              "reb": 6,
+              "ast": 2,
+              "stl": 1,
+              "blk": 0,
+              "to": 0,
+              "min": 24,
+              "fgm": 2,
+              "fga": 11,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 1,
+              "tpa": 5
+            }
+          }
+        ],
+        "players": [
+          {
+            "name": "Victor Wembanyama",
+            "espnId": 5104157,
+            "nbaTeamId": 24,
+            "team": "hipopotamos",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 108,
+            "stats": {
+              "pts": 123,
+              "tpm": 8,
+              "reb": 56,
+              "ast": 12,
+              "stl": 4,
+              "blk": 14,
+              "to": 11,
+              "fgm": 40,
+              "fga": 74,
+              "ftm": 35,
+              "fta": 44
+            },
+            "games": [
+              "401909917",
+              "401909933",
+              "401909295",
+              "401909944"
+            ],
+            "nbaGames": [
+              "401909917",
+              "401909933",
+              "401909295",
+              "401909944"
+            ],
+            "nbaStats": {
+              "pts": 123,
+              "tpm": 8,
+              "reb": 56,
+              "ast": 12,
+              "stl": 4,
+              "blk": 14,
+              "to": 11,
+              "fgm": 40,
+              "fga": 74,
+              "ftm": 35,
+              "fta": 44
+            }
+          },
+          {
+            "name": "Cade Cunningham",
+            "espnId": 4432166,
+            "nbaTeamId": 8,
+            "team": "hipopotamos",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 105,
+            "stats": {
+              "pts": 73,
+              "tpm": 6,
+              "reb": 16,
+              "ast": 26,
+              "stl": 9,
+              "blk": 1,
+              "to": 11,
+              "fgm": 28,
+              "fga": 57,
+              "ftm": 11,
+              "fta": 13
+            },
+            "games": [
+              "401909908",
+              "401909922",
+              "401909946"
+            ],
+            "nbaGames": [
+              "401909908",
+              "401909922",
+              "401909946"
+            ],
+            "nbaStats": {
+              "pts": 73,
+              "tpm": 6,
+              "reb": 16,
+              "ast": 26,
+              "stl": 9,
+              "blk": 1,
+              "to": 11,
+              "fgm": 28,
+              "fga": 57,
+              "ftm": 11,
+              "fta": 13
+            }
+          },
+          {
+            "name": "Deni Avdija",
+            "espnId": 4683021,
+            "nbaTeamId": 22,
+            "team": "hipopotamos",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 133,
+            "stats": {
+              "pts": 86,
+              "tpm": 6,
+              "reb": 23,
+              "ast": 29,
+              "stl": 3,
+              "blk": 0,
+              "to": 16,
+              "fgm": 28,
+              "fga": 63,
+              "ftm": 24,
+              "fta": 36
+            },
+            "games": [
+              "401909918",
+              "401909932",
+              "401909294",
+              "401909944"
+            ],
+            "nbaGames": [
+              "401909918",
+              "401909932",
+              "401909294",
+              "401909944"
+            ],
+            "nbaStats": {
+              "pts": 86,
+              "tpm": 6,
+              "reb": 23,
+              "ast": 29,
+              "stl": 3,
+              "blk": 0,
+              "to": 16,
+              "fgm": 28,
+              "fga": 63,
+              "ftm": 24,
+              "fta": 36
+            }
+          },
+          {
+            "name": "Derrick White",
+            "espnId": 3078576,
+            "nbaTeamId": 2,
+            "team": "hipopotamos",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 118,
+            "stats": {
+              "pts": 58,
+              "tpm": 7,
+              "reb": 13,
+              "ast": 22,
+              "stl": 5,
+              "blk": 4,
+              "to": 8,
+              "fgm": 20,
+              "fga": 50,
+              "ftm": 11,
+              "fta": 11
+            },
+            "games": [
+              "401909916",
+              "401909924",
+              "401909288",
+              "401909949"
+            ],
+            "nbaGames": [
+              "401909916",
+              "401909924",
+              "401909288",
+              "401909949"
+            ],
+            "nbaStats": {
+              "pts": 58,
+              "tpm": 7,
+              "reb": 13,
+              "ast": 22,
+              "stl": 5,
+              "blk": 4,
+              "to": 8,
+              "fgm": 20,
+              "fga": 50,
+              "ftm": 11,
+              "fta": 11
+            }
+          },
+          {
+            "name": "Jaden McDaniels",
+            "espnId": 4431671,
+            "nbaTeamId": 16,
+            "team": "hipopotamos",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 139,
+            "stats": {
+              "pts": 66,
+              "tpm": 6,
+              "reb": 26,
+              "ast": 15,
+              "stl": 4,
+              "blk": 3,
+              "to": 10,
+              "fgm": 25,
+              "fga": 56,
+              "ftm": 10,
+              "fta": 12
+            },
+            "games": [
+              "401909915",
+              "401909930",
+              "401909293",
+              "401909947"
+            ],
+            "nbaGames": [
+              "401909915",
+              "401909930",
+              "401909293",
+              "401909947"
+            ],
+            "nbaStats": {
+              "pts": 66,
+              "tpm": 6,
+              "reb": 26,
+              "ast": 15,
+              "stl": 4,
+              "blk": 3,
+              "to": 10,
+              "fgm": 25,
+              "fga": 56,
+              "ftm": 10,
+              "fta": 12
+            }
+          },
+          {
+            "name": "Naz Reid",
+            "espnId": 4396971,
+            "nbaTeamId": 30,
+            "team": "hipopotamos",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 89,
+            "stats": {
+              "pts": 55,
+              "tpm": 6,
+              "reb": 21,
+              "ast": 6,
+              "stl": 1,
+              "blk": 1,
+              "to": 5,
+              "fgm": 21,
+              "fga": 46,
+              "ftm": 7,
+              "fta": 11
+            },
+            "games": [
+              "401909908",
+              "401909925",
+              "401909288"
+            ],
+            "nbaGames": [
+              "401909908",
+              "401909925",
+              "401909288"
+            ],
+            "nbaStats": {
+              "pts": 55,
+              "tpm": 6,
+              "reb": 21,
+              "ast": 6,
+              "stl": 1,
+              "blk": 1,
+              "to": 5,
+              "fgm": 21,
+              "fga": 46,
+              "ftm": 7,
+              "fta": 11
+            }
+          },
+          {
+            "name": "Toumani Camara",
+            "espnId": 4431736,
+            "nbaTeamId": 22,
+            "team": "hipopotamos",
+            "gp": 2,
+            "nbaGp": 4,
+            "minutes": 51,
+            "stats": {
+              "pts": 22,
+              "tpm": 4,
+              "reb": 10,
+              "ast": 1,
+              "stl": 0,
+              "blk": 0,
+              "to": 2,
+              "fgm": 9,
+              "fga": 19,
+              "ftm": 0,
+              "fta": 0
+            },
+            "games": [
+              "401909294",
+              "401909944"
+            ],
+            "nbaGames": [
+              "401909918",
+              "401909932",
+              "401909294",
+              "401909944"
+            ],
+            "nbaStats": {
+              "pts": 42,
+              "tpm": 8,
+              "reb": 19,
+              "ast": 4,
+              "stl": 0,
+              "blk": 0,
+              "to": 8,
+              "fgm": 16,
+              "fga": 36,
+              "ftm": 2,
+              "fta": 6
+            }
+          },
+          {
+            "name": "P.J. Washington",
+            "espnId": 4278078,
+            "nbaTeamId": 6,
+            "team": "hipopotamos",
+            "gp": 1,
+            "nbaGp": 4,
+            "minutes": 25,
+            "stats": {
+              "pts": 6,
+              "tpm": 2,
+              "reb": 5,
+              "ast": 0,
+              "stl": 1,
+              "blk": 1,
+              "to": 2,
+              "fgm": 2,
+              "fga": 3,
+              "ftm": 0,
+              "fta": 0
+            },
+            "games": [
+              "401909948"
+            ],
+            "nbaGames": [
+              "401909913",
+              "401909933",
+              "401909290",
+              "401909948"
+            ],
+            "nbaStats": {
+              "pts": 65,
+              "tpm": 13,
+              "reb": 26,
+              "ast": 5,
+              "stl": 4,
+              "blk": 3,
+              "to": 5,
+              "fgm": 18,
+              "fga": 44,
+              "ftm": 16,
+              "fta": 20
+            }
+          },
+          {
+            "name": "Walker Kessler",
+            "espnId": 4433136,
+            "nbaTeamId": 13,
+            "team": "hipopotamos",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 127,
+            "stats": {
+              "pts": 58,
+              "tpm": 0,
+              "reb": 51,
+              "ast": 8,
+              "stl": 7,
+              "blk": 7,
+              "to": 6,
+              "fgm": 25,
+              "fga": 41,
+              "ftm": 8,
+              "fta": 13
+            },
+            "games": [
+              "401909921",
+              "401909934",
+              "401909294",
+              "401909946"
+            ],
+            "nbaGames": [
+              "401909921",
+              "401909934",
+              "401909294",
+              "401909946"
+            ],
+            "nbaStats": {
+              "pts": 58,
+              "tpm": 0,
+              "reb": 51,
+              "ast": 8,
+              "stl": 7,
+              "blk": 7,
+              "to": 6,
+              "fgm": 25,
+              "fga": 41,
+              "ftm": 8,
+              "fta": 13
+            }
+          },
+          {
+            "name": "Ace Bailey",
+            "espnId": 4873138,
+            "nbaTeamId": 26,
+            "team": "hipopotamos",
+            "gp": 2,
+            "nbaGp": 4,
+            "minutes": 61,
+            "stats": {
+              "pts": 19,
+              "tpm": 1,
+              "reb": 8,
+              "ast": 3,
+              "stl": 4,
+              "blk": 1,
+              "to": 5,
+              "fgm": 9,
+              "fga": 20,
+              "ftm": 0,
+              "fta": 0
+            },
+            "games": [
+              "401909290",
+              "401909947"
+            ],
+            "nbaGames": [
+              "401909917",
+              "401909928",
+              "401909290",
+              "401909947"
+            ],
+            "nbaStats": {
+              "pts": 39,
+              "tpm": 3,
+              "reb": 19,
+              "ast": 6,
+              "stl": 5,
+              "blk": 2,
+              "to": 8,
+              "fgm": 17,
+              "fga": 45,
+              "ftm": 2,
+              "fta": 3
+            }
+          },
+          {
+            "name": "Christian Braun",
+            "espnId": 4431767,
+            "nbaTeamId": 7,
+            "team": "hipopotamos",
+            "gp": 3,
+            "nbaGp": 3,
+            "minutes": 94,
+            "stats": {
+              "pts": 31,
+              "tpm": 2,
+              "reb": 10,
+              "ast": 7,
+              "stl": 4,
+              "blk": 0,
+              "to": 2,
+              "fgm": 10,
+              "fga": 20,
+              "ftm": 9,
+              "fta": 10
+            },
+            "games": [
+              "401909918",
+              "401909931",
+              "401909938"
+            ],
+            "nbaGames": [
+              "401909918",
+              "401909931",
+              "401909938"
+            ],
+            "nbaStats": {
+              "pts": 31,
+              "tpm": 2,
+              "reb": 10,
+              "ast": 7,
+              "stl": 4,
+              "blk": 0,
+              "to": 2,
+              "fgm": 10,
+              "fga": 20,
+              "ftm": 9,
+              "fta": 10
+            }
+          },
+          {
+            "name": "Ajay Mitchell",
+            "espnId": 4900671,
+            "nbaTeamId": 25,
+            "team": "hipopotamos",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 119,
+            "stats": {
+              "pts": 90,
+              "tpm": 5,
+              "reb": 17,
+              "ast": 10,
+              "stl": 2,
+              "blk": 1,
+              "to": 4,
+              "fgm": 35,
+              "fga": 67,
+              "ftm": 15,
+              "fta": 20
+            },
+            "games": [
+              "401909907",
+              "401909929",
+              "401909291",
+              "401909941"
+            ],
+            "nbaGames": [
+              "401909907",
+              "401909929",
+              "401909291",
+              "401909941"
+            ],
+            "nbaStats": {
+              "pts": 90,
+              "tpm": 5,
+              "reb": 17,
+              "ast": 10,
+              "stl": 2,
+              "blk": 1,
+              "to": 4,
+              "fgm": 35,
+              "fga": 67,
+              "ftm": 15,
+              "fta": 20
+            }
+          },
+          {
+            "name": "Devin Booker",
+            "espnId": 3136193,
+            "nbaTeamId": 21,
+            "team": "hipopotamos",
+            "gp": 4,
+            "nbaGp": 4,
+            "minutes": 142,
+            "stats": {
+              "pts": 113,
+              "tpm": 10,
+              "reb": 7,
+              "ast": 18,
+              "stl": 6,
+              "blk": 0,
+              "to": 11,
+              "fgm": 38,
+              "fga": 83,
+              "ftm": 27,
+              "fta": 27
+            },
+            "games": [
+              "401909919",
+              "401909932",
+              "401909936",
+              "401909943"
+            ],
+            "nbaGames": [
+              "401909919",
+              "401909932",
+              "401909936",
+              "401909943"
+            ],
+            "nbaStats": {
+              "pts": 113,
+              "tpm": 10,
+              "reb": 7,
+              "ast": 18,
+              "stl": 6,
+              "blk": 0,
+              "to": 11,
+              "fgm": 38,
+              "fga": 83,
+              "ftm": 27,
+              "fta": 27
+            }
+          }
+        ]
+      }
+    ],
+    "cromwellNba": [
+      {
+        "id": 3917376,
+        "name": "Jaylen Brown",
+        "nbaTeam": "PHI",
+        "games": [
+          {
+            "id": "401909912",
+            "date": "2026-11-03T00:30Z",
+            "stats": {
+              "pts": 25,
+              "reb": 11,
+              "ast": 5,
+              "stl": 1,
+              "blk": 0,
+              "to": 0,
+              "min": 33,
+              "fgm": 9,
+              "fga": 15,
+              "ftm": 3,
+              "fta": 4,
+              "tpm": 4,
+              "tpa": 7
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909912"
+          },
+          {
+            "id": "401909922",
+            "date": "2026-11-05T00:00Z",
+            "stats": {
+              "pts": 30,
+              "reb": 7,
+              "ast": 1,
+              "stl": 1,
+              "blk": 1,
+              "to": 0,
+              "min": 37,
+              "fgm": 11,
+              "fga": 19,
+              "ftm": 5,
+              "fta": 7,
+              "tpm": 3,
+              "tpa": 5
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909922"
+          },
+          {
+            "id": "401909289",
+            "date": "2026-11-07T00:30Z",
+            "stats": {
+              "pts": 20,
+              "reb": 5,
+              "ast": 5,
+              "stl": 1,
+              "blk": 0,
+              "to": 2,
+              "min": 34,
+              "fgm": 9,
+              "fga": 19,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 2,
+              "tpa": 9
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909289"
+          },
+          {
+            "id": "401909945",
+            "date": "2026-11-08T20:30Z",
+            "stats": {
+              "pts": 29,
+              "reb": 7,
+              "ast": 4,
+              "stl": 1,
+              "blk": 0,
+              "to": 1,
+              "min": 35,
+              "fgm": 11,
+              "fga": 22,
+              "ftm": 5,
+              "fta": 8,
+              "tpm": 2,
+              "tpa": 6
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909945"
+          }
+        ],
+        "stats": {
+          "pts": 104,
+          "reb": 30,
+          "ast": 15,
+          "stl": 4,
+          "blk": 1,
+          "to": 3,
+          "min": 139,
+          "fgm": 40,
+          "fga": 75,
+          "ftm": 13,
+          "fta": 19,
+          "tpm": 11,
+          "tpa": 27
+        }
+      },
+      {
+        "id": 4566434,
+        "name": "Franz Wagner",
+        "nbaTeam": "ORL",
+        "games": [
+          {
+            "id": "401909911",
+            "date": "2026-11-03T00:30Z",
+            "stats": {
+              "pts": 24,
+              "reb": 3,
+              "ast": 6,
+              "stl": 1,
+              "blk": 0,
+              "to": 3,
+              "min": 38,
+              "fgm": 10,
+              "fga": 18,
+              "ftm": 3,
+              "fta": 3,
+              "tpm": 1,
+              "tpa": 4
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909911"
+          },
+          {
+            "id": "401909936",
+            "date": "2026-11-06T02:00Z",
+            "stats": {
+              "pts": 15,
+              "reb": 8,
+              "ast": 15,
+              "stl": 4,
+              "blk": 0,
+              "to": 6,
+              "min": 38,
+              "fgm": 7,
+              "fga": 13,
+              "ftm": 1,
+              "fta": 4,
+              "tpm": 0,
+              "tpa": 1
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909936"
+          },
+          {
+            "id": "401909942",
+            "date": "2026-11-08T01:30Z",
+            "stats": {
+              "pts": 30,
+              "reb": 6,
+              "ast": 11,
+              "stl": 2,
+              "blk": 0,
+              "to": 6,
+              "min": 40,
+              "fgm": 11,
+              "fga": 22,
+              "ftm": 5,
+              "fta": 5,
+              "tpm": 3,
+              "tpa": 7
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909942"
+          }
+        ],
+        "stats": {
+          "pts": 69,
+          "reb": 17,
+          "ast": 32,
+          "stl": 7,
+          "blk": 0,
+          "to": 15,
+          "min": 116,
+          "fgm": 28,
+          "fga": 53,
+          "ftm": 9,
+          "fta": 12,
+          "tpm": 4,
+          "tpa": 12
+        }
+      },
+      {
+        "id": 4431678,
+        "name": "Tyrese Maxey",
+        "nbaTeam": "PHI",
+        "games": [
+          {
+            "id": "401909912",
+            "date": "2026-11-03T00:30Z",
+            "stats": {
+              "pts": 26,
+              "reb": 4,
+              "ast": 11,
+              "stl": 2,
+              "blk": 2,
+              "to": 4,
+              "min": 36,
+              "fgm": 10,
+              "fga": 15,
+              "ftm": 5,
+              "fta": 6,
+              "tpm": 1,
+              "tpa": 5
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909912"
+          },
+          {
+            "id": "401909922",
+            "date": "2026-11-05T00:00Z",
+            "stats": {
+              "pts": 19,
+              "reb": 1,
+              "ast": 7,
+              "stl": 0,
+              "blk": 0,
+              "to": 1,
+              "min": 34,
+              "fgm": 5,
+              "fga": 16,
+              "ftm": 6,
+              "fta": 6,
+              "tpm": 3,
+              "tpa": 7
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909922"
+          },
+          {
+            "id": "401909289",
+            "date": "2026-11-07T00:30Z",
+            "stats": {
+              "pts": 17,
+              "reb": 3,
+              "ast": 4,
+              "stl": 1,
+              "blk": 0,
+              "to": 0,
+              "min": 32,
+              "fgm": 5,
+              "fga": 15,
+              "ftm": 5,
+              "fta": 6,
+              "tpm": 2,
+              "tpa": 9
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909289"
+          },
+          {
+            "id": "401909945",
+            "date": "2026-11-08T20:30Z",
+            "stats": {
+              "pts": 27,
+              "reb": 4,
+              "ast": 7,
+              "stl": 0,
+              "blk": 0,
+              "to": 1,
+              "min": 36,
+              "fgm": 9,
+              "fga": 16,
+              "ftm": 6,
+              "fta": 6,
+              "tpm": 3,
+              "tpa": 7
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909945"
+          }
+        ],
+        "stats": {
+          "pts": 89,
+          "reb": 12,
+          "ast": 29,
+          "stl": 3,
+          "blk": 2,
+          "to": 6,
+          "min": 138,
+          "fgm": 29,
+          "fga": 62,
+          "ftm": 22,
+          "fta": 24,
+          "tpm": 9,
+          "tpa": 28
+        }
+      },
+      {
+        "id": 3112335,
+        "name": "Nikola Jokic",
+        "nbaTeam": "DEN",
+        "games": [
+          {
+            "id": "401909918",
+            "date": "2026-11-03T02:00Z",
+            "stats": {
+              "pts": 26,
+              "reb": 9,
+              "ast": 8,
+              "stl": 4,
+              "blk": 1,
+              "to": 2,
+              "min": 36,
+              "fgm": 10,
+              "fga": 22,
+              "ftm": 4,
+              "fta": 4,
+              "tpm": 2,
+              "tpa": 7
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909918"
+          },
+          {
+            "id": "401909931",
+            "date": "2026-11-05T02:00Z",
+            "stats": {
+              "pts": 32,
+              "reb": 10,
+              "ast": 11,
+              "stl": 3,
+              "blk": 0,
+              "to": 2,
+              "min": 30,
+              "fgm": 13,
+              "fga": 19,
+              "ftm": 6,
+              "fta": 7,
+              "tpm": 0,
+              "tpa": 1
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909931"
+          },
+          {
+            "id": "401909938",
+            "date": "2026-11-07T22:00Z",
+            "stats": {
+              "pts": 19,
+              "reb": 13,
+              "ast": 8,
+              "stl": 1,
+              "blk": 1,
+              "to": 1,
+              "min": 36,
+              "fgm": 7,
+              "fga": 20,
+              "ftm": 4,
+              "fta": 4,
+              "tpm": 1,
+              "tpa": 3
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909938"
+          }
+        ],
+        "stats": {
+          "pts": 77,
+          "reb": 32,
+          "ast": 27,
+          "stl": 8,
+          "blk": 2,
+          "to": 5,
+          "min": 102,
+          "fgm": 30,
+          "fga": 61,
+          "ftm": 14,
+          "fta": 15,
+          "tpm": 3,
+          "tpa": 11
+        }
+      },
+      {
+        "id": 4395723,
+        "name": "Keldon Johnson",
+        "nbaTeam": "SA",
+        "games": [
+          {
+            "id": "401909917",
+            "date": "2026-11-03T01:30Z",
+            "stats": {
+              "pts": 15,
+              "reb": 7,
+              "ast": 1,
+              "stl": 0,
+              "blk": 0,
+              "to": 0,
+              "min": 27,
+              "fgm": 5,
+              "fga": 12,
+              "ftm": 4,
+              "fta": 6,
+              "tpm": 1,
+              "tpa": 2
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909917"
+          },
+          {
+            "id": "401909933",
+            "date": "2026-11-05T02:30Z",
+            "stats": {
+              "pts": 4,
+              "reb": 5,
+              "ast": 2,
+              "stl": 0,
+              "blk": 0,
+              "to": 2,
+              "min": 19,
+              "fgm": 1,
+              "fga": 5,
+              "ftm": 2,
+              "fta": 2,
+              "tpm": 0,
+              "tpa": 3
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909933"
+          },
+          {
+            "id": "401909295",
+            "date": "2026-11-07T03:00Z",
+            "stats": {
+              "pts": 3,
+              "reb": 6,
+              "ast": 6,
+              "stl": 0,
+              "blk": 0,
+              "to": 2,
+              "min": 27,
+              "fgm": 1,
+              "fga": 3,
+              "ftm": 1,
+              "fta": 3,
+              "tpm": 0,
+              "tpa": 0
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909295"
+          },
+          {
+            "id": "401909944",
+            "date": "2026-11-08T03:00Z",
+            "stats": {
+              "pts": 10,
+              "reb": 7,
+              "ast": 4,
+              "stl": 2,
+              "blk": 0,
+              "to": 4,
+              "min": 27,
+              "fgm": 3,
+              "fga": 10,
+              "ftm": 4,
+              "fta": 4,
+              "tpm": 0,
+              "tpa": 3
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909944"
+          }
+        ],
+        "stats": {
+          "pts": 32,
+          "reb": 25,
+          "ast": 13,
+          "stl": 2,
+          "blk": 0,
+          "to": 8,
+          "min": 100,
+          "fgm": 10,
+          "fga": 30,
+          "ftm": 11,
+          "fta": 15,
+          "tpm": 1,
+          "tpa": 8
+        }
+      }
+    ],
+    "boxScores": [
+      {
+        "id": "401909907",
+        "name": "OKC @ CLE",
+        "date": "2026-11-03T00:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909907"
+      },
+      {
+        "id": "401909908",
+        "name": "DET @ CHA",
+        "date": "2026-11-03T00:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909908"
+      },
+      {
+        "id": "401909909",
+        "name": "ATL @ IND",
+        "date": "2026-11-03T00:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909909"
+      },
+      {
+        "id": "401909910",
+        "name": "BKN @ NY",
+        "date": "2026-11-03T00:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909910"
+      },
+      {
+        "id": "401909912",
+        "name": "CHI @ PHI",
+        "date": "2026-11-03T00:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909912"
+      },
+      {
+        "id": "401909913",
+        "name": "SAC @ DAL",
+        "date": "2026-11-03T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909913"
+      },
+      {
+        "id": "401909914",
+        "name": "NO @ MEM",
+        "date": "2026-11-03T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909914"
+      },
+      {
+        "id": "401909915",
+        "name": "MIL @ MIN",
+        "date": "2026-11-03T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909915"
+      },
+      {
+        "id": "401909916",
+        "name": "BOS @ HOU",
+        "date": "2026-11-03T01:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909916"
+      },
+      {
+        "id": "401909917",
+        "name": "UTAH @ SA",
+        "date": "2026-11-03T01:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909917"
+      },
+      {
+        "id": "401909918",
+        "name": "POR @ DEN",
+        "date": "2026-11-03T02:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909918"
+      },
+      {
+        "id": "401909919",
+        "name": "PHX @ GS",
+        "date": "2026-11-03T03:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909919"
+      },
+      {
+        "id": "401909920",
+        "name": "TOR @ LAC",
+        "date": "2026-11-03T03:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909920"
+      },
+      {
+        "id": "401909921",
+        "name": "MIA @ LAL",
+        "date": "2026-11-03T03:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909921"
+      },
+      {
+        "id": "401909922",
+        "name": "PHI @ DET",
+        "date": "2026-11-05T00:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909922"
+      },
+      {
+        "id": "401909923",
+        "name": "ATL @ WSH",
+        "date": "2026-11-05T00:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909923"
+      },
+      {
+        "id": "401909924",
+        "name": "MIL @ BOS",
+        "date": "2026-11-05T00:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909924"
+      },
+      {
+        "id": "401909925",
+        "name": "CHA @ BKN",
+        "date": "2026-11-05T00:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909925"
+      },
+      {
+        "id": "401909926",
+        "name": "CHI @ NY",
+        "date": "2026-11-05T00:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909926"
+      },
+      {
+        "id": "401909927",
+        "name": "IND @ MEM",
+        "date": "2026-11-05T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909927"
+      },
+      {
+        "id": "401909928",
+        "name": "UTAH @ NO",
+        "date": "2026-11-05T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909928"
+      },
+      {
+        "id": "401909929",
+        "name": "CLE @ OKC",
+        "date": "2026-11-05T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909929"
+      },
+      {
+        "id": "401909930",
+        "name": "MIN @ HOU",
+        "date": "2026-11-05T01:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909930"
+      },
+      {
+        "id": "401909931",
+        "name": "TOR @ DEN",
+        "date": "2026-11-05T02:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909931"
+      },
+      {
+        "id": "401909932",
+        "name": "POR @ PHX",
+        "date": "2026-11-05T02:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909932"
+      },
+      {
+        "id": "401909933",
+        "name": "DAL @ SA",
+        "date": "2026-11-05T02:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909933"
+      },
+      {
+        "id": "401909934",
+        "name": "LAL @ SAC",
+        "date": "2026-11-05T03:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909934"
+      },
+      {
+        "id": "401909935",
+        "name": "MIA @ LAC",
+        "date": "2026-11-05T03:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909935"
+      },
+      {
+        "id": "401909936",
+        "name": "ORL @ PHX",
+        "date": "2026-11-06T02:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909936"
+      },
+      {
+        "id": "401909937",
+        "name": "MIA @ GS",
+        "date": "2026-11-06T03:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909937"
+      },
+      {
+        "id": "401909287",
+        "name": "WSH @ ATL",
+        "date": "2026-11-07T00:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909287"
+      },
+      {
+        "id": "401909288",
+        "name": "BOS @ CHA",
+        "date": "2026-11-07T00:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909288"
+      },
+      {
+        "id": "401909289",
+        "name": "PHI @ CLE",
+        "date": "2026-11-07T00:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909289"
+      },
+      {
+        "id": "401909290",
+        "name": "UTAH @ DAL",
+        "date": "2026-11-07T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909290"
+      },
+      {
+        "id": "401909291",
+        "name": "OKC @ MEM",
+        "date": "2026-11-07T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909291"
+      },
+      {
+        "id": "401909293",
+        "name": "MIN @ NO",
+        "date": "2026-11-07T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909293"
+      },
+      {
+        "id": "401909294",
+        "name": "POR @ LAL",
+        "date": "2026-11-07T03:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909294"
+      },
+      {
+        "id": "401909295",
+        "name": "SA @ SAC",
+        "date": "2026-11-07T03:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909295"
+      },
+      {
+        "id": "401909938",
+        "name": "DEN VS IND",
+        "date": "2026-11-07T22:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909938"
+      },
+      {
+        "id": "401909939",
+        "name": "BKN @ ATL",
+        "date": "2026-11-08T00:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909939"
+      },
+      {
+        "id": "401909940",
+        "name": "NY @ CLE",
+        "date": "2026-11-08T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909940"
+      },
+      {
+        "id": "401909941",
+        "name": "WSH @ OKC",
+        "date": "2026-11-08T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909941"
+      },
+      {
+        "id": "401909942",
+        "name": "ORL @ GS",
+        "date": "2026-11-08T01:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909942"
+      },
+      {
+        "id": "401909943",
+        "name": "HOU @ PHX",
+        "date": "2026-11-08T02:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909943"
+      },
+      {
+        "id": "401909944",
+        "name": "SA @ POR",
+        "date": "2026-11-08T03:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909944"
+      },
+      {
+        "id": "401909945",
+        "name": "PHI @ CHI",
+        "date": "2026-11-08T20:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909945"
+      },
+      {
+        "id": "401909946",
+        "name": "LAL @ DET",
+        "date": "2026-11-08T23:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909946"
+      },
+      {
+        "id": "401909947",
+        "name": "UTAH @ MIN",
+        "date": "2026-11-09T00:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909947"
+      },
+      {
+        "id": "401909948",
+        "name": "BKN @ DAL",
+        "date": "2026-11-09T00:30Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909948"
+      },
+      {
+        "id": "401909949",
+        "name": "BOS @ MIL",
+        "date": "2026-11-09T01:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909949"
+      },
+      {
+        "id": "401909951",
+        "name": "MIA @ SAC",
+        "date": "2026-11-09T02:00Z",
+        "url": "https://www.espn.com/nba/boxscore/_/gameId/401909951"
+      }
+    ]
+  },
+  "nbaSchedule": {
+    "sourceUrl": "https://www.nba.com/games?date=2026-11-09",
+    "games": [
+      {
+        "id": "401909952",
+        "name": "LAL @ ATL",
+        "date": "2026-11-10T00:00Z",
+        "teams": [
+          1,
+          13
+        ]
+      },
+      {
+        "id": "401909953",
+        "name": "CLE @ CHA",
+        "date": "2026-11-10T00:00Z",
+        "teams": [
+          30,
+          5
+        ]
+      },
+      {
+        "id": "401909954",
+        "name": "WSH @ DET",
+        "date": "2026-11-10T00:00Z",
+        "teams": [
+          8,
+          27
+        ]
+      },
+      {
+        "id": "401909955",
+        "name": "MEM @ TOR",
+        "date": "2026-11-10T00:30Z",
+        "teams": [
+          28,
+          29
+        ]
+      },
+      {
+        "id": "401909956",
+        "name": "IND @ DAL",
+        "date": "2026-11-10T01:00Z",
+        "teams": [
+          6,
+          11
+        ]
+      },
+      {
+        "id": "401909957",
+        "name": "DEN @ HOU",
+        "date": "2026-11-10T01:30Z",
+        "teams": [
+          10,
+          7
+        ]
+      },
+      {
+        "id": "401909958",
+        "name": "SA @ PHX",
+        "date": "2026-11-10T02:00Z",
+        "teams": [
+          21,
+          24
+        ]
+      },
+      {
+        "id": "401909961",
+        "name": "BOS @ PHI",
+        "date": "2026-11-11T01:00Z",
+        "teams": [
+          20,
+          2
+        ]
+      }
+    ]
+  },
+  "injuryReport": {
+    "sourceUrl": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_12_45PM.pdf",
+    "reportedAt": "2026-11-09T17:45:00Z",
+    "statuses": [
+      [
+        "Nikola Jokić",
+        "Cuestionable",
+        "Esguince del codo derecho"
+      ],
+      [
+        "Scottie Barnes",
+        "Cuestionable",
+        "Lesión en la ingle izquierda"
+      ],
+      [
+        "Jarrett Allen",
+        "Cuestionable",
+        "Contusión en la rodilla derecha"
+      ],
+      [
+        "Christian Braun",
+        "Cuestionable",
+        "Contusión en la pantorrilla izquierda y enfermedad"
+      ],
+      [
+        "Brandon Miller",
+        "Descartado",
+        "Lesión en la cadera derecha"
+      ]
+    ],
+    "espnUpdates": [
+      {
+        "name": "Brandon Miller",
+        "status": "Out",
+        "description": "Miller (groin) is listed as out for Monday's game against Cleveland.",
+        "date": "2026-11-08T22:25Z"
+      },
+      {
+        "name": "Jarrett Allen",
+        "status": "Day-To-Day",
+        "description": "Allen (knee) is questionable for Monday's game against Charlotte.",
+        "date": "2026-11-08T22:15Z"
+      },
+      {
+        "name": "Christian Braun",
+        "status": "Day-To-Day",
+        "description": "Braun (calf/illness) is listed as questionable for Monday's game against Houston.",
+        "date": "2026-11-08T22:46Z"
+      },
+      {
+        "name": "Nikola Jokic",
+        "status": "Day-To-Day",
+        "description": "Jokic (elbow) is listed as questionable for Monday's game in Houston.",
+        "date": "2026-11-08T22:36Z"
+      },
+      {
+        "name": "Scottie Barnes",
+        "status": "Day-To-Day",
+        "description": "Barnes (adductor) was a limited participant in Sunday's practice and will be listed as questionable for Monday's game against the Grizzlies, Michael Grange of Sportsnet.ca reports.",
+        "date": "2026-11-08T17:11Z"
+      }
+    ]
+  },
+  "market": {
+    "scope": "Actuaciones NBA del 2 al 8 de noviembre. Candidatos ausentes de los cuatro planteles al corte. Confirmar estado de waivers, elegibilidad y cupo antes de incorporar.",
+    "players": [
+      {
+        "id": 4278049,
+        "name": "Daniel Gafford",
+        "nbaTeam": "DAL",
+        "games": [
+          {
+            "id": "401909913",
+            "date": "2026-11-03T01:00Z",
+            "stats": {
+              "pts": 20,
+              "reb": 7,
+              "ast": 0,
+              "stl": 1,
+              "blk": 1,
+              "to": 1,
+              "min": 26,
+              "fgm": 9,
+              "fga": 10,
+              "ftm": 2,
+              "fta": 2,
+              "tpm": 0,
+              "tpa": 0
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909913"
+          },
+          {
+            "id": "401909933",
+            "date": "2026-11-05T02:30Z",
+            "stats": {
+              "pts": 2,
+              "reb": 4,
+              "ast": 1,
+              "stl": 1,
+              "blk": 2,
+              "to": 2,
+              "min": 18,
+              "fgm": 1,
+              "fga": 6,
+              "ftm": 0,
+              "fta": 1,
+              "tpm": 0,
+              "tpa": 0
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909933"
+          },
+          {
+            "id": "401909290",
+            "date": "2026-11-07T01:00Z",
+            "stats": {
+              "pts": 7,
+              "reb": 1,
+              "ast": 1,
+              "stl": 0,
+              "blk": 2,
+              "to": 1,
+              "min": 18,
+              "fgm": 2,
+              "fga": 2,
+              "ftm": 3,
+              "fta": 3,
+              "tpm": 0,
+              "tpa": 0
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909290"
+          },
+          {
+            "id": "401909948",
+            "date": "2026-11-09T00:30Z",
+            "stats": {
+              "pts": 18,
+              "reb": 5,
+              "ast": 2,
+              "stl": 0,
+              "blk": 3,
+              "to": 1,
+              "min": 19,
+              "fgm": 7,
+              "fga": 8,
+              "ftm": 4,
+              "fta": 6,
+              "tpm": 0,
+              "tpa": 0
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909948"
+          }
+        ],
+        "stats": {
+          "pts": 47,
+          "reb": 17,
+          "ast": 4,
+          "stl": 2,
+          "blk": 8,
+          "to": 5,
+          "min": 81,
+          "fgm": 19,
+          "fga": 26,
+          "ftm": 9,
+          "fta": 12,
+          "tpm": 0,
+          "tpa": 0
+        },
+        "tier": null
+      },
+      {
+        "id": 6475,
+        "name": "Klay Thompson",
+        "nbaTeam": "MIA",
+        "games": [
+          {
+            "id": "401909921",
+            "date": "2026-11-03T03:00Z",
+            "stats": {
+              "pts": 19,
+              "reb": 1,
+              "ast": 1,
+              "stl": 0,
+              "blk": 0,
+              "to": 1,
+              "min": 27,
+              "fgm": 7,
+              "fga": 11,
+              "ftm": 1,
+              "fta": 1,
+              "tpm": 4,
+              "tpa": 7
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909921"
+          },
+          {
+            "id": "401909935",
+            "date": "2026-11-05T03:30Z",
+            "stats": {
+              "pts": 30,
+              "reb": 5,
+              "ast": 3,
+              "stl": 0,
+              "blk": 1,
+              "to": 2,
+              "min": 35,
+              "fgm": 11,
+              "fga": 22,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 8,
+              "tpa": 17
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909935"
+          },
+          {
+            "id": "401909937",
+            "date": "2026-11-06T03:00Z",
+            "stats": {
+              "pts": 11,
+              "reb": 0,
+              "ast": 3,
+              "stl": 0,
+              "blk": 2,
+              "to": 3,
+              "min": 23,
+              "fgm": 3,
+              "fga": 10,
+              "ftm": 3,
+              "fta": 3,
+              "tpm": 2,
+              "tpa": 7
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909937"
+          },
+          {
+            "id": "401909951",
+            "date": "2026-11-09T02:00Z",
+            "stats": {
+              "pts": 23,
+              "reb": 2,
+              "ast": 4,
+              "stl": 0,
+              "blk": 2,
+              "to": 0,
+              "min": 32,
+              "fgm": 8,
+              "fga": 15,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 7,
+              "tpa": 13
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909951"
+          }
+        ],
+        "stats": {
+          "pts": 83,
+          "reb": 8,
+          "ast": 11,
+          "stl": 0,
+          "blk": 5,
+          "to": 6,
+          "min": 117,
+          "fgm": 29,
+          "fga": 58,
+          "ftm": 4,
+          "fta": 4,
+          "tpm": 21,
+          "tpa": 44
+        },
+        "tier": null
+      },
+      {
+        "id": 4432241,
+        "name": "Jamal Shead",
+        "nbaTeam": "TOR",
+        "games": [
+          {
+            "id": "401909920",
+            "date": "2026-11-03T03:00Z",
+            "stats": {
+              "pts": 6,
+              "reb": 1,
+              "ast": 6,
+              "stl": 1,
+              "blk": 0,
+              "to": 1,
+              "min": 20,
+              "fgm": 3,
+              "fga": 7,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 0,
+              "tpa": 4
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909920"
+          },
+          {
+            "id": "401909931",
+            "date": "2026-11-05T02:00Z",
+            "stats": {
+              "pts": 3,
+              "reb": 3,
+              "ast": 6,
+              "stl": 1,
+              "blk": 0,
+              "to": 3,
+              "min": 20,
+              "fgm": 1,
+              "fga": 3,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 1,
+              "tpa": 2
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909931"
+          },
+          {
+            "id": "401909292",
+            "date": "2026-11-07T01:00Z",
+            "stats": {
+              "pts": 10,
+              "reb": 3,
+              "ast": 16,
+              "stl": 2,
+              "blk": 0,
+              "to": 1,
+              "min": 34,
+              "fgm": 4,
+              "fga": 10,
+              "ftm": 1,
+              "fta": 2,
+              "tpm": 1,
+              "tpa": 5
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909292"
+          }
+        ],
+        "stats": {
+          "pts": 19,
+          "reb": 7,
+          "ast": 28,
+          "stl": 4,
+          "blk": 0,
+          "to": 5,
+          "min": 74,
+          "fgm": 8,
+          "fga": 20,
+          "ftm": 1,
+          "fta": 2,
+          "tpm": 2,
+          "tpa": 11
+        },
+        "tier": null
+      },
+      {
+        "id": 4397002,
+        "name": "Ayo Dosunmu",
+        "nbaTeam": "MIN",
+        "games": [
+          {
+            "id": "401909915",
+            "date": "2026-11-03T01:00Z",
+            "stats": {
+              "pts": 19,
+              "reb": 12,
+              "ast": 8,
+              "stl": 1,
+              "blk": 1,
+              "to": 2,
+              "min": 37,
+              "fgm": 8,
+              "fga": 18,
+              "ftm": 2,
+              "fta": 2,
+              "tpm": 1,
+              "tpa": 6
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909915"
+          },
+          {
+            "id": "401909930",
+            "date": "2026-11-05T01:30Z",
+            "stats": {
+              "pts": 21,
+              "reb": 1,
+              "ast": 6,
+              "stl": 2,
+              "blk": 0,
+              "to": 0,
+              "min": 34,
+              "fgm": 10,
+              "fga": 20,
+              "ftm": 1,
+              "fta": 2,
+              "tpm": 0,
+              "tpa": 3
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909930"
+          },
+          {
+            "id": "401909293",
+            "date": "2026-11-07T01:00Z",
+            "stats": {
+              "pts": 26,
+              "reb": 2,
+              "ast": 4,
+              "stl": 0,
+              "blk": 1,
+              "to": 3,
+              "min": 39,
+              "fgm": 8,
+              "fga": 14,
+              "ftm": 6,
+              "fta": 6,
+              "tpm": 4,
+              "tpa": 6
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909293"
+          },
+          {
+            "id": "401909947",
+            "date": "2026-11-09T00:00Z",
+            "stats": {
+              "pts": 26,
+              "reb": 4,
+              "ast": 1,
+              "stl": 2,
+              "blk": 0,
+              "to": 5,
+              "min": 30,
+              "fgm": 7,
+              "fga": 13,
+              "ftm": 8,
+              "fta": 8,
+              "tpm": 4,
+              "tpa": 5
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909947"
+          }
+        ],
+        "stats": {
+          "pts": 92,
+          "reb": 19,
+          "ast": 19,
+          "stl": 5,
+          "blk": 2,
+          "to": 10,
+          "min": 140,
+          "fgm": 33,
+          "fga": 65,
+          "ftm": 17,
+          "fta": 18,
+          "tpm": 9,
+          "tpa": 20
+        },
+        "tier": "B"
+      },
+      {
+        "id": 3907498,
+        "name": "Matisse Thybulle",
+        "nbaTeam": "LAL",
+        "games": [
+          {
+            "id": "401909921",
+            "date": "2026-11-03T03:00Z",
+            "stats": {
+              "pts": 6,
+              "reb": 1,
+              "ast": 2,
+              "stl": 0,
+              "blk": 1,
+              "to": 1,
+              "min": 19,
+              "fgm": 2,
+              "fga": 6,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 2,
+              "tpa": 6
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909921"
+          },
+          {
+            "id": "401909934",
+            "date": "2026-11-05T03:00Z",
+            "stats": {
+              "pts": 3,
+              "reb": 1,
+              "ast": 2,
+              "stl": 2,
+              "blk": 2,
+              "to": 0,
+              "min": 23,
+              "fgm": 1,
+              "fga": 5,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 1,
+              "tpa": 5
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909934"
+          },
+          {
+            "id": "401909294",
+            "date": "2026-11-07T03:00Z",
+            "stats": {
+              "pts": 2,
+              "reb": 2,
+              "ast": 0,
+              "stl": 3,
+              "blk": 0,
+              "to": 2,
+              "min": 24,
+              "fgm": 0,
+              "fga": 1,
+              "ftm": 2,
+              "fta": 2,
+              "tpm": 0,
+              "tpa": 1
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909294"
+          },
+          {
+            "id": "401909946",
+            "date": "2026-11-08T23:00Z",
+            "stats": {
+              "pts": 4,
+              "reb": 2,
+              "ast": 0,
+              "stl": 4,
+              "blk": 0,
+              "to": 0,
+              "min": 28,
+              "fgm": 2,
+              "fga": 5,
+              "ftm": 0,
+              "fta": 0,
+              "tpm": 0,
+              "tpa": 3
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909946"
+          }
+        ],
+        "stats": {
+          "pts": 15,
+          "reb": 6,
+          "ast": 4,
+          "stl": 9,
+          "blk": 3,
+          "to": 3,
+          "min": 94,
+          "fgm": 5,
+          "fga": 17,
+          "ftm": 2,
+          "fta": 2,
+          "tpm": 3,
+          "tpa": 15
+        },
+        "tier": null
+      },
+      {
+        "id": 3136195,
+        "name": "Karl-Anthony Towns",
+        "nbaTeam": "NY",
+        "games": [
+          {
+            "id": "401909910",
+            "date": "2026-11-03T00:30Z",
+            "stats": {
+              "pts": 11,
+              "reb": 16,
+              "ast": 5,
+              "stl": 0,
+              "blk": 0,
+              "to": 4,
+              "min": 35,
+              "fgm": 4,
+              "fga": 11,
+              "ftm": 2,
+              "fta": 3,
+              "tpm": 1,
+              "tpa": 4
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909910"
+          },
+          {
+            "id": "401909926",
+            "date": "2026-11-05T00:30Z",
+            "stats": {
+              "pts": 17,
+              "reb": 12,
+              "ast": 1,
+              "stl": 1,
+              "blk": 0,
+              "to": 1,
+              "min": 25,
+              "fgm": 5,
+              "fga": 5,
+              "ftm": 5,
+              "fta": 7,
+              "tpm": 2,
+              "tpa": 2
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909926"
+          },
+          {
+            "id": "401909940",
+            "date": "2026-11-08T01:00Z",
+            "stats": {
+              "pts": 29,
+              "reb": 13,
+              "ast": 3,
+              "stl": 2,
+              "blk": 0,
+              "to": 0,
+              "min": 34,
+              "fgm": 11,
+              "fga": 21,
+              "ftm": 5,
+              "fta": 5,
+              "tpm": 2,
+              "tpa": 4
+            },
+            "url": "https://www.espn.com/nba/boxscore/_/gameId/401909940"
+          }
+        ],
+        "stats": {
+          "pts": 57,
+          "reb": 41,
+          "ast": 9,
+          "stl": 3,
+          "blk": 0,
+          "to": 5,
+          "min": 94,
+          "fgm": 20,
+          "fga": 37,
+          "ftm": 12,
+          "fta": 15,
+          "tpm": 5,
+          "tpa": 10
+        },
+        "tier": "A+"
+      }
+    ]
+  }
+}

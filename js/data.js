@@ -8283,6 +8283,31 @@ schedule: [
         "sourceSnapshot": "./assets/cortes/espn/20261109T134112.988Z.json"
       }
     ]
+  },
+  {
+    "week": 4,
+    "label": "Semana 4",
+    "start": "2026-11-09",
+    "end": "2026-11-15",
+    "featured": "w4-m2",
+    "matchups": [
+      {
+        "id": "w4-m1",
+        "teams": [
+          "shockers",
+          "pilsens"
+        ],
+        "status": "scheduled"
+      },
+      {
+        "id": "w4-m2",
+        "teams": [
+          "hipopotamos",
+          "pelafustanes"
+        ],
+        "status": "scheduled"
+      }
+    ]
   }
 ],
 
@@ -8335,6 +8360,467 @@ draft: {
 
 /* Publicaciones ------------------------------------------------------------- */
 posts: [
+{
+  "id": "previa-semana-4-las-revanchas",
+  "date": "2026-11-09",
+  "category": "Previas",
+  "readingMinutes": 4,
+  "title": "La semana de las revanchas abre con el líder contra el Chino",
+  "excerpt": "Hipopotamos y Mequetrefes cruzan el 1.º y el 2.º de la tabla. Shockers vuelve a encontrarse con Cromwell tras el 4–5 del debut. Jokić, Barnes y Allen figuran cuestionables para el lunes, y Brandon Miller está descartado.",
+  "teams": [
+    "hipopotamos",
+    "pelafustanes",
+    "shockers",
+    "pilsens"
+  ],
+  "fantasySnapshot": {
+    "week": 4,
+    "weekLabel": "Semana 4",
+    "start": "2026-11-09",
+    "end": "2026-11-15",
+    "matchups": [
+      {
+        "id": "w4-m1",
+        "teams": [
+          "shockers",
+          "pilsens"
+        ],
+        "status": "scheduled"
+      },
+      {
+        "id": "w4-m2",
+        "teams": [
+          "hipopotamos",
+          "pelafustanes"
+        ],
+        "status": "scheduled"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "ESPN Fantasy · Cruces y planteles verificados el lunes",
+      "url": "./assets/cortes/semana-4-fuentes-2026-11-09.json"
+    },
+    {
+      "title": "NBA · Parte de lesiones del lunes, 14:45 de Chile",
+      "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_12_45PM.pdf"
+    },
+    {
+      "title": "NBA · Agenda del lunes 9",
+      "url": "https://www.nba.com/games?date=2026-11-09"
+    },
+    {
+      "title": "NBA · Agenda del martes 10",
+      "url": "https://www.nba.com/games?date=2026-11-10"
+    },
+    {
+      "title": "ESPN Fantasy · Cierre oficial del 2 al 8 de noviembre",
+      "url": "./assets/cortes/espn/20261109T134112.988Z.json"
+    }
+  ],
+  "source": "Cruces oficiales de ESPN Fantasy del 9 al 15 de noviembre. Planteles consultados el lunes a las 15:01 de Chile. Estados del parte NBA de las 14:45 de Chile para los partidos indicados.",
+  "body": [
+    [
+      "p",
+      "Se cumplió la primera vuelta de enfrentamientos y a los cuatro les toca volver a la escena del debut. Hipopotamos llega con 17–10 en categorías y Mequetrefes con 14–13. Shockers parte en 13–14 y Pilsens en 10–17. Los duelos son los mismos que en octubre. El mercado les cambió las rotaciones y, a juzgar por cómo se saludaron el lunes, también la memoria."
+    ],
+    [
+      "h2",
+      "Hipopotamos–Mequetrefes abre la pelea de arriba"
+    ],
+    [
+      "matchup-cut",
+      "w4-m2"
+    ],
+    [
+      "p",
+      "El 7–2 de Hipopotamos en la primera fecha dejó una cuenta rara. Mequetrefes anotó 574 puntos contra 483 y ganó los libres, pero cedió las otras siete columnas. En la tercera semana el Chino mejoró el control, con 84 pérdidas y 28 tapones. Para darle pelea al líder necesita sostener ambos números, disputar el campo y aprovechar que sus 78 triples superaron los 63 del último corte de Cristóbal."
+    ],
+    [
+      "p",
+      "Brandon Miller está descartado para el lunes ante Cleveland por la lesión de cadera. El Chino mirará a Aaron Wiggins y a Payton Pritchard para sostener el tiro mientras espera el próximo parte. Hipopotamos viene de 800 puntos, 263 rebotes y 33 tapones. Booker y Wembanyama tienen un duelo NBA entre Phoenix y San Antonio a las 23:00 de Chile y comparten lado en fantasy. Antes, a las 21:00, los Lakers visitan Atlanta. Si juegan Dončić y Kessler, sus números empujarán en direcciones opuestas. Christian Braun figura cuestionable para Denver–Houston."
+    ],
+    [
+      "p",
+      "Cristóbal quiso dejar el 7–2 del estreno en la pizarra para el saludo. El Chino aceptó, con una condición. Dejar también escrito el 5–4 del último domingo y guardar espacio debajo."
+    ],
+    [
+      "sources",
+      [
+        0,
+        1,
+        2,
+        4
+      ]
+    ],
+    [
+      "h2",
+      "Shockers–Pilsens tiene otra cuenta por cobrar"
+    ],
+    [
+      "matchup-cut",
+      "w4-m1"
+    ],
+    [
+      "p",
+      "Cromwell ganó 5–4 en el estreno y tiene una ruta parecida para la revancha. Viene de 169 asistencias, 85 pérdidas y un 48,399% de campo. Shockers registró 182 asistencias y 40 robos, pero su 41,33% de campo le abrió la puerta a Mequetrefes. La pelea por creación y eficiencia puede pesar tanto como la anotación de Shai, Tatum, Maxey y Brown."
+    ],
+    [
+      "p",
+      "El lunes a las 22:30 de Chile se juega Denver–Houston, con Jokić cuestionable por el codo derecho. Shockers tiene a Barnes cuestionable para Toronto–Memphis y a Allen en la misma condición para Cleveland–Charlotte. El martes a las 22:00, Boston visita a Philadelphia. Tatum y los dos anotadores de Cromwell tendrán una cita NBA que atraviesa el cruce fantasy. Si el Rubio consigue que Wagner y Sabonis sostengan el pase mientras sus tiradores ganan campo, el recuerdo del 5–4 del debut puede durar algo más que una cargada."
+    ],
+    [
+      "p",
+      "Patricio pidió que nadie llevara sobres al vestuario. El Rubio llegó con una carpeta. La abrió y tenía adentro una sola hoja con los porcentajes sin redondear."
+    ],
+    [
+      "sources",
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    ]
+  ]
+},
+{
+  "id": "mercado-semana-4-gafford-klay-y-los-cupos",
+  "date": "2026-11-09",
+  "category": "Trades",
+  "readingMinutes": 4,
+  "title": "El Rubio busca tapones y el Chino vuelve a mirar a Klay",
+  "excerpt": "Daniel Gafford, Klay Thompson, Jamal Shead y Matisse Thybulle ofrecen respuestas distintas para los cuatro equipos. El mercado se mueve entre los tapones que faltaron y las plazas que nadie quiere ceder.",
+  "teams": [
+    "pilsens",
+    "pelafustanes",
+    "shockers",
+    "hipopotamos"
+  ],
+  "rulesLink": true,
+  "image": {
+    "src": "./assets/editorial/mercado-tablero-2026-11-09.webp",
+    "small": "./assets/editorial/mercado-tablero-2026-11-09-640.webp",
+    "width": 1280,
+    "height": 720,
+    "alt": "Cuatro manos se disputan una ficha en una mesa con una pizarra de básquet y papas fritas.",
+    "caption": "Ilustración editorial"
+  },
+  "sources": [
+    {
+      "title": "Planteles y actas NBA de los candidatos",
+      "url": "./assets/cortes/semana-4-fuentes-2026-11-09.json"
+    },
+    {
+      "title": "ESPN Fantasy · Cierre oficial del 2 al 8 de noviembre",
+      "url": "./assets/cortes/espn/20261109T134112.988Z.json"
+    },
+    {
+      "title": "NBA · Parte de lesiones del lunes, 14:45 de Chile",
+      "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_12_45PM.pdf"
+    },
+    {
+      "title": "ESPN Fantasy · Movimientos del 2 de noviembre",
+      "url": "./assets/cortes/ofertas-2026-11-02.json"
+    }
+  ],
+  "source": "Las cifras corresponden a partidos NBA del 2 al 8 de noviembre. Los candidatos no figuran en los cuatro planteles al corte del lunes a las 15:01 de Chile. Las incorporaciones dependen de waivers, elegibilidad y cupos. No hay altas confirmadas en esta nota.",
+  "body": [
+    [
+      "p",
+      "El lunes aparecieron cuatro nombres en la pizarra de mercado. A los diez minutos faltaba el de Gafford. El Rubio aseguró que lo había borrado por un error de ortografía y lo volvió a escribir en una hoja que dobló cuatro veces. Franz Wagner, el premium de la semana pasada, pidió que esta vez el precio incluyera estacionamiento. Maxey solo quiso saber si el nuevo venía a tapar tiros o a pedirlos."
+    ],
+    [
+      "h2",
+      "Cromwell puede empezar por Gafford"
+    ],
+    [
+      "p",
+      "Hipopotamos sumó 33 tapones. Cromwell terminó con ocho. Daniel Gafford, cortado por Shockers en octubre, viene de ocho bloqueos y 19 de 26 de campo en cuatro partidos NBA con Dallas. Tiene un uso concreto al lado de los interiores que ya reparten el juego. Sus 17 rebotes y la ausencia de triples delimitan lo que ofrece. Karl-Anthony Towns traería otra clase de ayuda, con 41 rebotes en tres partidos y cero bloqueos en la semana. Para el Rubio, Gafford apunta mejor al agujero de este domingo y figura sin tier en el anexo publicado. Towns, A+, exigiría liberar un cupo."
+    ],
+    [
+      "h2",
+      "El Chino dejó el cartel de Klay guardado"
+    ],
+    [
+      "p",
+      "Klay Thompson hizo 21 triples, 83 puntos y 29 de 58 de campo en cuatro partidos NBA. Mequetrefes lo soltó por Jalen Smith, que acaba de aportar cinco tapones en la semana del 5–4. Con Brandon Miller fuera para el lunes, el Chino tiene motivos para volver a mirar al tirador y otros tantos para mantener a Smith. Bobby Portis es una plaza que se puede discutir después de sus ocho puntos en el cómputo del cierre. El utilero encontró el cartel de Klay detrás del nuevo. El Chino pidió que lo dejara ahí por si había que ahorrar en impresión."
+    ],
+    [
+      "h2",
+      "Shockers tiene dos maneras de responder"
+    ],
+    [
+      "p",
+      "Ayo Dosunmu quedó en una oferta fallida el 2 de noviembre. Viene de 92 puntos, nueve triples y 17 de 18 libres en cuatro partidos NBA, con 33 de 65 de campo. Ayudaría a atacar la eficiencia que cedió Shockers. Como ocupa tier B, la idea requiere abrir uno de los tres cupos ya usados. Jamal Shead ofrece una prueba distinta, con 28 asistencias y cinco pérdidas en tres partidos y sin tier en el anexo. Tiene menos impacto anotador, pero es una opción para cubrir creación si la ingle de Barnes le recorta partidos. Flagg dejó escrito que su sobre ya venía con asistencias incluidas. Patricio contestó que ahora estaban comprando profundidad."
+    ],
+    [
+      "h2",
+      "Hipopotamos puede comprar otro par de manos"
+    ],
+    [
+      "p",
+      "Matisse Thybulle sumó nueve robos, tres tapones y tres pérdidas en cuatro partidos NBA. Su 5 de 17 de campo exige medir el costo en una categoría que Hipopotamos ganó por un suspiro. Con 800 puntos recientes, Cristóbal puede buscar un especialista para noches en que necesita defender robos. Christian Braun figura cuestionable para el lunes y la plaza de un alero de bajo volumen merece seguimiento. Booker se ofreció a recibir a Thybulle. Esta vez el utilero le entregó una sola llave."
+    ],
+    [
+      "sources",
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ]
+  ]
+},
+{
+  "id": "cierre-semana-3-hipopotamos-pilsens",
+  "date": "2026-11-09",
+  "category": "Crónicas",
+  "readingMinutes": 3,
+  "title": "Booker trae la cuenta y Wembanyama cierra el aro",
+  "excerpt": "Hipopotamos hizo 800 puntos y le ganó 6–3 a Cromwell. Booker cumplió en la línea, Ajay Mitchell sorprendió y un margen de 0,015 puntos porcentuales en tiros de campo dejó al Rubio buscando otra hoja de cálculo.",
+  "teams": [
+    "hipopotamos",
+    "pilsens"
+  ],
+  "fantasySnapshot": {
+    "week": 3,
+    "weekLabel": "Semana 3",
+    "start": "2026-11-02",
+    "end": "2026-11-08",
+    "updatedAt": "2026-11-09T13:41:12.988Z",
+    "sourceSnapshot": "./assets/cortes/espn/20261109T134112.988Z.json",
+    "matchups": [
+      {
+        "id": "w3-m1",
+        "teams": [
+          "pilsens",
+          "hipopotamos"
+        ],
+        "status": "final",
+        "stats": {
+          "pilsens": {
+            "fgp": 0.48399247,
+            "ftp": 0.80254777,
+            "tpm": 54,
+            "reb": 241,
+            "ast": 169,
+            "stl": 48,
+            "blk": 8,
+            "to": 85,
+            "pts": 694
+          },
+          "hipopotamos": {
+            "fgp": 0.48414023,
+            "ftp": 0.79695431,
+            "tpm": 63,
+            "reb": 263,
+            "ast": 157,
+            "stl": 50,
+            "blk": 33,
+            "to": 93,
+            "pts": 800
+          }
+        },
+        "updatedAt": "2026-11-09T13:41:12.988Z",
+        "sourceMode": "espn",
+        "source": "Totales semanales oficiales de ESPN Fantasy, obtenidos mediante su API de lectura.",
+        "sourceUrl": "https://fantasy.espn.com/basketball/boxscore?leagueId=732964684&matchupPeriodId=3&seasonId=2027&teamId=4",
+        "sourceSnapshot": "./assets/cortes/espn/20261109T134112.988Z.json"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "ESPN Fantasy · Cierre oficial del 2 al 8 de noviembre",
+      "url": "./assets/cortes/espn/20261109T134112.988Z.json"
+    },
+    {
+      "title": "ESPN Fantasy · Parcial del domingo a las 08:46 de Chile",
+      "url": "./assets/cortes/espn/20261108T114602.527Z.json"
+    },
+    {
+      "title": "Actas NBA y contraste con el cómputo fantasy",
+      "url": "./assets/cortes/semana-4-fuentes-2026-11-09.json"
+    }
+  ],
+  "source": "Totales finales oficiales de ESPN Fantasy. Las cifras individuales de Hipopotamos provienen de la combinación de actas NBA que reproduce las nueve categorías del cierre. Las actuaciones individuales de Cromwell se citan como producción NBA.",
+  "body": [
+    [
+      "p",
+      "La discusión del último tiro duró una semana. Devin Booker llegó por $2 preguntando quién se quedaba con la última pelota y acabó haciendo una parte del trabajo mucho menos glamorosa. Metió sus 27 libres. Cuando el utilero le pidió que eligiera entre los dos casilleros que había reclamado al llegar, Booker dejó las zapatillas en uno y pegó el 27/27 en el otro. Cristóbal se lo dejó hasta el lunes."
+    ],
+    [
+      "matchup-cut",
+      "w3-m1"
+    ],
+    [
+      "h2",
+      "Un aro cerrado y dos categorías al filo"
+    ],
+    [
+      "p",
+      "Wembanyama sostuvo el 6–3 con 123 puntos, 56 rebotes y 14 tapones. Walker Kessler agregó 51 rebotes y siete bloqueos. Entre ambos sumaron 21 tapones, trece más que todo Pilsens. El resultado colectivo fue 33–8 en esa columna y 263–241 en rebotes. Ajay Mitchell, el fichaje de $5 que llegó detrás de los titulares del mercado, anotó 90 puntos con cuatro pérdidas. Su volumen ayudó a que el ataque llegara a 800 frente a 694."
+    ],
+    [
+      "p",
+      "Cromwell todavía mandaba 45–39 en robos en el corte del domingo por la mañana. Hipopotamos añadió once y cerró arriba 50–48. También se llevó los triples, 63–54, y el porcentaje de campo, 48,414% contra 48,399%. El Rubio quiso leer ese último número con un decimal. Se le acabó el argumento cuando Jokić le preguntó qué hacían entonces con los otros cinco casilleros."
+    ],
+    [
+      "sources",
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    [
+      "h2",
+      "La creación de Pilsens aguantó"
+    ],
+    [
+      "p",
+      "Cromwell ganó asistencias 169–157, libres por 80,25% a 79,70% y pérdidas con 85 frente a 93. En las actas NBA de la semana, Jaylen Brown anotó 104 puntos y Tyrese Maxey sumó 89 con 22 de 24 en libres. Franz Wagner repartió 32 asistencias. El Rubio ya tiene argumentos para defender el recambio y un problema claro bajo el aro. Keldon Johnson, con 10 de 30 de campo y un triple en cuatro partidos NBA, dejó abierta la discusión sobre el uso de una plaza de rotación."
+    ],
+    [
+      "p",
+      "Hipopotamos queda primero por categorías, 17–10. Cromwell cae a 10–17 después de dos derrotas seguidas. Jokić dejó la pizarra con una sola instrucción para la revancha de esta semana. Al próximo que vea una bandeja rival, que haga algo más que avisar."
+    ],
+    [
+      "sources",
+      [
+        0,
+        2
+      ]
+    ]
+  ]
+},
+{
+  "id": "cierre-semana-3-mequetrefes-shockers",
+  "date": "2026-11-09",
+  "category": "Crónicas",
+  "readingMinutes": 3,
+  "title": "Tres tapones y un sobre de $52",
+  "excerpt": "Mequetrefes amaneció abajo el domingo y le dio vuelta el cruce a Shockers por 5–4. Dončić puso 135 puntos, los interiores recuperaron los tapones y Flagg dejó claro que la derrota no se explica por su fichaje.",
+  "teams": [
+    "pelafustanes",
+    "shockers"
+  ],
+  "fantasySnapshot": {
+    "week": 3,
+    "weekLabel": "Semana 3",
+    "start": "2026-11-02",
+    "end": "2026-11-08",
+    "updatedAt": "2026-11-09T13:41:12.988Z",
+    "sourceSnapshot": "./assets/cortes/espn/20261109T134112.988Z.json",
+    "matchups": [
+      {
+        "id": "w3-m2",
+        "teams": [
+          "shockers",
+          "pelafustanes"
+        ],
+        "status": "final",
+        "stats": {
+          "shockers": {
+            "fgp": 0.41330645,
+            "ftp": 0.82634731,
+            "tpm": 55,
+            "reb": 232,
+            "ast": 182,
+            "stl": 40,
+            "blk": 25,
+            "to": 95,
+            "pts": 603
+          },
+          "pelafustanes": {
+            "fgp": 0.45366795,
+            "ftp": 0.75824176,
+            "tpm": 78,
+            "reb": 222,
+            "ast": 170,
+            "stl": 33,
+            "blk": 28,
+            "to": 84,
+            "pts": 686
+          }
+        },
+        "updatedAt": "2026-11-09T13:41:12.988Z",
+        "sourceMode": "espn",
+        "source": "Totales semanales oficiales de ESPN Fantasy, obtenidos mediante su API de lectura.",
+        "sourceUrl": "https://fantasy.espn.com/basketball/boxscore?leagueId=732964684&matchupPeriodId=3&seasonId=2027&teamId=3",
+        "sourceSnapshot": "./assets/cortes/espn/20261109T134112.988Z.json"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "ESPN Fantasy · Cierre oficial del 2 al 8 de noviembre",
+      "url": "./assets/cortes/espn/20261109T134112.988Z.json"
+    },
+    {
+      "title": "ESPN Fantasy · Parcial del domingo a las 08:46 de Chile",
+      "url": "./assets/cortes/espn/20261108T114602.527Z.json"
+    },
+    {
+      "title": "Actas NBA y contraste con el cómputo fantasy",
+      "url": "./assets/cortes/semana-4-fuentes-2026-11-09.json"
+    }
+  ],
+  "source": "Totales definitivos y parcial del domingo obtenidos de ESPN Fantasy. Las cifras individuales se reconstruyeron con actas NBA y reproducen las nueve categorías de ambos equipos.",
+  "body": [
+    [
+      "p",
+      "El domingo temprano, Patricio tenía el 5–4 y una ventaja de 24–22 en tapones. El Chino miró esa columna y fue a buscar a sus interiores. Al cierre, Mequetrefes había añadido seis bloqueos frente a uno de Shockers. Se quedó con la categoría por 28–25 y con la serie por 5–4. El sobre de la puja por Cooper Flagg siguió sobre la mesa de Shockers. Nadie se atrevió a usarlo de posavasos."
+    ],
+    [
+      "matchup-cut",
+      "w3-m2"
+    ],
+    [
+      "h2",
+      "Dončić puso la diferencia y la segunda línea cerró la puerta"
+    ],
+    [
+      "p",
+      "Dončić firmó 135 puntos y 17 triples en tres partidos. Donovan Mitchell añadió 104 puntos y 15 triples, y Giannis Antetokounmpo, 106 puntos, 54 rebotes y siete tapones. Entre Giannis, Alperen Sengun y Jalen Smith hubo 18 bloqueos. Smith aportó cinco de ellos en las dos actuaciones que entran en la reconstrucción del cómputo. Aaron Wiggins hizo 11 triples y perdió cuatro pelotas. El Chino tuvo anotación de sobra y, cuando el cierre se puso incómodo, encontró manos en la segunda línea."
+    ],
+    [
+      "p",
+      "Mequetrefes terminó arriba en campo, 45,37% a 41,33%, triples, 78–55, tapones, pérdidas, 84 a 95, y puntos, 686–603. Brandon Miller, que venía de encender Santa María, se quedó en 35 puntos y 12 de 43 de campo. Los 8 puntos de Bobby Portis en el cómputo dejaron otra conversación abierta en un banco que esta semana puede necesitar más tiro."
+    ],
+    [
+      "sources",
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    [
+      "h2",
+      "Flagg pagó parte de la cuenta"
+    ],
+    [
+      "p",
+      "Shai Gilgeous-Alexander sumó 143 puntos, Cooper Flagg 82 y 30 asistencias, y Jayson Tatum convirtió sus 23 libres. Dyson Daniels hizo 44 rebotes, 31 asistencias y once robos. Shockers ganó libres, rebotes, asistencias y robos. En campo pesaron el 25 de 67 de Flagg y el 11 de 39 de Cameron Boozer, entre otras noches difíciles. Yaxel Lendeborg sí encontró utilidad con cinco tapones. Jarrett Allen aportó uno en el cómputo reconstruido."
+    ],
+    [
+      "p",
+      "A Flagg le dejaron el casillero de Towns y la cuenta de $52. El novato respondió colgando sus 30 asistencias en la puerta, justo debajo del precio. Tatum le puso una cinta arriba para que el papel aguantara. Mequetrefes sale segundo con 14–13 en categorías y Shockers queda 13–14. La discusión sobre quién se queda con el vestuario tendrá otra semana de plazo."
+    ],
+    [
+      "sources",
+      [
+        0,
+        2
+      ]
+    ]
+  ]
+},
 {
   "id": "waivers-2-noviembre-flagg-booker-vestuario",
   "date": "2026-11-03",
