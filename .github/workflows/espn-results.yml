@@ -106,17 +106,16 @@ jobs:
         run: |
           expected_commit=$(git rev-parse HEAD)
           gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" --silent
-          for attempt in $(seq 1 48); do
-            read -r state deployed_commit < <(gh api "repos/$GITHUB_REPOSITORY/pages/builds/latest" --jq '[.status, .commit] | @tsv')
-            if [ "$state" = 'errored' ]; then
-              echo 'GitHub Pages informó un error de publicación.' >&2
-              exit 1
+          deadline=$((SECONDS + 480))
+          # The latest build can still be a failed attempt while Pages starts its replacement.
+          while (( SECONDS < deadline )); do
+            if build=$(gh api "repos/$GITHUB_REPOSITORY/pages/builds/latest" --jq '[.status, .commit] | @tsv'); then
+              read -r state deployed_commit <<< "$build"
+              if [[ "$state" == 'built' && "$deployed_commit" == "$expected_commit" ]] && node scripts/verify-publication.cjs; then
+                exit 0
+              fi
             fi
-            if [ "$state" = 'built' ] && [ "$deployed_commit" = "$expected_commit" ]; then
-              node scripts/verify-publication.cjs
-              exit 0
-            fi
-            sleep 5
+            sleep 10
           done
-          echo 'No se confirmó la publicación del commit esperado.' >&2
+          echo "No se confirmó la publicación de $expected_commit. Último build: ${state:-desconocido} (${deployed_commit:-sin commit})." >&2
           exit 1
