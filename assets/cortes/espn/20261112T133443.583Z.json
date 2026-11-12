@@ -1,0 +1,100 @@
+{
+  "leagueId": 732964684,
+  "seasonId": 2027,
+  "matchupPeriodId": 4,
+  "start": "2026-11-09",
+  "end": "2026-11-15",
+  "capturedAt": "2026-11-12T13:34:43.583Z",
+  "status": "partial",
+  "retrieval": "espn-fantasy-api",
+  "matchups": [
+    {
+      "teams": [
+        {
+          "espnId": 1,
+          "name": "Penalolen Shockers",
+          "score": [
+            3,
+            6,
+            0
+          ],
+          "stats": {
+            "fgp": 0.47317073,
+            "ftp": 0.81111111,
+            "tpm": 25,
+            "reb": 124,
+            "ast": 64,
+            "stl": 21,
+            "blk": 19,
+            "to": 30,
+            "pts": 292
+          }
+        },
+        {
+          "espnId": 2,
+          "name": "Cromwell Pilsens",
+          "score": [
+            6,
+            3,
+            0
+          ],
+          "stats": {
+            "fgp": 0.5018315,
+            "ftp": 0.84444444,
+            "tpm": 39,
+            "reb": 120,
+            "ast": 85,
+            "stl": 20,
+            "blk": 4,
+            "to": 28,
+            "pts": 389
+          }
+        }
+      ]
+    },
+    {
+      "teams": [
+        {
+          "espnId": 4,
+          "name": "Los Hipopotamos Chuchetumare",
+          "score": [
+            6,
+            2,
+            1
+          ],
+          "stats": {
+            "fgp": 0.51020408,
+            "ftp": 0.81538462,
+            "tpm": 33,
+            "reb": 109,
+            "ast": 60,
+            "stl": 17,
+            "blk": 31,
+            "to": 29,
+            "pts": 336
+          }
+        },
+        {
+          "espnId": 3,
+          "name": "Mequetrefes",
+          "score": [
+            2,
+            6,
+            1
+          ],
+          "stats": {
+            "fgp": 0.47767857,
+            "ftp": 0.7962963,
+            "tpm": 41,
+            "reb": 100,
+            "ast": 65,
+            "stl": 17,
+            "blk": 7,
+            "to": 42,
+            "pts": 298
+          }
+        }
+      ]
+    }
+  ]
+}
