@@ -1,0 +1,100 @@
+{
+  "leagueId": 732964684,
+  "seasonId": 2027,
+  "matchupPeriodId": 4,
+  "start": "2026-11-09",
+  "end": "2026-11-15",
+  "capturedAt": "2026-11-14T11:57:39.142Z",
+  "status": "partial",
+  "retrieval": "espn-fantasy-api",
+  "matchups": [
+    {
+      "teams": [
+        {
+          "espnId": 1,
+          "name": "Penalolen Shockers",
+          "score": [
+            3,
+            6,
+            0
+          ],
+          "stats": {
+            "fgp": 0.48680352,
+            "ftp": 0.77777778,
+            "tpm": 36,
+            "reb": 207,
+            "ast": 100,
+            "stl": 31,
+            "blk": 29,
+            "to": 47,
+            "pts": 473
+          }
+        },
+        {
+          "espnId": 2,
+          "name": "Cromwell Pilsens",
+          "score": [
+            6,
+            3,
+            0
+          ],
+          "stats": {
+            "fgp": 0.5,
+            "ftp": 0.82517483,
+            "tpm": 57,
+            "reb": 174,
+            "ast": 149,
+            "stl": 30,
+            "blk": 7,
+            "to": 46,
+            "pts": 593
+          }
+        }
+      ]
+    },
+    {
+      "teams": [
+        {
+          "espnId": 4,
+          "name": "Los Hipopotamos Chuchetumare",
+          "score": [
+            4,
+            5,
+            0
+          ],
+          "stats": {
+            "fgp": 0.51734104,
+            "ftp": 0.84536082,
+            "tpm": 45,
+            "reb": 148,
+            "ast": 94,
+            "stl": 22,
+            "blk": 37,
+            "to": 38,
+            "pts": 485
+          }
+        },
+        {
+          "espnId": 3,
+          "name": "Mequetrefes",
+          "score": [
+            5,
+            4,
+            0
+          ],
+          "stats": {
+            "fgp": 0.50277778,
+            "ftp": 0.72631579,
+            "tpm": 60,
+            "reb": 165,
+            "ast": 95,
+            "stl": 26,
+            "blk": 14,
+            "to": 64,
+            "pts": 491
+          }
+        }
+      ]
+    }
+  ]
+}
