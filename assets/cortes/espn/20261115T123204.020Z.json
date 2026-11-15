@@ -1,0 +1,100 @@
+{
+  "leagueId": 732964684,
+  "seasonId": 2027,
+  "matchupPeriodId": 4,
+  "start": "2026-11-09",
+  "end": "2026-11-15",
+  "capturedAt": "2026-11-15T12:32:04.020Z",
+  "status": "partial",
+  "retrieval": "espn-fantasy-api",
+  "matchups": [
+    {
+      "teams": [
+        {
+          "espnId": 1,
+          "name": "Penalolen Shockers",
+          "score": [
+            4,
+            5,
+            0
+          ],
+          "stats": {
+            "fgp": 0.47532468,
+            "ftp": 0.77108434,
+            "tpm": 37,
+            "reb": 232,
+            "ast": 113,
+            "stl": 36,
+            "blk": 32,
+            "to": 50,
+            "pts": 531
+          }
+        },
+        {
+          "espnId": 2,
+          "name": "Cromwell Pilsens",
+          "score": [
+            5,
+            4,
+            0
+          ],
+          "stats": {
+            "fgp": 0.50452489,
+            "ftp": 0.8343949,
+            "tpm": 62,
+            "reb": 188,
+            "ast": 170,
+            "stl": 35,
+            "blk": 9,
+            "to": 54,
+            "pts": 639
+          }
+        }
+      ]
+    },
+    {
+      "teams": [
+        {
+          "espnId": 4,
+          "name": "Los Hipopotamos Chuchetumare",
+          "score": [
+            6,
+            3,
+            0
+          ],
+          "stats": {
+            "fgp": 0.50623441,
+            "ftp": 0.86666667,
+            "tpm": 53,
+            "reb": 169,
+            "ast": 110,
+            "stl": 29,
+            "blk": 41,
+            "to": 45,
+            "pts": 563
+          }
+        },
+        {
+          "espnId": 3,
+          "name": "Mequetrefes",
+          "score": [
+            3,
+            6,
+            0
+          ],
+          "stats": {
+            "fgp": 0.51015228,
+            "ftp": 0.75,
+            "tpm": 64,
+            "reb": 192,
+            "ast": 107,
+            "stl": 28,
+            "blk": 18,
+            "to": 69,
+            "pts": 550
+          }
+        }
+      ]
+    }
+  ]
+}
