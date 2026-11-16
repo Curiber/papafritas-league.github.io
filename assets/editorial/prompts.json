@@ -39,5 +39,11 @@
     "tool": "image_gen (herramienta integrada)",
     "createdAt": "2026-11-09",
     "alt": "Stephen Curry sostiene el gesto de lanzamiento mientras la pelota vuela hacia el aro."
+  },
+  "mercado-especialistas-2026-11-16": {
+    "prompt": "Use case: illustration-story. Create a 16:9 sports-magazine editorial illustration for Papafritas League about fantasy basketball managers hunting replacement specialists after a star shooter is sidelined. Scene from court level in a dark gym: an empty chair and a folded deep blue jersey with gold trim sit at one side of the court, while two anonymous reserve basketball players, a small perimeter guard holding an orange ball and a tall center with hands ready for a rebound, stand in a warm spotlight beside a tactical board with abstract court markings. The vacant chair and the two profiles must read clearly in a mobile news crop. Warm orange and cream arena lighting against rich charcoal and navy, expressive ink and paint with restrained paper grain matching Papafritas sports coverage. Keep the subjects in the central 75 percent. One editorial cover, no letters, no numbers, no logos, no recognizable pro players, no graphic injury, no watermarks.",
+    "tool": "image_gen (herramienta integrada)",
+    "createdAt": "2026-11-16",
+    "alt": "Dos jugadores esperan en la cancha junto a una camiseta doblada y una pizarra de básquet."
   }
 }
