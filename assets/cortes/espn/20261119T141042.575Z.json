@@ -1,0 +1,100 @@
+{
+  "leagueId": 732964684,
+  "seasonId": 2027,
+  "matchupPeriodId": 5,
+  "start": "2026-11-16",
+  "end": "2026-11-22",
+  "capturedAt": "2026-11-19T14:10:42.575Z",
+  "status": "partial",
+  "retrieval": "espn-fantasy-api",
+  "matchups": [
+    {
+      "teams": [
+        {
+          "espnId": 4,
+          "name": "Los Hipopotamos Chuchetumare",
+          "score": [
+            6,
+            3,
+            0
+          ],
+          "stats": {
+            "fgp": 0.44516129,
+            "ftp": 0.80519481,
+            "tpm": 34,
+            "reb": 135,
+            "ast": 84,
+            "stl": 22,
+            "blk": 16,
+            "to": 32,
+            "pts": 372
+          }
+        },
+        {
+          "espnId": 1,
+          "name": "Penalolen Shockers",
+          "score": [
+            3,
+            6,
+            0
+          ],
+          "stats": {
+            "fgp": 0.47260274,
+            "ftp": 0.70512821,
+            "tpm": 24,
+            "reb": 129,
+            "ast": 72,
+            "stl": 29,
+            "blk": 23,
+            "to": 46,
+            "pts": 355
+          }
+        }
+      ]
+    },
+    {
+      "teams": [
+        {
+          "espnId": 2,
+          "name": "Cromwell Pilsens",
+          "score": [
+            3,
+            6,
+            0
+          ],
+          "stats": {
+            "fgp": 0.49812734,
+            "ftp": 0.84375,
+            "tpm": 41,
+            "reb": 110,
+            "ast": 101,
+            "stl": 17,
+            "blk": 13,
+            "to": 40,
+            "pts": 361
+          }
+        },
+        {
+          "espnId": 3,
+          "name": "Mequetrefes",
+          "score": [
+            6,
+            3,
+            0
+          ],
+          "stats": {
+            "fgp": 0.50337838,
+            "ftp": 0.83561644,
+            "tpm": 45,
+            "reb": 112,
+            "ast": 61,
+            "stl": 20,
+            "blk": 16,
+            "to": 48,
+            "pts": 404
+          }
+        }
+      ]
+    }
+  ]
+}
