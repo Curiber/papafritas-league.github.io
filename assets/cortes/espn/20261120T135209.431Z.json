@@ -1,0 +1,100 @@
+{
+  "leagueId": 732964684,
+  "seasonId": 2027,
+  "matchupPeriodId": 5,
+  "start": "2026-11-16",
+  "end": "2026-11-22",
+  "capturedAt": "2026-11-20T13:52:09.431Z",
+  "status": "partial",
+  "retrieval": "espn-fantasy-api",
+  "matchups": [
+    {
+      "teams": [
+        {
+          "espnId": 4,
+          "name": "Los Hipopotamos Chuchetumare",
+          "score": [
+            6,
+            3,
+            0
+          ],
+          "stats": {
+            "fgp": 0.45833333,
+            "ftp": 0.81609195,
+            "tpm": 42,
+            "reb": 151,
+            "ast": 95,
+            "stl": 29,
+            "blk": 19,
+            "to": 42,
+            "pts": 443
+          }
+        },
+        {
+          "espnId": 1,
+          "name": "Penalolen Shockers",
+          "score": [
+            3,
+            6,
+            0
+          ],
+          "stats": {
+            "fgp": 0.46428571,
+            "ftp": 0.72093023,
+            "tpm": 25,
+            "reb": 150,
+            "ast": 81,
+            "stl": 31,
+            "blk": 26,
+            "to": 51,
+            "pts": 373
+          }
+        }
+      ]
+    },
+    {
+      "teams": [
+        {
+          "espnId": 2,
+          "name": "Cromwell Pilsens",
+          "score": [
+            5,
+            4,
+            0
+          ],
+          "stats": {
+            "fgp": 0.51056338,
+            "ftp": 0.85294118,
+            "tpm": 45,
+            "reb": 122,
+            "ast": 104,
+            "stl": 19,
+            "blk": 13,
+            "to": 41,
+            "pts": 393
+          }
+        },
+        {
+          "espnId": 3,
+          "name": "Mequetrefes",
+          "score": [
+            4,
+            5,
+            0
+          ],
+          "stats": {
+            "fgp": 0.50324675,
+            "ftp": 0.84,
+            "tpm": 46,
+            "reb": 120,
+            "ast": 63,
+            "stl": 21,
+            "blk": 18,
+            "to": 49,
+            "pts": 419
+          }
+        }
+      ]
+    }
+  ]
+}
