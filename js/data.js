@@ -11636,33 +11636,33 @@ schedule: [
         "status": "partial",
         "stats": {
           "hipopotamos": {
-            "fgp": 0.47094188,
-            "ftp": 0.74166667,
-            "tpm": 57,
-            "reb": 201,
-            "ast": 126,
-            "stl": 35,
-            "blk": 25,
-            "to": 58,
-            "pts": 616
+            "fgp": 0.47894737,
+            "ftp": 0.74418605,
+            "tpm": 64,
+            "reb": 239,
+            "ast": 140,
+            "stl": 42,
+            "blk": 30,
+            "to": 67,
+            "pts": 706
           },
           "shockers": {
-            "fgp": 0.48941176,
-            "ftp": 0.7,
-            "tpm": 36,
-            "reb": 186,
-            "ast": 124,
-            "stl": 43,
-            "blk": 28,
-            "to": 67,
-            "pts": 536
+            "fgp": 0.49770642,
+            "ftp": 0.70247934,
+            "tpm": 39,
+            "reb": 199,
+            "ast": 128,
+            "stl": 44,
+            "blk": 29,
+            "to": 68,
+            "pts": 558
           }
         },
-        "updatedAt": "2026-11-21T13:16:11.468Z",
+        "updatedAt": "2026-11-22T13:07:52.649Z",
         "sourceMode": "espn",
         "source": "Totales semanales oficiales de ESPN Fantasy, obtenidos mediante su API de lectura.",
         "sourceUrl": "https://fantasy.espn.com/basketball/boxscore?leagueId=732964684&matchupPeriodId=5&seasonId=2027&teamId=4",
-        "sourceSnapshot": "./assets/cortes/espn/20261121T131611.468Z.json"
+        "sourceSnapshot": "./assets/cortes/espn/20261122T130752.649Z.json"
       },
       {
         "id": "w5-m2",
@@ -11673,33 +11673,33 @@ schedule: [
         "status": "partial",
         "stats": {
           "pilsens": {
-            "fgp": 0.51174935,
-            "ftp": 0.83157895,
-            "tpm": 56,
-            "reb": 156,
-            "ast": 144,
-            "stl": 24,
-            "blk": 17,
-            "to": 60,
-            "pts": 527
+            "fgp": 0.48085106,
+            "ftp": 0.80916031,
+            "tpm": 64,
+            "reb": 188,
+            "ast": 170,
+            "stl": 29,
+            "blk": 21,
+            "to": 67,
+            "pts": 622
           },
           "pelafustanes": {
-            "fgp": 0.50260417,
-            "ftp": 0.8,
+            "fgp": 0.49127182,
+            "ftp": 0.79411765,
             "tpm": 57,
-            "reb": 148,
-            "ast": 88,
+            "reb": 154,
+            "ast": 96,
             "stl": 27,
             "blk": 20,
             "to": 63,
-            "pts": 523
+            "pts": 532
           }
         },
-        "updatedAt": "2026-11-21T13:16:11.468Z",
+        "updatedAt": "2026-11-22T13:07:52.649Z",
         "sourceMode": "espn",
         "source": "Totales semanales oficiales de ESPN Fantasy, obtenidos mediante su API de lectura.",
         "sourceUrl": "https://fantasy.espn.com/basketball/boxscore?leagueId=732964684&matchupPeriodId=5&seasonId=2027&teamId=2",
-        "sourceSnapshot": "./assets/cortes/espn/20261121T131611.468Z.json"
+        "sourceSnapshot": "./assets/cortes/espn/20261122T130752.649Z.json"
       }
     ]
   }

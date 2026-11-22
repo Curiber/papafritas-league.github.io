@@ -1,0 +1,100 @@
+{
+  "leagueId": 732964684,
+  "seasonId": 2027,
+  "matchupPeriodId": 5,
+  "start": "2026-11-16",
+  "end": "2026-11-22",
+  "capturedAt": "2026-11-22T13:07:52.649Z",
+  "status": "partial",
+  "retrieval": "espn-fantasy-api",
+  "matchups": [
+    {
+      "teams": [
+        {
+          "espnId": 4,
+          "name": "Los Hipopotamos Chuchetumare",
+          "score": [
+            7,
+            2,
+            0
+          ],
+          "stats": {
+            "fgp": 0.47894737,
+            "ftp": 0.74418605,
+            "tpm": 64,
+            "reb": 239,
+            "ast": 140,
+            "stl": 42,
+            "blk": 30,
+            "to": 67,
+            "pts": 706
+          }
+        },
+        {
+          "espnId": 1,
+          "name": "Penalolen Shockers",
+          "score": [
+            2,
+            7,
+            0
+          ],
+          "stats": {
+            "fgp": 0.49770642,
+            "ftp": 0.70247934,
+            "tpm": 39,
+            "reb": 199,
+            "ast": 128,
+            "stl": 44,
+            "blk": 29,
+            "to": 68,
+            "pts": 558
+          }
+        }
+      ]
+    },
+    {
+      "teams": [
+        {
+          "espnId": 2,
+          "name": "Cromwell Pilsens",
+          "score": [
+            7,
+            2,
+            0
+          ],
+          "stats": {
+            "fgp": 0.48085106,
+            "ftp": 0.80916031,
+            "tpm": 64,
+            "reb": 188,
+            "ast": 170,
+            "stl": 29,
+            "blk": 21,
+            "to": 67,
+            "pts": 622
+          }
+        },
+        {
+          "espnId": 3,
+          "name": "Mequetrefes",
+          "score": [
+            2,
+            7,
+            0
+          ],
+          "stats": {
+            "fgp": 0.49127182,
+            "ftp": 0.79411765,
+            "tpm": 57,
+            "reb": 154,
+            "ast": 96,
+            "stl": 27,
+            "blk": 20,
+            "to": 63,
+            "pts": 532
+          }
+        }
+      ]
+    }
+  ]
+}
