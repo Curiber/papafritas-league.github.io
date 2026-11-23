@@ -171,7 +171,7 @@ function home() {
   return `<section class="hero" aria-label="Portada">${featured()}${story()}</section>
     ${section(`${esc(week.label)} · Cruces`, `${fmtShort(week.start)} – ${fmtShort(week.end)}`)}<div class="matches">${ms.map(matchCard).join('')}</div>
     <div class="columns"><section>${section('Tabla de posiciones', played() ? 'Temporada regular' : 'Sin cruces finalizados')}${standingsTable(true)}
-      ${section('Desde la redacción', '<a href="#noticias">Todas las notas</a>')}<div class="news-grid">${posts().slice(0, 2).map(news).join('')}</div></section>
+      ${section('Desde la redacción', '<a href="#noticias">Todas las notas</a>')}<div class="news-grid">${posts().slice(1, 3).map(news).join('')}</div></section>
       <aside>${section('Power ranking', esc(D.rankings[0].label))}${rankBox()}</aside></div>
     ${section('Las franquicias', 'Cuatro equipos · Temporada ' + esc(D.season))}<div class="team-grid">${D.teams.map(teamCard).join('')}</div>`;
 }

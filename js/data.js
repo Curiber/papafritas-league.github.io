@@ -9317,6 +9317,2884 @@ statisticsReports: [
     ]
   },
   "sourceImages": []
+},
+{
+  "id": "semana-5-final-2026-11-22",
+  "status": "final",
+  "season": "2026–27",
+  "sourceMode": "espn",
+  "from": "2026-11-16",
+  "through": "2026-11-22",
+  "updatedDate": "2026-11-23",
+  "updatedAt": "2026-11-23T15:44:10.424Z",
+  "sourceSnapshot": "./assets/cortes/espn/20261123T154410.424Z.json",
+  "source": "Totales oficiales de ESPN Fantasy y reconstrucción de las actuaciones individuales con actas NBA del 16 al 22 de noviembre. Las sumas reproducen las nueve categorías de los cuatro equipos.",
+  "computationNote": "Cromwell e Hipopotamos coinciden con todas las actuaciones de sus jugadores. En Shockers queda fuera un partido de VanVleet. En Mequetrefes quedan fuera las dos apariciones NBA de Miller y las tres de Monk. Son las combinaciones que reproducen el marcador. El corte no acredita el motivo de alineación. Los minutos proceden del redondeo del acta NBA.",
+  "teamTotals": {
+    "hipopotamos": {
+      "fgp": 0.47247706,
+      "ftp": 0.74647887,
+      "tpm": 77,
+      "reb": 269,
+      "ast": 169,
+      "stl": 52,
+      "blk": 32,
+      "to": 83,
+      "pts": 801
+    },
+    "shockers": {
+      "fgp": 0.49250936,
+      "ftp": 0.74691358,
+      "tpm": 51,
+      "reb": 261,
+      "ast": 169,
+      "stl": 57,
+      "blk": 37,
+      "to": 83,
+      "pts": 698
+    },
+    "pilsens": {
+      "fgp": 0.48207885,
+      "ftp": 0.81935484,
+      "tpm": 70,
+      "reb": 241,
+      "ast": 194,
+      "stl": 37,
+      "blk": 23,
+      "to": 83,
+      "pts": 735
+    },
+    "pelafustanes": {
+      "fgp": 0.48817204,
+      "ftp": 0.79090909,
+      "tpm": 72,
+      "reb": 187,
+      "ast": 108,
+      "stl": 35,
+      "blk": 26,
+      "to": 73,
+      "pts": 613
+    }
+  },
+  "players": [
+    {
+      "name": "Shai Gilgeous-Alexander",
+      "espnId": 4278073,
+      "nbaTeamId": 25,
+      "team": "shockers",
+      "gp": 2,
+      "nbaGp": 2,
+      "minutes": 73,
+      "stats": {
+        "pts": 74,
+        "tpm": 5,
+        "reb": 8,
+        "ast": 11,
+        "stl": 2,
+        "blk": 3,
+        "to": 7,
+        "fgm": 28,
+        "fga": 53,
+        "ftm": 13,
+        "fta": 21
+      },
+      "games": [
+        "401910014",
+        "401909310"
+      ],
+      "nbaGames": [
+        "401910014",
+        "401909310"
+      ],
+      "nbaStats": {
+        "pts": 74,
+        "tpm": 5,
+        "reb": 8,
+        "ast": 11,
+        "stl": 2,
+        "blk": 3,
+        "to": 7,
+        "fgm": 28,
+        "fga": 53,
+        "ftm": 13,
+        "fta": 21
+      }
+    },
+    {
+      "name": "Jayson Tatum",
+      "espnId": 4065648,
+      "nbaTeamId": 2,
+      "team": "shockers",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 111,
+      "stats": {
+        "pts": 75,
+        "tpm": 10,
+        "reb": 30,
+        "ast": 13,
+        "stl": 4,
+        "blk": 1,
+        "to": 15,
+        "fgm": 27,
+        "fga": 65,
+        "ftm": 11,
+        "fta": 15
+      },
+      "games": [
+        "401909994",
+        "401910015",
+        "401910035"
+      ],
+      "nbaGames": [
+        "401909994",
+        "401910015",
+        "401910035"
+      ],
+      "nbaStats": {
+        "pts": 75,
+        "tpm": 10,
+        "reb": 30,
+        "ast": 13,
+        "stl": 4,
+        "blk": 1,
+        "to": 15,
+        "fgm": 27,
+        "fga": 65,
+        "ftm": 11,
+        "fta": 15
+      }
+    },
+    {
+      "name": "Scottie Barnes",
+      "espnId": 4433134,
+      "nbaTeamId": 28,
+      "team": "shockers",
+      "gp": 2,
+      "nbaGp": 2,
+      "minutes": 71,
+      "stats": {
+        "pts": 49,
+        "tpm": 1,
+        "reb": 9,
+        "ast": 7,
+        "stl": 1,
+        "blk": 2,
+        "to": 3,
+        "fgm": 21,
+        "fga": 35,
+        "ftm": 6,
+        "fta": 8
+      },
+      "games": [
+        "401910002",
+        "401909308"
+      ],
+      "nbaGames": [
+        "401910002",
+        "401909308"
+      ],
+      "nbaStats": {
+        "pts": 49,
+        "tpm": 1,
+        "reb": 9,
+        "ast": 7,
+        "stl": 1,
+        "blk": 2,
+        "to": 3,
+        "fgm": 21,
+        "fga": 35,
+        "ftm": 6,
+        "fta": 8
+      }
+    },
+    {
+      "name": "Amen Thompson",
+      "espnId": 4684740,
+      "nbaTeamId": 10,
+      "team": "shockers",
+      "gp": 2,
+      "nbaGp": 2,
+      "minutes": 57,
+      "stats": {
+        "pts": 37,
+        "tpm": 0,
+        "reb": 15,
+        "ast": 3,
+        "stl": 2,
+        "blk": 1,
+        "to": 5,
+        "fgm": 16,
+        "fga": 23,
+        "ftm": 5,
+        "fta": 10
+      },
+      "games": [
+        "401910008",
+        "401909312"
+      ],
+      "nbaGames": [
+        "401910008",
+        "401909312"
+      ],
+      "nbaStats": {
+        "pts": 37,
+        "tpm": 0,
+        "reb": 15,
+        "ast": 3,
+        "stl": 2,
+        "blk": 1,
+        "to": 5,
+        "fgm": 16,
+        "fga": 23,
+        "ftm": 5,
+        "fta": 10
+      }
+    },
+    {
+      "name": "Dyson Daniels",
+      "espnId": 4869342,
+      "nbaTeamId": 1,
+      "team": "shockers",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 111,
+      "stats": {
+        "pts": 26,
+        "tpm": 1,
+        "reb": 32,
+        "ast": 22,
+        "stl": 11,
+        "blk": 3,
+        "to": 6,
+        "fgm": 12,
+        "fga": 28,
+        "ftm": 1,
+        "fta": 2
+      },
+      "games": [
+        "401910014",
+        "401909305",
+        "401910029"
+      ],
+      "nbaGames": [
+        "401910014",
+        "401909305",
+        "401910029"
+      ],
+      "nbaStats": {
+        "pts": 26,
+        "tpm": 1,
+        "reb": 32,
+        "ast": 22,
+        "stl": 11,
+        "blk": 3,
+        "to": 6,
+        "fgm": 12,
+        "fga": 28,
+        "ftm": 1,
+        "fta": 2
+      }
+    },
+    {
+      "name": "Fred VanVleet",
+      "espnId": 2991230,
+      "nbaTeamId": 10,
+      "team": "shockers",
+      "gp": 2,
+      "nbaGp": 3,
+      "minutes": 59,
+      "stats": {
+        "pts": 33,
+        "tpm": 5,
+        "reb": 6,
+        "ast": 15,
+        "stl": 2,
+        "blk": 1,
+        "to": 3,
+        "fgm": 13,
+        "fga": 31,
+        "ftm": 2,
+        "fta": 5
+      },
+      "games": [
+        "401909998",
+        "401909312"
+      ],
+      "nbaGames": [
+        "401909998",
+        "401910008",
+        "401909312"
+      ],
+      "nbaStats": {
+        "pts": 48,
+        "tpm": 8,
+        "reb": 8,
+        "ast": 21,
+        "stl": 3,
+        "blk": 1,
+        "to": 5,
+        "fgm": 19,
+        "fga": 44,
+        "ftm": 2,
+        "fta": 5
+      }
+    },
+    {
+      "name": "Paul Reed",
+      "espnId": 4278562,
+      "nbaTeamId": 8,
+      "team": "shockers",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 99,
+      "stats": {
+        "pts": 51,
+        "tpm": 0,
+        "reb": 25,
+        "ast": 11,
+        "stl": 7,
+        "blk": 5,
+        "to": 6,
+        "fgm": 21,
+        "fga": 33,
+        "ftm": 9,
+        "fta": 11
+      },
+      "games": [
+        "401910004",
+        "401910013",
+        "401909308",
+        "401910029"
+      ],
+      "nbaGames": [
+        "401910004",
+        "401910013",
+        "401909308",
+        "401910029"
+      ],
+      "nbaStats": {
+        "pts": 51,
+        "tpm": 0,
+        "reb": 25,
+        "ast": 11,
+        "stl": 7,
+        "blk": 5,
+        "to": 6,
+        "fgm": 21,
+        "fga": 33,
+        "ftm": 9,
+        "fta": 11
+      }
+    },
+    {
+      "name": "Yaxel Lendeborg",
+      "espnId": 5175737,
+      "nbaTeamId": 9,
+      "team": "shockers",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 130,
+      "stats": {
+        "pts": 64,
+        "tpm": 4,
+        "reb": 29,
+        "ast": 17,
+        "stl": 4,
+        "blk": 4,
+        "to": 10,
+        "fgm": 23,
+        "fga": 65,
+        "ftm": 14,
+        "fta": 16
+      },
+      "games": [
+        "401910000",
+        "401910016",
+        "401910019",
+        "401910035"
+      ],
+      "nbaGames": [
+        "401910000",
+        "401910016",
+        "401910019",
+        "401910035"
+      ],
+      "nbaStats": {
+        "pts": 64,
+        "tpm": 4,
+        "reb": 29,
+        "ast": 17,
+        "stl": 4,
+        "blk": 4,
+        "to": 10,
+        "fgm": 23,
+        "fga": 65,
+        "ftm": 14,
+        "fta": 16
+      }
+    },
+    {
+      "name": "Bam Adebayo",
+      "espnId": 4066261,
+      "nbaTeamId": 14,
+      "team": "shockers",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 83,
+      "stats": {
+        "pts": 54,
+        "tpm": 3,
+        "reb": 20,
+        "ast": 16,
+        "stl": 6,
+        "blk": 2,
+        "to": 4,
+        "fgm": 16,
+        "fga": 29,
+        "ftm": 19,
+        "fta": 26
+      },
+      "games": [
+        "401909998",
+        "401910009",
+        "401910030"
+      ],
+      "nbaGames": [
+        "401909998",
+        "401910009",
+        "401910030"
+      ],
+      "nbaStats": {
+        "pts": 54,
+        "tpm": 3,
+        "reb": 20,
+        "ast": 16,
+        "stl": 6,
+        "blk": 2,
+        "to": 4,
+        "fgm": 16,
+        "fga": 29,
+        "ftm": 19,
+        "fta": 26
+      }
+    },
+    {
+      "name": "Donovan Clingan",
+      "espnId": 5105565,
+      "nbaTeamId": 22,
+      "team": "shockers",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 111,
+      "stats": {
+        "pts": 51,
+        "tpm": 3,
+        "reb": 48,
+        "ast": 12,
+        "stl": 4,
+        "blk": 8,
+        "to": 7,
+        "fgm": 22,
+        "fga": 35,
+        "ftm": 4,
+        "fta": 8
+      },
+      "games": [
+        "401909999",
+        "401910003",
+        "401910020",
+        "401910024"
+      ],
+      "nbaGames": [
+        "401909999",
+        "401910003",
+        "401910020",
+        "401910024"
+      ],
+      "nbaStats": {
+        "pts": 51,
+        "tpm": 3,
+        "reb": 48,
+        "ast": 12,
+        "stl": 4,
+        "blk": 8,
+        "to": 7,
+        "fgm": 22,
+        "fga": 35,
+        "ftm": 4,
+        "fta": 8
+      }
+    },
+    {
+      "name": "Collin Murray-Boyles",
+      "espnId": 5093267,
+      "nbaTeamId": 28,
+      "team": "shockers",
+      "gp": 2,
+      "nbaGp": 2,
+      "minutes": 38,
+      "stats": {
+        "pts": 9,
+        "tpm": 0,
+        "reb": 3,
+        "ast": 4,
+        "stl": 1,
+        "blk": 3,
+        "to": 1,
+        "fgm": 4,
+        "fga": 8,
+        "ftm": 1,
+        "fta": 2
+      },
+      "games": [
+        "401910002",
+        "401910012"
+      ],
+      "nbaGames": [
+        "401910002",
+        "401910012"
+      ],
+      "nbaStats": {
+        "pts": 9,
+        "tpm": 0,
+        "reb": 3,
+        "ast": 4,
+        "stl": 1,
+        "blk": 3,
+        "to": 1,
+        "fgm": 4,
+        "fga": 8,
+        "ftm": 1,
+        "fta": 2
+      }
+    },
+    {
+      "name": "Jamal Murray",
+      "espnId": 3936299,
+      "nbaTeamId": 7,
+      "team": "shockers",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 154,
+      "stats": {
+        "pts": 108,
+        "tpm": 10,
+        "reb": 18,
+        "ast": 20,
+        "stl": 9,
+        "blk": 4,
+        "to": 10,
+        "fgm": 33,
+        "fga": 66,
+        "ftm": 32,
+        "fta": 34
+      },
+      "games": [
+        "401910001",
+        "401910015",
+        "401909312",
+        "401910032"
+      ],
+      "nbaGames": [
+        "401910001",
+        "401910015",
+        "401909312",
+        "401910032"
+      ],
+      "nbaStats": {
+        "pts": 108,
+        "tpm": 10,
+        "reb": 18,
+        "ast": 20,
+        "stl": 9,
+        "blk": 4,
+        "to": 10,
+        "fgm": 33,
+        "fga": 66,
+        "ftm": 32,
+        "fta": 34
+      }
+    },
+    {
+      "name": "Daniss Jenkins",
+      "espnId": 5107199,
+      "nbaTeamId": 8,
+      "team": "shockers",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 151,
+      "stats": {
+        "pts": 67,
+        "tpm": 9,
+        "reb": 18,
+        "ast": 18,
+        "stl": 4,
+        "blk": 0,
+        "to": 6,
+        "fgm": 27,
+        "fga": 63,
+        "ftm": 4,
+        "fta": 4
+      },
+      "games": [
+        "401910004",
+        "401910013",
+        "401909308",
+        "401910029"
+      ],
+      "nbaGames": [
+        "401910004",
+        "401910013",
+        "401909308",
+        "401910029"
+      ],
+      "nbaStats": {
+        "pts": 67,
+        "tpm": 9,
+        "reb": 18,
+        "ast": 18,
+        "stl": 4,
+        "blk": 0,
+        "to": 6,
+        "fgm": 27,
+        "fga": 63,
+        "ftm": 4,
+        "fta": 4
+      }
+    },
+    {
+      "name": "Nikola Jokić",
+      "espnId": 3112335,
+      "nbaTeamId": 7,
+      "team": "pilsens",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 157,
+      "stats": {
+        "pts": 115,
+        "tpm": 8,
+        "reb": 48,
+        "ast": 38,
+        "stl": 2,
+        "blk": 3,
+        "to": 16,
+        "fgm": 45,
+        "fga": 75,
+        "ftm": 17,
+        "fta": 19
+      },
+      "games": [
+        "401910001",
+        "401910015",
+        "401909312",
+        "401910032"
+      ],
+      "nbaGames": [
+        "401910001",
+        "401910015",
+        "401909312",
+        "401910032"
+      ],
+      "nbaStats": {
+        "pts": 115,
+        "tpm": 8,
+        "reb": 48,
+        "ast": 38,
+        "stl": 2,
+        "blk": 3,
+        "to": 16,
+        "fgm": 45,
+        "fga": 75,
+        "ftm": 17,
+        "fta": 19
+      }
+    },
+    {
+      "name": "Jalen Johnson",
+      "espnId": 4701230,
+      "nbaTeamId": 1,
+      "team": "pilsens",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 100,
+      "stats": {
+        "pts": 54,
+        "tpm": 4,
+        "reb": 29,
+        "ast": 17,
+        "stl": 5,
+        "blk": 2,
+        "to": 10,
+        "fgm": 19,
+        "fga": 40,
+        "ftm": 12,
+        "fta": 13
+      },
+      "games": [
+        "401910014",
+        "401909305",
+        "401910029"
+      ],
+      "nbaGames": [
+        "401910014",
+        "401909305",
+        "401910029"
+      ],
+      "nbaStats": {
+        "pts": 54,
+        "tpm": 4,
+        "reb": 29,
+        "ast": 17,
+        "stl": 5,
+        "blk": 2,
+        "to": 10,
+        "fgm": 19,
+        "fga": 40,
+        "ftm": 12,
+        "fta": 13
+      }
+    },
+    {
+      "name": "Dylan Harper",
+      "espnId": 5037871,
+      "nbaTeamId": 24,
+      "team": "pilsens",
+      "gp": 1,
+      "nbaGp": 1,
+      "minutes": 35,
+      "stats": {
+        "pts": 20,
+        "tpm": 0,
+        "reb": 4,
+        "ast": 2,
+        "stl": 0,
+        "blk": 0,
+        "to": 2,
+        "fgm": 8,
+        "fga": 14,
+        "ftm": 4,
+        "fta": 5
+      },
+      "games": [
+        "401910004"
+      ],
+      "nbaGames": [
+        "401910004"
+      ],
+      "nbaStats": {
+        "pts": 20,
+        "tpm": 0,
+        "reb": 4,
+        "ast": 2,
+        "stl": 0,
+        "blk": 0,
+        "to": 2,
+        "fgm": 8,
+        "fga": 14,
+        "ftm": 4,
+        "fta": 5
+      }
+    },
+    {
+      "name": "Jaylen Wells",
+      "espnId": 5112087,
+      "nbaTeamId": 29,
+      "team": "pilsens",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 102,
+      "stats": {
+        "pts": 43,
+        "tpm": 7,
+        "reb": 16,
+        "ast": 5,
+        "stl": 2,
+        "blk": 0,
+        "to": 3,
+        "fgm": 16,
+        "fga": 31,
+        "ftm": 4,
+        "fta": 4
+      },
+      "games": [
+        "401909996",
+        "401910007",
+        "401910019",
+        "401910026"
+      ],
+      "nbaGames": [
+        "401909996",
+        "401910007",
+        "401910019",
+        "401910026"
+      ],
+      "nbaStats": {
+        "pts": 43,
+        "tpm": 7,
+        "reb": 16,
+        "ast": 5,
+        "stl": 2,
+        "blk": 0,
+        "to": 3,
+        "fgm": 16,
+        "fga": 31,
+        "ftm": 4,
+        "fta": 4
+      }
+    },
+    {
+      "name": "Keldon Johnson",
+      "espnId": 4395723,
+      "nbaTeamId": 24,
+      "team": "pilsens",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 65,
+      "stats": {
+        "pts": 24,
+        "tpm": 2,
+        "reb": 11,
+        "ast": 8,
+        "stl": 2,
+        "blk": 0,
+        "to": 2,
+        "fgm": 9,
+        "fga": 20,
+        "ftm": 4,
+        "fta": 6
+      },
+      "games": [
+        "401910004",
+        "401910022",
+        "401910027"
+      ],
+      "nbaGames": [
+        "401910004",
+        "401910022",
+        "401910027"
+      ],
+      "nbaStats": {
+        "pts": 24,
+        "tpm": 2,
+        "reb": 11,
+        "ast": 8,
+        "stl": 2,
+        "blk": 0,
+        "to": 2,
+        "fgm": 9,
+        "fga": 20,
+        "ftm": 4,
+        "fta": 6
+      }
+    },
+    {
+      "name": "Franz Wagner",
+      "espnId": 4566434,
+      "nbaTeamId": 19,
+      "team": "pilsens",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 142,
+      "stats": {
+        "pts": 99,
+        "tpm": 3,
+        "reb": 29,
+        "ast": 33,
+        "stl": 4,
+        "blk": 4,
+        "to": 9,
+        "fgm": 40,
+        "fga": 86,
+        "ftm": 16,
+        "fta": 19
+      },
+      "games": [
+        "401909994",
+        "401910010",
+        "401909306",
+        "401910031"
+      ],
+      "nbaGames": [
+        "401909994",
+        "401910010",
+        "401909306",
+        "401910031"
+      ],
+      "nbaStats": {
+        "pts": 99,
+        "tpm": 3,
+        "reb": 29,
+        "ast": 33,
+        "stl": 4,
+        "blk": 4,
+        "to": 9,
+        "fgm": 40,
+        "fga": 86,
+        "ftm": 16,
+        "fta": 19
+      }
+    },
+    {
+      "name": "Tyrese Maxey",
+      "espnId": 4431678,
+      "nbaTeamId": 20,
+      "team": "pilsens",
+      "gp": 2,
+      "nbaGp": 2,
+      "minutes": 71,
+      "stats": {
+        "pts": 41,
+        "tpm": 4,
+        "reb": 5,
+        "ast": 13,
+        "stl": 1,
+        "blk": 1,
+        "to": 4,
+        "fgm": 11,
+        "fga": 23,
+        "ftm": 15,
+        "fta": 16
+      },
+      "games": [
+        "401909997",
+        "401910023"
+      ],
+      "nbaGames": [
+        "401909997",
+        "401910023"
+      ],
+      "nbaStats": {
+        "pts": 41,
+        "tpm": 4,
+        "reb": 5,
+        "ast": 13,
+        "stl": 1,
+        "blk": 1,
+        "to": 4,
+        "fgm": 11,
+        "fga": 23,
+        "ftm": 15,
+        "fta": 16
+      }
+    },
+    {
+      "name": "Paul George",
+      "espnId": 4251,
+      "nbaTeamId": 2,
+      "team": "pilsens",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 96,
+      "stats": {
+        "pts": 51,
+        "tpm": 8,
+        "reb": 20,
+        "ast": 9,
+        "stl": 8,
+        "blk": 2,
+        "to": 5,
+        "fgm": 16,
+        "fga": 46,
+        "ftm": 11,
+        "fta": 15
+      },
+      "games": [
+        "401909994",
+        "401910015",
+        "401910028"
+      ],
+      "nbaGames": [
+        "401909994",
+        "401910015",
+        "401910028"
+      ],
+      "nbaStats": {
+        "pts": 51,
+        "tpm": 8,
+        "reb": 20,
+        "ast": 9,
+        "stl": 8,
+        "blk": 2,
+        "to": 5,
+        "fgm": 16,
+        "fga": 46,
+        "ftm": 11,
+        "fta": 15
+      }
+    },
+    {
+      "name": "Davion Mitchell",
+      "espnId": 4278053,
+      "nbaTeamId": 14,
+      "team": "pilsens",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 103,
+      "stats": {
+        "pts": 54,
+        "tpm": 8,
+        "reb": 9,
+        "ast": 19,
+        "stl": 5,
+        "blk": 1,
+        "to": 8,
+        "fgm": 20,
+        "fga": 36,
+        "ftm": 6,
+        "fta": 7
+      },
+      "games": [
+        "401909998",
+        "401910009",
+        "401910030"
+      ],
+      "nbaGames": [
+        "401909998",
+        "401910009",
+        "401910030"
+      ],
+      "nbaStats": {
+        "pts": 54,
+        "tpm": 8,
+        "reb": 9,
+        "ast": 19,
+        "stl": 5,
+        "blk": 1,
+        "to": 8,
+        "fgm": 20,
+        "fga": 36,
+        "ftm": 6,
+        "fta": 7
+      }
+    },
+    {
+      "name": "Pascal Siakam",
+      "espnId": 3149673,
+      "nbaTeamId": 11,
+      "team": "pilsens",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 96,
+      "stats": {
+        "pts": 70,
+        "tpm": 7,
+        "reb": 17,
+        "ast": 6,
+        "stl": 5,
+        "blk": 1,
+        "to": 5,
+        "fgm": 27,
+        "fga": 56,
+        "ftm": 9,
+        "fta": 12
+      },
+      "games": [
+        "401910008",
+        "401909307",
+        "401910034"
+      ],
+      "nbaGames": [
+        "401910008",
+        "401909307",
+        "401910034"
+      ],
+      "nbaStats": {
+        "pts": 70,
+        "tpm": 7,
+        "reb": 17,
+        "ast": 6,
+        "stl": 5,
+        "blk": 1,
+        "to": 5,
+        "fgm": 27,
+        "fga": 56,
+        "ftm": 9,
+        "fta": 12
+      }
+    },
+    {
+      "name": "Deni Avdija",
+      "espnId": 4683021,
+      "nbaTeamId": 22,
+      "team": "pilsens",
+      "gp": 2,
+      "nbaGp": 2,
+      "minutes": 66,
+      "stats": {
+        "pts": 47,
+        "tpm": 5,
+        "reb": 17,
+        "ast": 9,
+        "stl": 1,
+        "blk": 3,
+        "to": 7,
+        "fgm": 18,
+        "fga": 32,
+        "ftm": 6,
+        "fta": 11
+      },
+      "games": [
+        "401909999",
+        "401910024"
+      ],
+      "nbaGames": [
+        "401909999",
+        "401910024"
+      ],
+      "nbaStats": {
+        "pts": 47,
+        "tpm": 5,
+        "reb": 17,
+        "ast": 9,
+        "stl": 1,
+        "blk": 3,
+        "to": 7,
+        "fgm": 18,
+        "fga": 32,
+        "ftm": 6,
+        "fta": 11
+      }
+    },
+    {
+      "name": "Darius Acuff Jr.",
+      "espnId": 5142620,
+      "nbaTeamId": 23,
+      "team": "pilsens",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 111,
+      "stats": {
+        "pts": 75,
+        "tpm": 10,
+        "reb": 11,
+        "ast": 26,
+        "stl": 1,
+        "blk": 2,
+        "to": 9,
+        "fgm": 26,
+        "fga": 68,
+        "ftm": 13,
+        "fta": 17
+      },
+      "games": [
+        "401910018",
+        "401909313",
+        "401910028"
+      ],
+      "nbaGames": [
+        "401910018",
+        "401909313",
+        "401910028"
+      ],
+      "nbaStats": {
+        "pts": 75,
+        "tpm": 10,
+        "reb": 11,
+        "ast": 26,
+        "stl": 1,
+        "blk": 2,
+        "to": 9,
+        "fgm": 26,
+        "fga": 68,
+        "ftm": 13,
+        "fta": 17
+      }
+    },
+    {
+      "name": "Wendell Carter Jr.",
+      "espnId": 4277847,
+      "nbaTeamId": 19,
+      "team": "pilsens",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 121,
+      "stats": {
+        "pts": 42,
+        "tpm": 4,
+        "reb": 25,
+        "ast": 9,
+        "stl": 1,
+        "blk": 4,
+        "to": 3,
+        "fgm": 14,
+        "fga": 31,
+        "ftm": 10,
+        "fta": 11
+      },
+      "games": [
+        "401909994",
+        "401910010",
+        "401909306",
+        "401910031"
+      ],
+      "nbaGames": [
+        "401909994",
+        "401910010",
+        "401909306",
+        "401910031"
+      ],
+      "nbaStats": {
+        "pts": 42,
+        "tpm": 4,
+        "reb": 25,
+        "ast": 9,
+        "stl": 1,
+        "blk": 4,
+        "to": 3,
+        "fgm": 14,
+        "fga": 31,
+        "ftm": 10,
+        "fta": 11
+      }
+    },
+    {
+      "name": "Luka Dončić",
+      "espnId": 3945274,
+      "nbaTeamId": 13,
+      "team": "pelafustanes",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 115,
+      "stats": {
+        "pts": 90,
+        "tpm": 9,
+        "reb": 16,
+        "ast": 22,
+        "stl": 5,
+        "blk": 1,
+        "to": 20,
+        "fgm": 32,
+        "fga": 80,
+        "ftm": 17,
+        "fta": 20
+      },
+      "games": [
+        "401910005",
+        "401910017",
+        "401909313"
+      ],
+      "nbaGames": [
+        "401910005",
+        "401910017",
+        "401909313"
+      ],
+      "nbaStats": {
+        "pts": 90,
+        "tpm": 9,
+        "reb": 16,
+        "ast": 22,
+        "stl": 5,
+        "blk": 1,
+        "to": 20,
+        "fgm": 32,
+        "fga": 80,
+        "ftm": 17,
+        "fta": 20
+      }
+    },
+    {
+      "name": "Giannis Antetokounmpo",
+      "espnId": 3032977,
+      "nbaTeamId": 14,
+      "team": "pelafustanes",
+      "gp": 2,
+      "nbaGp": 2,
+      "minutes": 61,
+      "stats": {
+        "pts": 47,
+        "tpm": 0,
+        "reb": 27,
+        "ast": 15,
+        "stl": 2,
+        "blk": 4,
+        "to": 3,
+        "fgm": 15,
+        "fga": 22,
+        "ftm": 17,
+        "fta": 22
+      },
+      "games": [
+        "401909998",
+        "401910009"
+      ],
+      "nbaGames": [
+        "401909998",
+        "401910009"
+      ],
+      "nbaStats": {
+        "pts": 47,
+        "tpm": 0,
+        "reb": 27,
+        "ast": 15,
+        "stl": 2,
+        "blk": 4,
+        "to": 3,
+        "fgm": 15,
+        "fga": 22,
+        "ftm": 17,
+        "fta": 22
+      }
+    },
+    {
+      "name": "Donovan Mitchell",
+      "espnId": 3908809,
+      "nbaTeamId": 5,
+      "team": "pelafustanes",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 100,
+      "stats": {
+        "pts": 93,
+        "tpm": 6,
+        "reb": 11,
+        "ast": 10,
+        "stl": 4,
+        "blk": 0,
+        "to": 8,
+        "fgm": 38,
+        "fga": 69,
+        "ftm": 11,
+        "fta": 13
+      },
+      "games": [
+        "401909995",
+        "401910007",
+        "401909307"
+      ],
+      "nbaGames": [
+        "401909995",
+        "401910007",
+        "401909307"
+      ],
+      "nbaStats": {
+        "pts": 93,
+        "tpm": 6,
+        "reb": 11,
+        "ast": 10,
+        "stl": 4,
+        "blk": 0,
+        "to": 8,
+        "fgm": 38,
+        "fga": 69,
+        "ftm": 11,
+        "fta": 13
+      }
+    },
+    {
+      "name": "Alperen Sengun",
+      "espnId": 4871144,
+      "nbaTeamId": 10,
+      "team": "pelafustanes",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 80,
+      "stats": {
+        "pts": 58,
+        "tpm": 3,
+        "reb": 25,
+        "ast": 13,
+        "stl": 2,
+        "blk": 1,
+        "to": 8,
+        "fgm": 20,
+        "fga": 37,
+        "ftm": 15,
+        "fta": 20
+      },
+      "games": [
+        "401909998",
+        "401910008",
+        "401909312"
+      ],
+      "nbaGames": [
+        "401909998",
+        "401910008",
+        "401909312"
+      ],
+      "nbaStats": {
+        "pts": 58,
+        "tpm": 3,
+        "reb": 25,
+        "ast": 13,
+        "stl": 2,
+        "blk": 1,
+        "to": 8,
+        "fgm": 20,
+        "fga": 37,
+        "ftm": 15,
+        "fta": 20
+      }
+    },
+    {
+      "name": "Brandon Miller",
+      "espnId": 4433287,
+      "nbaTeamId": 30,
+      "team": "pelafustanes",
+      "gp": 0,
+      "nbaGp": 2,
+      "minutes": 0,
+      "stats": {
+        "pts": 0,
+        "tpm": 0,
+        "reb": 0,
+        "ast": 0,
+        "stl": 0,
+        "blk": 0,
+        "to": 0,
+        "fgm": 0,
+        "fga": 0,
+        "ftm": 0,
+        "fta": 0
+      },
+      "games": [],
+      "nbaGames": [
+        "401910005",
+        "401909305"
+      ],
+      "nbaStats": {
+        "pts": 47,
+        "tpm": 10,
+        "reb": 10,
+        "ast": 7,
+        "stl": 1,
+        "blk": 1,
+        "to": 8,
+        "fgm": 17,
+        "fga": 37,
+        "ftm": 3,
+        "fta": 3
+      }
+    },
+    {
+      "name": "OG Anunoby",
+      "espnId": 3934719,
+      "nbaTeamId": 18,
+      "team": "pelafustanes",
+      "gp": 2,
+      "nbaGp": 2,
+      "minutes": 72,
+      "stats": {
+        "pts": 31,
+        "tpm": 2,
+        "reb": 11,
+        "ast": 2,
+        "stl": 2,
+        "blk": 4,
+        "to": 2,
+        "fgm": 11,
+        "fga": 23,
+        "ftm": 7,
+        "fta": 8
+      },
+      "games": [
+        "401910002",
+        "401910021"
+      ],
+      "nbaGames": [
+        "401910002",
+        "401910021"
+      ],
+      "nbaStats": {
+        "pts": 31,
+        "tpm": 2,
+        "reb": 11,
+        "ast": 2,
+        "stl": 2,
+        "blk": 4,
+        "to": 2,
+        "fgm": 11,
+        "fga": 23,
+        "ftm": 7,
+        "fta": 8
+      }
+    },
+    {
+      "name": "Payton Pritchard",
+      "espnId": 4066354,
+      "nbaTeamId": 2,
+      "team": "pelafustanes",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 124,
+      "stats": {
+        "pts": 50,
+        "tpm": 8,
+        "reb": 12,
+        "ast": 19,
+        "stl": 3,
+        "blk": 1,
+        "to": 6,
+        "fgm": 19,
+        "fga": 52,
+        "ftm": 4,
+        "fta": 5
+      },
+      "games": [
+        "401909994",
+        "401910015",
+        "401910028",
+        "401910035"
+      ],
+      "nbaGames": [
+        "401909994",
+        "401910015",
+        "401910028",
+        "401910035"
+      ],
+      "nbaStats": {
+        "pts": 50,
+        "tpm": 8,
+        "reb": 12,
+        "ast": 19,
+        "stl": 3,
+        "blk": 1,
+        "to": 6,
+        "fgm": 19,
+        "fga": 52,
+        "ftm": 4,
+        "fta": 5
+      }
+    },
+    {
+      "name": "Alex Sarr",
+      "espnId": 5160992,
+      "nbaTeamId": 27,
+      "team": "pelafustanes",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 99,
+      "stats": {
+        "pts": 32,
+        "tpm": 7,
+        "reb": 18,
+        "ast": 6,
+        "stl": 3,
+        "blk": 7,
+        "to": 5,
+        "fgm": 11,
+        "fga": 23,
+        "ftm": 3,
+        "fta": 5
+      },
+      "games": [
+        "401909996",
+        "401910012",
+        "401909309",
+        "401910031"
+      ],
+      "nbaGames": [
+        "401909996",
+        "401910012",
+        "401909309",
+        "401910031"
+      ],
+      "nbaStats": {
+        "pts": 32,
+        "tpm": 7,
+        "reb": 18,
+        "ast": 6,
+        "stl": 3,
+        "blk": 7,
+        "to": 5,
+        "fgm": 11,
+        "fga": 23,
+        "ftm": 3,
+        "fta": 5
+      }
+    },
+    {
+      "name": "Matas Buzelis",
+      "espnId": 4711294,
+      "nbaTeamId": 4,
+      "team": "pelafustanes",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 124,
+      "stats": {
+        "pts": 78,
+        "tpm": 13,
+        "reb": 18,
+        "ast": 8,
+        "stl": 4,
+        "blk": 4,
+        "to": 8,
+        "fgm": 28,
+        "fga": 57,
+        "ftm": 9,
+        "fta": 10
+      },
+      "games": [
+        "401909995",
+        "401910011",
+        "401909309",
+        "401910032"
+      ],
+      "nbaGames": [
+        "401909995",
+        "401910011",
+        "401909309",
+        "401910032"
+      ],
+      "nbaStats": {
+        "pts": 78,
+        "tpm": 13,
+        "reb": 18,
+        "ast": 8,
+        "stl": 4,
+        "blk": 4,
+        "to": 8,
+        "fgm": 28,
+        "fga": 57,
+        "ftm": 9,
+        "fta": 10
+      }
+    },
+    {
+      "name": "Bobby Portis",
+      "espnId": 3064482,
+      "nbaTeamId": 14,
+      "team": "pelafustanes",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 61,
+      "stats": {
+        "pts": 35,
+        "tpm": 4,
+        "reb": 17,
+        "ast": 1,
+        "stl": 2,
+        "blk": 0,
+        "to": 5,
+        "fgm": 15,
+        "fga": 32,
+        "ftm": 1,
+        "fta": 2
+      },
+      "games": [
+        "401909998",
+        "401910009",
+        "401910030"
+      ],
+      "nbaGames": [
+        "401909998",
+        "401910009",
+        "401910030"
+      ],
+      "nbaStats": {
+        "pts": 35,
+        "tpm": 4,
+        "reb": 17,
+        "ast": 1,
+        "stl": 2,
+        "blk": 0,
+        "to": 5,
+        "fgm": 15,
+        "fga": 32,
+        "ftm": 1,
+        "fta": 2
+      }
+    },
+    {
+      "name": "Malik Monk",
+      "espnId": 4066262,
+      "nbaTeamId": 23,
+      "team": "pelafustanes",
+      "gp": 0,
+      "nbaGp": 3,
+      "minutes": 0,
+      "stats": {
+        "pts": 0,
+        "tpm": 0,
+        "reb": 0,
+        "ast": 0,
+        "stl": 0,
+        "blk": 0,
+        "to": 0,
+        "fgm": 0,
+        "fga": 0,
+        "ftm": 0,
+        "fta": 0
+      },
+      "games": [],
+      "nbaGames": [
+        "401910018",
+        "401909313",
+        "401910028"
+      ],
+      "nbaStats": {
+        "pts": 13,
+        "tpm": 2,
+        "reb": 1,
+        "ast": 6,
+        "stl": 1,
+        "blk": 2,
+        "to": 8,
+        "fgm": 3,
+        "fga": 11,
+        "ftm": 5,
+        "fta": 5
+      }
+    },
+    {
+      "name": "Jalen Smith",
+      "espnId": 4397189,
+      "nbaTeamId": 4,
+      "team": "pelafustanes",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 83,
+      "stats": {
+        "pts": 57,
+        "tpm": 11,
+        "reb": 21,
+        "ast": 7,
+        "stl": 5,
+        "blk": 4,
+        "to": 4,
+        "fgm": 22,
+        "fga": 34,
+        "ftm": 2,
+        "fta": 3
+      },
+      "games": [
+        "401909995",
+        "401910011",
+        "401910032"
+      ],
+      "nbaGames": [
+        "401909995",
+        "401910011",
+        "401910032"
+      ],
+      "nbaStats": {
+        "pts": 57,
+        "tpm": 11,
+        "reb": 21,
+        "ast": 7,
+        "stl": 5,
+        "blk": 4,
+        "to": 4,
+        "fgm": 22,
+        "fga": 34,
+        "ftm": 2,
+        "fta": 3
+      }
+    },
+    {
+      "name": "Aaron Wiggins",
+      "espnId": 4397183,
+      "nbaTeamId": 1,
+      "team": "pelafustanes",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 79,
+      "stats": {
+        "pts": 42,
+        "tpm": 9,
+        "reb": 11,
+        "ast": 5,
+        "stl": 3,
+        "blk": 0,
+        "to": 4,
+        "fgm": 16,
+        "fga": 36,
+        "ftm": 1,
+        "fta": 2
+      },
+      "games": [
+        "401910014",
+        "401909305",
+        "401910029"
+      ],
+      "nbaGames": [
+        "401910014",
+        "401909305",
+        "401910029"
+      ],
+      "nbaStats": {
+        "pts": 42,
+        "tpm": 9,
+        "reb": 11,
+        "ast": 5,
+        "stl": 3,
+        "blk": 0,
+        "to": 4,
+        "fgm": 16,
+        "fga": 36,
+        "ftm": 1,
+        "fta": 2
+      }
+    },
+    {
+      "name": "Victor Wembanyama",
+      "espnId": 5104157,
+      "nbaTeamId": 24,
+      "team": "hipopotamos",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 99,
+      "stats": {
+        "pts": 107,
+        "tpm": 8,
+        "reb": 48,
+        "ast": 8,
+        "stl": 6,
+        "blk": 7,
+        "to": 9,
+        "fgm": 44,
+        "fga": 78,
+        "ftm": 11,
+        "fta": 12
+      },
+      "games": [
+        "401910004",
+        "401910022",
+        "401910027"
+      ],
+      "nbaGames": [
+        "401910004",
+        "401910022",
+        "401910027"
+      ],
+      "nbaStats": {
+        "pts": 107,
+        "tpm": 8,
+        "reb": 48,
+        "ast": 8,
+        "stl": 6,
+        "blk": 7,
+        "to": 9,
+        "fgm": 44,
+        "fga": 78,
+        "ftm": 11,
+        "fta": 12
+      }
+    },
+    {
+      "name": "Cade Cunningham",
+      "espnId": 4432166,
+      "nbaTeamId": 8,
+      "team": "hipopotamos",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 107,
+      "stats": {
+        "pts": 55,
+        "tpm": 4,
+        "reb": 14,
+        "ast": 30,
+        "stl": 2,
+        "blk": 2,
+        "to": 11,
+        "fgm": 24,
+        "fga": 56,
+        "ftm": 3,
+        "fta": 7
+      },
+      "games": [
+        "401910004",
+        "401909308",
+        "401910029"
+      ],
+      "nbaGames": [
+        "401910004",
+        "401909308",
+        "401910029"
+      ],
+      "nbaStats": {
+        "pts": 55,
+        "tpm": 4,
+        "reb": 14,
+        "ast": 30,
+        "stl": 2,
+        "blk": 2,
+        "to": 11,
+        "fgm": 24,
+        "fga": 56,
+        "ftm": 3,
+        "fta": 7
+      }
+    },
+    {
+      "name": "Derrick White",
+      "espnId": 3078576,
+      "nbaTeamId": 2,
+      "team": "hipopotamos",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 99,
+      "stats": {
+        "pts": 35,
+        "tpm": 3,
+        "reb": 9,
+        "ast": 15,
+        "stl": 1,
+        "blk": 1,
+        "to": 1,
+        "fgm": 15,
+        "fga": 49,
+        "ftm": 2,
+        "fta": 3
+      },
+      "games": [
+        "401909994",
+        "401910015",
+        "401910035"
+      ],
+      "nbaGames": [
+        "401909994",
+        "401910015",
+        "401910035"
+      ],
+      "nbaStats": {
+        "pts": 35,
+        "tpm": 3,
+        "reb": 9,
+        "ast": 15,
+        "stl": 1,
+        "blk": 1,
+        "to": 1,
+        "fgm": 15,
+        "fga": 49,
+        "ftm": 2,
+        "fta": 3
+      }
+    },
+    {
+      "name": "Jaden McDaniels",
+      "espnId": 4431671,
+      "nbaTeamId": 16,
+      "team": "hipopotamos",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 143,
+      "stats": {
+        "pts": 77,
+        "tpm": 7,
+        "reb": 20,
+        "ast": 12,
+        "stl": 8,
+        "blk": 5,
+        "to": 10,
+        "fgm": 32,
+        "fga": 54,
+        "ftm": 6,
+        "fta": 6
+      },
+      "games": [
+        "401909999",
+        "401910003",
+        "401910021",
+        "401910026"
+      ],
+      "nbaGames": [
+        "401909999",
+        "401910003",
+        "401910021",
+        "401910026"
+      ],
+      "nbaStats": {
+        "pts": 77,
+        "tpm": 7,
+        "reb": 20,
+        "ast": 12,
+        "stl": 8,
+        "blk": 5,
+        "to": 10,
+        "fgm": 32,
+        "fga": 54,
+        "ftm": 6,
+        "fta": 6
+      }
+    },
+    {
+      "name": "Walker Kessler",
+      "espnId": 4433136,
+      "nbaTeamId": 13,
+      "team": "hipopotamos",
+      "gp": 2,
+      "nbaGp": 2,
+      "minutes": 61,
+      "stats": {
+        "pts": 25,
+        "tpm": 1,
+        "reb": 18,
+        "ast": 3,
+        "stl": 1,
+        "blk": 3,
+        "to": 3,
+        "fgm": 10,
+        "fga": 18,
+        "ftm": 4,
+        "fta": 12
+      },
+      "games": [
+        "401910017",
+        "401909313"
+      ],
+      "nbaGames": [
+        "401910017",
+        "401909313"
+      ],
+      "nbaStats": {
+        "pts": 25,
+        "tpm": 1,
+        "reb": 18,
+        "ast": 3,
+        "stl": 1,
+        "blk": 3,
+        "to": 3,
+        "fgm": 10,
+        "fga": 18,
+        "ftm": 4,
+        "fta": 12
+      }
+    },
+    {
+      "name": "Ace Bailey",
+      "espnId": 4873138,
+      "nbaTeamId": 26,
+      "team": "hipopotamos",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 107,
+      "stats": {
+        "pts": 47,
+        "tpm": 6,
+        "reb": 21,
+        "ast": 10,
+        "stl": 7,
+        "blk": 1,
+        "to": 9,
+        "fgm": 18,
+        "fga": 48,
+        "ftm": 5,
+        "fta": 7
+      },
+      "games": [
+        "401910006",
+        "401910017",
+        "401909311",
+        "401910033"
+      ],
+      "nbaGames": [
+        "401910006",
+        "401910017",
+        "401909311",
+        "401910033"
+      ],
+      "nbaStats": {
+        "pts": 47,
+        "tpm": 6,
+        "reb": 21,
+        "ast": 10,
+        "stl": 7,
+        "blk": 1,
+        "to": 9,
+        "fgm": 18,
+        "fga": 48,
+        "ftm": 5,
+        "fta": 7
+      }
+    },
+    {
+      "name": "Christian Braun",
+      "espnId": 4431767,
+      "nbaTeamId": 7,
+      "team": "hipopotamos",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 137,
+      "stats": {
+        "pts": 65,
+        "tpm": 9,
+        "reb": 21,
+        "ast": 12,
+        "stl": 9,
+        "blk": 2,
+        "to": 5,
+        "fgm": 25,
+        "fga": 47,
+        "ftm": 6,
+        "fta": 6
+      },
+      "games": [
+        "401910001",
+        "401910015",
+        "401909312",
+        "401910032"
+      ],
+      "nbaGames": [
+        "401910001",
+        "401910015",
+        "401909312",
+        "401910032"
+      ],
+      "nbaStats": {
+        "pts": 65,
+        "tpm": 9,
+        "reb": 21,
+        "ast": 12,
+        "stl": 9,
+        "blk": 2,
+        "to": 5,
+        "fgm": 25,
+        "fga": 47,
+        "ftm": 6,
+        "fta": 6
+      }
+    },
+    {
+      "name": "Ajay Mitchell",
+      "espnId": 4900671,
+      "nbaTeamId": 25,
+      "team": "hipopotamos",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 87,
+      "stats": {
+        "pts": 38,
+        "tpm": 3,
+        "reb": 11,
+        "ast": 13,
+        "stl": 2,
+        "blk": 2,
+        "to": 5,
+        "fgm": 14,
+        "fga": 40,
+        "ftm": 7,
+        "fta": 10
+      },
+      "games": [
+        "401910014",
+        "401909310",
+        "401910030"
+      ],
+      "nbaGames": [
+        "401910014",
+        "401909310",
+        "401910030"
+      ],
+      "nbaStats": {
+        "pts": 38,
+        "tpm": 3,
+        "reb": 11,
+        "ast": 13,
+        "stl": 2,
+        "blk": 2,
+        "to": 5,
+        "fgm": 14,
+        "fga": 40,
+        "ftm": 7,
+        "fta": 10
+      }
+    },
+    {
+      "name": "Devin Booker",
+      "espnId": 3136193,
+      "nbaTeamId": 21,
+      "team": "hipopotamos",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 108,
+      "stats": {
+        "pts": 72,
+        "tpm": 4,
+        "reb": 8,
+        "ast": 17,
+        "stl": 2,
+        "blk": 0,
+        "to": 7,
+        "fgm": 24,
+        "fga": 53,
+        "ftm": 20,
+        "fta": 23
+      },
+      "games": [
+        "401910001",
+        "401910018",
+        "401909311"
+      ],
+      "nbaGames": [
+        "401910001",
+        "401910018",
+        "401909311"
+      ],
+      "nbaStats": {
+        "pts": 72,
+        "tpm": 4,
+        "reb": 8,
+        "ast": 17,
+        "stl": 2,
+        "blk": 0,
+        "to": 7,
+        "fgm": 24,
+        "fga": 53,
+        "ftm": 20,
+        "fta": 23
+      }
+    },
+    {
+      "name": "Jabari Smith Jr.",
+      "espnId": 4432639,
+      "nbaTeamId": 10,
+      "team": "hipopotamos",
+      "gp": 3,
+      "nbaGp": 3,
+      "minutes": 90,
+      "stats": {
+        "pts": 50,
+        "tpm": 7,
+        "reb": 18,
+        "ast": 6,
+        "stl": 0,
+        "blk": 1,
+        "to": 3,
+        "fgm": 18,
+        "fga": 30,
+        "ftm": 7,
+        "fta": 9
+      },
+      "games": [
+        "401909998",
+        "401910008",
+        "401909312"
+      ],
+      "nbaGames": [
+        "401909998",
+        "401910008",
+        "401909312"
+      ],
+      "nbaStats": {
+        "pts": 50,
+        "tpm": 7,
+        "reb": 18,
+        "ast": 6,
+        "stl": 0,
+        "blk": 1,
+        "to": 3,
+        "fgm": 18,
+        "fga": 30,
+        "ftm": 7,
+        "fta": 9
+      }
+    },
+    {
+      "name": "Anthony Davis",
+      "espnId": 6583,
+      "nbaTeamId": 27,
+      "team": "hipopotamos",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 136,
+      "stats": {
+        "pts": 106,
+        "tpm": 4,
+        "reb": 36,
+        "ast": 6,
+        "stl": 4,
+        "blk": 5,
+        "to": 9,
+        "fgm": 41,
+        "fga": 70,
+        "ftm": 20,
+        "fta": 28
+      },
+      "games": [
+        "401909996",
+        "401910012",
+        "401909309",
+        "401910031"
+      ],
+      "nbaGames": [
+        "401909996",
+        "401910012",
+        "401909309",
+        "401910031"
+      ],
+      "nbaStats": {
+        "pts": 106,
+        "tpm": 4,
+        "reb": 36,
+        "ast": 6,
+        "stl": 4,
+        "blk": 5,
+        "to": 9,
+        "fgm": 41,
+        "fga": 70,
+        "ftm": 20,
+        "fta": 28
+      }
+    },
+    {
+      "name": "Jrue Holiday",
+      "espnId": 3995,
+      "nbaTeamId": 22,
+      "team": "hipopotamos",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 118,
+      "stats": {
+        "pts": 68,
+        "tpm": 10,
+        "reb": 20,
+        "ast": 23,
+        "stl": 8,
+        "blk": 1,
+        "to": 9,
+        "fgm": 24,
+        "fga": 54,
+        "ftm": 10,
+        "fta": 13
+      },
+      "games": [
+        "401909999",
+        "401910003",
+        "401910020",
+        "401910024"
+      ],
+      "nbaGames": [
+        "401909999",
+        "401910003",
+        "401910020",
+        "401910024"
+      ],
+      "nbaStats": {
+        "pts": 68,
+        "tpm": 10,
+        "reb": 20,
+        "ast": 23,
+        "stl": 8,
+        "blk": 1,
+        "to": 9,
+        "fgm": 24,
+        "fga": 54,
+        "ftm": 10,
+        "fta": 13
+      }
+    },
+    {
+      "name": "Saddiq Bey",
+      "espnId": 4397136,
+      "nbaTeamId": 3,
+      "team": "hipopotamos",
+      "gp": 4,
+      "nbaGp": 4,
+      "minutes": 144,
+      "stats": {
+        "pts": 56,
+        "tpm": 11,
+        "reb": 25,
+        "ast": 14,
+        "stl": 2,
+        "blk": 2,
+        "to": 2,
+        "fgm": 20,
+        "fga": 57,
+        "ftm": 5,
+        "fta": 6
+      },
+      "games": [
+        "401910000",
+        "401910013",
+        "401909310",
+        "401910027"
+      ],
+      "nbaGames": [
+        "401910000",
+        "401910013",
+        "401909310",
+        "401910027"
+      ],
+      "nbaStats": {
+        "pts": 56,
+        "tpm": 11,
+        "reb": 25,
+        "ast": 14,
+        "stl": 2,
+        "blk": 2,
+        "to": 2,
+        "fgm": 20,
+        "fga": 57,
+        "ftm": 5,
+        "fta": 6
+      }
+    }
+  ],
+  "games": [
+    {
+      "id": "401909994",
+      "name": "ORL @ BOS",
+      "date": "2026-11-17T00:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909994",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909994"
+    },
+    {
+      "id": "401909995",
+      "name": "CHI @ CLE",
+      "date": "2026-11-17T00:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909995",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909995"
+    },
+    {
+      "id": "401909996",
+      "name": "MEM @ WSH",
+      "date": "2026-11-17T00:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909996",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909996"
+    },
+    {
+      "id": "401909997",
+      "name": "PHI @ BKN",
+      "date": "2026-11-17T00:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909997",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909997"
+    },
+    {
+      "id": "401909998",
+      "name": "HOU @ MIA",
+      "date": "2026-11-17T00:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909998",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909998"
+    },
+    {
+      "id": "401909999",
+      "name": "POR @ MIN",
+      "date": "2026-11-17T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909999",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909999"
+    },
+    {
+      "id": "401910000",
+      "name": "GS @ NO",
+      "date": "2026-11-17T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910000",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910000"
+    },
+    {
+      "id": "401910001",
+      "name": "PHX @ DEN",
+      "date": "2026-11-17T02:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910001",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910001"
+    },
+    {
+      "id": "401910002",
+      "name": "NY @ TOR",
+      "date": "2026-11-18T00:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910002",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910002"
+    },
+    {
+      "id": "401910003",
+      "name": "POR @ MIN",
+      "date": "2026-11-18T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910003",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910003"
+    },
+    {
+      "id": "401910004",
+      "name": "DET @ SA",
+      "date": "2026-11-18T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910004",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910004"
+    },
+    {
+      "id": "401910006",
+      "name": "UTAH @ LAC",
+      "date": "2026-11-18T03:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910006",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910006"
+    },
+    {
+      "id": "401910005",
+      "name": "CHA @ LAL",
+      "date": "2026-11-18T04:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910005",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910005"
+    },
+    {
+      "id": "401910007",
+      "name": "MEM @ CLE",
+      "date": "2026-11-19T00:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910007",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910007"
+    },
+    {
+      "id": "401910008",
+      "name": "HOU @ IND",
+      "date": "2026-11-19T00:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910008",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910008"
+    },
+    {
+      "id": "401910009",
+      "name": "MIL @ MIA",
+      "date": "2026-11-19T00:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910009",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910009"
+    },
+    {
+      "id": "401910010",
+      "name": "PHI @ ORL",
+      "date": "2026-11-19T00:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910010",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910010"
+    },
+    {
+      "id": "401910011",
+      "name": "CHI @ BKN",
+      "date": "2026-11-19T00:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910011",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910011"
+    },
+    {
+      "id": "401910012",
+      "name": "WSH @ TOR",
+      "date": "2026-11-19T00:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910012",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910012"
+    },
+    {
+      "id": "401910013",
+      "name": "DET @ NO",
+      "date": "2026-11-19T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910013",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910013"
+    },
+    {
+      "id": "401910014",
+      "name": "ATL @ OKC",
+      "date": "2026-11-19T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910014",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910014"
+    },
+    {
+      "id": "401910016",
+      "name": "GS @ DAL",
+      "date": "2026-11-19T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910016",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910016"
+    },
+    {
+      "id": "401910015",
+      "name": "BOS @ DEN",
+      "date": "2026-11-19T02:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910015",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910015"
+    },
+    {
+      "id": "401910017",
+      "name": "UTAH @ LAL",
+      "date": "2026-11-19T03:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910017",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910017"
+    },
+    {
+      "id": "401910018",
+      "name": "PHX @ SAC",
+      "date": "2026-11-19T03:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910018",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910018"
+    },
+    {
+      "id": "401910019",
+      "name": "GS @ MEM",
+      "date": "2026-11-20T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910019",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910019"
+    },
+    {
+      "id": "401910020",
+      "name": "POR @ MIL",
+      "date": "2026-11-20T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910020",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910020"
+    },
+    {
+      "id": "401910021",
+      "name": "NY @ MIN",
+      "date": "2026-11-20T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910021",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910021"
+    },
+    {
+      "id": "401910022",
+      "name": "LAC @ SA",
+      "date": "2026-11-20T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910022",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910022"
+    },
+    {
+      "id": "401909305",
+      "name": "CHA @ ATL",
+      "date": "2026-11-21T00:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909305",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909305"
+    },
+    {
+      "id": "401909306",
+      "name": "ORL @ BKN",
+      "date": "2026-11-21T00:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909306",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909306"
+    },
+    {
+      "id": "401909307",
+      "name": "IND @ CLE",
+      "date": "2026-11-21T00:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909307",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909307"
+    },
+    {
+      "id": "401909308",
+      "name": "TOR @ DET",
+      "date": "2026-11-21T00:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909308",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909308"
+    },
+    {
+      "id": "401909309",
+      "name": "WSH @ CHI",
+      "date": "2026-11-21T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909309",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909309"
+    },
+    {
+      "id": "401909310",
+      "name": "NO @ OKC",
+      "date": "2026-11-21T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909310",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909310"
+    },
+    {
+      "id": "401909311",
+      "name": "PHX @ UTAH",
+      "date": "2026-11-21T02:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909311",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909311"
+    },
+    {
+      "id": "401909312",
+      "name": "HOU @ DEN",
+      "date": "2026-11-21T03:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909312",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909312"
+    },
+    {
+      "id": "401909313",
+      "name": "SAC @ LAL",
+      "date": "2026-11-21T03:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401909313",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909313"
+    },
+    {
+      "id": "401910023",
+      "name": "MIL @ PHI",
+      "date": "2026-11-21T18:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910023",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910023"
+    },
+    {
+      "id": "401910024",
+      "name": "POR @ NY",
+      "date": "2026-11-22T00:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910024",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910024"
+    },
+    {
+      "id": "401910026",
+      "name": "MEM @ MIN",
+      "date": "2026-11-22T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910026",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910026"
+    },
+    {
+      "id": "401910027",
+      "name": "NO @ SA",
+      "date": "2026-11-22T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910027",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910027"
+    },
+    {
+      "id": "401910028",
+      "name": "BOS @ SAC",
+      "date": "2026-11-22T03:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910028",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910028"
+    },
+    {
+      "id": "401910029",
+      "name": "DET @ ATL",
+      "date": "2026-11-22T20:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910029",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910029"
+    },
+    {
+      "id": "401910030",
+      "name": "OKC @ MIA",
+      "date": "2026-11-22T23:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910030",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910030"
+    },
+    {
+      "id": "401910031",
+      "name": "ORL @ WSH",
+      "date": "2026-11-23T00:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910031",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910031"
+    },
+    {
+      "id": "401910032",
+      "name": "DEN @ CHI",
+      "date": "2026-11-23T00:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910032",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910032"
+    },
+    {
+      "id": "401910033",
+      "name": "DAL @ UTAH",
+      "date": "2026-11-23T00:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910033",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910033"
+    },
+    {
+      "id": "401910034",
+      "name": "IND @ NY",
+      "date": "2026-11-23T01:00Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910034",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910034"
+    },
+    {
+      "id": "401910035",
+      "name": "BOS @ GS",
+      "date": "2026-11-23T01:30Z",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401910035",
+      "dataUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910035"
+    }
+  ],
+  "excludedNbaGames": {
+    "shockers": [
+      {
+        "player": "Fred VanVleet",
+        "id": "401910008",
+        "stats": {
+          "pts": 15,
+          "reb": 2,
+          "ast": 6,
+          "stl": 1,
+          "blk": 0,
+          "to": 2,
+          "min": 27,
+          "fgm": 6,
+          "fga": 13,
+          "ftm": 0,
+          "fta": 0,
+          "tpm": 3,
+          "tpa": 7
+        }
+      }
+    ],
+    "pelafustanes": [
+      {
+        "player": "Brandon Miller",
+        "id": "401910005",
+        "stats": {
+          "pts": 28,
+          "reb": 2,
+          "ast": 4,
+          "stl": 0,
+          "blk": 1,
+          "to": 5,
+          "min": 32,
+          "fgm": 10,
+          "fga": 19,
+          "ftm": 3,
+          "fta": 3,
+          "tpm": 5,
+          "tpa": 12
+        }
+      },
+      {
+        "player": "Brandon Miller",
+        "id": "401909305",
+        "stats": {
+          "pts": 19,
+          "reb": 8,
+          "ast": 3,
+          "stl": 1,
+          "blk": 0,
+          "to": 3,
+          "min": 33,
+          "fgm": 7,
+          "fga": 18,
+          "ftm": 0,
+          "fta": 0,
+          "tpm": 5,
+          "tpa": 13
+        }
+      },
+      {
+        "player": "Malik Monk",
+        "id": "401910018",
+        "stats": {
+          "pts": 8,
+          "reb": 1,
+          "ast": 2,
+          "stl": 1,
+          "blk": 0,
+          "to": 3,
+          "min": 20,
+          "fgm": 3,
+          "fga": 6,
+          "ftm": 0,
+          "fta": 0,
+          "tpm": 2,
+          "tpa": 4
+        }
+      },
+      {
+        "player": "Malik Monk",
+        "id": "401910028",
+        "stats": {
+          "pts": 3,
+          "reb": 0,
+          "ast": 1,
+          "stl": 0,
+          "blk": 1,
+          "to": 1,
+          "min": 10,
+          "fgm": 0,
+          "fga": 0,
+          "ftm": 3,
+          "fta": 3,
+          "tpm": 0,
+          "tpa": 0
+        }
+      },
+      {
+        "player": "Malik Monk",
+        "id": "401909313",
+        "stats": {
+          "pts": 2,
+          "reb": 0,
+          "ast": 3,
+          "stl": 0,
+          "blk": 1,
+          "to": 4,
+          "min": 12,
+          "fgm": 0,
+          "fga": 5,
+          "ftm": 2,
+          "fta": 2,
+          "tpm": 0,
+          "tpa": 3
+        }
+      }
+    ]
+  },
+  "sourceImages": []
 }
 ],
 
@@ -11128,7 +14006,219 @@ rosterSnapshots: [
         "challenge": "La mejora de la segunda línea debe acompañarse de control de pérdidas y mejores porcentajes. La salida de Klay Thompson obliga a redistribuir sus triples; no toda la anotación nueva sustituye el mismo perfil."
       }
     ]
-  }
+  },
+{
+  "date": "2026-11-22",
+  "source": "Planteles usados para reconstruir el cierre de la semana 5 con actas NBA. El conjunto reproduce las nueve categorías y coincide con las identidades consultadas en ESPN el 23 de noviembre. La fecha identifica el cierre deportivo.",
+  "teams": [
+    {
+      "id": "shockers",
+      "roster": [
+        "Shai Gilgeous-Alexander",
+        "Jayson Tatum",
+        "Scottie Barnes",
+        "Amen Thompson",
+        "Dyson Daniels",
+        "Fred VanVleet",
+        "Paul Reed",
+        "Yaxel Lendeborg",
+        "Bam Adebayo",
+        "Donovan Clingan",
+        "Collin Murray-Boyles",
+        "Jamal Murray",
+        "Daniss Jenkins"
+      ],
+      "leaders": [
+        "Shai Gilgeous-Alexander",
+        "Jayson Tatum",
+        "Jamal Murray"
+      ],
+      "strength": "Murray comparte la creación con Gilgeous-Alexander y Tatum. Adebayo y Clingan sostienen el juego interior, con Daniels y Reed aportando defensa. Jenkins amplía la rotación del perímetro.",
+      "challenge": "Los triples quedaron por debajo de la producción rival en el clásico. El margen en libres fue mínimo y requiere sostener eficiencia y disponibilidad en la rotación."
+    },
+    {
+      "id": "pilsens",
+      "roster": [
+        "Nikola Jokić",
+        "Jalen Johnson",
+        "Dylan Harper",
+        "Jaylen Wells",
+        "Keldon Johnson",
+        "Franz Wagner",
+        "Tyrese Maxey",
+        "Paul George",
+        "Davion Mitchell",
+        "Pascal Siakam",
+        "Deni Avdija",
+        "Darius Acuff Jr.",
+        "Wendell Carter Jr."
+      ],
+      "leaders": [
+        "Nikola Jokić",
+        "Tyrese Maxey",
+        "Franz Wagner"
+      ],
+      "strength": "Jokić, Wagner y Davion Mitchell sostienen el pase. Avdija y Acuff amplían las opciones de creación, mientras Siakam y Carter suman recursos interiores.",
+      "challenge": "Harper figura descartado en el parte del lunes. Cromwell necesita sostener la defensa del aro sin perder el volumen de asistencias que le dio el clásico Santa María."
+    },
+    {
+      "id": "hipopotamos",
+      "roster": [
+        "Victor Wembanyama",
+        "Cade Cunningham",
+        "Derrick White",
+        "Jaden McDaniels",
+        "Walker Kessler",
+        "Ace Bailey",
+        "Christian Braun",
+        "Ajay Mitchell",
+        "Devin Booker",
+        "Jabari Smith Jr.",
+        "Anthony Davis",
+        "Jrue Holiday",
+        "Saddiq Bey"
+      ],
+      "leaders": [
+        "Victor Wembanyama",
+        "Cade Cunningham",
+        "Devin Booker"
+      ],
+      "strength": "Davis se suma a Wembanyama y Kessler cerca del aro. Cunningham y Booker lideran la creación exterior, con Holiday y Bey dando opciones de tiro y defensa.",
+      "challenge": "El clásico se perdió en libres por un margen mínimo. El estado de la espalda de Wembanyama requiere seguimiento para el inicio de semana, junto con el reparto de tiros y la eficiencia del perímetro."
+    },
+    {
+      "id": "pelafustanes",
+      "roster": [
+        "Luka Dončić",
+        "Donovan Mitchell",
+        "Brandon Miller",
+        "Giannis Antetokounmpo",
+        "Alperen Sengun",
+        "Payton Pritchard",
+        "OG Anunoby",
+        "Alex Sarr",
+        "Matas Buzelis",
+        "Bobby Portis",
+        "Malik Monk",
+        "Aaron Wiggins",
+        "Jalen Smith"
+      ],
+      "leaders": [
+        "Luka Dončić",
+        "Donovan Mitchell",
+        "Giannis Antetokounmpo"
+      ],
+      "strength": "Dončić y Mitchell sostienen PTS, AST y 3PM, con Antetokounmpo y Sengun como apoyos interiores. Aaron Wiggins suma una opción exterior y Jalen Smith amplía la rotación de rebote, junto a Sarr y Portis.",
+      "challenge": "La mejora de la segunda línea debe acompañarse de control de pérdidas y mejores porcentajes. La salida de Klay Thompson obliga a redistribuir sus triples; no toda la anotación nueva sustituye el mismo perfil."
+    }
+  ]
+},
+{
+  "date": "2026-11-23",
+  "source": "Planteles consultados en ESPN Fantasy el 23 de noviembre de 2026. Este corte muestra integrantes y no incluye el reporte de ofertas ni precios.",
+  "teams": [
+    {
+      "id": "shockers",
+      "roster": [
+        "Shai Gilgeous-Alexander",
+        "Jayson Tatum",
+        "Scottie Barnes",
+        "Amen Thompson",
+        "Dyson Daniels",
+        "Fred VanVleet",
+        "Paul Reed",
+        "Yaxel Lendeborg",
+        "Bam Adebayo",
+        "Donovan Clingan",
+        "Collin Murray-Boyles",
+        "Jamal Murray",
+        "Daniss Jenkins"
+      ],
+      "leaders": [
+        "Shai Gilgeous-Alexander",
+        "Jayson Tatum",
+        "Jamal Murray"
+      ],
+      "strength": "Murray comparte la creación con Gilgeous-Alexander y Tatum. Adebayo y Clingan sostienen el juego interior, con Daniels y Reed aportando defensa. Jenkins amplía la rotación del perímetro.",
+      "challenge": "Los triples quedaron por debajo de la producción rival en el clásico. El margen en libres fue mínimo y requiere sostener eficiencia y disponibilidad en la rotación."
+    },
+    {
+      "id": "pilsens",
+      "roster": [
+        "Nikola Jokić",
+        "Jalen Johnson",
+        "Dylan Harper",
+        "Jaylen Wells",
+        "Keldon Johnson",
+        "Franz Wagner",
+        "Tyrese Maxey",
+        "Paul George",
+        "Davion Mitchell",
+        "Pascal Siakam",
+        "Deni Avdija",
+        "Darius Acuff Jr.",
+        "Wendell Carter Jr."
+      ],
+      "leaders": [
+        "Nikola Jokić",
+        "Tyrese Maxey",
+        "Franz Wagner"
+      ],
+      "strength": "Jokić, Wagner y Davion Mitchell sostienen el pase. Avdija y Acuff amplían las opciones de creación, mientras Siakam y Carter suman recursos interiores.",
+      "challenge": "Harper figura descartado en el parte del lunes. Cromwell necesita sostener la defensa del aro sin perder el volumen de asistencias que le dio el clásico Santa María."
+    },
+    {
+      "id": "hipopotamos",
+      "roster": [
+        "Victor Wembanyama",
+        "Cade Cunningham",
+        "Derrick White",
+        "Jaden McDaniels",
+        "Walker Kessler",
+        "Ace Bailey",
+        "Christian Braun",
+        "Ajay Mitchell",
+        "Devin Booker",
+        "Jabari Smith Jr.",
+        "Anthony Davis",
+        "Jrue Holiday",
+        "Saddiq Bey"
+      ],
+      "leaders": [
+        "Victor Wembanyama",
+        "Cade Cunningham",
+        "Devin Booker"
+      ],
+      "strength": "Davis se suma a Wembanyama y Kessler cerca del aro. Cunningham y Booker lideran la creación exterior, con Holiday y Bey dando opciones de tiro y defensa.",
+      "challenge": "El clásico se perdió en libres por un margen mínimo. El estado de la espalda de Wembanyama requiere seguimiento para el inicio de semana, junto con el reparto de tiros y la eficiencia del perímetro."
+    },
+    {
+      "id": "pelafustanes",
+      "roster": [
+        "Luka Dončić",
+        "Donovan Mitchell",
+        "Brandon Miller",
+        "Giannis Antetokounmpo",
+        "Alperen Sengun",
+        "Payton Pritchard",
+        "OG Anunoby",
+        "Alex Sarr",
+        "Matas Buzelis",
+        "Bobby Portis",
+        "Malik Monk",
+        "Aaron Wiggins",
+        "Jalen Smith"
+      ],
+      "leaders": [
+        "Luka Dončić",
+        "Donovan Mitchell",
+        "Giannis Antetokounmpo"
+      ],
+      "strength": "Dončić y Mitchell sostienen PTS, AST y 3PM, con Antetokounmpo y Sengun como apoyos interiores. Aaron Wiggins suma una opción exterior y Jalen Smith amplía la rotación de rebote, junto a Sarr y Portis.",
+      "challenge": "La mejora de la segunda línea debe acompañarse de control de pérdidas y mejores porcentajes. La salida de Klay Thompson obliga a redistribuir sus triples; no toda la anotación nueva sustituye el mismo perfil."
+    }
+  ]
+}
 ],
 
 /* Equipos actuales ------------------------------------------------------ */
@@ -11149,27 +14239,26 @@ teams: [
     "leaders": [
       "Shai Gilgeous-Alexander",
       "Jayson Tatum",
-      "Cooper Flagg"
+      "Jamal Murray"
     ],
     "roster": [
       "Shai Gilgeous-Alexander",
-      "Scottie Barnes",
       "Jayson Tatum",
-      "Bam Adebayo",
-      "Cooper Flagg",
+      "Scottie Barnes",
       "Amen Thompson",
-      "Yaxel Lendeborg",
       "Dyson Daniels",
-      "Donovan Clingan",
-      "Paul Reed",
-      "Jonathan Kuminga",
       "Fred VanVleet",
-      "Collin Murray-Boyles"
+      "Paul Reed",
+      "Yaxel Lendeborg",
+      "Bam Adebayo",
+      "Donovan Clingan",
+      "Collin Murray-Boyles",
+      "Jamal Murray",
+      "Daniss Jenkins"
     ],
-    "strength": "Gilgeous-Alexander, Tatum y Flagg sostienen la creación. Bam Adebayo y Donovan Clingan amplían los recursos interiores, con Murray-Boyles como otra opción de rotación junto a Barnes, Daniels y Amen Thompson.",
-    "challenge": "El recambio interior modifica las fuentes de rebotes y tapones. Shockers necesita conservar su ventaja en robos y elevar la eficiencia de campo, la categoría que cedió ante Mequetrefes.",
-    "rosterUpdatedDate": "2026-11-09",
-    "rosterReportId": "waivers-2026-11-09"
+    "strength": "Murray comparte la creación con Gilgeous-Alexander y Tatum. Adebayo y Clingan sostienen el juego interior, con Daniels y Reed aportando defensa. Jenkins amplía la rotación del perímetro.",
+    "challenge": "Los triples quedaron por debajo de la producción rival en el clásico. El margen en libres fue mínimo y requiere sostener eficiencia y disponibilidad en la rotación.",
+    "rosterUpdatedDate": "2026-11-23"
   },
   {
     "id": "pilsens",
@@ -11187,27 +14276,26 @@ teams: [
     "leaders": [
       "Nikola Jokić",
       "Tyrese Maxey",
-      "Pascal Siakam"
+      "Franz Wagner"
     ],
     "roster": [
-      "Domantas Sabonis",
-      "Dylan Harper",
-      "Pascal Siakam",
-      "Keldon Johnson",
       "Nikola Jokić",
-      "Tyrese Maxey",
-      "Franz Wagner",
-      "Paul George",
-      "Caleb Wilson",
-      "Davion Mitchell",
       "Jalen Johnson",
+      "Dylan Harper",
       "Jaylen Wells",
-      "Dillon Brooks"
+      "Keldon Johnson",
+      "Franz Wagner",
+      "Tyrese Maxey",
+      "Paul George",
+      "Davion Mitchell",
+      "Pascal Siakam",
+      "Deni Avdija",
+      "Darius Acuff Jr.",
+      "Wendell Carter Jr."
     ],
-    "strength": "Jokić y Sabonis conservan la creación interior. Siakam amplía las opciones de ataque desde el ala pívot, George aporta tiro y manos en el perímetro y Davion Mitchell agrega otra vía de pase.",
-    "challenge": "Salen Brown, Dybantsa y Mamukelashvili. Cromwell necesita repartir la anotación que aportaba Brown y sostener la defensa interior mientras integra tres perfiles nuevos.",
-    "rosterUpdatedDate": "2026-11-09",
-    "rosterReportId": "waivers-2026-11-09"
+    "strength": "Jokić, Wagner y Davion Mitchell sostienen el pase. Avdija y Acuff amplían las opciones de creación, mientras Siakam y Carter suman recursos interiores.",
+    "challenge": "Harper figura descartado en el parte del lunes. Cromwell necesita sostener la defensa del aro sin perder el volumen de asistencias que le dio el clásico Santa María.",
+    "rosterUpdatedDate": "2026-11-23"
   },
   {
     "id": "hipopotamos",
@@ -11225,27 +14313,26 @@ teams: [
     "leaders": [
       "Victor Wembanyama",
       "Cade Cunningham",
-      "Stephen Curry"
+      "Devin Booker"
     ],
     "roster": [
+      "Victor Wembanyama",
       "Cade Cunningham",
       "Derrick White",
-      "Stephen Curry",
-      "Jabari Smith Jr.",
-      "Victor Wembanyama",
-      "Ajay Mitchell",
       "Jaden McDaniels",
-      "Devin Booker",
-      "Christian Braun",
-      "Ace Bailey",
       "Walker Kessler",
-      "Kris Dunn",
-      "P.J. Washington"
+      "Ace Bailey",
+      "Christian Braun",
+      "Ajay Mitchell",
+      "Devin Booker",
+      "Jabari Smith Jr.",
+      "Anthony Davis",
+      "Jrue Holiday",
+      "Saddiq Bey"
     ],
-    "strength": "Wembanyama y Kessler sostienen el aro. Curry se suma a Cunningham y Booker para ampliar el tiro y la creación exterior. Jabari Smith Jr. aporta alcance desde el puesto de ala pívot y Kris Dunn suma una opción defensiva en el perímetro.",
-    "challenge": "La salida de Avdija reduce la creación desde el alero. Las de Reid y Camara cambian el reparto de rebotes y defensa. Integrar a Curry exige repartir la pelota y sostener el equilibrio que llevó al equipo al primer lugar.",
-    "rosterUpdatedDate": "2026-11-09",
-    "rosterReportId": "waivers-2026-11-09"
+    "strength": "Davis se suma a Wembanyama y Kessler cerca del aro. Cunningham y Booker lideran la creación exterior, con Holiday y Bey dando opciones de tiro y defensa.",
+    "challenge": "El clásico se perdió en libres por un margen mínimo. El estado de la espalda de Wembanyama requiere seguimiento para el inicio de semana, junto con el reparto de tiros y la eficiencia del perímetro.",
+    "rosterUpdatedDate": "2026-11-23"
   },
   {
     "id": "pelafustanes",
@@ -11702,6 +14789,31 @@ schedule: [
         "sourceSnapshot": "./assets/cortes/espn/20261123T154410.424Z.json"
       }
     ]
+  },
+  {
+    "week": 6,
+    "label": "Semana 6",
+    "start": "2026-11-23",
+    "end": "2026-11-29",
+    "featured": "w6-m2",
+    "matchups": [
+      {
+        "id": "w6-m1",
+        "teams": [
+          "shockers",
+          "pelafustanes"
+        ],
+        "status": "scheduled"
+      },
+      {
+        "id": "w6-m2",
+        "teams": [
+          "pilsens",
+          "hipopotamos"
+        ],
+        "status": "scheduled"
+      }
+    ]
   }
 ],
 
@@ -11754,6 +14866,389 @@ draft: {
 
 /* Publicaciones ------------------------------------------------------------- */
 posts: [
+{
+  "id": "cierre-semana-5-clasicos-pato-rubio",
+  "date": "2026-11-23",
+  "category": "Crónicas",
+  "readingMinutes": 5,
+  "title": "El Pato le apagó la fiesta a Tobi y el Rubio cobró Santa María",
+  "excerpt": "Shockers convirtió el 2–7 del domingo en un triunfo 4–3, con dos empates y una diferencia mínima en libres. Cromwell ganó 5–4 al Chino. Murray hizo 45 puntos al cierre y Jokić sostuvo la revancha sansana.",
+  "teams": [
+    "shockers",
+    "hipopotamos",
+    "pilsens",
+    "pelafustanes"
+  ],
+  "reportId": "semana-5-final-2026-11-22",
+  "sources": [
+    {
+      "title": "ESPN Fantasy · Cierre oficial del 16 al 22 de noviembre",
+      "url": "./assets/cortes/espn/20261123T154410.424Z.json"
+    },
+    {
+      "title": "ESPN Fantasy · Parcial del domingo a las 10:07 de Chile",
+      "url": "./assets/cortes/espn/20261122T130752.649Z.json"
+    },
+    {
+      "title": "Actas NBA y cómputo individual reconstruido",
+      "url": "./assets/cortes/semana-5-final-reconstruccion-2026-11-23.json"
+    },
+    {
+      "title": "Planteles y candidatos al corte del lunes",
+      "url": "./assets/cortes/semana-6-planteles-mercado-2026-11-23.json"
+    },
+    {
+      "title": "NBA · Parte de lesiones del lunes a las 13:45 de Chile",
+      "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45AM.pdf"
+    }
+  ],
+  "fantasySnapshot": {
+    "week": 5,
+    "weekLabel": "Semana 5",
+    "start": "2026-11-16",
+    "end": "2026-11-22",
+    "updatedAt": "2026-11-23T15:44:10.424Z",
+    "sourceSnapshot": "./assets/cortes/espn/20261123T154410.424Z.json",
+    "matchups": [
+      {
+        "id": "w5-m1",
+        "teams": [
+          "hipopotamos",
+          "shockers"
+        ],
+        "status": "final",
+        "stats": {
+          "hipopotamos": {
+            "fgp": 0.47247706,
+            "ftp": 0.74647887,
+            "tpm": 77,
+            "reb": 269,
+            "ast": 169,
+            "stl": 52,
+            "blk": 32,
+            "to": 83,
+            "pts": 801
+          },
+          "shockers": {
+            "fgp": 0.49250936,
+            "ftp": 0.74691358,
+            "tpm": 51,
+            "reb": 261,
+            "ast": 169,
+            "stl": 57,
+            "blk": 37,
+            "to": 83,
+            "pts": 698
+          }
+        },
+        "updatedAt": "2026-11-23T15:44:10.424Z",
+        "sourceMode": "espn",
+        "source": "Totales semanales oficiales de ESPN Fantasy, obtenidos mediante su API de lectura.",
+        "sourceUrl": "https://fantasy.espn.com/basketball/boxscore?leagueId=732964684&matchupPeriodId=5&seasonId=2027&teamId=4",
+        "sourceSnapshot": "./assets/cortes/espn/20261123T154410.424Z.json"
+      },
+      {
+        "id": "w5-m2",
+        "teams": [
+          "pilsens",
+          "pelafustanes"
+        ],
+        "status": "final",
+        "stats": {
+          "pilsens": {
+            "fgp": 0.48207885,
+            "ftp": 0.81935484,
+            "tpm": 70,
+            "reb": 241,
+            "ast": 194,
+            "stl": 37,
+            "blk": 23,
+            "to": 83,
+            "pts": 735
+          },
+          "pelafustanes": {
+            "fgp": 0.48817204,
+            "ftp": 0.79090909,
+            "tpm": 72,
+            "reb": 187,
+            "ast": 108,
+            "stl": 35,
+            "blk": 26,
+            "to": 73,
+            "pts": 613
+          }
+        },
+        "updatedAt": "2026-11-23T15:44:10.424Z",
+        "sourceMode": "espn",
+        "source": "Totales semanales oficiales de ESPN Fantasy, obtenidos mediante su API de lectura.",
+        "sourceUrl": "https://fantasy.espn.com/basketball/boxscore?leagueId=732964684&matchupPeriodId=5&seasonId=2027&teamId=2",
+        "sourceSnapshot": "./assets/cortes/espn/20261123T154410.424Z.json"
+      }
+    ]
+  },
+  "source": "Crónica del cierre oficial de ESPN Fantasy. Las cifras individuales se contrastaron con actas NBA y reproducen el cómputo de los cuatro equipos. El parcial del domingo corresponde al corte guardado a las 10:07 de Chile.",
+  "body": [
+    [
+      "p",
+      "A las diez de la mañana del domingo, Hipopotamos ganaba 7–2 y Tobi tenía la portada prácticamente escrita. El Pato pidió que esperaran a la edición nocturna. Le quedaban Jamal Murray, Bam Adebayo y un puñado de aguateros con ganas de arruinar la foto familiar. Cuando cerró ESPN, Shockers había ganado 4–3, con dos categorías empatadas. En Santa María, el Rubio se cobró el 7–2 de la primera vuelta con un 5–4. El Chino alcanzó a avisar que el comité de reclamos volvía a atender el lunes."
+    ],
+    [
+      "h2",
+      "El clásico se cayó de la línea"
+    ],
+    [
+      "matchup-cut",
+      "w5-m1"
+    ],
+    [
+      "p",
+      "Shockers convirtió 121 de 162 libres. Hipopotamos, 106 de 142. El 74,691% contra 74,648% le dio al Pato la cuarta categoría por unas cuatro centésimas de punto porcentual. También ganó campo, 49,25% a 47,25%, robos 57–52 y tapones 37–32. Tobi se llevó puntos 801–698, triples 77–51 y rebotes 269–261. Las asistencias quedaron 169–169 y las pérdidas 83–83. El equipo que más anotó tuvo que guardar los brindis."
+    ],
+    [
+      "p",
+      "Murray hizo 45 puntos, seis triples y 13 de 14 libres el domingo frente a Chicago. Bam puso 24 puntos, 15 rebotes y doce asistencias ante Oklahoma City, sin pérdidas. Dyson Daniels metió cinco robos y tres tapones en la última jornada. Shockers pasó de 29 a 37 bloqueos y emparejó las dos columnas que aún podía salvar. El comisionado había explicado durante años que había que mirar las nueve categorías. Por una vez consiguió que toda la familia escuchara hasta el final."
+    ],
+    [
+      "p",
+      "El costo para Hipopotamos fue especialmente amargo después de los 107 puntos y 48 rebotes de Wembanyama en la semana y los 106 de Davis. Jrue Holiday repartió 23 asistencias y Christian Braun hizo nueve robos. El domingo, Cunningham dio 15 asistencias, pero sus seis pérdidas y el 6 de 21 de White en campo dejaron trabajo para la pizarra. Tobi quiso cerrar la discusión con sus 801 puntos. El Pato contestó que la próxima junta podía hacerla en una cancha más corta, por si seguían contando solo las canastas."
+    ],
+    [
+      "sources",
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    [
+      "h2",
+      "Santa María volvió a la mesa del Rubio"
+    ],
+    [
+      "matchup-cut",
+      "w5-m2"
+    ],
+    [
+      "p",
+      "Cromwell ganó libres, rebotes, asistencias, robos y puntos. Los 194 pases de gol frente a 108 muestran la diferencia que pudo sostener durante la semana. Jokić produjo 115 puntos, 48 rebotes y 38 asistencias. El domingo agregó 37, 18 y once, respectivamente. Wagner sumó 99 puntos y 33 asistencias en el período. Acuff aportó 26 pases y Carter cuatro tapones. El Rubio ahora tiene más argumentos que el cartel de reconstrucción que venía cambiando de lado."
+    ],
+    [
+      "p",
+      "Mequetrefes descontó hasta el 5–4 con una última noche de tiro. Jalen Smith anotó 26 puntos y seis triples, y Buzelis agregó 21 y cuatro. El Chino terminó arriba en campo, 48,82% a 48,21%, triples 72–70, tapones 26–23 y pérdidas, 73 contra 83. Donovan Mitchell puso 93 puntos en el cómputo y Buzelis 78. Giannis y Anunoby se perdieron el domingo por molestias físicas. Esas ausencias pesaron en una rotación que había llegado al día final 2–7 abajo."
+    ],
+    [
+      "p",
+      "Pinki propuso celebrar con una pilsen express en el Gauchito. El Chino recordó que en 2025 había calculado que les quedaban 21 juntas y preguntó si esta se podía cobrar como media. El Rubio llevó el 5–4 impreso. El Chino llevó el 72–70 en triples y exigió que se contara también la sobremesa. Las dos delegaciones mantienen abierta la negociación del jueves."
+    ],
+    [
+      "sources",
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    [
+      "h2",
+      "Dos ganadores y una tabla que sigue molestando"
+    ],
+    [
+      "p",
+      "Hipopotamos conserva el primer puesto con 25–18–2 en categorías. Mequetrefes sigue segundo con 22–23, Shockers queda 20–22–3 y Cromwell 20–24–1. El Rubio ganó tres de sus cinco cruces y todavía figura cuarto, porque la tabla cobra cada categoría. Solicitó grabar por fin el podcast pendiente desde 2023 para explicarlo. El Pato aceptó participar con una condición. El capítulo sobre libres lo presenta él."
+    ],
+    [
+      "player-report",
+      "shockers"
+    ],
+    [
+      "player-report",
+      "hipopotamos"
+    ],
+    [
+      "player-report",
+      "pilsens"
+    ],
+    [
+      "player-report",
+      "pelafustanes"
+    ],
+    [
+      "sources",
+      [
+        0,
+        2
+      ]
+    ]
+  ]
+},
+{
+  "id": "previa-semana-6-revanchas-y-avdija",
+  "date": "2026-11-23",
+  "category": "Previas",
+  "readingMinutes": 4,
+  "title": "El Chino le guarda la planilla al Pato y Avdija entra por el otro camarín",
+  "excerpt": "Mequetrefes ya le dio vuelta un domingo a Shockers. Cromwell vuelve por el 6–3 que le propinó Hipopotamos, esta vez con Avdija de su lado y Wembanyama en duda para el arranque.",
+  "teams": ["pilsens", "hipopotamos", "shockers", "pelafustanes"],
+  "sources": [
+    {
+      "title": "ESPN Fantasy · Primeros cruces entre los cuatro equipos",
+      "url": "./assets/cortes/espn/20261109T134112.988Z.json"
+    },
+    {
+      "title": "ESPN Fantasy · Cierre de la semana 5",
+      "url": "./assets/cortes/espn/20261123T154410.424Z.json"
+    },
+    {
+      "title": "Planteles, programación y cruces de la semana 6",
+      "url": "./assets/cortes/semana-6-planteles-mercado-2026-11-23.json"
+    },
+    {
+      "title": "NBA · Parte de lesiones del lunes a las 14:15 de Chile",
+      "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_15PM.pdf"
+    }
+  ],
+  "fantasySnapshot": {
+    "week": 6,
+    "weekLabel": "Semana 6",
+    "start": "2026-11-23",
+    "end": "2026-11-29",
+    "matchups": [
+      { "id": "w6-m1", "teams": ["shockers", "pelafustanes"], "status": "scheduled" },
+      { "id": "w6-m2", "teams": ["pilsens", "hipopotamos"], "status": "scheduled" }
+    ]
+  },
+  "source": "Previa del 23 al 29 de noviembre. Las cifras de la semana anterior corresponden a cruces distintos. Programación en hora de Chile continental y disponibilidad según el parte NBA del lunes a las 14:15.",
+  "body": [
+    ["p", "El Chino guardó la planilla del primer partido contra Shockers. La dobló justo donde el Pato tenía el 5–4 el domingo en la mañana. Al abrirla completa, el 5–4 era de Mequetrefes. En Cromwell, el Rubio hizo una gestión más discreta. Le encargó al utilero que le mostrara a Deni Avdija la puerta de local antes de que apareciera Tobi. El calendario devolvió los dos cruces de la tercera fecha y, con ellos, un par de conversaciones que nadie dio por cerradas."],
+    ["h2", "Shockers y Mequetrefes vuelven al expediente de los tapones"],
+    ["matchup-cut", "w6-m1"],
+    ["p", "En el primer cruce, Shockers llegó al último día arriba 24–22 en tapones y terminó abajo 25–28. El Pato trae argumentos para resistir mejor esta vez. Bam Adebayo cerró el Clásico Familiar con un triple-doble sin pérdidas y Dyson Daniels sumó cinco robos y tres tapones el domingo. A Jamal Murray todavía le deben la foto por sus 45 puntos. Con ese reparto, Shockers puede presionar desde el perímetro y proteger el aro sin exigirle al mismo jugador que haga las dos cosas."],
+    ["p", "El Chino tiene una salida por fuera. Mequetrefes anotó 72 triples la semana pasada y Shockers, en el otro cruce, 51. Donovan Mitchell cerró con 93 puntos y Jalen Smith metió seis triples el domingo. Si los tiradores del Chino sostienen ese volumen, el Pato va a tener que pelear por campo y pérdidas hasta el final. En el camarín de Mequetrefes ya ofrecieron cederle al comisionado la silla principal para revisar el conteo. Queda justo debajo del aro."],
+    ["p", "El lunes a las 22:00 juegan Cleveland y Chicago, con Mitchell, Matas Buzelis y Smith en la órbita de Mequetrefes. Brandon Miller figura probable ante Memphis por una contusión en la rodilla derecha. Oklahoma City todavía tenía pendiente su informe en ese corte, de modo que la participación de Shai Gilgeous-Alexander queda por confirmar."],
+    ["h2", "Cromwell quiere el pase extra y Tobi pide noticias de la espalda de Wemby"],
+    ["matchup-cut", "w6-m2"],
+    ["p", "Hipopotamos ganó el primer cruce 6–3 con 800 puntos y 33 tapones frente a ocho. El porcentaje de campo se resolvió por apenas 0,015 puntos porcentuales. Ahora el Rubio llega con 194 asistencias en Santa María y con Avdija, ex Hipopotamos, en su plantel. Si Jokić y Wagner vuelven a encontrar el pase extra, Cromwell puede obligar a Tobi a seguirles el ritmo durante toda la semana. La defensa de Hipopotamos tiene otra pregunta para el estreno. Wembanyama figura cuestionable ante Sacramento por rigidez lumbar y el partido empieza a medianoche en Chile. Dylan Harper está descartado por la cadera izquierda en ese mismo juego."],
+    ["p", "Si Wembanyama pierde minutos, Anthony Davis y Walker Kessler quedan al frente de la pelea por los tapones. Cunningham y Holiday tendrán que cuidar cada posesión frente a un Cromwell que ya reparte la pelota desde varias posiciones. Avdija salió al pasillo y preguntó si iban a hablar del partido. Desde el camarín de visita le contestaron que sí, apenas Pinki y Tobi se pusieran de acuerdo sobre quién debía el reggae. El Rubio cerró la puerta. A él le basta con que esta vez, cuando llegue el domingo, la última asistencia lleve su camiseta."],
+    ["sources", [0, 1, 2, 3]]
+  ]
+},
+{
+  "id": "mercado-semana-6-telefonos-calientes",
+  "date": "2026-11-23",
+  "category": "Trades",
+  "readingMinutes": 4,
+  "title": "Teléfonos calientes: el Pato mira a Mykhailiuk y el Chino busca un pasador",
+  "excerpt": "Spencer, Grimes y Bamba entran al radar después de los clásicos. Shockers busca tiro, Hipopotamos revisa la eficiencia y el Rubio vuelve a tener espacio que cubrir bajo el aro. El Chino quiere que el próximo refuerzo entregue la pelota.",
+  "teams": [
+    "shockers",
+    "pelafustanes",
+    "hipopotamos",
+    "pilsens"
+  ],
+  "rulesLink": true,
+  "sources": [
+    {
+      "title": "ESPN Fantasy · Cierre oficial del 16 al 22 de noviembre",
+      "url": "./assets/cortes/espn/20261123T154410.424Z.json"
+    },
+    {
+      "title": "ESPN Fantasy · Parcial del domingo a las 10:07 de Chile",
+      "url": "./assets/cortes/espn/20261122T130752.649Z.json"
+    },
+    {
+      "title": "Actas NBA y cómputo individual reconstruido",
+      "url": "./assets/cortes/semana-5-final-reconstruccion-2026-11-23.json"
+    },
+    {
+      "title": "Planteles y candidatos al corte del lunes",
+      "url": "./assets/cortes/semana-6-planteles-mercado-2026-11-23.json"
+    },
+    {
+      "title": "NBA · Parte de lesiones del lunes a las 13:45 de Chile",
+      "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45AM.pdf"
+    }
+  ],
+  "image": {
+    "src": "./assets/editorial/mercado-telefonos-2026-11-23.webp",
+    "small": "./assets/editorial/mercado-telefonos-2026-11-23-640.webp",
+    "width": 1280,
+    "height": 720,
+    "alt": "Teléfonos descolgados y fichas de jugadores sobre una mesa junto a una cancha de básquet.",
+    "caption": "Ilustración editorial."
+  },
+  "source": "Análisis de posibles incorporaciones con actuaciones NBA del 16 al 22 de noviembre y planteles consultados en ESPN el lunes a las 14:55 de Chile. Los candidatos estaban fuera de los cuatro equipos en ese corte. La disponibilidad por waivers y la elegibilidad se comprueban al presentar la solicitud.",
+  "body": [
+    [
+      "p",
+      "El Pato ganó el clásico y decidió que era un buen momento para llamar por otro tirador. El Chino perdió Santa María y empezó a buscar a alguien que repartiera la pelota. A Tobi le recomendaron bajar el volumen de la conferencia hasta revisar los libres. El Rubio recibió todo el lunes con la pilsen todavía cerrada. Después de dos clásicos así, los teléfonos de Papafritas tienen más actividad que la mesa que intentan reservar desde febrero de 2023."
+    ],
+    [
+      "h2",
+      "El plantel ya se movió y ahora vienen las próximas preguntas"
+    ],
+    [
+      "p",
+      "El corte de ESPN muestra a Jamal Murray y Daniss Jenkins en Shockers, a Davis, Holiday y Bey en Hipopotamos, y a Avdija, Acuff y Carter en Cromwell. Los tres equipos reconstruyeron parte de su rotación respecto de la lista anterior. Mequetrefes mantiene sus trece nombres. Las actuaciones de ese grupo explican el cierre del fin de semana y sirven para elegir qué necesidad conviene cubrir en el próximo turno."
+    ],
+    [
+      "h2",
+      "Shockers pregunta por Svi y deja a Buddy en la otra línea"
+    ],
+    [
+      "p",
+      "Svi Mykhailiuk hizo 19 triples en 34 intentos y 73 puntos en cuatro partidos NBA. Tiene el tiro que le falta a un equipo que ganó el clásico con 51 triples frente a 77. Buddy Hield es otra opción, con 16 triples y cinco pérdidas en cuatro actuaciones. El precio de abrir una plaza en un equipo que viene de festejar es una conversación para el Pato. Mykhailiuk también perdió once balones. La planilla que acaba de terminar empatada 83–83 va a aparecer en esa reunión."
+    ],
+    [
+      "p",
+      "El Rubio mandó a preguntar si Svi tenía carisma. El Pato dejó el teléfono apoyado sobre la tabla de triples y le sugirió que revisara la programación de teleseries. Glen Davis ya tenía listo el puesto de bienvenida. El utilero solo pidió que esta vez los aguateros supieran dónde se guarda el aro de práctica."
+    ],
+    [
+      "h2",
+      "El Chino pide a Spencer y una explicación por las 108 asistencias"
+    ],
+    [
+      "p",
+      "Cam Spencer entregó 32 asistencias con cuatro pérdidas en cuatro partidos NBA. También convirtió siete triples y nueve de diez libres. Su perfil merece una revisión después de que Mequetrefes repartiera 86 asistencias menos que Cromwell. La plaza de Monk vuelve a la conversación por el poco volumen de minutos de sus apariciones NBA recientes. La llegada de otro base también podría permitir al Chino elegir mejor las noches en que necesita un pase extra."
+    ],
+    [
+      "p",
+      "El buen camarín recibió la carpeta y prometió mantener la sinergia. El Chino pidió que el nuevo asistiera primero a la práctica y después al debate sobre Jordan. Tobi ofreció resolver la contratación jugando pádel. Spencer preguntó si los pases de devolución también contaban en las nueve categorías."
+    ],
+    [
+      "h2",
+      "Hipopotamos puede mirar a Grimes antes de volver a brindar"
+    ],
+    [
+      "p",
+      "Quentin Grimes sumó 80 puntos, 15 triples y 13 de 15 libres en tres partidos NBA. Es una opción exterior para estudiar después de una derrota tan estrecha en la línea. La discusión empieza por el reparto de minutos y la plaza que se pueda abrir, porque el tiro ya tiene dueños. Wembanyama figura cuestionable para el lunes por rigidez lumbar. Su disponibilidad puede cambiar el orden de prioridades de Tobi."
+    ],
+    [
+      "p",
+      "Booker pidió revisar el expediente del candidato y se detuvo en los quince tiros libres. Dijo que estaba aprobado para conversar. La secretaría de Hipopotamos corrigió el acta y dejó escrito que el último tiro seguía pendiente. El título de pádel de Tobi volvió a aparecer entre los documentos sin que nadie lo hubiera solicitado."
+    ],
+    [
+      "h2",
+      "El Rubio recibe el nombre de Bamba con el vaso en la mano"
+    ],
+    [
+      "p",
+      "Mo Bamba acumuló 38 rebotes y cinco tapones en cuatro partidos NBA, con 13 de 21 de campo. Su producción anotadora fue de 29 puntos. Es un perfil para comparar con la plaza de un jugador de rotación como Keldon Johnson si Cromwell quiere proteger más el aro. Harper está descartado para el lunes por la cadera. Esa baja también exige decidir cuánto tiro y creación puede gastar el Rubio para reforzar otra categoría."
+    ],
+    [
+      "p",
+      "Jokić revisó la ficha y anotó el número de rebotes antes de devolverla. Pinki preguntó si la presentación podía hacerse con el reggae que Tobi le debe. El encargado de prensa contestó que primero había que cerrar la incorporación y después la canción. El Chino ofreció aportar una de sus juntas disponibles para el lanzamiento."
+    ],
+    [
+      "sources",
+      [
+        0,
+        2,
+        3,
+        4
+      ]
+    ]
+  ]
+},
 {
   "id": "cierre-semana-4-hipopotamos-mequetrefes",
   "date": "2026-11-16",

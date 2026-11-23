@@ -45,5 +45,11 @@
     "tool": "image_gen (herramienta integrada)",
     "createdAt": "2026-11-16",
     "alt": "Dos jugadores esperan en la cancha junto a una camiseta doblada y una pizarra de básquet."
+  },
+  "mercado-telefonos-2026-11-23": {
+    "prompt": "Use case: illustration-story. A single 16:9 editorial illustration for Papafritas League, a Chilean friends' fantasy basketball newspaper, about spicy transfer rumors after two dramatic weekend derbies. At a dim press-room desk beside a basketball court, three plain telephones in charcoal, burgundy and navy have off-hook receivers, as hands holding pencils compare cream scouting slips with simple anonymous player silhouettes. An orange basketball and a small carton of fries sit at the far edge. Through the open doorway see an unbranded empty locker and warm arena lights. Tactile ink-and-paint sports-magazine art with halftone paper grain, dramatic warm orange highlights, matte charcoal and deep blue shadows. Strong focused composition with the telephones and scouting slips centrally readable at mobile news thumbnail size. Clearly a transfer rumor investigation scene. No readable text, no letters, no numbers, no logos, no watermarks, no identifiable real persons, no currency, no handshake, no press conference. Important details inside central 75 percent so the image survives a 2:1 crop.",
+    "tool": "image_gen (herramienta integrada)",
+    "createdAt": "2026-11-23",
+    "alt": "Teléfonos descolgados y fichas de jugadores sobre una mesa junto a una cancha de básquet."
   }
 }

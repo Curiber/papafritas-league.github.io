@@ -356,9 +356,10 @@ test('los diez waivers respetan los pares de altas/bajas y las pujas de la captu
   assert.deepEqual(totals,{shockers:32,pilsens:4,hipopotamos:43,pelafustanes:25});
 });
 
-test('el historial de movimientos reconstruye los planteles actuales y conserva los anteriores', () => {
+test('los movimientos reconstruyen sus cortes históricos y el último corte conserva el plantel actual', () => {
   const a=app(),initial=a.data.rosterSnapshots.find(s=>s.date==='2026-10-20');
   const reports=Array.from(a.data.transactionReports).sort((x,y)=>x.date.localeCompare(y.date));
+  const latestSnapshot=Array.from(a.data.rosterSnapshots).sort((x,y)=>y.date.localeCompare(x.date))[0];
   for(const t of a.data.teams){
     const roster=Array.from(initial.teams.find(x=>x.id===t.id).roster);
     for(const r of reports){
@@ -369,7 +370,10 @@ test('el historial de movimientos reconstruye los planteles actuales y conserva 
       const snapshot=a.data.rosterSnapshots.find(s=>s.date===r.date);
       assert.deepEqual(roster,Array.from(snapshot.teams.find(x=>x.id===t.id).roster));
     }
-    assert.deepEqual(roster,Array.from(t.roster));assert.equal(t.roster.length,13);
+    assert.deepEqual(Array.from(latestSnapshot.teams.find(x=>x.id===t.id).roster),Array.from(t.roster));
+    assert.equal(t.roster.length,13);
+    const page=a.run(`teamPage(team(${JSON.stringify(t.id)}))`);
+    for(const player of t.roster)assert.ok(page.includes(a.run(`esc(${JSON.stringify(player)})`)),player);
   }
   assert.equal(new Set(a.data.teams.flatMap(t=>t.roster)).size,52);
   assert.equal(a.run("teamAt('hipopotamos','2026-10-25').roster.includes('Josh Giddey')"),true);
@@ -382,7 +386,6 @@ test('el historial de movimientos reconstruye los planteles actuales y conserva 
   assert.match(a.run('rankPage()'),/Brunson/);
   assert.doesNotMatch(a.run('rankPage()'),/Domantas Sabonis/);
   assert.doesNotMatch(a.run("matchupPage(matchupById('w1-m2'))"),/Domantas Sabonis/);
-  assert.match(a.run("teamPage(team('pilsens'))"),/Domantas Sabonis/);
 });
 
 test('la nueva noticia destaca el impacto deportivo y muestra los diez movimientos con su portada', () => {
